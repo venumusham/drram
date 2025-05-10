@@ -17,11 +17,11 @@ const ServicesHighlightSection: React.FC = () => {
           </div>
           
           <h3 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Specialized Aesthetic & Reconstructive Solutions
+            Comprehensive Plastic Surgery Solutions
           </h3>
           
           <p className="text-gray-700 leading-relaxed">
-            We offer expert treatments in Gynecomastia, Aesthetics, and Liposuction, along with comprehensive plastic surgery procedures. Our focus is on delivering natural results while ensuring patient safety and satisfaction.
+            Dr. M. Ram Prabhu offers a wide range of plastic surgery procedures with a focus on achieving natural-looking results while ensuring patient safety and satisfaction.
           </p>
         </div>
         
@@ -30,7 +30,7 @@ const ServicesHighlightSection: React.FC = () => {
           {Object.keys(serviceHighlights).map((category) => (
             <button
               key={category}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+              className={`px-6 py-3 rounded-full text-sm font-medium transition-colors duration-200 ${
                 activeCategory === category
                   ? 'bg-primary-600 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -43,45 +43,52 @@ const ServicesHighlightSection: React.FC = () => {
         </div>
         
         {/* Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {serviceHighlights[activeCategory].services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-2"
+              className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1"
             >
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-serif text-xl font-bold text-gray-900 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-gray-700 text-sm mb-4">
-                  {service.description}
-                </p>
-                <a 
-                  href={`/services#${service.id}`}
-                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm"
-                >
-                  Learn more
-                  <ChevronRight size={16} className="ml-1" />
-                </a>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="h-full">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-700 mb-6">
+                    {service.description}
+                  </p>
+                  
+                  {service.procedures && (
+                    <div className="mb-8">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-4">Procedures Include:</h4>
+                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {service.procedures.map((procedure, idx) => (
+                          <li key={idx} className="flex items-center text-gray-700">
+                            <ChevronRight className="w-4 h-4 text-primary-600 mr-2" />
+                            {procedure}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  
+                  <Button 
+                    href={`/services#${service.id}`}
+                    variant="primary"
+                  >
+                    Learn More
+                  </Button>
+                </div>
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center mt-12">
-          <Button 
-            href="/services"
-            variant="primary"
-          >
-            View All Services
-          </Button>
         </div>
       </div>
     </section>
