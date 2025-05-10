@@ -5,40 +5,36 @@ import Button from '../ui/Button';
 const HeroSection: React.FC = () => {
   return (
     <div className="relative min-h-screen flex items-center">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0" 
-        style={{
-          backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/7088530/pexels-photo-7088530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
+      {/* Background Gradient */}
+      <div
+        className="absolute inset-0 z-0 bg-gradient-to-br from-primary-900 via-primary-800 to-accent-900"
       ></div>
-      
+
       {/* Content */}
       <div className="container mx-auto px-4 pt-28 pb-16 relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-white font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fadeIn">
-            Expertise in 
-            <span className="text-accent-400"> Aesthetic</span> &amp; 
+            Expertise in
+            <span className="text-accent-400"> Aesthetic</span> &amp;
             <span className="text-accent-400"> Reconstructive</span> Surgery
           </h1>
-          
+
           <p className="text-gray-300 text-lg md:text-xl mb-8 animate-fadeIn animation-delay-300">
-            Dr. M. Ram Prabhu and his team provide world-class plastic surgery procedures with a focus on natural results and patient satisfaction.
+            Dr. M. Ram Prabhu and his team provide world-class plastic surgery
+            procedures with a focus on natural results and patient satisfaction.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeIn animation-delay-600">
-            <Button 
-              href="/contact" 
+            <Button
+              href="/contact"
               variant="primary"
               size="lg"
               icon={<Calendar size={20} />}
             >
               Book a Consultation
             </Button>
-            <Button 
-              href="/services" 
+            <Button
+              href="/services"
               variant="outline"
               size="lg"
               className="text-white border-white hover:bg-white/10"
@@ -62,7 +58,9 @@ const HeroSection: React.FC = () => {
                 Dr. M. Ram Prabhu
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
-                "My philosophy is to enhance your natural beauty while ensuring safe procedures and exceptional care at every step of your journey."
+                "My philosophy is to enhance your natural beauty while ensuring
+                safe procedures and exceptional care at every step of your
+                journey."
               </p>
             </div>
           </div>
