@@ -50,12 +50,15 @@ const ServicesHighlightSection: React.FC = () => {
               className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1"
             >
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="h-full">
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
-                    className="w-full h-full object-cover"
-                  />
+                <div className="h-full w-full flex items-center justify-center bg-gray-100">
+                  <div className="w-4/5 h-full mx-auto">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg"
+                      style={{ minHeight: 250 }}
+                    />
+                  </div>
                 </div>
                 <div className="p-8">
                   <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">

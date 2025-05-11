@@ -6,7 +6,7 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ inverted = false }) => {
-  const textColor = inverted ? 'text-orange-500' : 'text-orange-400';
+  const textColor = inverted ? 'text-accent-500' : 'text-accent-400';
   const accentColor = inverted ? 'text-accent-500' : 'text-accent-400';
 
   return (
@@ -18,7 +18,7 @@ const Logo: React.FC<LogoProps> = ({ inverted = false }) => {
       </div>
       <div className="ml-2">
         <div
-          className={`font-serif font-bold text-xl leading-none ${textColor}`}
+          className={`font-serif font-bold text-xl leading-none text-accent-400`}
         >
           Dr Ramprabhu Clinic
         </div>

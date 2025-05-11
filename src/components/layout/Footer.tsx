@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 text-gray-400" />
                 <div className="text-gray-400 text-sm">
-                  <p>WhatsApp: +91 93910 38023</p>
+                  <p>WhatsApp: +91 99498 08628</p>
                   <p>Clinic: +91 99498 08628</p>
                 </div>
               </li>

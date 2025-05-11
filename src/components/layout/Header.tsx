@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Calendar } from 'lucide-react';
+import { Menu, X, Phone, Calendar, MessageCircle } from 'lucide-react';
 import Button from '../ui/Button';
 import Logo from '../ui/Logo';
 
@@ -32,7 +32,8 @@ const Header: React.FC = () => {
     setIsMenuOpen(false);
   }, [location]);
 
-  const linkColor = isScrolled ? 'text-gray-800' : 'text-white';
+  // Force all header link text to white for visibility
+  const linkColor = 'text-white';
   const activeLinkColor = isScrolled ? 'text-primary-600' : 'text-accent-400';
 
   return (
@@ -120,6 +121,16 @@ const Header: React.FC = () => {
                 <Phone size={20} className="mr-1" />
                 <span className="text-sm">+91 99498 08628</span>
               </a>
+              <a
+                href="https://wa.me/9949808628"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center hover:text-green-500 transition-colors ${linkColor}`}
+                aria-label="WhatsApp"
+              >
+                <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mr-1" />
+                <span className="text-sm hidden lg:inline">WhatsApp</span>
+              </a>
               <Button
                 icon={<Calendar size={16} />}
                 href="/contact"
@@ -205,13 +216,23 @@ const Header: React.FC = () => {
               >
                 Contact
               </Link>
-              <div className="pt-4">
+              <div className="pt-4 flex flex-col space-y-2">
                 <a
                   href="tel:+919949808628"
                   className="flex items-center text-primary-600 hover:text-primary-700 transition-colors"
                 >
                   <Phone size={20} className="mr-1" />
                   <span className="text-sm">+91 99498 08628</span>
+                </a>
+                <a
+                  href="https://wa.me/9949808628"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-green-600 hover:text-green-700 transition-colors"
+                  aria-label="WhatsApp"
+                >
+                  <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mr-1" />
+                  <span className="text-sm">WhatsApp</span>
                 </a>
               </div>
               <Button

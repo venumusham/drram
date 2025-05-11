@@ -23,7 +23,7 @@ export const serviceHighlights: ServiceHighlights = {
         id: 'facelift',
         title: 'Face Procedures',
         description: 'Comprehensive facial rejuvenation procedures to enhance your natural beauty.',
-        image: 'https://images.pexels.com/photos/3738339/pexels-photo-3738339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        image: '/images/services/face.jpg',
         procedures: [
           'Facelift Surgery',
           'Rhinoplasty',
@@ -42,7 +42,7 @@ export const serviceHighlights: ServiceHighlights = {
         id: 'body-contouring',
         title: 'Body Contouring',
         description: 'Advanced body sculpting procedures to help you achieve your desired shape.',
-        image: 'https://images.pexels.com/photos/3764013/pexels-photo-3764013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        image: '/images/services/body.jpg',
         procedures: [
           'Liposuction',
           'Tummy Tuck',
@@ -61,7 +61,7 @@ export const serviceHighlights: ServiceHighlights = {
         id: 'breast-procedures',
         title: 'Breast Procedures',
         description: 'Comprehensive breast enhancement and reconstruction procedures.',
-        image: 'https://images.pexels.com/photos/9929202/pexels-photo-9929202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        image: '/images/services/breast.jpg',
         procedures: [
           'Breast Augmentation',
           'Breast Lift',
@@ -80,7 +80,7 @@ export const serviceHighlights: ServiceHighlights = {
         id: 'reconstructive',
         title: 'Reconstructive Surgery',
         description: 'Specialized procedures to restore form and function.',
-        image: 'https://images.pexels.com/photos/7446145/pexels-photo-7446145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        image: '/images/services/reconstructive.jpg',
         procedures: [
           'Skin Cancer Reconstruction',
           'Hand Surgery',

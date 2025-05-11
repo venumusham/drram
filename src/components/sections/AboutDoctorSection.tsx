@@ -1,16 +1,16 @@
 import React from 'react';
 import { Award, BookOpen, Stethoscope, Users } from 'lucide-react';
 import Button from '../ui/Button';
-
+import RamPrabhuImg from './about-ram.png'; // Import the image
 const AboutDoctorSection: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="rounded-lg shadow-2xl overflow-hidden transform translate-y-4 translate-x-4 relative z-10">
               <img 
-                src="https://ship-app-assets.fra1.digitaloceanspaces.com/stream/65c514ca046cbf0013ecd370/1715281173414-1602417785968.jpg" 
+                src={RamPrabhuImg} 
                 alt="Dr. M. Ram Prabhu" 
                 className="w-full h-auto object-cover"
               />
@@ -26,7 +26,7 @@ const AboutDoctorSection: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-medium text-gray-900">
-                    15 Years of Excellence
+                    15+ Years of Excellence
                   </h4>
                   <p className="text-xs text-gray-500">
                     DNB Plastic Surgery
@@ -48,11 +48,11 @@ const AboutDoctorSection: React.FC = () => {
             </h3>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              Dr. M. Ram Prabhu is a highly skilled Aesthetics and Plastic Surgeon with 15 years of experience, specializing in Gynecomastia, Aesthetics, and Liposuction. He graduated with his MBBS from Dr. NTR University of Health Sciences, Andhra Pradesh in 2009, followed by DNB in Plastic Surgery from National Board of Examinations, New Delhi in 2019.
+              Dr. M. Ram Prabhu is a highly skilled Aesthetics and Plastic Surgeon with 15+ years of experience, specializing in Gynecomastia, Aesthetics, and Liposuction. He graduated with his MBBS from Dr. NTR University of Health Sciences, Andhra Pradesh in 2009, followed by DNB in Plastic Surgery from National Board of Examinations, New Delhi in 2019.
             </p>
             
             <p className="text-gray-700 leading-relaxed mb-8">
-              Currently practicing at Pristyn Care Clinic in Hyderabad, Dr. Prabhu is known for his compassionate care and dedication to patient recovery. He is fluent in English and Hindi, and has been praised by patients for his caring nature and round-the-clock availability.
+              Currently practicing at Pristyn Care Clinic in Hyderabad, Dr Ram Prabhu is known for his compassionate care and dedication to patient recovery. He is fluent in English and Hindi, and has been praised by patients for his caring nature and round-the-clock availability.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -97,7 +97,7 @@ const AboutDoctorSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0 mb-0">
               <Button
                 href="/about"
                 variant="primary"
