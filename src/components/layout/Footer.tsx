@@ -15,16 +15,16 @@ const Footer: React.FC = () => {
               We offer a range of aesthetic and reconstructive procedures with a focus on natural results.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+              <a href="https://instagram.com/dr.ramprabhu_plasticsurgeon" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+              <a href="https://facebook.com/ramprabhu.musham" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
+              <a href="https://youtube.com/@drramprabhumusham" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.12C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.386.566a2.994 2.994 0 0 0-2.112 2.12C0 8.348 0 12 0 12s0 3.652.502 5.814a2.994 2.994 0 0 0 2.112 2.12C4.772 20.5 12 20.5 12 20.5s7.228 0 9.386-.566a2.994 2.994 0 0 0 2.112-2.12C24 15.652 24 12 24 12s0-3.652-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <a href="https://linkedin.com/in/ramprabhu-musham-78b2ba20" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
             </div>
