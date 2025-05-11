@@ -21,7 +21,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
       }}
     >
       <div className="container mx-auto px-4 relative z-10 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-orange mb-4">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-4">
           {title}
         </h1>
         {description && (

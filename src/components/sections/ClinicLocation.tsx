@@ -50,9 +50,9 @@ const ClinicLocation: React.FC = () => {
           <div className="ml-4">
             <h3 className="text-lg font-medium text-gray-900">Phone</h3>
             <p className="text-gray-700">
-              WhatsApp: +91 93910 38023
+              WhatsApp: +91 99498 08628
               <br />
-              Clinic: +91 93910 38023
+              Clinic: +91 99498 08628
             </p>
           </div>
         </div>
