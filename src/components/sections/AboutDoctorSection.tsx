@@ -1,7 +1,7 @@
 import React from 'react';
 import { Award, BookOpen, Stethoscope, Users } from 'lucide-react';
 import Button from '../ui/Button';
-import RamPrabhuImg from './about-ram.png'; // Import the image
+import RamPrabhuImg from './ram.png'; // Import the image
 const AboutDoctorSection: React.FC = () => {
   return (
     <section className="py-16 md:py-20 bg-gray-50">
@@ -12,7 +12,7 @@ const AboutDoctorSection: React.FC = () => {
               <img 
                 src={RamPrabhuImg} 
                 alt="Dr. M. Ram Prabhu" 
-                className="w-full h-auto object-cover"
+                className="w-4/5 h-auto object-cover"
               />
             </div>
             <div className="absolute top-0 left-0 w-full h-full border-2 border-accent-500 rounded-lg -z-0"></div>
