@@ -81,13 +81,16 @@ const HeroSection: React.FC = () => {
               </a>
             </div>
             <div className="flex justify-center gap-4 mt-2">
-              <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+              <a href="https://linkedin.com/in/ramprabhu-musham-78b2ba20" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style={{width: '24px'}} />
               </a>
-              <a href="https://www.instagram.com/dr.ramprabhu_plasticsurgeon/" target="_blank">
+              <a href="https://facebook.com/ramprabhu.musham" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style={{width: '24px'}} />
+              </a>
+              <a href="https://instagram.com/dr.ramprabhu_plasticsurgeon" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style={{width: '24px'}} />
               </a>
-              <a href="https://www.youtube.com/@drramprabhumusham" target="_blank">
+              <a href="https://youtube.com/@drramprabhumusham" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style={{width: '24px'}} />
               </a>
             </div>
