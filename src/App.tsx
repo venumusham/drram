@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import HomePage from './pages/Home';
@@ -8,6 +8,11 @@ import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
 import GalleryPage from './pages/Gallery';
 import FAQPage from './pages/FAQ';
+import PlasticSurgeonHyderabad from './pages/PlasticSurgeonHyderabad';
+import PlasticSurgeryKondapur from './pages/PlasticSurgeryKondapur';
+import CosmeticSurgeonMadhapur from './pages/CosmeticSurgeonMadhapur';
+import PlasticSurgeonGachibowli from './pages/PlasticSurgeonGachibowli';
+import PlasticSurgeonHitechCity from './pages/PlasticSurgeonHitechCity';
 
 function App() {
   return (
@@ -22,6 +27,11 @@ function App() {
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/plastic-surgeon-hyderabad" element={<PlasticSurgeonHyderabad />} />
+            <Route path="/plastic-surgery-kondapur" element={<PlasticSurgeryKondapur />} />
+            <Route path="/cosmetic-surgeon-madhapur" element={<CosmeticSurgeonMadhapur />} />
+            <Route path="/plastic-surgeon-gachibowli" element={<PlasticSurgeonGachibowli />} />
+            <Route path="/plastic-surgeon-hitech-city" element={<PlasticSurgeonHitechCity />} />
           </Routes>
         </main>
         <Footer />
