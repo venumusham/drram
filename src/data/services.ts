@@ -21,7 +21,7 @@ export const serviceHighlights: ServiceHighlights = {
     services: [
       {
         id: 'facelift',
-        title: 'Face Procedures',
+        title: 'Facelift',
         description: 'Comprehensive facial rejuvenation procedures to enhance your natural beauty.',
         image: '/images/services/face.jpg',
         procedures: [
