@@ -83,7 +83,7 @@ const ServicesHighlightSection: React.FC = () => {
                   )}
                   
                   <Button 
-                    href={`/services#${service.id}`}
+                    href={`/services/${service.id}`}
                     variant="primary"
                   >
                     Learn More

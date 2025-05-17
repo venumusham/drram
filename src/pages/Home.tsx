@@ -13,9 +13,9 @@ const HomePage: React.FC = () => {
     <div className="HomePage">
       <HeroSection />
       <AboutDoctorSection />
+      <StatisticsSection />
       <AffiliationsSection />
       <ServicesHighlightSection />
-      <StatisticsSection />
       <YouTubeSection />
       <TestimonialsSection />
       <CTASection />

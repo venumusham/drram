@@ -34,13 +34,13 @@ const CTASection: React.FC = () => {
             </Button>
             
             <Button 
-              href="tel:+1234567890" 
+              href="tel:+919949808628" 
               variant="outline"
               size="lg"
               className="text-white border-white hover:bg-white/10"
               icon={<Phone size={20} />}
             >
-              Call Us
+              Call Now
             </Button>
           </div>
         </div>

@@ -13,6 +13,10 @@ import PlasticSurgeryKondapur from './pages/PlasticSurgeryKondapur';
 import CosmeticSurgeonMadhapur from './pages/CosmeticSurgeonMadhapur';
 import PlasticSurgeonGachibowli from './pages/PlasticSurgeonGachibowli';
 import PlasticSurgeonHitechCity from './pages/PlasticSurgeonHitechCity';
+import FaceliftPage from './pages/services/facelift';
+import BodyContouringPage from './pages/services/body-contouring';
+import BreastProceduresPage from './pages/services/breast-procedures';
+import ReconstructivePage from './pages/services/reconstructive';
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/facelift" element={<FaceliftPage />} />
+            <Route path="/services/body-contouring" element={<BodyContouringPage />} />
+            <Route path="/services/breast-procedures" element={<BreastProceduresPage />} />
+            <Route path="/services/reconstructive" element={<ReconstructivePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/faq" element={<FAQPage />} />

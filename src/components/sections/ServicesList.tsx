@@ -1,31 +1,37 @@
 import React from 'react';
 import { ArrowRight, Scale as Scalpel, Heart, Activity, Brain, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
     icon: Scalpel,
     title: "Facial Procedures",
     description: "Transform your appearance with our advanced facial surgical procedures, including facelifts, rhinoplasty, and facial contouring.",
+    route: "/services/facelift"
   },
   {
     icon: Heart,
     title: "Body Contouring",
     description: "Achieve your desired body shape through procedures like liposuction, tummy tucks, and body lifts.",
+    route: "/services/body-contouring"
   },
   {
     icon: Activity,
     title: "Breast Surgery",
     description: "Enhance or reduce breast size with our comprehensive range of breast surgical procedures.",
+    route: "/services/breast-procedures"
   },
   {
     icon: Brain,
     title: "Reconstructive Surgery",
     description: "Restore form and function with our expert reconstructive surgical procedures.",
+    route: "/services/reconstructive"
   },
   {
     icon: Sparkles,
     title: "Non-Surgical Treatments",
     description: "Experience remarkable results with our non-invasive cosmetic treatments and procedures.",
+    route: "/services"
   }
 ];
 
@@ -51,12 +57,12 @@ const ServicesList: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <a 
-                href="#" 
+              <Link 
+                to={service.route} 
                 className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
               >
                 Learn more <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
