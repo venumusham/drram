@@ -53,13 +53,15 @@ const HeroSection: React.FC = () => {
               Expertise in <span className="text-accent-400">Aesthetic</span> & <span className="text-accent-400">Reconstructive</span> Surgery
             </h1>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 mb-6 animate-fadeIn animation-delay-600">
-              <button
+              <Button
                 onClick={scrollToAppointment}
-                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200"
+                variant="outline"
+                size="md"
+                className="text-white border-white hover:bg-white/10"
+                icon={<Calendar size={18} />}
               >
-                <Calendar size={18} className="mr-2" />
                 Book a Consultation
-              </button>
+              </Button>
               <Button
                 href="https://wa.me/9949808628"
                 variant="outline"
