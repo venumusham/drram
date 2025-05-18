@@ -3,8 +3,24 @@ import { ArrowRight, Calendar } from 'lucide-react';
 import Button from '../ui/Button';
 import RamPrabhuImage from './ram.png'; // Import the image
 import pryImage from './p.webp'; // Import the image
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
+  const navigate = useNavigate();
+
+  const scrollToAppointment = () => {
+    // First navigate to the contact page
+    navigate('/contact');
+    
+    // Then scroll to the form after a short delay to ensure the page has loaded
+    setTimeout(() => {
+      const appointmentForm = document.getElementById('appointment-form');
+      if (appointmentForm) {
+        appointmentForm.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <div className="relative min-h-[50vh] flex items-center bg-gradient-to-br from-primary-950 via-primary-900 to-accent-950 overflow-hidden">
       {/* Background Pattern */}
@@ -37,14 +53,13 @@ const HeroSection: React.FC = () => {
               Expertise in <span className="text-accent-400">Aesthetic</span> & <span className="text-accent-400">Reconstructive</span> Surgery
             </h1>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 mb-6 animate-fadeIn animation-delay-600">
-              <Button
-                href="/contact"
-                variant="primary"
-                size="md"
-                icon={<Calendar size={18} />}
+              <button
+                onClick={scrollToAppointment}
+                className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200"
               >
+                <Calendar size={18} className="mr-2" />
                 Book a Consultation
-              </Button>
+              </button>
               <Button
                 href="https://wa.me/9949808628"
                 variant="outline"
@@ -80,7 +95,7 @@ const HeroSection: React.FC = () => {
                       <a href="https://www.pristyncare.com/specialist/dr-m-ram-prabhu-bnonbbggix/" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
                         <img src={pryImage} alt="Pristyn Care" className="h-7 w-auto object-contain" />
                       </a>
-                      <a href="https://www.ideaclinics.com/" target="_blankk" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
+                      <a href="https://www.ideaclinics.com/" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
                         <img src="https://www.ideaclinics.com/wp-content/uploads/2021/03/IDEA-logo-1.png" alt="Idea Clinic" className="h-7 w-auto object-contain" />
                       </a>
                       <a href="https://luxhospitals.com/top-hospital-for-liposuction-surgery/#doctors" target="_blank" className="hover:opacity-80 transition-opacity bg-white p-2 rounded-lg">
