@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 const procedures = [
   {
@@ -65,6 +66,8 @@ const procedures = [
 ];
 
 export const ReconstructivePage: React.FC = () => {
+  useScrollToTop();
+
   return (
     <div className="bg-white min-h-screen pb-12">
       {/* Hero Section */}
@@ -131,6 +134,4 @@ export const ReconstructivePage: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default ReconstructivePage; 
+}; 

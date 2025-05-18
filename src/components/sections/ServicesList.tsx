@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Scale as Scalpel, Heart, Activity, Brain } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -30,8 +30,12 @@ const services = [
 ];
 
 const ServicesList: React.FC = () => {
-  const handleServiceClick = () => {
+  const navigate = useNavigate();
+
+  const handleServiceClick = (route: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
     window.scrollTo(0, 0);
+    navigate(route);
   };
 
   return (
@@ -86,7 +90,7 @@ const ServicesList: React.FC = () => {
               <p className="text-sm text-gray-600 mb-3">{service.description}</p>
               <Link 
                 to={service.route} 
-                onClick={handleServiceClick}
+                onClick={handleServiceClick(service.route)}
                 className="inline-flex items-center text-sm text-primary-600 hover:text-primary-800 transition-colors duration-200"
               >
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
