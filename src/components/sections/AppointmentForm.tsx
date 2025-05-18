@@ -50,7 +50,7 @@ const AppointmentForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 md:p-8">
+    <div id="appointment-form" className="bg-white rounded-lg shadow-md p-6 md:p-8">
       <h2 className="font-serif text-2xl font-bold text-gray-900 mb-6">
         Book an Appointment
       </h2>

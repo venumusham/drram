@@ -1,8 +1,24 @@
 import React from 'react';
 import { Calendar, Phone } from 'lucide-react';
 import Button from '../ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 const CTASection: React.FC = () => {
+  const navigate = useNavigate();
+
+  const scrollToAppointment = () => {
+    // First navigate to the contact page
+    navigate('/contact');
+    
+    // Then scroll to the form after a short delay to ensure the page has loaded
+    setTimeout(() => {
+      const appointmentForm = document.getElementById('appointment-form');
+      if (appointmentForm) {
+        appointmentForm.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <section className="py-16 bg-primary-800 relative overflow-hidden">
       {/* Background Elements */}
@@ -24,14 +40,13 @@ const CTASection: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button 
-              href="/contact" 
-              variant="secondary"
-              size="lg"
-              icon={<Calendar size={20} />}
+            <button
+              onClick={scrollToAppointment}
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-white hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200"
             >
+              <Calendar size={20} className="mr-2" />
               Book a Consultation
-            </Button>
+            </button>
             
             <Button 
               href="tel:+919949808628" 
