@@ -19,28 +19,28 @@ const AboutDoctorSection: React.FC = () => {
           <div className="lg:col-span-4 lg:-ml-8">
             <div className="relative lg:pr-8">
               <div className="rounded-lg shadow-2xl overflow-hidden transform translate-y-0 translate-x-4 relative z-10">
-                <img 
-                  src={RamPrabhuImg} 
-                  alt="Dr. M. Ram Prabhu" 
+              <img 
+                src={RamPrabhuImg} 
+                alt="Dr. M. Ram Prabhu" 
                   className="w-full h-auto object-cover"
-                />
-              </div>
-              <div className="absolute top-0 left-0 w-full h-full border-2 border-accent-500 rounded-lg -z-0"></div>
-              
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-xl p-4 z-20 max-w-xs">
-                <div className="flex items-center">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
-                      <Award className="w-6 h-6" />
-                    </div>
+              />
+            </div>
+            <div className="absolute top-0 left-0 w-full h-full border-2 border-accent-500 rounded-lg -z-0"></div>
+            
+            <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-xl p-4 z-20 max-w-xs">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
+                    <Award className="w-6 h-6" />
                   </div>
-                  <div className="ml-4">
-                    <h4 className="text-sm font-medium text-gray-900">
-                      15+ Years of Excellence
-                    </h4>
-                    <p className="text-xs text-gray-500">
-                      DNB Plastic Surgery
-                    </p>
+                </div>
+                <div className="ml-4">
+                  <h4 className="text-sm font-medium text-gray-900">
+                    15+ Years of Excellence
+                  </h4>
+                  <p className="text-xs text-gray-500">
+                    DNB Plastic Surgery
+                  </p>
                   </div>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const AboutDoctorSection: React.FC = () => {
             <p className="text-gray-700 leading-relaxed mb-6">
               Dr. M. Ram Prabhu is a highly skilled Aesthetics and Plastic Surgeon with 15+ years of experience, specializing in Gynecomastia, Aesthetics, and Liposuction. He graduated with his MBBS from Dr. NTR University of Health Sciences, Andhra Pradesh in 2009, followed by DNB in Plastic Surgery from National Board of Examinations, New Delhi in 2019.
             </p>
-
+            
             <a 
               href="https://www.linkedin.com/in/ramprabhu-musham-78b2ba20/" 
               target="_blank" 

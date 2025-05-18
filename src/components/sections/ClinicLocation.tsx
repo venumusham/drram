@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Navigation, MessageCircle } from 'lucide-react';
 
 const ClinicLocation: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const ClinicLocation: React.FC = () => {
         ></iframe>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-6">
         <div className="flex">
           <div className="flex-shrink-0">
             <MapPin className="h-6 w-6 text-primary-600" />
@@ -40,6 +40,15 @@ const ClinicLocation: React.FC = () => {
               <br />
               Hyderabad
             </p>
+            <a 
+              href="https://maps.app.goo.gl/u5BUxZYY3yBXnwWh7" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center mt-2 text-primary-600 hover:text-primary-700 transition-colors"
+            >
+              <Navigation className="w-4 h-4 mr-1" />
+              <span>Get Directions</span>
+            </a>
           </div>
         </div>
 
@@ -49,11 +58,28 @@ const ClinicLocation: React.FC = () => {
           </div>
           <div className="ml-4">
             <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-            <p className="text-gray-700">
-              WhatsApp: +91 99498 08628
-              <br />
-              Clinic: +91 99498 08628
-            </p>
+            <div className="space-y-2">
+              <div className="flex items-center">
+                <MessageCircle className="w-4 h-4 text-primary-600 mr-2" />
+                <a 
+                  href="https://wa.me/9949808628" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-primary-600 transition-colors"
+                >
+                  WhatsApp: +91 99498 08628
+                </a>
+              </div>
+              <div className="flex items-center">
+                <Phone className="w-4 h-4 text-primary-600 mr-2" />
+                <a 
+                  href="tel:+919949808628" 
+                  className="text-gray-700 hover:text-primary-600 transition-colors"
+                >
+                  Clinic: +91 99498 08628
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

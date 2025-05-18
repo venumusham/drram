@@ -16,7 +16,7 @@ import PlasticSurgeonHitechCity from './pages/PlasticSurgeonHitechCity';
 import FaceliftPage from './pages/services/facelift';
 import BodyContouringPage from './pages/services/body-contouring';
 import BreastProceduresPage from './pages/services/breast-procedures';
-import ReconstructivePage from './pages/services/reconstructive';
+import { ReconstructivePage } from './pages/services/reconstructive';
 
 function App() {
   return (
