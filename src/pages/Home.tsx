@@ -10,6 +10,22 @@ import StatisticsSection from '../components/sections/StatisticsSection';
 import YouTubeSection from '../components/sections/YouTubeSection';
 
 const HomePage: React.FC = () => {
+  // Structured data for business information
+  const businessStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalBusiness',
+    name: 'Dr. Ram Prabhu - Plastic Surgeon',
+    telephone: '+919949808628',
+    url: 'https://drramprabhu.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Hyderabad',
+      addressRegion: 'Telangana',
+      addressCountry: 'IN'
+    },
+    medicalSpecialty: 'Plastic Surgery'
+  };
+
   return (
     <>
       <SEO 
@@ -27,6 +43,10 @@ const HomePage: React.FC = () => {
         ]}
         image="/images/hero.jpg"
         url="https://drramprabhu.com"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessStructuredData) }}
       />
       <div className="HomePage">
         <HeroSection />
