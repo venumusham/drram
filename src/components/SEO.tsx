@@ -76,7 +76,7 @@ const SEO: React.FC<SEOProps> = ({
       latitude: '17.4847',
       longitude: '78.3494'
     },
-    telephone: '+91-XXXXXXXXXX',
+    telephone: '+91-9949808628',
     priceRange: '₹₹₹',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
