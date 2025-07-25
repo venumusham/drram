@@ -23,11 +23,20 @@ const HeroSection: React.FC = () => {
 
   return (
     <div className="relative min-h-[50vh] flex items-center bg-gradient-to-br from-primary-950 via-primary-900 to-accent-950 overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-5"></div>
-      
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/80 to-transparent"></div>
+      {/* YouTube Video Background */}
+      <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
+        <iframe
+          className="w-full h-full object-cover aspect-video"
+          src="https://www.youtube.com/embed/B1ynwibvObs?autoplay=1&mute=1&loop=1&playlist=B1ynwibvObs&controls=0&showinfo=0&modestbranding=1&rel=0"
+          title="Hero Background Video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+        />
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/80 via-primary-900/70 to-transparent"></div>
+      </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 pt-20 pb-12 relative z-10">
@@ -49,42 +58,12 @@ const HeroSection: React.FC = () => {
             <div className="mb-1 text-accent-400 font-semibold uppercase tracking-widest text-sm animate-fadeIn">
               Hyderabad's Trusted Plastic Surgeon
             </div>
-            <h1 className="text-white font-serif text-3xl md:text-4xl font-bold leading-tight mb-4 animate-fadeIn">
+            <h1 className="text-white font-serif text-2xl md:text-3xl font-bold leading-tight mb-4 animate-fadeIn">
               Expertise in <span className="text-accent-400">Aesthetic</span> & <span className="text-accent-400">Reconstructive</span> Surgery
             </h1>
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 mb-6 animate-fadeIn animation-delay-600">
-              <Button
-                onClick={scrollToAppointment}
-                variant="outline"
-                size="md"
-                className="text-white border-white hover:bg-white/10"
-                icon={<Calendar size={18} />}
-              >
-                Book a Consultation
-              </Button>
-              <Button
-                href="https://wa.me/9949808628"
-                variant="outline"
-                size="md"
-                className="text-white border-green-500 hover:bg-green-50/10"
-                icon={<img src="/images/whatsapp.svg" alt="WhatsApp" className="w-4 h-4" />}
-              >
-                WhatsApp
-              </Button>
-              <Button
-                href="/services"
-                variant="outline"
-                size="md"
-                className="text-white border-white hover:bg-white/10"
-                icon={<ArrowRight size={18} />}
-              >
-                Explore Our Services
-              </Button>
-            </div>
-            <p className="text-gray-200 text-base md:text-lg mb-6 animate-fadeIn animation-delay-300">
+            <p className="text-gray-200 text-base md:text-lg mt-40 mb-12 animate-fadeIn animation-delay-300">
               Dr. M. Ram Prabhu and his team provide world-class plastic surgery procedures with a focus on natural results and patient satisfaction.
             </p>
-
             {/* Combined Sections Container */}
             <div className="flex flex-col lg:flex-row gap-4 animate-fadeIn animation-delay-600">
               {/* Associations Section */}
