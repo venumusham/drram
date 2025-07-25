@@ -8,6 +8,7 @@ import TestimonialsSection from '../components/sections/TestimonialsSection';
 import CTASection from '../components/sections/CTASection';
 import StatisticsSection from '../components/sections/StatisticsSection';
 import YouTubeSection from '../components/sections/YouTubeSection';
+import FloatingSocialBar from '../components/FloatingSocialBar';
 
 const HomePage: React.FC = () => {
   // Structured data for business information
@@ -58,6 +59,7 @@ const HomePage: React.FC = () => {
         <YouTubeSection />
         <CTASection />
       </div>
+      <FloatingSocialBar />
     </>
   );
 };
