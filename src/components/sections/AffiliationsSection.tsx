@@ -38,13 +38,13 @@ const AffiliationsSection: React.FC = () => {
             Dr. Ram Prabhu is affiliated with prestigious medical organizations, ensuring the highest standards of practice and continuous professional development.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex overflow-x-auto gap-6 pb-4 px-1 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-primary-200 scrollbar-track-primary-50">
           {affiliations.map((affiliation, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-200"
+              className="min-w-[260px] max-w-xs bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 snap-center"
             >
-              <div className="w-32 h-32 mb-4 flex items-center justify-center bg-primary-50 rounded-full overflow-hidden">
+              <div className="w-24 h-24 mb-4 flex items-center justify-center bg-primary-50 rounded-full overflow-hidden">
                 <img
                   src={affiliation.logo}
                   alt={affiliation.alt}
