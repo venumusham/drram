@@ -147,7 +147,11 @@ const GynecomastiaLanding: React.FC = () => (
     <section className="py-10 px-4 bg-primary-50">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-2xl font-bold text-primary-900 mb-4">Our Hospital Location</h2>
-        <p className="mb-2">Plot no: 116, Lumbini Enclave Hitech city main road, Landmark: near IKEA, Gachibowli, Hyderabad, Telangana 500081</p>
+        <p className="mb-2">Idea Clinic, 1st Floor
+61B, 3rd Street
+Near Burfighar Sweetshop
+Sri Ram Nagar, Kondapur
+Hyderabad</p>
         <a href="https://maps.app.goo.gl/u5BUxZYY3yBXnwWh7" className="text-primary-700 underline">Get Directions</a>
         <div className="mt-4">
           <a href="tel:+919949808628" className="bg-primary-700 text-white px-6 py-2 rounded shadow hover:bg-primary-800 transition">Call Now</a>
