@@ -31,7 +31,7 @@ const GynecomastiaLanding: React.FC = () => (
               <span className="text-xs">→</span>
             </span>
           </a>
-          <a href="#details" className="min-w-[80px] bg-gradient-to-br from-yellow-200 via-yellow-100 to-yellow-300 rounded-lg shadow p-1 flex flex-col justify-between relative focus:outline-none focus:ring-2 focus:ring-primary-700 min-h-[40px]">
+          <a  href="tel:+919949808628" className="min-w-[80px] bg-gradient-to-br from-yellow-200 via-yellow-100 to-yellow-300 rounded-lg shadow p-1 flex flex-col justify-between relative focus:outline-none focus:ring-2 focus:ring-primary-700 min-h-[40px]">
             <span className="text-primary-900 font-bold text-[11px] mb-0.5">Cost Estimation</span>
             <span className="absolute bottom-0.5 right-0.5 bg-primary-700 text-white w-4 h-4 flex items-center justify-center rounded-full">
               <span className="text-xs">→</span>
@@ -62,7 +62,7 @@ const GynecomastiaLanding: React.FC = () => (
       <div className="max-w-lg mx-auto">
         <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.youtube.com/embed/B1ynwibvObs?autoplay=1&mute=1&playsinline=1"
+            src="https://www.youtube.com/embed/B1ynwibvObs?autoplay=1&playsinline=1"
             title="Gynecomastia Surgery Video"
             allow="autoplay; encrypted-media"
             allowFullScreen
