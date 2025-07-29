@@ -18,6 +18,7 @@ import FaceliftPage from './pages/services/facelift';
 import BodyContouringPage from './pages/services/body-contouring';
 import BreastProceduresPage from './pages/services/breast-procedures';
 import { ReconstructivePage } from './pages/services/reconstructive';
+import GynecomastiaLanding from './pages/GynecomastiaLanding';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
               <Route path="/cosmetic-surgeon-madhapur" element={<CosmeticSurgeonMadhapur />} />
               <Route path="/plastic-surgeon-gachibowli" element={<PlasticSurgeonGachibowli />} />
               <Route path="/plastic-surgeon-hitech-city" element={<PlasticSurgeonHitechCity />} />
+              <Route path="/gynecomastia" element={<GynecomastiaLanding />} />
             </Routes>
           </main>
           <Footer />
