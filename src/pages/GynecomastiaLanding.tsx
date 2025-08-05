@@ -62,7 +62,7 @@ const GynecomastiaLanding: React.FC = () => (
       <div className="max-w-lg mx-auto">
         <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.youtube.com/embed/B1ynwibvObs?autoplay=1&playsinline=1"
+            src="https://www.youtube.com/embed/aIgr0I-RnM4?autoplay=1&playsinline=1"
             title="Gynecomastia Surgery Video"
             allow="autoplay; encrypted-media"
             allowFullScreen
