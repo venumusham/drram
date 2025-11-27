@@ -1,52 +1,64 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEO from '../components/SEO';
 
-const CosmeticSurgeonMadhapur: React.FC = () => (
-  <>
-    <Helmet>
-      <title>Best Cosmetic Surgeon in Madhapur - Dr. Ram Prabhu | Expert Plastic & Reconstructive Surgery</title>
-      <meta name="description" content="Looking for a top cosmetic surgeon in Madhapur? Dr. Ram Prabhu provides expert cosmetic and reconstructive surgery with 15+ years experience. Serving Kondapur, Gachibowli, Hitech City & Hyderabad." />
-      <meta name="keywords" content="cosmetic surgeon madhapur, plastic surgery madhapur, best cosmetic surgeon madhapur, dr ram prabhu madhapur, reconstructive surgery madhapur" />
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "MedicalBusiness",
-          "name": "Dr. Ram Prabhu - Cosmetic Surgeon",
-          "image": "https://drramprabhu.com/images/dr-ram-prabhu.jpg",
-          "description": "Expert cosmetic and plastic surgery services in Madhapur by Dr. Ram Prabhu",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Idea Clinics",
-            "addressLocality": "Madhapur",
-            "addressRegion": "Telangana",
-            "postalCode": "500081",
-            "addressCountry": "IN"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "17.458099988030647",
-            "longitude": "78.37559661478558"
-          },
-          "url": "https://drramprabhu.com/cosmetic-surgeon-madhapur",
-          "telephone": "+919949808628",
-          "priceRange": "₹₹₹",
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          }
-        })}
-      </script>
-    </Helmet>
-    <div className="container mx-auto px-4 py-12 bg-white">
+const CosmeticSurgeonMadhapur: React.FC = () => {
+  const madhapurSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Dr. Ram Prabhu - Cosmetic Surgeon",
+    "image": "https://drramprabhu.com/images/banner.png",
+    "description": "Expert cosmetic and plastic surgery services in Madhapur by Dr. Ram Prabhu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Idea Clinics",
+      "addressLocality": "Madhapur",
+      "addressRegion": "Telangana",
+      "postalCode": "500081",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "17.458099988030647",
+      "longitude": "78.37559661478558"
+    },
+    "url": "https://drramprabhu.com/cosmetic-surgeon-madhapur",
+    "telephone": "+919949808628",
+    "priceRange": "₹₹₹",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  };
+
+  return (
+    <>
+      <SEO
+        title="Best Cosmetic Surgeon in Madhapur - Dr. Ram Prabhu | Expert Plastic & Reconstructive Surgery"
+        description="Looking for a top cosmetic surgeon in Madhapur? Dr. Ram Prabhu provides cosmetic and reconstructive surgery with over 15 years of experience, serving Kondapur, Gachibowli, Hitech City, and Hyderabad."
+        keywords={[
+          'cosmetic surgeon madhapur',
+          'plastic surgery madhapur',
+          'best cosmetic surgeon madhapur',
+          'dr ram prabhu madhapur',
+          'reconstructive surgery madhapur'
+        ]}
+        image="https://drramprabhu.com/images/banner.png"
+        url="https://drramprabhu.com/cosmetic-surgeon-madhapur"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(madhapurSchema) }}
+      />
+      <div className="container mx-auto px-4 py-12 bg-white">
       <h1 className="text-4xl font-bold text-primary-800 mb-6">
         Best Cosmetic Surgeon in Madhapur – Dr. Ram Prabhu
       </h1>
@@ -181,8 +193,9 @@ const CosmeticSurgeonMadhapur: React.FC = () => (
           </div>
         </div>
       </div>
-    </div>
-  </>
-);
+      </div>
+    </>
+  );
+};
 
 export default CosmeticSurgeonMadhapur; 
