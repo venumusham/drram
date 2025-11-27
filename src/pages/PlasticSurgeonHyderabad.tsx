@@ -1,52 +1,64 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEO from '../components/SEO';
 
-const PlasticSurgeonHyderabad: React.FC = () => (
-  <>
-    <Helmet>
-      <title>Best Plastic Surgeon in Hyderabad - Dr. Ram Prabhu | Expert Cosmetic & Reconstructive Surgery</title>
-      <meta name="description" content="Looking for the best plastic surgeon in Hyderabad? Dr. Ram Prabhu offers expert cosmetic and reconstructive surgery with 15+ years experience. Serving Kondapur, Madhapur, Gachibowli & Hitech City." />
-      <meta name="keywords" content="plastic surgeon hyderabad, cosmetic surgery hyderabad, best plastic surgeon hyderabad, dr ram prabhu hyderabad, reconstructive surgery hyderabad" />
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "MedicalBusiness",
-          "name": "Dr. Ram Prabhu - Plastic Surgeon",
-          "image": "https://drramprabhu.com/images/dr-ram-prabhu.jpg",
-          "description": "Expert plastic and cosmetic surgery services in Hyderabad by Dr. Ram Prabhu",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Idea Clinics",
-            "addressLocality": "Hyderabad",
-            "addressRegion": "Telangana",
-            "postalCode": "500081",
-            "addressCountry": "IN"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "17.458099988030647",
-            "longitude": "78.37559661478558"
-          },
-          "url": "https://drramprabhu.com/plastic-surgeon-hyderabad",
-          "telephone": "+919949808628",
-          "priceRange": "₹₹₹",
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          }
-        })}
-      </script>
-    </Helmet>
-    <div className="container mx-auto px-4 py-12 bg-white">
+const PlasticSurgeonHyderabad: React.FC = () => {
+  const hyderabadSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Dr. Ram Prabhu - Plastic Surgeon",
+    "image": "https://drramprabhu.com/images/banner.png",
+    "description": "Expert plastic and cosmetic surgery services in Hyderabad by Dr. Ram Prabhu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Idea Clinics",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500081",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "17.458099988030647",
+      "longitude": "78.37559661478558"
+    },
+    "url": "https://drramprabhu.com/plastic-surgeon-hyderabad",
+    "telephone": "+919949808628",
+    "priceRange": "₹₹₹",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  };
+
+  return (
+    <>
+      <SEO
+        title="Best Plastic Surgeon in Hyderabad - Dr. Ram Prabhu | Expert Cosmetic & Reconstructive Surgery"
+        description="Looking for the best plastic surgeon in Hyderabad? Dr. Ram Prabhu offers expert cosmetic and reconstructive surgery with 15+ years of experience across Kondapur, Madhapur, Gachibowli, and Hitech City."
+        keywords={[
+          'plastic surgeon hyderabad',
+          'cosmetic surgery hyderabad',
+          'best plastic surgeon hyderabad',
+          'dr ram prabhu hyderabad',
+          'reconstructive surgery hyderabad'
+        ]}
+        image="https://drramprabhu.com/images/banner.png"
+        url="https://drramprabhu.com/plastic-surgeon-hyderabad"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hyderabadSchema) }}
+      />
+      <div className="container mx-auto px-4 py-12 bg-white">
       <h1 className="text-4xl font-bold text-primary-800 mb-6">
         Best Plastic Surgeon in Hyderabad – Dr. Ram Prabhu
       </h1>
@@ -181,8 +193,9 @@ const PlasticSurgeonHyderabad: React.FC = () => (
           </div>
         </div>
       </div>
-    </div>
-  </>
-);
+      </div>
+    </>
+  );
+};
 
 export default PlasticSurgeonHyderabad; 

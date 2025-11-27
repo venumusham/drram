@@ -10,6 +10,8 @@ interface SEOProps {
   type?: 'website' | 'article';
 }
 
+const siteName = 'Dr. Ram Prabhu Plastic Surgery Clinic';
+
 const SEO: React.FC<SEOProps> = ({
   title,
   description,
@@ -149,6 +151,7 @@ const SEO: React.FC<SEOProps> = ({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={allKeywords} />
+      <link rel="canonical" href={url} />
 
       {/* Open Graph Meta Tags */}
       <meta property="og:title" content={title} />
@@ -156,6 +159,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
+      <meta property="og:site_name" content={siteName} />
 
       {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />

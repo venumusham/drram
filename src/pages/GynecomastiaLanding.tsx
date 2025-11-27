@@ -1,11 +1,57 @@
 import React from 'react';
 import FloatingSocialBar from '../components/FloatingSocialBar';
 import FAQAccordion from '../components/FAQAccordion';
-import CollapsibleComparisonTable from '../components/CollapsibleComparisonTable';
 import ProceduresAccordion from '../components/ProceduresAccordion';
+import SEO from '../components/SEO';
 
-const GynecomastiaLanding: React.FC = () => (
-  <div className="relative min-h-screen bg-gradient-to-br from-primary-50 to-white">
+const GynecomastiaLanding: React.FC = () => {
+  const gynecomastiaSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalProcedure',
+    name: 'Gynecomastia Surgery in Hyderabad',
+    alternateName: 'Male Chest Reduction Surgery',
+    url: 'https://drramprabhu.com/gynecomastia',
+    image: 'https://drramprabhu.com/images/breast/Gynecomastia.jpg',
+    description: 'Comprehensive gynecomastia surgery with liposuction and gland excision performed by Dr. M. Ram Prabhu in Hyderabad.',
+    medicalSpecialty: 'PlasticSurgery',
+    procedureType: 'Outpatient',
+    areaServed: ['Hyderabad', 'Kondapur', 'Gachibowli', 'Madhapur', 'Hitech City'],
+    performer: {
+      '@type': 'Physician',
+      name: 'Dr. M. Ram Prabhu',
+      medicalSpecialty: ['Plastic Surgery', 'Cosmetic Surgery'],
+      telephone: '+919949808628'
+    },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      price: '50000',
+      priceCurrency: 'INR',
+      url: 'https://drramprabhu.com/gynecomastia'
+    }
+  };
+
+  return (
+    <>
+      <SEO
+        title="Gynecomastia Surgery in Hyderabad | Male Chest Reduction by Dr. Ram Prabhu"
+        description="Scarless gynecomastia surgery with laser liposuction, gland removal, and 1–2 day recovery by Dr. Ram Prabhu in Hyderabad. EMI options and free consultation."
+        keywords={[
+          'gynecomastia surgery hyderabad',
+          'male chest reduction hyderabad',
+          'man boobs treatment hyderabad',
+          'gynecomastia specialist dr ram prabhu',
+          'lipo gynecomastia india'
+        ]}
+        image="https://drramprabhu.com/images/breast/Gynecomastia.jpg"
+        url="https://drramprabhu.com/gynecomastia"
+        type="article"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(gynecomastiaSchema) }}
+      />
+      <div className="relative min-h-screen bg-gradient-to-br from-primary-50 to-white">
     <FloatingSocialBar />
 
     {/* Hero Section */}
@@ -158,7 +204,9 @@ Hyderabad</p>
         </div>
       </div>
     </section>
-  </div>
-);
+      </div>
+    </>
+  );
+};
 
-export default GynecomastiaLanding; 
+export default GynecomastiaLanding;
