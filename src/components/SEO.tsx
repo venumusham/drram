@@ -31,7 +31,7 @@ const SEO: React.FC<SEOProps> = ({
     'cosmetic procedures in banjara hills hyderabad',
     'hyderabad city hair transplant services',
     'man boobs surgery hyderabad kondapur gachibowli',
-    
+
     // Procedure-specific keywords
     'affordable cosmetic surgery in hyderabad',
     'affordable plastic surgery options india',
@@ -42,13 +42,13 @@ const SEO: React.FC<SEOProps> = ({
     'summer body transformation surgeries hyderabad',
     'tummy tuck surgery india',
     'top rated surgeons for breast augmentation telangana',
-    
+
     // Non-surgical keywords
     'non-surgical cosmetic procedures telangana',
     'popular non-invasive treatments hyderabad',
     'latest cosmetic surgery trends india',
     'wedding season cosmetic treatments telangana',
-    
+
     // General keywords
     'how to choose a plastic surgeon in hyderabad',
     'dr ram prabhu',
@@ -78,7 +78,7 @@ const SEO: React.FC<SEOProps> = ({
       latitude: '17.4847',
       longitude: '78.3494'
     },
-    telephone: '+91-9949808628',
+    telephone: '9949808628',
     priceRange: '₹₹₹',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',

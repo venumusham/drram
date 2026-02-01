@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Linkedin } from 'lucide-react';
 import Logo from '../ui/Logo';
 
 const Footer: React.FC = () => {
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div>
             <Logo inverted />
             <p className="mt-4 text-gray-400 text-sm leading-relaxed">
-              Dr. Ram Prabhu is dedicated to helping you look and feel your best. 
+              Dr. Ram Prabhu is dedicated to helping you look and feel your best.
               We offer a range of aesthetic and reconstructive procedures with a focus on natural results.
             </p>
             <div className="flex space-x-4 mt-6">
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                 <Facebook size={20} />
               </a>
               <a href="https://youtube.com/@drramprabhumusham" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.12C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.386.566a2.994 2.994 0 0 0-2.112 2.12C0 8.348 0 12 0 12s0 3.652.502 5.814a2.994 2.994 0 0 0 2.112 2.12C4.772 20.5 12 20.5 12 20.5s7.228 0 9.386-.566a2.994 2.994 0 0 0 2.112-2.12C24 15.652 24 12 24 12s0-3.652-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.12C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.386.566a2.994 2.994 0 0 0-2.112 2.12C0 8.348 0 12 0 12s0 3.652.502 5.814a2.994 2.994 0 0 0 2.112 2.12C4.772 20.5 12 20.5 12 20.5s7.228 0 9.386-.566a2.994 2.994 0 0 0 2.112-2.12C24 15.652 24 12 24 12s0-3.652-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
               </a>
               <a href="https://linkedin.com/in/ramprabhu-musham-78b2ba20" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
@@ -108,8 +108,8 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 text-gray-400" />
                 <div className="text-gray-400 text-sm">
-                  <p>WhatsApp: +91 99498 08628</p>
-                  <p>Clinic: +91 99498 08628</p>
+                  <p>WhatsApp: 9949808628</p>
+                  <p>Clinic: 9949808628</p>
                 </div>
               </li>
               <li className="flex items-start">

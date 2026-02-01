@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
     name: 'Dr. Ram Prabhu - Plastic Surgeon',
-    telephone: '+919949808628',
+    telephone: '9949808628',
     url: 'https://drramprabhu.com',
     address: {
       '@type': 'PostalAddress',
@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Dr. Ram Prabhu - Best Plastic Surgeon in Hyderabad | Cosmetic & Reconstructive Surgery"
         description="Expert plastic surgeon in Hyderabad offering cosmetic and reconstructive procedures. Specializing in rhinoplasty, breast augmentation, facelift, and body contouring. Book your consultation today."
         keywords={[
