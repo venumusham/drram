@@ -40,9 +40,9 @@ const ClinicLocation: React.FC = () => {
               <br />
               Hyderabad
             </p>
-            <a 
-              href="https://maps.app.goo.gl/u5BUxZYY3yBXnwWh7" 
-              target="_blank" 
+            <a
+              href="https://maps.app.goo.gl/u5BUxZYY3yBXnwWh7"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center mt-2 text-primary-600 hover:text-primary-700 transition-colors"
             >
@@ -61,22 +61,22 @@ const ClinicLocation: React.FC = () => {
             <div className="space-y-2">
               <div className="flex items-center">
                 <MessageCircle className="w-4 h-4 text-primary-600 mr-2" />
-                <a 
-                  href="https://wa.me/9949808628" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/9949808628"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-primary-600 transition-colors"
                 >
-                  WhatsApp: +91 99498 08628
+                  WhatsApp: 9949808628
                 </a>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 text-primary-600 mr-2" />
-                <a 
-                  href="tel:+919949808628" 
+                <a
+                  href="tel:9949808628"
                   className="text-gray-700 hover:text-primary-600 transition-colors"
                 >
-                  Clinic: +91 99498 08628
+                  Clinic: 9949808628
                 </a>
               </div>
             </div>

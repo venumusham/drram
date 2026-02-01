@@ -1,8 +1,8 @@
 import React from 'react';
 import { Phone, MessageCircle, MapPin } from 'lucide-react';
 
-const phone = '+919949808628';
-const whatsapp = '919949808628';
+const phone = '9949808628';
+const whatsapp = '9949808628';
 const maps = 'https://maps.app.goo.gl/u5BUxZYY3yBXnwWh7';
 
 const FloatingSocialBar: React.FC = () => (

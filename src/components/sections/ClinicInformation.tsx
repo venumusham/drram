@@ -37,8 +37,8 @@ const ClinicInformation: React.FC = () => {
               <h3 className="text-xl font-semibold">Contact</h3>
             </div>
             <p className="text-gray-600">
-              Phone: +91 99498 08628<br />
-              Clinic: +91 99498 08628<br />
+              Phone: 9949808628<br />
+              Clinic: 9949808628<br />
               Email: ram.musham@gmail.com
             </p>
           </div>

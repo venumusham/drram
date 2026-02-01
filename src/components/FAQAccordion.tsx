@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: 'How do I book a consultation?',
-    answer: 'Call +91 99498 08628 or WhatsApp us to schedule a free consultation and get a personalized treatment plan.'
+    answer: 'Call 9949808628 or WhatsApp us to schedule a free consultation and get a personalized treatment plan.'
   }
 ];
 
