@@ -27,12 +27,22 @@ const faqs = [
   }
 ];
 
-const FAQAccordion: React.FC = () => {
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface FAQAccordionProps {
+  items?: FAQItem[];
+}
+
+const FAQAccordion: React.FC<FAQAccordionProps> = ({ items }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const displayFaqs = items || faqs;
 
   return (
     <div>
-      {faqs.map((faq, idx) => (
+      {displayFaqs.map((faq, idx) => (
         <div key={idx} className="mb-4 border rounded">
           <button
             className="w-full text-left px-4 py-3 font-semibold text-primary-800 focus:outline-none focus:bg-primary-50 bg-primary-50 hover:bg-primary-100 rounded"

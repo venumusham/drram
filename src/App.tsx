@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -19,6 +18,7 @@ import BodyContouringPage from './pages/services/body-contouring';
 import BreastProceduresPage from './pages/services/breast-procedures';
 import { ReconstructivePage } from './pages/services/reconstructive';
 import GynecomastiaLanding from './pages/GynecomastiaLanding';
+import StaplerCircumcision from './pages/StaplerCircumcision';
 
 function App() {
   return (
@@ -44,6 +44,7 @@ function App() {
               <Route path="/plastic-surgeon-gachibowli" element={<PlasticSurgeonGachibowli />} />
               <Route path="/plastic-surgeon-hitech-city" element={<PlasticSurgeonHitechCity />} />
               <Route path="/gynecomastia" element={<GynecomastiaLanding />} />
+              <Route path="/stapler-circumcision-hyderabad" element={<StaplerCircumcision />} />
             </Routes>
           </main>
           <Footer />
