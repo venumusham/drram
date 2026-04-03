@@ -2,17 +2,208 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr Ramprabhu Clinic | Dr. M. Ram Prabhu | Plastic Surgery Clinic</title>
-    <meta name="description" content="Dr Ramprabhu Clinic is a premier plastic surgery clinic led by Dr. M. Ram Prabhu offering comprehensive aesthetic and reconstructive procedures in Hyderabad.">
-    <!-- Google tag (gtag.js) -->
+
+    <!-- Primary Meta -->
+    <title>Dr. M. Ram Prabhu | Plastic & Cosmetic Surgeon Hyderabad</title>
+    <meta
+      name="description"
+      content="Dr. M. Ram Prabhu is a leading plastic & cosmetic surgeon in Hyderabad with 18+ years of experience and 6,000+ successful procedures. Specialising in gynecomastia, liposuction, breast surgery & scar revision. Located in Kondapur, Hyderabad."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://drramprabhu.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://drramprabhu.com/" />
+    <meta property="og:site_name" content="Dr. Ramprabhu Clinic" />
+    <meta property="og:title" content="Dr. M. Ram Prabhu | Plastic & Cosmetic Surgeon Hyderabad" />
+    <meta property="og:description" content="18+ years experience. 6,000+ successful procedures. Expert in gynecomastia, liposuction, breast surgery & scar revision. Kondapur, Hyderabad. Book a free consultation today." />
+    <meta property="og:image" content="https://drramprabhu.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dr. M. Ram Prabhu - Plastic Surgeon Hyderabad" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dr. M. Ram Prabhu | Plastic & Cosmetic Surgeon Hyderabad" />
+    <meta name="twitter:description" content="18+ years experience. 6,000+ successful procedures. Expert in gynecomastia, liposuction & breast surgery. Kondapur, Hyderabad. Book a free consultation." />
+    <meta name="twitter:image" content="https://drramprabhu.com/og-image.jpg" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Physician",
+          "@id": "https://drramprabhu.com/#physician",
+          "name": "Dr. M. Ram Prabhu",
+          "alternateName": "Dr. Ramprabhu M",
+          "description": "Board-certified plastic and cosmetic surgeon with 18+ years of experience and 6,000+ successful procedures, specialising in gynecomastia, liposuction, breast augmentation, and scar revision.",
+          "image": "https://drramprabhu.com/images/dr-ramprabhu.jpg",
+          "url": "https://drramprabhu.com/",
+          "telephone": "+919949808628",
+          "email": "ram.musham@gmail.com",
+          "gender": "Male",
+          "jobTitle": "Plastic & Cosmetic Surgeon",
+          "medicalSpecialty": ["PlasticSurgery", "CosmeticSurgery"],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "name": "MBBS",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Dr. NTR University of Health Sciences, Andhra Pradesh"
+              },
+              "dateCreated": "2009"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "name": "MCh - Plastic Surgery (DNB)",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "National Board of Examinations, New Delhi"
+              },
+              "dateCreated": "2019"
+            }
+          ],
+          "memberOf": {
+            "@type": "MedicalOrganization",
+            "name": "Telangana State Medical Council",
+            "identifier": "66931"
+          },
+          "worksFor": { "@id": "https://drramprabhu.com/#clinic" }
+        },
+        {
+          "@type": "MedicalBusiness",
+          "@id": "https://drramprabhu.com/#clinic",
+          "name": "Dr. Ramprabhu Clinic - Idea Clinic",
+          "description": "Premier plastic and cosmetic surgery clinic in Kondapur, Hyderabad offering aesthetic and reconstructive procedures.",
+          "url": "https://drramprabhu.com/",
+          "logo": "https://drramprabhu.com/logo.png",
+          "image": "https://drramprabhu.com/og-image.jpg",
+          "telephone": "+919949808628",
+          "email": "ram.musham@gmail.com",
+          "priceRange": "INR",
+          "currenciesAccepted": "INR",
+          "paymentAccepted": "Cash, Credit Card, UPI",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Idea Clinic, 1st Floor 61B, 3rd Street, Near Burfighar Sweetshop, Sri Ram Nagar",
+            "addressLocality": "Kondapur",
+            "addressRegion": "Telangana",
+            "postalCode": "500084",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "17.4599",
+            "longitude": "78.3544"
+          },
+          "hasMap": "https://maps.google.com/?q=Idea+Clinic+Kondapur+Hyderabad",
+          "medicalSpecialty": "PlasticSurgery",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "08:00",
+              "closes": "17:00"
+            }
+          ],
+          "availableService": [
+            { "@type": "MedicalProcedure", "name": "Gynecomastia Surgery" },
+            { "@type": "MedicalProcedure", "name": "Liposuction" },
+            { "@type": "MedicalProcedure", "name": "Breast Augmentation" },
+            { "@type": "MedicalProcedure", "name": "Breast Reduction" },
+            { "@type": "MedicalProcedure", "name": "Scar Revision" },
+            { "@type": "MedicalProcedure", "name": "Lipoma Removal" },
+            { "@type": "MedicalProcedure", "name": "Sebaceous Cyst Removal" },
+            { "@type": "MedicalProcedure", "name": "Tummy Tuck (Abdominoplasty)" }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "500",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://drramprabhu.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://drramprabhu.com/services" },
+            { "@type": "ListItem", "position": 3, "name": "About", "item": "https://drramprabhu.com/about" },
+            { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://drramprabhu.com/contact" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How many years of experience does Dr. Ram Prabhu have?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dr. M. Ram Prabhu has over 18 years of experience in plastic and cosmetic surgery, with 6,000+ successful procedures performed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What procedures does Dr. Ram Prabhu specialise in?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dr. Ram Prabhu specialises in gynecomastia surgery, liposuction, breast augmentation, breast reduction, scar revision, lipoma removal, and tummy tuck (abdominoplasty)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is Dr. Ram Prabhu's clinic located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The clinic is located at Idea Clinic, 1st Floor 61B, 3rd Street, Near Burfighar Sweetshop, Sri Ram Nagar, Kondapur, Hyderabad, Telangana 500084."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the clinic hours?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The clinic is open every day from 8am to 5pm."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I contact Dr. Ram Prabhu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can contact Dr. Ram Prabhu by phone or WhatsApp at +91 9949808628, or by email at ram.musham@gmail.com."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBFQ1Z5BEL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-QBFQ1Z5BEL');
     </script>
   </head>
