@@ -1,25 +1,6 @@
 import React from 'react';
-import { ArrowRight, Calendar } from 'lucide-react';
-import Button from '../ui/Button';
-import RamPrabhuImage from './ram.png'; // Import the image
-import pryImage from './p.webp'; // Import the image
-import { useNavigate } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
-  const navigate = useNavigate();
-
-  const scrollToAppointment = () => {
-    // First navigate to the contact page
-    navigate('/contact');
-    
-    // Then scroll to the form after a short delay to ensure the page has loaded
-    setTimeout(() => {
-      const appointmentForm = document.getElementById('appointment-form');
-      if (appointmentForm) {
-        appointmentForm.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
-  };
 
   return (
     <div className="relative min-h-[50vh] flex items-center bg-gradient-to-br from-primary-950 via-primary-900 to-accent-950 overflow-hidden">
@@ -64,48 +45,27 @@ const HeroSection: React.FC = () => {
             <p className="text-gray-200 text-base md:text-lg mt-40 mb-12 animate-fadeIn animation-delay-300">
               Dr. M. Ram Prabhu and his team provide world-class plastic surgery procedures with a focus on natural results and patient satisfaction.
             </p>
-            {/* Combined Sections Container */}
-            <div className="flex flex-col lg:flex-row gap-4 animate-fadeIn animation-delay-600">
-              {/* Associations Section */}
-              <div className="w-full">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
-                  {/* Left: Hospitals */}
-                  <div className="flex flex-col items-center space-y-3">
-                    <h3 className="text-base text-accent-400 font-semibold uppercase tracking-wider">Associated with:</h3>
-                    <div className="flex justify-center items-center gap-4 flex-wrap">
-                      <a href="https://www.pristyncare.com/specialist/dr-m-ram-prabhu-bnonbbggix/" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                        <img src={pryImage} alt="Pristyn Care" className="h-7 w-auto object-contain" />
-                      </a>
-                      <a href="https://www.ideaclinics.com/" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                        <img src="https://www.ideaclinics.com/wp-content/uploads/2021/03/IDEA-logo-1.png" alt="Idea Clinic" className="h-7 w-auto object-contain" />
-                      </a>
-                      <a href="https://luxhospitals.com/top-hospital-for-liposuction-surgery/#doctors" target="_blank" className="hover:opacity-80 transition-opacity bg-white p-2 rounded-lg">
-                        <img src="https://luxhospitals.com/wp-content/uploads/2025/04/converted-14.avif" alt="Lux Hospitals" className="h-7 w-auto object-contain" />
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Right: Social Media */}
-                  <div className="flex flex-col items-center space-y-3">
-                    <h3 className="text-base text-accent-400 font-semibold uppercase tracking-wider">Connect with us:</h3>
-                    <div className="flex justify-center gap-4">
-                      <a href="https://linkedin.com/in/ramprabhu-musham-78b2ba20" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style={{width: '20px'}} />
-                      </a>
-                      <a href="https://facebook.com/ramprabhu.musham" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style={{width: '20px'}} />
-                      </a>
-                      <a href="https://instagram.com/dr.ramprabhu_plasticsurgeon" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style={{width: '20px'}} />
-                      </a>
-                      <a href="https://youtube.com/@drramprabhumusham" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style={{width: '20px'}} />
-                      </a>
-                    </div>
-                  </div>
+            {/* Social Media Section */}
+            <div className="animate-fadeIn animation-delay-600">
+              <div className="flex flex-col items-center lg:items-start space-y-3">
+                <h3 className="text-base text-accent-400 font-semibold uppercase tracking-wider">Connect with us:</h3>
+                <div className="flex justify-center gap-4">
+                  <a href="https://linkedin.com/in/ramprabhu-musham-78b2ba20" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style={{width: '20px'}} />
+                  </a>
+                  <a href="https://facebook.com/ramprabhu.musham" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style={{width: '20px'}} />
+                  </a>
+                  <a href="https://instagram.com/dr.ramprabhu_plasticsurgeon" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style={{width: '20px'}} />
+                  </a>
+                  <a href="https://youtube.com/@drramprabhumusham" target="_blank" className="hover:opacity-80 transition-opacity bg-white/10 p-2 rounded-lg backdrop-blur-sm">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style={{width: '20px'}} />
+                  </a>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
