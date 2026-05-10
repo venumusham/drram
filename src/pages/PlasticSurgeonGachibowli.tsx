@@ -42,8 +42,8 @@ const PlasticSurgeonGachibowli: React.FC = () => {
   return (
     <>
       <SEO
-        title="Best Plastic Surgeon in Gachibowli - Dr. Ram Prabhu | Expert Cosmetic & Reconstructive Surgery"
-        description="Need a plastic surgeon in Gachibowli? Dr. Ram Prabhu provides cosmetic and reconstructive surgery with 15+ years of experience for patients across Hyderabad."
+        title="Plastic Surgeon Gachibowli ★ 140+ Reviews | Dr. Ram Prabhu DNB"
+        description="Plastic surgeon for Gachibowli, Hyderabad — Dr. Ram Prabhu, DNB (Super Speciality), 16+ years, 6,000+ procedures. Clinic 5 min from IKEA. Gynecomastia, liposuction, rhinoplasty. Call 9949808628."
         keywords={[
           'plastic surgeon gachibowli',
           'cosmetic surgery gachibowli',

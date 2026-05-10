@@ -8,8 +8,8 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Contact Dr. Ram Prabhu Clinic | Book a Plastic Surgery Consultation in Hyderabad"
-        description="Call 9949808628 or submit the appointment form to reach Dr. Ram Prabhu’s plastic surgery clinic in Kondapur, Hyderabad. Get directions, clinic hours, and consultation support."
+        title="Book Appointment | Dr. Ram Prabhu Plastic Surgery Clinic Kondapur"
+        description="Book a plastic surgery consultation with Dr. Ram Prabhu at Idea Clinic, Kondapur Hyderabad. Call or WhatsApp 9949808628. Mon-Sat 10AM-12PM & 7PM-8PM. Free parking. Get directions."
         keywords={[
           'contact dr ram prabhu',
           'plastic surgery appointment hyderabad',

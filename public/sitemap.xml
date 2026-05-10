@@ -2,101 +2,210 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Home -->
+  <!-- ============================================
+       Core Pages
+       ============================================ -->
   <url>
     <loc>https://drramprabhu.com/</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- About -->
   <url>
     <loc>https://drramprabhu.com/about</loc>
-    <lastmod>2025-05-01</lastmod>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Services Overview -->
   <url>
     <loc>https://drramprabhu.com/services</loc>
-    <lastmod>2025-05-01</lastmod>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Individual Service Pages -->
-  <url>
-    <loc>https://drramprabhu.com/services/gynecomastia</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://drramprabhu.com/services/liposuction</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://drramprabhu.com/services/breast-augmentation</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://drramprabhu.com/services/breast-reduction</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://drramprabhu.com/services/scar-revision</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://drramprabhu.com/services/lipoma-removal</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://drramprabhu.com/services/tummy-tuck</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Gallery -->
   <url>
     <loc>https://drramprabhu.com/gallery</loc>
-    <lastmod>2025-05-01</lastmod>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Testimonials -->
   <url>
-    <loc>https://drramprabhu.com/testimonials</loc>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://drramprabhu.com/faq</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Contact -->
   <url>
     <loc>https://drramprabhu.com/contact</loc>
-    <lastmod>2025-05-01</lastmod>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================
+       Service Detail Pages (existing routes)
+       ============================================ -->
+  <url>
+    <loc>https://drramprabhu.com/services/facelift</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/services/body-contouring</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/services/breast-procedures</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/services/reconstructive</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================
+       Procedure Landing Pages (Money Pages)
+       ============================================ -->
+  <url>
+    <loc>https://drramprabhu.com/gynecomastia</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/rhinoplasty-hyderabad</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/liposuction-hyderabad</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/facelift-hyderabad</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/breast-augmentation-hyderabad</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/tummy-tuck-hyderabad</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/lipoma-removal-hyderabad</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/earlobe-repair-kondapur</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/stapler-circumcision-hyderabad</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================
+       Medical Tourism / NRI Landing (Step 7)
+       ============================================ -->
+  <url>
+    <loc>https://drramprabhu.com/medical-tourism-india</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ============================================
+       Local SEO Pages (location-based)
+       ============================================ -->
+  <url>
+    <loc>https://drramprabhu.com/plastic-surgeon-hyderabad</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/plastic-surgery-kondapur</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/cosmetic-surgeon-madhapur</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/plastic-surgeon-gachibowli</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/plastic-surgeon-hitech-city</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================
+       Blog (Step 7)
+       ============================================ -->
+  <url>
+    <loc>https://drramprabhu.com/blog</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://drramprabhu.com/blog/gynecomastia-surgery-cost-hyderabad-2026-guide</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 

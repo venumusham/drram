@@ -58,91 +58,25 @@ const SEO: React.FC<SEOProps> = ({
 
   const allKeywords = [...new Set([...defaultKeywords, ...keywords])].join(', ');
 
+  // NOTE: The site-wide MedicalBusiness + Physician + AggregateRating schema
+  // lives in index.html (single source of truth). Per-page Schema here is
+  // intentionally minimal to avoid conflicting signals (rating/hours/geo).
+  // Add page-specific MedicalProcedure schema in individual pages instead.
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
-    name: 'Idea Clinic - Dr. Ram Prabhu Plastic Surgery',
-    image: image,
-    url: url,
+    '@type': 'WebPage',
+    name: title,
     description: description,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '61B, 3rd Street, Near Burfighar Sweetshop, Sri Ram Nagar',
-      addressLocality: 'Kondapur',
-      addressRegion: 'Hyderabad',
-      postalCode: '500084',
-      addressCountry: 'IN'
+    url: url,
+    image: image,
+    isPartOf: {
+      '@type': 'WebSite',
+      '@id': 'https://drramprabhu.com/#website',
+      name: siteName,
+      url: 'https://drramprabhu.com/'
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: '17.4847',
-      longitude: '78.3494'
-    },
-    telephone: '9949808628',
-    priceRange: '₹₹₹',
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday'
-      ],
-      opens: '09:00',
-      closes: '17:00'
-    },
-    sameAs: [
-      'https://www.facebook.com/drramprabhu',
-      'https://www.instagram.com/drramprabhu',
-      'https://www.linkedin.com/in/drramprabhu'
-    ],
-    medicalSpecialty: [
-      'Plastic Surgery',
-      'Cosmetic Surgery',
-      'Reconstructive Surgery',
-      'Rhinoplasty',
-      'Breast Augmentation',
-      'Tummy Tuck',
-      'Facial Reconstruction',
-      'Hair Transplant'
-    ],
-    areaServed: [
-      'Kondapur',
-      'Hyderabad',
-      'Telangana',
-      'South India'
-    ],
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Surgical Procedures',
-      itemListElement: [
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'MedicalProcedure',
-            name: 'Rhinoplasty',
-            description: 'Nose reshaping surgery for aesthetic and functional improvement'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'MedicalProcedure',
-            name: 'Breast Augmentation',
-            description: 'Surgical procedure to enhance breast size and shape'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'MedicalProcedure',
-            name: 'Tummy Tuck',
-            description: 'Surgical procedure to remove excess fat and skin from the abdomen'
-          }
-        }
-      ]
-    }
+    about: { '@id': 'https://drramprabhu.com/#clinic' },
+    primaryImageOfPage: image
   };
 
   return (

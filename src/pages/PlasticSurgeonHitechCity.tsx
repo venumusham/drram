@@ -42,8 +42,8 @@ const PlasticSurgeonHitechCity: React.FC = () => {
   return (
     <>
       <SEO
-        title="Best Plastic Surgeon in Hitech City - Dr. Ram Prabhu | Expert Cosmetic & Reconstructive Surgery"
-        description="Looking for a plastic surgeon in Hitech City? Dr. Ram Prabhu offers advanced cosmetic and reconstructive surgery with 15+ years of experience, serving Kondapur, Madhapur, and Gachibowli."
+        title="Plastic Surgeon Hitech City ★ 140+ Reviews | Dr. Ram Prabhu DNB"
+        description="Plastic surgeon for Hitech City, Hyderabad — Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years, 6,000+ procedures, 140+ reviews. Gynecomastia, liposuction, rhinoplasty, breast surgery. Call 9949808628."
         keywords={[
           'plastic surgeon hitech city',
           'cosmetic surgery hitech city',

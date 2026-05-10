@@ -37,8 +37,8 @@ const BodyContouringPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Body Contouring Surgery in Hyderabad | Liposuction & Tummy Tuck"
-        description="Sculpt your body with liposuction, tummy tuck, body lift, and thigh lift procedures by Dr. Ram Prabhu in Hyderabad. Customized plans to tighten and tone."
+        title="Body Contouring Hyderabad | Liposuction Tummy Tuck | Dr. Ram Prabhu"
+        description="Body contouring in Kondapur Hyderabad — liposuction, tummy tuck (abdominoplasty), body lift, brachioplasty & thigh lift. Dr. Ram Prabhu, DNB, 16+ years. Free consultation 9949808628."
         keywords={[
           'body contouring hyderabad',
           'liposuction specialist hyderabad',

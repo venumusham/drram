@@ -42,8 +42,8 @@ const PlasticSurgeonHyderabad: React.FC = () => {
   return (
     <>
       <SEO
-        title="Best Plastic Surgeon in Hyderabad - Dr. Ram Prabhu | Expert Cosmetic & Reconstructive Surgery"
-        description="Looking for the best plastic surgeon in Hyderabad? Dr. Ram Prabhu offers expert cosmetic and reconstructive surgery with 15+ years of experience across Kondapur, Madhapur, Gachibowli, and Hitech City."
+        title="Plastic Surgeon Hyderabad ★ 140+ Reviews | Dr. Ram Prabhu DNB"
+        description="Top plastic surgeon in Hyderabad — Dr. Ram Prabhu, DNB (Super Speciality), 16+ years, 6,000+ procedures, 140+ Google reviews. Serving Kondapur, Madhapur, Gachibowli, Hitech City. Call 9949808628."
         keywords={[
           'plastic surgeon hyderabad',
           'cosmetic surgery hyderabad',

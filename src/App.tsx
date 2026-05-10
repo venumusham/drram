@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import FloatingSocialBar from './components/FloatingSocialBar';
 import HomePage from './pages/Home';
 import ServicesPage from './pages/Services';
 import AboutPage from './pages/About';
@@ -19,6 +20,20 @@ import BreastProceduresPage from './pages/services/breast-procedures';
 import { ReconstructivePage } from './pages/services/reconstructive';
 import GynecomastiaLanding from './pages/GynecomastiaLanding';
 import StaplerCircumcision from './pages/StaplerCircumcision';
+import NotFoundPage from './pages/NotFound';
+// Money pages — long-form SEO-optimized procedure landings (Step 6).
+// All use the shared MoneyPageTemplate component with structured data.
+import RhinoplastyHyderabad from './pages/money/RhinoplastyHyderabad';
+import LiposuctionHyderabad from './pages/money/LiposuctionHyderabad';
+import FaceliftHyderabad from './pages/money/FaceliftHyderabad';
+import BreastAugmentationHyderabad from './pages/money/BreastAugmentationHyderabad';
+import TummyTuckHyderabad from './pages/money/TummyTuckHyderabad';
+import LipomaRemovalHyderabad from './pages/money/LipomaRemovalHyderabad';
+import EarlobeRepairKondapur from './pages/money/EarlobeRepairKondapur';
+// Step 7 — Medical tourism / NRI landing + Blog
+import MedicalTourismIndia from './pages/MedicalTourismIndia';
+import BlogIndex from './pages/Blog';
+import GynecomastiaCostGuide from './pages/blog/GynecomastiaCostGuide';
 
 function App() {
   return (
@@ -45,9 +60,30 @@ function App() {
               <Route path="/plastic-surgeon-hitech-city" element={<PlasticSurgeonHitechCity />} />
               <Route path="/gynecomastia" element={<GynecomastiaLanding />} />
               <Route path="/stapler-circumcision-hyderabad" element={<StaplerCircumcision />} />
+              {/* Money pages (Step 6) */}
+              <Route path="/rhinoplasty-hyderabad" element={<RhinoplastyHyderabad />} />
+              <Route path="/liposuction-hyderabad" element={<LiposuctionHyderabad />} />
+              <Route path="/facelift-hyderabad" element={<FaceliftHyderabad />} />
+              <Route path="/breast-augmentation-hyderabad" element={<BreastAugmentationHyderabad />} />
+              <Route path="/tummy-tuck-hyderabad" element={<TummyTuckHyderabad />} />
+              <Route path="/lipoma-removal-hyderabad" element={<LipomaRemovalHyderabad />} />
+              <Route path="/earlobe-repair-kondapur" element={<EarlobeRepairKondapur />} />
+              {/* Medical tourism (Step 7) */}
+              <Route path="/medical-tourism-india" element={<MedicalTourismIndia />} />
+              {/* Blog (Step 7) */}
+              <Route path="/blog" element={<BlogIndex />} />
+              <Route
+                path="/blog/gynecomastia-surgery-cost-hyderabad-2026-guide"
+                element={<GynecomastiaCostGuide />}
+              />
+              {/* Catch-all 404 — must be LAST */}
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>
           <Footer />
+          <FloatingSocialBar />
+          {/* Spacer to prevent bottom mobile bar from covering footer content */}
+          <div className="h-14 md:hidden" aria-hidden="true" />
         </div>
       </Router>
     </HelmetProvider>

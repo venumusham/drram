@@ -1,0 +1,202 @@
+import React from 'react';
+import MoneyPageTemplate, { MoneyPageData } from '../../components/MoneyPageTemplate';
+
+const data: MoneyPageData = {
+  slug: 'earlobe-repair-kondapur',
+  procedureName: 'Earlobe Repair',
+  seoTitle: 'Earlobe Repair Hyderabad ★ 30-Min Walk-In | Dr. Ram Prabhu',
+  seoDescription:
+    'Torn or split earlobe repair in Kondapur Hyderabad — 30-minute walk-in procedure under local anaesthesia. Re-piercing in 6 weeks. Dr. Ram Prabhu, DNB. From ₹6,000. Call 9949808628.',
+  seoKeywords: [
+    'earlobe repair near me',
+    'ear lobe repair near me',
+    'earlobe surgery near me',
+    'ear lobe stitching near me',
+    'earring hole surgery',
+    'ear lobe surgery',
+    'ear pinning near me',
+    'split earlobe repair hyderabad',
+    'torn earlobe surgery',
+    'earlobe reconstruction kondapur',
+  ],
+  h1: 'Earlobe Repair in Hyderabad — Walk-In Surgery for Torn or Split Earlobes',
+  heroSubheadline:
+    'Torn, split, or stretched earlobe repair by Dr. Ram Prabhu, DNB Plastic Surgeon. 30-minute walk-in procedure under local anaesthesia. Same-day discharge. Re-piercing possible after 6-8 weeks.',
+  heroBadges: [
+    '★ DNB Plastic Surgery',
+    '30-Minute Walk-In',
+    'Local Anaesthesia',
+    'Same-Day Return',
+    'Re-Piercing After 6 Weeks',
+  ],
+  heroPriceBand: 'Earlobe Repair from ₹6,000',
+  heroImage: 'https://drramprabhu.com/images/body/before-after.jpg',
+  priceMin: '6000',
+  priceMax: '20000',
+  whatIsParagraphs: [
+    'Earlobe repair is a quick, walk-in plastic surgery procedure to fix torn, split, or stretched earlobes. The most common cause is heavy earrings pulling through the piercing over years, or sudden trauma (a child grabbing an earring, snagging on clothing). Stretched earlobes from gauges (tunnels) can also be repaired and brought back to natural appearance.',
+    'At our Kondapur clinic, Dr. Ram Prabhu performs earlobe repair under local anaesthesia in 30-45 minutes per ear. The procedure is virtually painless, requires no hospital stay, and uses fine plastic surgery techniques to leave a barely visible scar. Most patients return to office work the same day.',
+    'After 6-8 weeks of healing, the earlobe can be re-pierced if desired — usually in a slightly different position to avoid the original weak spot. Many patients prefer a single small piercing instead of multiple holes after repair.',
+  ],
+  causes: [
+    'Heavy earrings pulling through over years',
+    'Trauma (child grabbing earring, clothing snag)',
+    'Repeated infection at piercing site',
+    'Stretched piercings from gauges/tunnels',
+    'Improper piercing too close to lobe edge',
+    'Allergic reaction causing tissue breakdown',
+    'Keloid formation around piercing',
+    'Multiple piercings weakening lobe',
+  ],
+  symptoms: [
+    'Visible split or tear through the earlobe',
+    'Inability to wear earrings safely',
+    'Stretched piercing hole much larger than the post',
+    'Asymmetric earlobes after repeated injury',
+    'Earring hangs awkwardly or falls forward',
+    'Self-consciousness about earlobe appearance',
+    'Keloid bumps around old piercing',
+  ],
+  procedures: [
+    {
+      title: 'Single Earlobe Repair',
+      description: 'One torn or split earlobe repaired with fine plastic surgery technique. Hidden scar.',
+      bestFor: 'One ear affected',
+      duration: '30 min',
+      anesthesia: 'Local',
+      stay: 'Walk-in',
+      price: '₹6,000 — ₹10,000',
+    },
+    {
+      title: 'Bilateral Earlobe Repair',
+      description: 'Both earlobes repaired in one session. Most common scenario.',
+      bestFor: 'Both ears affected',
+      duration: '45-60 min',
+      anesthesia: 'Local',
+      stay: 'Walk-in',
+      price: '₹10,000 — ₹15,000',
+    },
+    {
+      title: 'Stretched / Gauged Earlobe Repair',
+      description: 'Tightening of stretched earlobes from tunnels. Z-plasty for natural shape.',
+      bestFor: 'Gauged earlobes',
+      duration: '45-60 min',
+      anesthesia: 'Local',
+      stay: 'Walk-in',
+      price: '₹12,000 — ₹20,000',
+    },
+    {
+      title: 'Keloid Excision + Repair',
+      description: 'Earlobe keloid removal combined with repair. May include steroid injections.',
+      bestFor: 'Keloid scarring at piercing',
+      duration: '30-45 min',
+      anesthesia: 'Local',
+      stay: 'Walk-in',
+      price: '₹8,000 — ₹15,000',
+    },
+    {
+      title: 'Re-piercing (after 6-8 weeks)',
+      description: 'Sterile re-piercing in optimal position with steel earring.',
+      bestFor: 'After complete healing',
+      duration: '5 min',
+      anesthesia: 'None / topical',
+      stay: 'Walk-in',
+      price: '₹500 — ₹1,000',
+    },
+    {
+      title: 'Combined with Otoplasty',
+      description: 'Earlobe repair combined with prominent ear correction.',
+      bestFor: 'Multiple ear concerns',
+      duration: '60-90 min',
+      anesthesia: 'Local + sedation',
+      stay: 'Day-care',
+      price: '₹40,000 — ₹70,000',
+    },
+  ],
+  walkthrough: [
+    { step: 'Step 1', title: 'Brief Consultation (10 min)', detail: 'Examination of earlobe(s), discussion of repair plan. Consent. Pre-op photo.' },
+    { step: 'Step 2', title: 'Local Anaesthesia (2-3 min)', detail: 'Tiny injection of local anaesthetic. Mild sting for a few seconds, then complete numbness within 1-2 minutes.' },
+    { step: 'Step 3', title: 'Edge Refreshing (5 min)', detail: 'The torn or stretched edges are refreshed (small amount of skin trimmed) to create healthy edges that will heal together.' },
+    { step: 'Step 4', title: 'Layered Repair (10-15 min)', detail: 'Earlobe repaired in layers — deep stitches for strength, fine skin sutures for cosmetic result. Z-plasty technique prevents notching.' },
+    { step: 'Step 5', title: 'Dressing (5 min)', detail: 'Tiny gauze dressing or skin glue applied. No bandage needed in most cases.' },
+    { step: 'Step 6', title: 'Discharge', detail: 'Walk out the same minute. Detailed post-care instructions given. WhatsApp follow-up available.' },
+  ],
+  recovery: [
+    { when: 'Day 0', title: 'Procedure day', detail: 'Mild numbness for 2-3 hours. Once anaesthesia wears off — minimal soreness, like a small bruise. Over-the-counter pain medication if needed.' },
+    { when: 'Day 1', title: 'Return to work', detail: 'Most patients return to work the next day. Avoid swimming and direct sun on the ear.' },
+    { when: 'Day 5-7', title: 'Sutures removed', detail: 'Suture removal in clinic (or absorbable sutures dissolve). Wound healed externally.' },
+    { when: 'Week 2-3', title: 'Scar maturation begins', detail: 'Scar pink, beginning to soften. Scar massage and silicone gel can be started.' },
+    { when: 'Week 6-8', title: 'Re-piercing eligible', detail: 'Earlobe fully healed. Can be re-pierced in optimal new position. Use lightweight earrings only for first 6 months.' },
+    { when: 'Month 6', title: 'Scar fading', detail: 'Scar fades to thin pink line. Largely invisible at conversational distance.' },
+    { when: 'Month 12', title: 'Final scar', detail: 'Scar matures to barely visible white line. Permanent repair.' },
+  ],
+  beforeAfterImage: '/images/body/before-after.jpg',
+  faqs: [
+    {
+      q: 'How much does earlobe repair cost in Hyderabad?',
+      a: 'Single earlobe: ₹6,000-₹10,000. Both earlobes: ₹10,000-₹15,000. Stretched/gauged: ₹12,000-₹20,000. Keloid + repair: ₹8,000-₹15,000. Re-piercing: ₹500-₹1,000. Includes local anaesthesia, sutures, and follow-up.',
+    },
+    {
+      q: 'Is earlobe repair painful?',
+      a: 'Almost painless — only a brief sting from the local anaesthetic injection. The actual repair is done with the lobe completely numb. Mild soreness for 24 hours after, easily managed with over-the-counter painkillers.',
+    },
+    {
+      q: 'How long is the procedure?',
+      a: 'Single earlobe: 30 minutes. Both earlobes: 45-60 minutes. Total time at clinic including consultation: about 1 hour. Walk-in / walk-out — no hospital stay needed.',
+    },
+    {
+      q: 'When can I wear earrings again after repair?',
+      a: 'Wait 6-8 weeks before re-piercing. Use only lightweight earrings (no heavy or dangly) for the first 6 months. Avoid sleeping with earrings on. Studs are safer than hooks initially.',
+    },
+    {
+      q: 'Will the scar be visible?',
+      a: 'The scar is hidden along natural ear contours. Initially pink, it fades to a thin barely-visible line within 12 months. Most patients\' scars are not noticed even by close acquaintances.',
+    },
+    {
+      q: 'Can I re-pierce my earlobe in the same hole after repair?',
+      a: 'No — the original hole has been closed surgically. Re-piercing must be done in a slightly different location after 6-8 weeks of complete healing. We can advise on the safest new position.',
+    },
+    {
+      q: 'How can I avoid future tearing?',
+      a: 'Choose lightweight earrings (avoid heavy gold studs). Place piercings at least 3-4 mm from earlobe edge. Remove earrings while sleeping or exercising. Avoid pulling earrings to put on/take off — slide them gently.',
+    },
+    {
+      q: 'Can children have earlobe repair?',
+      a: 'Yes — earlobe repair is safe for children over 6 years. For younger children, we may use brief sedation in addition to local anaesthesia. Most children tolerate the procedure well.',
+    },
+    {
+      q: 'Is earlobe repair covered by insurance?',
+      a: 'Earlobe repair is generally considered cosmetic and not covered. However, if the tear was caused by trauma (accident) or causes functional problems, partial coverage may be possible. We provide documentation if needed.',
+    },
+    {
+      q: 'Can stretched earlobes from gauges be fully restored?',
+      a: 'Yes — using Z-plasty and tissue rearrangement, stretched earlobes (from tunnels/gauges up to 1 inch) can be brought back to natural appearance in most cases. Very large gauges (>1 inch) may need staged repair.',
+    },
+    {
+      q: 'Will I have a keloid after earlobe repair?',
+      a: 'If you have a history of keloids, we use steroid injections, silicone gel, and pressure therapy as preventive measures. The risk is lower for repair than for original piercing. Inform Dr. Ram Prabhu of any keloid history.',
+    },
+    {
+      q: 'How do I book an earlobe repair appointment?',
+      a: 'Call or WhatsApp 9949808628. Many earlobe repairs can be done on a walk-in basis with prior phone confirmation. Mon-Sat, 10AM-12PM and 7PM-8PM. Idea Clinic, Kondapur, Hyderabad.',
+    },
+  ],
+  formGradeOptions: [
+    'One earlobe torn',
+    'Both earlobes torn',
+    'Stretched / gauged earlobes',
+    'Keloid + tear',
+    'Re-piercing only',
+    'Not sure — need consultation',
+  ],
+  formSubject: 'New Earlobe Repair Consultation Request',
+  whatsappMessage: 'Hello Dr. Ram Prabhu, I would like to book an earlobe repair consultation. Please share available slots and pricing.',
+  relatedPages: [
+    { url: '/lipoma-removal-hyderabad', label: 'Lipoma Removal' },
+    { url: '/services/reconstructive', label: 'Scar Revision' },
+    { url: '/services', label: 'All Services' },
+  ],
+};
+
+const EarlobeRepairKondapur: React.FC = () => <MoneyPageTemplate data={data} />;
+export default EarlobeRepairKondapur;

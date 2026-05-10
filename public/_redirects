@@ -1,1 +1,10 @@
-/*    /index.html   200 
+# Netlify-style redirects.
+#
+# IMPORTANT: This is the SPA fallback. The 200 status means "show this content
+# but keep the URL as requested" -- so deep links like /services/facelift work.
+#
+# AFTER prerendering: each route has its own dist/<route>/index.html, which
+# Netlify will serve directly (more specific match wins). This catch-all only
+# fires for routes NOT in dist (e.g., 404s, future client-only routes).
+
+/*    /index.html   200

@@ -72,8 +72,8 @@ export const ReconstructivePage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Reconstructive Plastic Surgery in Hyderabad | Scar Revision & Microsurgery"
-        description="Comprehensive reconstructive surgery solutions including scar revision, trauma repair, cancer reconstruction, congenital correction, and microsurgery by Dr. Ram Prabhu."
+        title="Reconstructive Plastic Surgery Hyderabad | Microsurgery | Dr. Ram Prabhu"
+        description="Reconstructive surgery in Kondapur Hyderabad — scar revision, post-trauma repair, cancer reconstruction, cleft lip & palate, microvascular surgery. Dr. Ram Prabhu, DNB. 9949808628."
         keywords={[
           'reconstructive surgery hyderabad',
           'scar revision specialist',

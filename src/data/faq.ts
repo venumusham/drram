@@ -18,7 +18,7 @@ export const faqData: FAQ[] = [
   },
   {
     question: "What are Dr. Prabhu's qualifications?",
-    answer: "Dr. M. Ram Prabhu is a board-certified plastic surgeon with over 20 years of experience. He completed his medical degree with honors, followed by specialized training in plastic and reconstructive surgery at prestigious institutions. He regularly participates in continuing education and has published numerous articles in medical journals. Dr. Prabhu is an active member of several professional organizations including the Association of Plastic Surgeons of India.",
+    answer: "Dr. M. Ram Prabhu is a plastic surgeon with 16+ years of experience. He earned MBBS from Dr. NTR University of Health Sciences (2009) and DNB (Super Speciality) in Plastic Surgery from the National Board of Examinations, New Delhi (2019). He is registered with the Telangana State Medical Council (License No. 66931) and is an active member of the Indian Association of Aesthetic Plastic Surgeons (IAAPS) and the Association of Plastic Surgeons of India (APSI). He has performed 6,000+ procedures, including 1,000+ gynecomastia surgeries.",
     category: "general"
   },
   {

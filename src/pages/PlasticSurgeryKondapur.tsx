@@ -42,8 +42,8 @@ const PlasticSurgeryKondapur: React.FC = () => {
   return (
     <>
       <SEO
-        title="Best Plastic Surgeon in Kondapur - Dr. Ram Prabhu | Expert Cosmetic & Reconstructive Surgery"
-        description="Looking for a trusted plastic surgeon in Kondapur? Dr. Ram Prabhu offers cosmetic and reconstructive surgery with 15+ years of experience, serving Gachibowli, Madhapur, Hitech City, and Hyderabad."
+        title="Plastic Surgeon Kondapur ★ 140+ Reviews | Dr. Ram Prabhu Idea Clinic"
+        description="Plastic surgeon in Kondapur, Hyderabad — Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years, 6,000+ procedures, 140+ reviews. Idea Clinic, Sri Ram Nagar. Mon-Sat. Call 9949808628."
         keywords={[
           'plastic surgeon kondapur',
           'cosmetic surgery kondapur',

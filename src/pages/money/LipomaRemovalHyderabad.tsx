@@ -1,0 +1,203 @@
+import React from 'react';
+import MoneyPageTemplate, { MoneyPageData } from '../../components/MoneyPageTemplate';
+
+const data: MoneyPageData = {
+  slug: 'lipoma-removal-hyderabad',
+  procedureName: 'Lipoma Removal',
+  seoTitle: 'Lipoma Removal Hyderabad ★ Day-Care | Dr. Ram Prabhu DNB',
+  seoDescription:
+    'Lipoma removal in Kondapur Hyderabad — small incision, day-care, minimal scar. Sebaceous cyst & lump excision by Dr. Ram Prabhu, DNB Plastic Surgery. From ₹8,000. Call 9949808628.',
+  seoKeywords: [
+    'lipoma removal',
+    'lipoma removal hyderabad',
+    'lipoma treatment in hyderabad',
+    'lipoma specialist doctor near me',
+    'lipoma means',
+    'is lipoma curable by medicine',
+    'lumps doctor',
+    'cyst removal surgeon near me',
+    'sebaceous cyst removal hyderabad',
+  ],
+  h1: 'Lipoma Removal in Hyderabad — Day-Care Surgery with Minimal Scar',
+  heroSubheadline:
+    'Painless lipoma and sebaceous cyst removal performed by Dr. Ram Prabhu, DNB Super Speciality Plastic Surgeon. Day-care procedure, hidden incision, histopathology included. Same-day discharge.',
+  heroBadges: [
+    '★ DNB Plastic Surgery',
+    'Day-Care Surgery',
+    'Minimal Scar',
+    'Histopathology Included',
+    'Same-Day Discharge',
+  ],
+  heroPriceBand: 'Lipoma Removal from ₹8,000',
+  heroImage: 'https://drramprabhu.com/images/body/before-after.jpg',
+  priceMin: '8000',
+  priceMax: '50000',
+  whatIsParagraphs: [
+    'A lipoma is a benign (non-cancerous) growth of fatty tissue that forms a soft, movable lump just under the skin. They are very common — up to 1 in 100 adults has at least one. Most lipomas are harmless, but they can cause cosmetic concerns, discomfort if pressed, or rarely interfere with movement when located near joints or nerves.',
+    'Lipomas do NOT shrink with medication, weight loss, or topical treatments. The only effective treatment is surgical excision — removing the entire fatty mass through a small incision. Done correctly by a plastic surgeon, the procedure is quick (usually 20-45 minutes), uses local anaesthesia for most cases, and leaves a minimal scar.',
+    'At our Kondapur clinic, Dr. Ram Prabhu performs lipoma removal as a day-care procedure with same-day discharge. The excised tissue is sent for histopathology to confirm benign nature — a routine safety step. Most patients return to normal work in 24-48 hours.',
+    'We also remove sebaceous cysts, dermatofibromas, and other benign skin lumps using similar techniques.',
+  ],
+  causes: [
+    'Genetic predisposition (familial lipomatosis)',
+    'Adiposis dolorosa (multiple painful lipomas)',
+    'Madelung\'s disease (multiple symmetric lipomatosis)',
+    'Trauma (rare; debatable cause)',
+    'Idiopathic (most cases — no identifiable cause)',
+    'Age-related connective tissue changes',
+    'Metabolic factors in some hereditary syndromes',
+  ],
+  symptoms: [
+    'Soft, doughy lump under the skin',
+    'Mass that moves easily when pressed',
+    'Slow growth over months to years',
+    'Usually painless (most lipomas)',
+    'Occasionally tender if pressing on a nerve',
+    'Multiple lumps in some patients',
+    'Common locations: shoulders, neck, back, arms, thighs',
+    'Cosmetic concern especially in visible areas (face, scalp)',
+  ],
+  procedures: [
+    {
+      title: 'Standard Excision (Small Lipoma)',
+      description: 'Single incision over the lipoma, complete removal with capsule. Histopathology included.',
+      bestFor: 'Lipomas under 3 cm',
+      duration: '20-30 min',
+      anesthesia: 'Local',
+      stay: 'Day-care',
+      price: '₹8,000 — ₹15,000',
+    },
+    {
+      title: 'Standard Excision (Large Lipoma)',
+      description: 'Larger incision, careful dissection from surrounding tissue. May need drain for 1-2 days.',
+      bestFor: 'Lipomas 3-10 cm',
+      duration: '30-60 min',
+      anesthesia: 'Local + sedation',
+      stay: 'Day-care',
+      price: '₹15,000 — ₹30,000',
+    },
+    {
+      title: 'Multiple Lipoma Removal',
+      description: 'Several lipomas excised in one session. Strategic incision planning.',
+      bestFor: '3-10 lipomas, scattered',
+      duration: '60-120 min',
+      anesthesia: 'Local + sedation',
+      stay: 'Day-care',
+      price: '₹20,000 — ₹50,000',
+    },
+    {
+      title: 'Liposuction-Assisted Removal',
+      description: 'For large soft lipomas — liposuction reduces bulk first, smaller incision needed.',
+      bestFor: 'Large soft lipomas, cosmetic concern',
+      duration: '45-60 min',
+      anesthesia: 'Local + sedation',
+      stay: 'Day-care',
+      price: '₹20,000 — ₹35,000',
+    },
+    {
+      title: 'Facial / Scalp Lipoma',
+      description: 'Specialised technique for visible areas. Hidden incision in hairline or natural crease.',
+      bestFor: 'Face, scalp, neck',
+      duration: '30-45 min',
+      anesthesia: 'Local',
+      stay: 'Day-care',
+      price: '₹12,000 — ₹25,000',
+    },
+    {
+      title: 'Sebaceous Cyst Removal',
+      description: 'Complete removal including cyst wall to prevent recurrence.',
+      bestFor: 'Sebaceous cysts (different from lipoma)',
+      duration: '20-30 min',
+      anesthesia: 'Local',
+      stay: 'Day-care',
+      price: '₹6,000 — ₹15,000',
+    },
+  ],
+  walkthrough: [
+    { step: 'Step 1', title: 'Consultation & Assessment (15 min)', detail: 'Clinical examination. Ultrasound if needed (deep or atypical lipoma). Consent for biopsy.' },
+    { step: 'Step 2', title: 'Pre-op Preparation (15 min)', detail: 'Site marking, sterile preparation. Local anaesthesia injected — only sting felt during this step.' },
+    { step: 'Step 3', title: 'Incision (5 min)', detail: 'Small incision over the lipoma, sized to allow complete removal. Hidden in skin crease where possible.' },
+    { step: 'Step 4', title: 'Dissection (10-30 min)', detail: 'Lipoma carefully separated from surrounding tissue. Capsule preserved to prevent recurrence.' },
+    { step: 'Step 5', title: 'Removal & Bleeding Control (5 min)', detail: 'Complete lipoma removed in one piece. Bleeding controlled with cautery. Tissue sent for histopathology.' },
+    { step: 'Step 6', title: 'Closure (5-10 min)', detail: 'Skin closed in layers with absorbable sutures. Adhesive strips applied. No external sutures usually needed.' },
+    { step: 'Step 7', title: 'Discharge (15 min)', detail: 'Wound dressing, post-op instructions. Most patients walk out within 1 hour of procedure.' },
+  ],
+  recovery: [
+    { when: 'Day 0', title: 'Procedure day', detail: 'Mild discomfort once anaesthesia wears off. Over-the-counter pain medication suffices. Avoid strenuous activity.' },
+    { when: 'Day 1-2', title: 'Return to office work', detail: 'Most patients return to desk work the next day. Keep dressing dry. Driving okay.' },
+    { when: 'Day 3-5', title: 'Wound check', detail: 'First wound check in clinic (or via WhatsApp photos). Light activity okay.' },
+    { when: 'Day 7-10', title: 'Sutures dissolve', detail: 'Absorbable sutures dissolve. Adhesive strips removed. Wound healed externally.' },
+    { when: 'Week 2-3', title: 'Histopathology results', detail: 'Histopathology report available. Result confirmed as benign lipoma. Final review consultation.' },
+    { when: 'Month 3', title: 'Scar maturation', detail: 'Scar pink, beginning to fade. Scar massage and silicone gel optional.' },
+    { when: 'Month 12', title: 'Final scar', detail: 'Scar fades to thin, barely visible line. Permanent removal — does not regrow at the same site.' },
+  ],
+  beforeAfterImage: '/images/body/before-after.jpg',
+  faqs: [
+    {
+      q: 'How much does lipoma removal cost in Hyderabad?',
+      a: 'Lipoma removal cost ranges from ₹8,000 to ₹50,000. Small lipoma (<3 cm): ₹8K-₹15K. Medium (3-10 cm): ₹15K-₹30K. Large or multiple: ₹20K-₹50K. Includes surgery, local anaesthesia, dressing, and histopathology. Insurance may cover symptomatic lipomas.',
+    },
+    {
+      q: 'Is lipoma removal painful?',
+      a: 'The procedure itself is virtually painless because of local anaesthesia — you only feel the initial injection sting. After surgery, mild soreness for 1-2 days, manageable with over-the-counter pain medication.',
+    },
+    {
+      q: 'Can lipoma be removed without surgery?',
+      a: 'No — lipomas cannot be cured by medication, creams, weight loss, or massage. They are encapsulated fatty masses that must be physically removed. Steroid injections may shrink small lipomas slightly but do not eliminate them.',
+    },
+    {
+      q: 'Will the lipoma come back after surgery?',
+      a: 'Recurrence at the SAME site is rare (<5%) when complete excision with capsule is performed. Some patients have a genetic tendency to develop new lipomas at OTHER sites, but each lipoma is independent and once removed, that one is gone permanently.',
+    },
+    {
+      q: 'How long does lipoma removal take?',
+      a: 'Most lipoma removals take 20-45 minutes from incision to closure. The total time at the clinic (including consultation, prep, and recovery) is about 1.5-2 hours. Same-day discharge.',
+    },
+    {
+      q: 'Will there be a scar after lipoma removal?',
+      a: 'Yes — any incision leaves a scar. However, plastic surgeons place incisions in skin creases where possible and use fine suturing techniques to minimise visibility. Most lipoma scars fade to thin, barely visible lines within 12 months.',
+    },
+    {
+      q: 'Can lipomas turn cancerous?',
+      a: 'True lipomas are completely benign and do NOT turn cancerous. However, some malignant tumours (liposarcomas) can mimic lipomas, especially if they are deep, fast-growing, painful, or atypical. This is why we send every excised mass for histopathology — a routine safety step.',
+    },
+    {
+      q: 'Is lipoma removal covered by insurance?',
+      a: 'If the lipoma causes pain, restricts movement, is rapidly growing, or shows atypical features, insurance may cover the procedure as medically necessary. Purely cosmetic removal is usually not covered. We provide documentation to support claims.',
+    },
+    {
+      q: 'Can multiple lipomas be removed in one session?',
+      a: 'Yes — we routinely remove 3-10 lipomas in a single session under local anaesthesia. Larger numbers may be staged for safety and comfort. The total local anaesthesia dose is the limiting factor.',
+    },
+    {
+      q: 'What is the difference between lipoma and sebaceous cyst?',
+      a: 'Lipoma is a fatty tissue mass — soft, doughy, deep under skin. Sebaceous cyst is a fluid-filled sac with a punctum (small opening) and contains sebum (cheese-like substance). Both are benign and removed similarly, but technique differs slightly.',
+    },
+    {
+      q: 'When should I worry about a lump and see a doctor?',
+      a: 'Get any lump evaluated if it: grows rapidly, becomes painful, feels firm or fixed (not movable), changes colour, or is over 5 cm. Also if you have multiple lumps appearing simultaneously, or family history of liposarcoma. We use clinical examination and ultrasound to differentiate.',
+    },
+    {
+      q: 'How do I book a lipoma removal consultation?',
+      a: 'Call or WhatsApp 9949808628. Most lipomas can be assessed and scheduled at the same visit if simple. Bring any prior ultrasound or MRI reports if available. Mon-Sat, 10AM-12PM and 7PM-8PM.',
+    },
+  ],
+  formGradeOptions: [
+    'Single small lipoma',
+    'Multiple lipomas',
+    'Large lipoma',
+    'Facial / scalp lipoma',
+    'Sebaceous cyst',
+    'Not sure — need consultation',
+  ],
+  formSubject: 'New Lipoma Removal Consultation Request',
+  whatsappMessage: 'Hello Dr. Ram Prabhu, I would like to book a lipoma removal consultation. Please share available slots and pricing.',
+  relatedPages: [
+    { url: '/services/reconstructive', label: 'Reconstructive Surgery' },
+    { url: '/earlobe-repair-kondapur', label: 'Earlobe Repair' },
+    { url: '/services', label: 'All Services' },
+  ],
+};
+
+const LipomaRemovalHyderabad: React.FC = () => <MoneyPageTemplate data={data} />;
+export default LipomaRemovalHyderabad;
