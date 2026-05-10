@@ -32,8 +32,8 @@ const FaceliftPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Facelift Surgery in Hyderabad | Dr. Ram Prabhu"
-        description="Advanced facelift, mini facelift, and neck lift procedures by Dr. Ram Prabhu in Hyderabad. Natural-looking facial rejuvenation with tailored surgical plans."
+        title="Facelift Surgery Hyderabad | Natural Results | Dr. Ram Prabhu"
+        description="Facelift, mini facelift, mid-facelift & neck lift in Kondapur Hyderabad by Dr. Ram Prabhu, DNB. Natural-looking facial rejuvenation, 16+ years experience. Call 9949808628 for consultation."
         keywords={[
           'facelift hyderabad',
           'mini facelift india',

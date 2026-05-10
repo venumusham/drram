@@ -8,7 +8,6 @@ import TestimonialsSection from '../components/sections/TestimonialsSection';
 import CTASection from '../components/sections/CTASection';
 import StatisticsSection from '../components/sections/StatisticsSection';
 import YouTubeSection from '../components/sections/YouTubeSection';
-import FloatingSocialBar from '../components/FloatingSocialBar';
 
 const HomePage: React.FC = () => {
   // Structured data for business information
@@ -30,8 +29,8 @@ const HomePage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Dr. Ram Prabhu - Best Plastic Surgeon in Hyderabad | Cosmetic & Reconstructive Surgery"
-        description="Expert plastic surgeon in Hyderabad offering cosmetic and reconstructive procedures. Specializing in rhinoplasty, breast augmentation, facelift, and body contouring. Book your consultation today."
+        title="Dr. M. Ram Prabhu | Plastic & Cosmetic Surgeon Hyderabad"
+        description="Plastic surgeon in Kondapur Hyderabad — Dr. M. Ram Prabhu, DNB (Super Speciality). 16+ yrs, 6,000+ procedures, 140+ Google reviews. Gynecomastia, liposuction, rhinoplasty, breast surgery. Call 9949808628."
         keywords={[
           'best plastic surgeon hyderabad',
           'cosmetic surgery hyderabad',
@@ -59,7 +58,6 @@ const HomePage: React.FC = () => {
         <YouTubeSection />
         <CTASection />
       </div>
-      <FloatingSocialBar />
     </>
   );
 };

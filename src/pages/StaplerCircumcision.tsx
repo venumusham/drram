@@ -59,8 +59,8 @@ const StaplerCircumcision: React.FC = () => {
     return (
         <>
             <SEO
-                title="Stapler Circumcision in Hyderabad | Painless & Bloodless | Dr. Ram Prabhu"
-                description="Get painless stapler circumcision in Hyderabad by Dr. Ram Prabhu. Bloodless procedure, 15-minute surgery, and quick recovery. Book your consultation today."
+                title="Stapler Circumcision Hyderabad | 15-Min Painless | Dr. Ram Prabhu"
+                description="Painless stapler (ZSR) circumcision in Kondapur Hyderabad — bloodless, 15-min procedure, same-day discharge, quick recovery. Dr. Ram Prabhu, DNB. EMI available. Call 9949808628."
                 keywords={[
                     'stapler circumcision hyderabad',
                     'zsr circumcision hyderabad',

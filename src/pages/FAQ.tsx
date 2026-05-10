@@ -8,8 +8,8 @@ const FAQPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="Plastic Surgery FAQs | Dr. Ram Prabhu Clinic Hyderabad"
-        description="Find answers to common questions about plastic surgery costs, recovery timelines, safety protocols, and financing options at Dr. Ram Prabhu’s Hyderabad clinic."
+        title="Plastic Surgery FAQs | Cost, Recovery, Safety | Dr. Ram Prabhu"
+        description="Plastic surgery FAQs by Dr. Ram Prabhu, DNB. Cost, recovery timelines, anaesthesia, EMI options, gynecomastia, liposuction & rhinoplasty answers — Kondapur Hyderabad. Call 9949808628."
         keywords={[
           'plastic surgery faq hyderabad',
           'cosmetic surgery questions',

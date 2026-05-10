@@ -1,6 +1,5 @@
 import React from 'react';
 import { Award, BookOpen, Stethoscope, Users } from 'lucide-react';
-import Button from '../ui/Button';
 import RamPrabhuImg from './ram.png'; // Import the image
 const AboutDoctorSection: React.FC = () => {
   return (
@@ -36,10 +35,10 @@ const AboutDoctorSection: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-medium text-gray-900">
-                    15+ Years of Excellence
+                    16+ Years of Excellence
                   </h4>
                   <p className="text-xs text-gray-500">
-                    DNB Plastic Surgery
+                    DNB (Super Speciality) Plastic Surgery
                   </p>
                   </div>
                 </div>
@@ -54,7 +53,7 @@ const AboutDoctorSection: React.FC = () => {
             </h3>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              Dr. M. Ram Prabhu is a highly skilled Aesthetics and Plastic Surgeon with 15+ years of experience, specializing in Gynecomastia, Aesthetics, and Liposuction. He graduated with his MBBS from Dr. NTR University of Health Sciences, Andhra Pradesh in 2009, followed by DNB in Plastic Surgery from National Board of Examinations, New Delhi in 2019.
+              Dr. M. Ram Prabhu is a highly skilled Aesthetics and Plastic Surgeon with 16+ years of experience, specializing in Gynecomastia, Liposuction, Rhinoplasty, and Aesthetic Surgery. He earned his MBBS from Dr. NTR University of Health Sciences, Andhra Pradesh in 2009, followed by DNB (Super Speciality) in Plastic Surgery from the National Board of Examinations, New Delhi in 2019. He is registered with the Telangana State Medical Council (License No. 66931) and is a member of IAAPS and APSI.
             </p>
             
             <a 
@@ -99,7 +98,7 @@ const AboutDoctorSection: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-gray-900 font-medium">Advanced Training</h4>
-                  <p className="text-sm text-gray-600">DNB in Plastic Surgery</p>
+                  <p className="text-sm text-gray-600">DNB (Super Speciality) Plastic Surgery, NBE 2019</p>
                 </div>
               </div>
               

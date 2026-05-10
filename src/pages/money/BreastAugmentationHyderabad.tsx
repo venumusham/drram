@@ -1,0 +1,202 @@
+import React from 'react';
+import MoneyPageTemplate, { MoneyPageData } from '../../components/MoneyPageTemplate';
+
+const data: MoneyPageData = {
+  slug: 'breast-augmentation-hyderabad',
+  procedureName: 'Breast Augmentation',
+  seoTitle: 'Breast Augmentation Hyderabad ★ from ₹1.2L | Dr. Ram Prabhu DNB',
+  seoDescription:
+    'Breast augmentation with silicone implants or fat transfer in Kondapur Hyderabad by Dr. Ram Prabhu, DNB Plastic Surgery. Natural results, FDA-approved implants. From ₹1.2L. Call 9949808628.',
+  seoKeywords: [
+    'breast augmentation hyderabad',
+    'breast augmentation in hyderabad',
+    'breast surgery cost in hyderabad',
+    'breast implants hyderabad',
+    'breast enlargement surgery hyderabad',
+    'fat transfer breast augmentation',
+    'silicone implants india',
+    'top rated surgeons for breast augmentation telangana',
+    'best breast surgeon hyderabad',
+  ],
+  h1: 'Breast Augmentation in Hyderabad — Natural Results with Implants or Fat Transfer',
+  heroSubheadline:
+    'Breast augmentation by Dr. Ram Prabhu, DNB Super Speciality Plastic Surgeon. FDA-approved silicone and cohesive gel implants, fat-transfer augmentation, and personalised sizing using 3D simulation tools.',
+  heroBadges: [
+    '★ DNB Plastic Surgery',
+    'FDA-Approved Implants',
+    'Fat Transfer Option',
+    'Sub-muscular Placement',
+    '0% EMI',
+  ],
+  heroPriceBand: 'Augmentation from ₹1,20,000',
+  heroImage: 'https://drramprabhu.com/images/breast/Breast-Augmentation.jpg',
+  priceMin: '120000',
+  priceMax: '250000',
+  whatIsParagraphs: [
+    'Breast augmentation (augmentation mammoplasty) enhances breast size, shape, and projection using FDA-approved silicone gel implants, cohesive "gummy bear" implants, saline implants, or fat transfer (autologous fat grafting). The right choice depends on your starting anatomy, goals, lifestyle, and tissue thickness.',
+    'At our Kondapur clinic, Dr. Ram Prabhu personalises every augmentation — the implant size, shape (round vs anatomical), placement (sub-glandular vs sub-muscular), and incision location are all selected based on your body proportions and aesthetic preferences. We use 3D imaging during consultation so you can preview results before deciding.',
+    'Modern breast augmentation is not about going as large as possible — it is about achieving balanced, natural proportions that suit your frame. Most Indian women choose moderate augmentation in the 250-350cc range that delivers a feminine, fitted-clothing look without obvious "enhanced" appearance.',
+    'Augmentation can also be combined with a breast lift (mastopexy) when there is sagging, or with breast reconstruction after mastectomy.',
+  ],
+  causes: [
+    'Naturally small breast size (micromastia)',
+    'Asymmetry between left and right breasts',
+    'Volume loss after pregnancy and breastfeeding',
+    'Volume loss after significant weight loss',
+    'Reconstructive needs after mastectomy',
+    'Tubular breast deformity',
+    'Concerns about clothing fit and proportions',
+    'Confidence and self-image concerns',
+  ],
+  symptoms: [
+    'Difficulty finding well-fitting bras and tops',
+    'Self-consciousness in swimwear or fitted clothing',
+    'Asymmetry that requires padding on one side',
+    'Loss of upper-pole fullness after pregnancy',
+    'Feeling of disproportion between breasts and hips',
+    'Tubular or constricted breast shape since puberty',
+  ],
+  procedures: [
+    {
+      title: 'Silicone Gel Implants',
+      description: 'Most common choice — natural feel, smooth round or anatomical shapes. FDA-approved cohesive gel.',
+      bestFor: 'Most women, natural feel desired',
+      duration: '90-120 min',
+      anesthesia: 'General',
+      stay: 'Day-care or 1 day',
+      price: '₹1,30,000 — ₹2,00,000',
+    },
+    {
+      title: 'Cohesive Gel ("Gummy Bear") Implants',
+      description: 'Highly cohesive form-stable implants. Maintains shape if cut. Premium choice.',
+      bestFor: 'Anatomical shape, premium feel',
+      duration: '90-120 min',
+      anesthesia: 'General',
+      stay: 'Day-care or 1 day',
+      price: '₹1,80,000 — ₹2,50,000',
+    },
+    {
+      title: 'Fat Transfer Augmentation',
+      description: 'Uses your own fat from abdomen/thighs. Modest size increase, no implants. Two birds with one stone.',
+      bestFor: 'Modest increase + body contour',
+      duration: '3-4 hrs',
+      anesthesia: 'General',
+      stay: 'Day-care',
+      price: '₹1,50,000 — ₹2,00,000',
+    },
+    {
+      title: 'Augmentation + Lift (Mastopexy)',
+      description: 'Combines implants with a breast lift for women with both volume loss and sagging.',
+      bestFor: 'Post-pregnancy with sagging',
+      duration: '3-4 hrs',
+      anesthesia: 'General',
+      stay: '1 day',
+      price: '₹2,00,000 — ₹2,80,000',
+    },
+    {
+      title: 'Asymmetry Correction',
+      description: 'Different-sized implants for each side, or implant + lift, to balance asymmetric breasts.',
+      bestFor: 'Significant asymmetry',
+      duration: '2-3 hrs',
+      anesthesia: 'General',
+      stay: 'Day-care',
+      price: '₹1,30,000 — ₹2,00,000',
+    },
+    {
+      title: 'Tuberous Breast Correction',
+      description: 'Specialised technique to correct constricted, tubular breast shape with implants and tissue rearrangement.',
+      bestFor: 'Tubular breast deformity',
+      duration: '2.5-3.5 hrs',
+      anesthesia: 'General',
+      stay: '1 day',
+      price: '₹1,80,000 — ₹2,30,000',
+    },
+  ],
+  walkthrough: [
+    { step: 'Step 1', title: 'Sizer Selection (in consultation)', detail: 'Sizers are tried during consultation. 3D simulation shows expected appearance. Implant choice finalised.' },
+    { step: 'Step 2', title: 'Arrival & Markings (45 min)', detail: 'Pre-op photographs. Detailed markings while sitting and standing — incision location, implant pocket boundaries.' },
+    { step: 'Step 3', title: 'Anaesthesia (15 min)', detail: 'General anaesthesia administered by a board-certified anaesthetist.' },
+    { step: 'Step 4', title: 'Incision & Pocket (60 min)', detail: 'Incision via inframammary fold (under breast), peri-areolar (around nipple), or trans-axillary (armpit). Implant pocket created — sub-glandular or sub-muscular.' },
+    { step: 'Step 5', title: 'Implant Insertion (15-30 min)', detail: 'Implants inserted using a sterile no-touch technique (Keller funnel). Position verified for symmetry.' },
+    { step: 'Step 6', title: 'Closure (30 min)', detail: 'Tissue closed in layers with absorbable sutures. Surgical bra applied.' },
+    { step: 'Step 7', title: 'Recovery (3-4 hrs)', detail: 'Observation in recovery. Most patients walk out same day or after one night observation.' },
+  ],
+  recovery: [
+    { when: 'Day 0', title: 'Surgery day', detail: 'Mild-moderate soreness. Sleep elevated and on back. Surgical bra 24/7.' },
+    { when: 'Day 1-3', title: 'Initial recovery', detail: 'Soreness peaks Day 2-3. Pain medication for 5-7 days. Light walking encouraged.' },
+    { when: 'Day 5-7', title: 'Return to work', detail: 'Most desk-job patients return to work. No heavy lifting. Driving cleared.' },
+    { when: 'Week 2-3', title: 'Light exercise', detail: 'Walking and gentle cardio okay. No upper body or chest exercises yet.' },
+    { when: 'Week 4-6', title: 'Most activities resumed', detail: 'Cardio fully cleared. Light upper body permitted. Implants begin to settle into final position.' },
+    { when: 'Month 3', title: '"Drop and fluff"', detail: 'Implants settle into natural position. Final shape becoming evident.' },
+    { when: 'Month 6', title: 'Final result', detail: 'Implants fully settled. Final breast shape visible. Long-term result.' },
+  ],
+  beforeAfterImage: '/images/body/before-after.jpg',
+  faqs: [
+    {
+      q: 'How much does breast augmentation cost in Hyderabad?',
+      a: 'Cost ranges from ₹1,20,000 to ₹2,50,000. Standard silicone implants: ₹1.3L-₹2L. Cohesive gel ("gummy bear"): ₹1.8L-₹2.5L. Fat transfer: ₹1.5L-₹2L. Augmentation + lift: ₹2L-₹2.8L. Includes implants, surgery, anaesthesia, and follow-up. EMI options available.',
+    },
+    {
+      q: 'Which implant type is best — silicone, cohesive gel, or saline?',
+      a: 'Most patients choose silicone gel for its natural feel. Cohesive gel ("gummy bear") is firmer, holds shape better, lower rupture risk — premium option. Saline implants are rare in India today. Fat transfer offers a no-implant option but provides a more modest increase. Choice depends on tissue thickness, desired feel, and budget.',
+    },
+    {
+      q: 'How long do breast implants last?',
+      a: 'Modern silicone implants are not "lifetime" devices but can last 15-20+ years without issues. Implants do not need to be replaced unless there is a complication (rupture, capsular contracture, change in preference). Annual self-examination and periodic ultrasound monitoring are recommended.',
+    },
+    {
+      q: 'Will breast augmentation affect breastfeeding?',
+      a: 'Most modern techniques (sub-muscular placement, inframammary incision) preserve breastfeeding ability. Peri-areolar incisions carry a small risk of reduced ability. Discuss future pregnancy plans with Dr. Ram Prabhu during consultation to choose the best approach.',
+    },
+    {
+      q: 'Where will my scars be?',
+      a: 'Three common incision options: inframammary (in the natural fold under the breast) — most common, hidden in bra; peri-areolar (around the nipple) — hidden along colour change; trans-axillary (armpit) — no breast scar but more difficult precision. Dr. Ram Prabhu will recommend based on your anatomy.',
+    },
+    {
+      q: 'What size implant is right for me?',
+      a: 'Implant size is chosen based on chest measurements, body proportions, lifestyle, and goals. Most Indian women find 250-350cc gives natural-looking proportions. We use sizers and 3D simulation in consultation to help you decide. Going too large risks an unnatural look and tissue stretch.',
+    },
+    {
+      q: 'How painful is breast augmentation recovery?',
+      a: 'Soreness is moderate, similar to intense chest workouts. Sub-muscular placement is more sore than sub-glandular for the first week. Pain medication is needed for 5-7 days. Most patients find recovery easier than they expected.',
+    },
+    {
+      q: 'When can I return to work and gym after augmentation?',
+      a: 'Desk work in 5-7 days. Driving in 7-10 days. Light cardio in 2-3 weeks. Upper body exercises in 4-6 weeks. Final implant position settles by 3-6 months ("drop and fluff").',
+    },
+    {
+      q: 'Is sub-muscular or sub-glandular placement better?',
+      a: 'Sub-muscular (under the chest muscle) gives more natural upper-pole appearance, better long-term coverage, and easier mammography — preferred for thinner women. Sub-glandular (over the muscle) recovers faster but visible rippling risk in thin tissue. Dr. Ram Prabhu recommends based on your tissue thickness.',
+    },
+    {
+      q: 'What are the risks of breast augmentation?',
+      a: 'Common risks include capsular contracture (scar tissue tightening — 5-10%), implant malposition, rupture, infection, hematoma, sensation changes, and rarely BIA-ALCL (a very rare lymphoma associated with textured implants). Modern smooth implants and proper technique minimise risks. Detailed risk discussion is part of consultation.',
+    },
+    {
+      q: 'Can I combine augmentation with other procedures?',
+      a: 'Yes — common combinations include augmentation + lift (mastopexy), augmentation + tummy tuck (mommy makeover), augmentation + liposuction. Combining is safe and saves on anaesthesia/recovery time when done by an experienced surgeon.',
+    },
+    {
+      q: 'How do I book a breast augmentation consultation?',
+      a: 'Call or WhatsApp 9949808628 to schedule a consultation. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. All consultations are confidential.',
+    },
+  ],
+  formGradeOptions: [
+    'Silicone gel implants',
+    'Cohesive gel ("gummy bear")',
+    'Fat transfer (no implants)',
+    'Augmentation + Lift',
+    'Asymmetry correction',
+    'Not sure — need consultation',
+  ],
+  formSubject: 'New Breast Augmentation Consultation Request',
+  whatsappMessage: 'Hello Dr. Ram Prabhu, I would like to book a breast augmentation consultation. Please share available slots and pricing.',
+  relatedPages: [
+    { url: '/services/breast-procedures', label: 'All Breast Surgery' },
+    { url: '/tummy-tuck-hyderabad', label: 'Tummy Tuck' },
+    { url: '/liposuction-hyderabad', label: 'Liposuction' },
+  ],
+};
+
+const BreastAugmentationHyderabad: React.FC = () => <MoneyPageTemplate data={data} />;
+export default BreastAugmentationHyderabad;

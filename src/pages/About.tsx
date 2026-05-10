@@ -11,8 +11,8 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <SEO
-        title="About Dr. M. Ram Prabhu | Board-Certified Plastic Surgeon in Hyderabad"
-        description="Learn about Dr. M. Ram Prabhu’s 15+ years of experience in aesthetic and reconstructive plastic surgery in Hyderabad. Discover his training, specialties, and patient-first approach."
+        title="About Dr. M. Ram Prabhu | DNB Plastic Surgeon Kondapur Hyderabad"
+        description="Learn about Dr. M. Ram Prabhu — DNB (Super Speciality) Plastic Surgery, 16+ years experience, 6,000+ procedures in aesthetic and reconstructive surgery. IAAPS & APSI member. Kondapur, Hyderabad."
         keywords={[
           'about dr ram prabhu',
           'plastic surgeon biography hyderabad',
@@ -26,7 +26,7 @@ const AboutPage: React.FC = () => {
       <div className="AboutPage">
         <PageHeader 
           title="About Dr. M. Ram Prabhu" 
-          description="Meet our lead plastic surgeon with 15+ years of experience in aesthetic and reconstructive surgery."
+          description="Meet our lead plastic surgeon with 16+ years of experience in aesthetic and reconstructive surgery. DNB (Super Speciality) Plastic Surgery, NBE."
         />
         <div className="container mx-auto px-4 py-12">
           <ServicesHighlightSection />

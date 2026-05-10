@@ -42,8 +42,8 @@ const CosmeticSurgeonMadhapur: React.FC = () => {
   return (
     <>
       <SEO
-        title="Best Cosmetic Surgeon in Madhapur - Dr. Ram Prabhu | Expert Plastic & Reconstructive Surgery"
-        description="Looking for a top cosmetic surgeon in Madhapur? Dr. Ram Prabhu provides cosmetic and reconstructive surgery with over 15 years of experience, serving Kondapur, Gachibowli, Hitech City, and Hyderabad."
+        title="Cosmetic Surgeon Madhapur ★ 140+ Reviews | Dr. Ram Prabhu DNB"
+        description="Cosmetic surgeon for Madhapur, Hyderabad — Dr. Ram Prabhu, DNB (Super Speciality), 16+ years, 6,000+ procedures. Rhinoplasty, gynecomastia, liposuction, facelift, scar revision. Call 9949808628."
         keywords={[
           'cosmetic surgeon madhapur',
           'plastic surgery madhapur',
