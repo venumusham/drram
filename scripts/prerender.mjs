@@ -163,3 +163,4 @@ if (failures.length) {
 }
 
 console.log('🎉 Prerender complete. Static HTML written to dist/<route>/index.html');
+process.exit(0);
