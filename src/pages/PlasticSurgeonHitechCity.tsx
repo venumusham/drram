@@ -142,13 +142,11 @@ const PlasticSurgeonHitechCity: React.FC = () => {
 
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-primary-700 mb-4">Our Location in Hitech City</h2>
-          <div className="rounded-lg overflow-hidden shadow-lg">
+          <div className="rounded-lg overflow-hidden shadow-lg h-[400px]">
             <iframe
               title="Hitech City Clinic Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.18241477785!2d78.3491344!3d17.4604023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91038ef40aef%3A0x4255a5cd5b7f505b!2sDr.%20Ramprabhu%20Plastic%20Surgery%20Clinic!5e0!3m2!1sen!2sin!4v1715760000000!5m2!1sen!2sin"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.985621181176!2d78.3517147!3d17.460402299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91038ef40aef%3A0x4255a5cd5b7f505b!2sDr.%20Ramprabhu%20Plastic%20Surgery%20Clinic!5e0!3m2!1sen!2sin!4v1778855170129!5m2!1sen!2sin"
+              className="w-full h-full border-0"
               allowFullScreen
               loading="lazy"
             ></iframe>
