@@ -409,32 +409,7 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
           </div>
         </section>
 
-        {/* ============ 9. BEFORE & AFTER ============ */}
-        <section className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-6 text-center">
-              Real Patient Results — Before & After
-            </h2>
-            <p className="text-gray-700 text-center mb-6 max-w-2xl mx-auto">
-              Photographs shared with explicit patient consent. Results vary based on anatomy and post-operative care.
-            </p>
-            <div className="flex flex-col items-center">
-              <div className="relative mb-4">
-                <img
-                  src={data.beforeAfterImage}
-                  alt={`${data.procedureName} before and after results — Dr. Ram Prabhu, Hyderabad`}
-                  className="rounded-lg shadow-lg w-full max-w-2xl"
-                  loading="lazy"
-                />
-                <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm font-semibold">Before</div>
-                <div className="absolute top-4 right-4 bg-black/70 text-white px-3 py-1 rounded text-sm font-semibold">After</div>
-              </div>
-              <Link to="/gallery" className="bg-primary-700 text-white px-6 py-2 rounded shadow hover:bg-primary-800 transition mt-2">
-                View Full Before & After Gallery →
-              </Link>
-            </div>
-          </div>
-        </section>
+
 
         {/* ============ 10. VIDEO (optional) ============ */}
         {data.videoEmbedUrl && (
@@ -552,8 +527,8 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Visit Our Clinic in Kondapur</h2>
             <address className="not-italic text-gray-700 mb-3 leading-relaxed">
-              <strong>Idea Clinic, 1st Floor</strong><br />
-              61B, 3rd Street, Near Burfighar Sweetshop<br />
+              1st Floor, Idea Clinic, 61B<br />
+              3rd Street, Near Burfighar Sweetshop<br />
               Sri Ram Nagar, Kondapur<br />
               Hyderabad, Telangana 500084
             </address>

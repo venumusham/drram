@@ -81,7 +81,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'How do I book a consultation?',
-    a: 'Call or WhatsApp 9949808628 to schedule a consultation. The clinic is at Idea Clinic, Sri Ram Nagar, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
+    a: 'Call or WhatsApp 9949808628 to schedule a consultation. The clinic is at 1st Floor, Idea Clinic, 61B, 3rd Street, Sri Ram Nagar, Kondapur, Hyderabad (PIN: 500084) — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
   },
 ];
 
@@ -480,30 +480,7 @@ const GynecomastiaLanding: React.FC = () => {
           </div>
         </section>
 
-        {/* ================= 10. BEFORE & AFTER ================= */}
-        <section className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-6 text-center">Real Patient Results — Before & After</h2>
-            <p className="text-gray-700 text-center mb-6 max-w-2xl mx-auto">
-              These photographs are shared with explicit patient consent. Results vary based on grade, anatomy, and post-operative care. Schedule a consultation to view more case-specific results.
-            </p>
-            <div className="flex flex-col items-center">
-              <div className="relative mb-4">
-                <img
-                  src="/images/breast/Gynecomastia-before-after.jpeg"
-                  alt="Gynecomastia surgery before and after results — male chest reduction by Dr. Ram Prabhu, Hyderabad"
-                  className="rounded-lg shadow-lg w-full max-w-2xl"
-                  loading="lazy"
-                />
-                <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded text-sm font-semibold">Before</div>
-                <div className="absolute top-4 right-4 bg-black/70 text-white px-3 py-1 rounded text-sm font-semibold">After</div>
-              </div>
-              <a href="/gallery" className="bg-primary-700 text-white px-6 py-2 rounded shadow hover:bg-primary-800 transition mt-2">
-                View Full Before & After Gallery →
-              </a>
-            </div>
-          </div>
-        </section>
+
 
         {/* ================= 11. VIDEO ================= */}
         <section className="py-12 px-4 bg-primary-50">
@@ -600,8 +577,8 @@ const GynecomastiaLanding: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Visit Our Clinic in Kondapur</h2>
             <address className="not-italic text-gray-700 mb-3 leading-relaxed">
-              <strong>Idea Clinic, 1st Floor</strong><br />
-              61B, 3rd Street, Near Burfighar Sweetshop<br />
+              1st Floor, Idea Clinic, 61B<br />
+              3rd Street, Near Burfighar Sweetshop<br />
               Sri Ram Nagar, Kondapur<br />
               Hyderabad, Telangana 500084
             </address>

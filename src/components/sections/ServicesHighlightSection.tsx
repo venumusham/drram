@@ -47,16 +47,16 @@ const ServicesHighlightSection: React.FC = () => {
           {serviceHighlights[activeCategory].services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:-translate-y-1"
+              className="bg-white rounded-2xl overflow-hidden shadow-soft border border-gray-100 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1"
             >
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="h-full w-full flex items-center justify-center bg-gray-100">
-                  <div className="w-4/5 h-full mx-auto">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="h-full w-full flex items-center justify-center p-6 lg:p-10">
+                  <div className="w-full h-full mx-auto overflow-hidden rounded-xl shadow-soft">
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg"
-                      style={{ minHeight: 250 }}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      style={{ minHeight: 300 }}
                     />
                   </div>
                 </div>

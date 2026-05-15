@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'How do I book a consultation?',
     answer:
-      'Call or WhatsApp 9949808628 to schedule a consultation. The clinic is at Idea Clinic, Sri Ram Nagar, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
+      'Call or WhatsApp 9949808628 to schedule a consultation. The clinic is at 1st Floor, Idea Clinic, 61B, 3rd Street, Sri Ram Nagar, Kondapur, Hyderabad (PIN: 500084) — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
   },
 ];
 

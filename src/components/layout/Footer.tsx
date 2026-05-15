@@ -49,10 +49,11 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  Gallery
+                <Link to="/blog" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Blog
                 </Link>
               </li>
+
               <li>
                 <Link to="/faq" className="text-gray-400 hover:text-white transition-colors text-sm">
                   FAQ
@@ -119,11 +120,10 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-gray-400" />
                 <span className="text-gray-400 text-sm">
-                  Idea Clinic, 1st Floor<br />
-                  61B, 3rd Street<br />
-                  Near Burfighar Sweetshop<br />
+                  1st Floor, Idea Clinic, 61B<br />
+                  3rd Street, Near Burfighar Sweetshop<br />
                   Sri Ram Nagar, Kondapur<br />
-                  Hyderabad
+                  Hyderabad, Telangana 500084
                 </span>
               </li>
               <li className="flex items-start">

@@ -32,7 +32,6 @@ const ROUTES = [
   '/services/breast-procedures',
   '/services/reconstructive',
   '/about',
-  '/gallery',
   '/faq',
   '/contact',
   '/plastic-surgeon-hyderabad',
@@ -55,6 +54,18 @@ const ROUTES = [
   // Blog (Step 7)
   '/blog',
   '/blog/gynecomastia-surgery-cost-hyderabad-2026-guide',
+  '/blog/gynecomastia-recovery-timeline-hyderabad',
+  '/blog/laser-liposuction-in-hyderabad--a-guide-to-idea-clinics-kondapur',
+  '/blog/revitalize-your-confidence--discover-the-art-of-cosmetic-surgery',
+  '/blog/lipomas-and-plastic-surgery--exploring-treatment-options-and-considerations',
+  '/blog/goodbye-gynecomastia--how-a-skilled-plastic-surgeon-can-help',
+  '/blog/the-ultimate-guide-to-nose-rhinoplasty--everything-you-need-to-know',
+  '/blog/reclaiming-your-confidence--the-power-of-a-tummy-tuck',
+  '/blog/enhancing-confidence--the-ultimate-guide-to-breast-implant-surgery',
+  '/blog/navigating-advanced-lymphedema--understanding-treatment-options-and-support',
+  '/blog/restoring-hope--the-power-of-plastic-surgery-reconstruction-for-diabetic-foot',
+  '/blog/revolutionizing-skin-repair--the-science-of-skin-grafting',
+  '/blog/the-evolution-of-plastic-surgery-techniques--insights-from-a-leading-plastic-surgeon-in-hyderabad',
 ];
 
 const PREVIEW_PORT = 4173;
@@ -70,7 +81,10 @@ console.log('🚀 Starting prerender pass...');
 
 // 1. Boot vite preview
 console.log(`📡 Booting vite preview on :${PREVIEW_PORT}...`);
-const preview = spawn('npx', ['vite', 'preview', '--port', String(PREVIEW_PORT), '--strictPort'], {
+// Run local Vite via Node (no `npx` on PATH required). Avoid require.resolve('vite/...')
+// — Vite's package.json "exports" does not expose ./bin/vite.js.
+const viteCli = path.join(path.dirname(DIST_DIR), 'node_modules', 'vite', 'bin', 'vite.js');
+const preview = spawn(process.execPath, [viteCli, 'preview', '--port', String(PREVIEW_PORT), '--strictPort'], {
   stdio: ['ignore', 'pipe', 'pipe'],
   env: { ...process.env, NODE_ENV: 'production' },
 });

@@ -10,16 +10,16 @@ const PlasticSurgeryKondapur: React.FC = () => {
     "description": "Expert plastic and cosmetic surgery services in Kondapur by Dr. Ram Prabhu",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Idea Clinics",
+      "streetAddress": "1st Floor, Idea Clinic, 61B, 3rd Street, Sri Ram Nagar",
       "addressLocality": "Kondapur",
       "addressRegion": "Telangana",
-      "postalCode": "500081",
+      "postalCode": "500084",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "17.458099988030647",
-      "longitude": "78.37559661478558"
+      "latitude": "17.4604023",
+      "longitude": "78.3517147"
     },
     "url": "https://drramprabhu.com/plastic-surgery-kondapur",
     "telephone": "9949808628",
@@ -43,7 +43,7 @@ const PlasticSurgeryKondapur: React.FC = () => {
     <>
       <SEO
         title="Plastic Surgeon Kondapur ★ 140+ Reviews | Dr. Ram Prabhu Idea Clinic"
-        description="Plastic surgeon in Kondapur, Hyderabad — Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years, 6,000+ procedures, 140+ reviews. Idea Clinic, Sri Ram Nagar. Mon-Sat. Call 9949808628."
+        description="Plastic surgeon in Kondapur, Hyderabad — Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years, 6,000+ procedures, 140+ reviews. 1st Floor, Idea Clinic, Sri Ram Nagar, Kondapur. Mon-Sat. Call 9949808628."
         keywords={[
           'plastic surgeon kondapur',
           'cosmetic surgery kondapur',
@@ -145,7 +145,7 @@ const PlasticSurgeryKondapur: React.FC = () => {
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
               title="Kondapur Clinic Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3027470973837!2d78.37559661478558!3d17.458099988030647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc9f80d613%3A0x1ea4d62c7e8b5a2d!2sIdea%20Clinics!5e0!3m2!1sen!2sin!4v1645510415774!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.18241477785!2d78.3491344!3d17.4604023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91038ef40aef%3A0x4255a5cd5b7f505b!2sDr.%20Ramprabhu%20Plastic%20Surgery%20Clinic!5e0!3m2!1sen!2sin!4v1715760000000!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}

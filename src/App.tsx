@@ -7,7 +7,6 @@ import HomePage from './pages/Home';
 import ServicesPage from './pages/Services';
 import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
-import GalleryPage from './pages/Gallery';
 import FAQPage from './pages/FAQ';
 import PlasticSurgeonHyderabad from './pages/PlasticSurgeonHyderabad';
 import PlasticSurgeryKondapur from './pages/PlasticSurgeryKondapur';
@@ -34,6 +33,8 @@ import EarlobeRepairKondapur from './pages/money/EarlobeRepairKondapur';
 import MedicalTourismIndia from './pages/MedicalTourismIndia';
 import BlogIndex from './pages/Blog';
 import GynecomastiaCostGuide from './pages/blog/GynecomastiaCostGuide';
+import GynecomastiaRecoveryTimeline from './pages/blog/GynecomastiaRecoveryTimeline';
+import BlogMarkdownPost from './pages/blog/BlogMarkdownPost';
 
 function App() {
   return (
@@ -50,7 +51,6 @@ function App() {
               <Route path="/services/breast-procedures" element={<BreastProceduresPage />} />
               <Route path="/services/reconstructive" element={<ReconstructivePage />} />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/faq" element={<FAQPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/plastic-surgeon-hyderabad" element={<PlasticSurgeonHyderabad />} />
@@ -76,7 +76,8 @@ function App() {
                 path="/blog/gynecomastia-surgery-cost-hyderabad-2026-guide"
                 element={<GynecomastiaCostGuide />}
               />
-              {/* Catch-all 404 — must be LAST */}
+              <Route path="/blog/gynecomastia-recovery-timeline-hyderabad" element={<GynecomastiaRecoveryTimeline />} />
+              <Route path="/blog/:slug" element={<BlogMarkdownPost />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>

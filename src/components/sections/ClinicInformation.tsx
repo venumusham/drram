@@ -13,11 +13,10 @@ const ClinicInformation: React.FC = () => {
               <h3 className="text-xl font-semibold">Location</h3>
             </div>
             <p className="text-gray-600">
-              Idea Clinic, 1st Floor<br />
-              61B, 3rd Street<br />
-              Near Burfighar Sweetshop<br />
+              1st Floor, Idea Clinic, 61B<br />
+              3rd Street, Near Burfighar Sweetshop<br />
               Sri Ram Nagar, Kondapur<br />
-              Hyderabad
+              Hyderabad, Telangana 500084
             </p>
           </div>
 
