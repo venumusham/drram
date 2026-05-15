@@ -1,0 +1,6 @@
+[build]
+  # By running this simple echo command, we prevent Netlify from 
+  # triggering our heavy `vite build && node scripts/prerender.mjs` flow.
+  # This serves the already pre-built `dist` folder we push to GitHub.
+  command = "echo 'Skipping build layer, serving precompiled local dist folder'"
+  publish = "dist"

@@ -511,8 +511,8 @@ const MedicalTourismIndia: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Visit Our Clinic in Hyderabad</h2>
             <address className="not-italic text-gray-700 mb-3 leading-relaxed">
-              <strong>Idea Clinic, 1st Floor</strong><br />
-              61B, 3rd Street, Near Burfighar Sweetshop<br />
+              1st Floor, Idea Clinic, 61B<br />
+              3rd Street, Near Burfighar Sweetshop<br />
               Sri Ram Nagar, Kondapur<br />
               Hyderabad, Telangana 500084, India
             </address>

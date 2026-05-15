@@ -74,21 +74,7 @@ const FaceliftPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Before & After Gallery */}
-        <div className="container mx-auto px-4 py-8 max-w-4xl">
-          <h2 className="text-2xl font-bold mb-6 text-primary-800">Before & After</h2>
-          <div className="flex justify-center">
-            <div className="relative">
-              <img 
-                src="/images/facelift/before-after.jpg" 
-                alt="Before and After Results" 
-                className="rounded-lg shadow-lg w-full max-w-lg" 
-              />
-              <div className="absolute top-4 left-4 bg-black/60 text-white px-3 py-1 rounded">Before</div>
-              <div className="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded">After</div>
-            </div>
-          </div>
-        </div>
+
 
         {/* Call to Action */}
         <div className="container mx-auto px-4 py-8 text-center">

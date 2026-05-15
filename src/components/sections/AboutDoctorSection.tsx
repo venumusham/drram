@@ -17,16 +17,16 @@ const AboutDoctorSection: React.FC = () => {
           {/* First Column: Image */}
           <div className="lg:col-span-4 lg:-ml-8">
             <div className="relative lg:pr-8">
-              <div className="rounded-lg shadow-2xl overflow-hidden transform translate-y-0 translate-x-4 relative z-10">
+              <div className="rounded-2xl shadow-soft-lg overflow-hidden transform translate-y-0 translate-x-4 relative z-10 transition-transform duration-500 hover:-translate-y-2">
               <img 
                 src={RamPrabhuImg} 
                 alt="Dr. M. Ram Prabhu" 
                   className="w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute top-0 left-0 w-full h-full border-2 border-accent-500 rounded-lg -z-0"></div>
+            <div className="absolute top-0 left-0 w-full h-full border-2 border-accent-400 rounded-2xl -z-0 translate-x-1 translate-y-1"></div>
             
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-xl p-4 z-20 max-w-xs">
+            <div className="absolute -bottom-6 -right-2 md:-right-6 glassmorphism rounded-xl shadow-soft-lg p-4 z-20 max-w-xs transition-transform duration-500 hover:scale-105">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">

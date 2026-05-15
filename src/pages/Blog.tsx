@@ -45,7 +45,7 @@ const BlogIndex: React.FC = () => {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
 
       <div className="min-h-screen bg-white">
-        <section className="py-12 px-4 bg-gradient-to-br from-primary-900 to-primary-800 text-white">
+        <section className="pt-24 pb-12 px-4 bg-gradient-to-br from-primary-900 to-primary-800 text-white">
           <div className="max-w-4xl mx-auto">
             <nav className="text-xs text-primary-200 mb-3" aria-label="Breadcrumb">
               <Link to="/" className="hover:text-white">Home</Link>
@@ -69,9 +69,16 @@ const BlogIndex: React.FC = () => {
                   <Link
                     key={p.slug}
                     to={`/blog/${p.slug}`}
-                    className="block bg-white border-2 border-primary-100 rounded-lg overflow-hidden hover:shadow-lg hover:border-primary-300 transition"
+                    aria-label={`Read article: ${p.title}`}
+                    className="group block bg-white border-2 border-primary-100 rounded-lg overflow-hidden hover:shadow-lg hover:border-primary-300 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                   >
-                    <img src={p.image} alt={p.title} className="w-full h-48 object-cover" loading="lazy" />
+                    <img
+                      src={p.image}
+                      alt={p.imageAlt ?? `${p.title} — featured image`}
+                      className="w-full h-48 object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <div className="p-5">
                       <div className="flex flex-wrap gap-2 mb-2">
                         {p.categories.map((c) => (

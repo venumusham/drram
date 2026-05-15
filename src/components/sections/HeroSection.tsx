@@ -25,12 +25,14 @@ const HeroSection: React.FC = () => {
           {/* Right: Banner Image */}
           <div className="hidden lg:block w-full lg:w-1/2 relative lg:order-2">
             <div className="relative w-full h-full flex items-center justify-center mt-8">
-              <div className="absolute -inset-1 bg-gradient-to-r from-accent-400 to-primary-400 rounded-lg blur opacity-30"></div>
-              <img 
-                src="/banner-desktop.png" 
-                alt="Banner" 
-                className="relative w-full h-full max-h-[800px] object-contain rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              />
+              <div className="absolute -inset-1 bg-gradient-to-r from-accent-400 to-primary-400 rounded-2xl blur opacity-30 animate-pulse"></div>
+              <div className="relative glassmorphism-dark rounded-2xl p-2 w-full h-full max-h-[800px] shadow-soft-lg transform hover:-translate-y-2 transition-transform duration-500">
+                <img 
+                  src="/banner-desktop.png" 
+                  alt="Banner" 
+                  className="w-full h-full object-contain rounded-xl"
+                />
+              </div>
             </div>
           </div>
 
@@ -42,7 +44,7 @@ const HeroSection: React.FC = () => {
             <h1 className="text-white font-serif text-2xl md:text-3xl font-bold leading-tight mb-4 animate-fadeIn">
               Expertise in <span className="text-accent-400">Aesthetic</span> & <span className="text-accent-400">Reconstructive</span> Surgery
             </h1>
-            <p className="text-gray-200 text-base md:text-lg mt-40 mb-12 animate-fadeIn animation-delay-300">
+            <p className="text-white/90 text-base md:text-lg mt-5 mb-10 max-w-xl mx-auto lg:mx-0 animate-fadeIn animation-delay-300">
               Dr. M. Ram Prabhu and his team provide world-class plastic surgery procedures with a focus on natural results and patient satisfaction.
             </p>
             {/* Social Media Section */}

@@ -13,7 +13,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 }) => {
   return (
     <div 
-      className="relative bg-gray-900 py-24 md:py-32"
+      className="relative bg-gray-900 pt-28 pb-20 md:pt-32 md:pb-28"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.9)), url(${backgroundImage})`,
         backgroundSize: 'cover',

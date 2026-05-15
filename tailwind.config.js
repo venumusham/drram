@@ -1,8 +1,28 @@
+import typography from '@tailwindcss/typography';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme('colors.primary.700'),
+              fontWeight: '500',
+              textDecoration: 'none',
+              '&:hover': {
+                color: theme('colors.primary.800'),
+                textDecoration: 'underline',
+              },
+            },
+            'h2, h3, h4': {
+              scrollMarginTop: '7rem',
+            },
+          },
+        },
+      }),
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['Playfair Display', 'Georgia', 'serif'],
@@ -94,5 +114,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [typography],
 };

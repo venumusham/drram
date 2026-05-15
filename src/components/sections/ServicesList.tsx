@@ -44,7 +44,7 @@ const ServicesList: React.FC = () => {
         <div className="text-center mb-12">
           {/* Featured Services */}
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-600 to-primary-700 p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-900 to-primary-800 p-6 shadow-soft-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
               <div className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               <div className="relative">
                 <h3 className="text-xl font-bold text-white mb-3">Reconstructive Excellence</h3>
@@ -54,7 +54,7 @@ const ServicesList: React.FC = () => {
               </div>
             </div>
             
-            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-600 to-primary-700 p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-900 to-primary-800 p-6 shadow-soft-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
               <div className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               <div className="relative">
                 <h3 className="text-xl font-bold text-white mb-3">Advanced Rhinoplasty Solutions</h3>
@@ -64,7 +64,7 @@ const ServicesList: React.FC = () => {
               </div>
             </div>
             
-            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-600 to-primary-700 p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-accent-600 to-accent-700 p-6 shadow-soft-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
               <div className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               <div className="relative">
                 <h3 className="text-xl font-bold text-white mb-3">Laser Liposuction</h3>
@@ -81,7 +81,7 @@ const ServicesList: React.FC = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:scale-105"
+              className="bg-white rounded-2xl shadow-soft border border-gray-100 p-6 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1"
             >
               <div className="flex items-center justify-center w-10 h-10 bg-primary-100 rounded-lg mb-4">
                 <service.icon className="w-5 h-5 text-primary-600" />

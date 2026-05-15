@@ -41,7 +41,7 @@ const AffiliationsSection: React.FC = () => {
           {affiliations.map((affiliation, index) => (
             <div
               key={index}
-              className="min-w-[260px] max-w-xs bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center text-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 snap-center"
+              className="min-w-[260px] max-w-xs bg-white p-6 rounded-2xl shadow-soft flex flex-col items-center justify-center text-center hover:shadow-soft-lg transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 snap-center"
             >
               <div className="w-24 h-24 mb-4 flex items-center justify-center bg-primary-50 rounded-full overflow-hidden">
                 <img

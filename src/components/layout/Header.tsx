@@ -78,14 +78,15 @@ const Header: React.FC = () => {
                 Services
               </Link>
               <Link
-                to="/gallery"
-                className={`ml-6 text-sm font-medium hover:text-accent-400 transition-colors ${location.pathname === '/gallery'
+                to="/blog"
+                className={`ml-6 text-sm font-medium hover:text-accent-400 transition-colors ${location.pathname.startsWith('/blog')
                   ? activeLinkColor
                   : linkColor
                   }`}
               >
-                Gallery
+                Blog
               </Link>
+
               <Link
                 to="/faq"
                 className={`ml-6 text-sm font-medium hover:text-accent-400 transition-colors ${location.pathname === '/faq'
@@ -177,14 +178,15 @@ const Header: React.FC = () => {
                 Services
               </Link>
               <Link
-                to="/gallery"
-                className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname === '/gallery'
+                to="/blog"
+                className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname.startsWith('/blog')
                   ? 'text-primary-600'
                   : 'text-gray-800'
                   }`}
               >
-                Gallery
+                Blog
               </Link>
+
               <Link
                 to="/faq"
                 className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname === '/faq'
