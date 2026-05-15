@@ -5,7 +5,7 @@ import { Phone, MessageCircle, MapPin } from 'lucide-react';
 export const PHONE = '9949808628';
 export const PHONE_INTL = '+919949808628';
 export const WHATSAPP_INTL = '919949808628';
-export const MAPS_URL = 'https://www.google.com/maps/place/Dr.+Ramprabhu+Plastic+Surgery+Clinic/@17.4604023,78.3491344,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb91038ef40aef:0x4255a5cd5b7f505b!8m2!3d17.4604023!4d78.3517147!16s%2Fg%2F11ltg38zrr';
+export const MAPS_URL = 'https://maps.app.goo.gl/bSxwGm3f2zBu4fbi9';
 export const WHATSAPP_DEFAULT_MSG =
   'Hello Dr. Ram Prabhu, I would like to book a consultation. Please share available slots.';
 

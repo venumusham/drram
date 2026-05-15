@@ -9,17 +9,14 @@ const ClinicLocation: React.FC = () => {
         Our Location
       </h2>
 
-      <div className="mb-6 aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+      <div className="mb-6 rounded-lg overflow-hidden h-[400px]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.18241477785!2d78.3491344!3d17.4604023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91038ef40aef%3A0x4255a5cd5b7f505b!2sDr.%20Ramprabhu%20Plastic%20Surgery%20Clinic!5e0!3m2!1sen!2sin!4v1715760000000!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.985621181176!2d78.3517147!3d17.460402299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91038ef40aef%3A0x4255a5cd5b7f505b!2sDr.%20Ramprabhu%20Plastic%20Surgery%20Clinic!5e0!3m2!1sen!2sin!4v1778855170129!5m2!1sen!2sin"
+          className="w-full h-full border-0"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Clinic Location"
-          className="w-full h-full"
         ></iframe>
       </div>
 
