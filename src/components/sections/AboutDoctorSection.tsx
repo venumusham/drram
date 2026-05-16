@@ -1,114 +1,81 @@
 import React from 'react';
-import { Award, BookOpen, Stethoscope, Users } from 'lucide-react';
-import RamPrabhuImg from './ram.png'; // Import the image
+import { Link } from 'react-router-dom';
+import RamPrabhuImg from './ram.png';
+
+const tags = [
+  'Gynecomastia Specialist',
+  'VASER Liposuction',
+  'Rhinoplasty',
+  'Breast Surgery',
+  'Reconstructive',
+  'Diabetic Foot',
+];
+
+const affiliations = [
+  { n: 'NMC', l: 'Compliant', logo: '/images/affiliations/nmc.png' },
+  { n: 'TSMC', l: 'Registered', logo: '/images/affiliations/tsmc.png' },
+  { n: 'IAAPS', l: 'Member', logo: '/images/affiliations/iaaps.png' },
+  { n: 'APSI', l: 'Member', logo: '/images/affiliations/apsi.png' },
+];
+
 const AboutDoctorSection: React.FC = () => {
   return (
-    <section className="py-8 md:py-12 bg-gray-50">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="flex items-center justify-center">
-            <div className="h-px bg-accent-500 flex-grow max-w-[80px]"></div>
-            <h2 className="text-accent-600 font-semibold mx-3 text-sm uppercase tracking-wider">About the Doctor</h2>
-            <div className="h-px bg-accent-500 flex-grow max-w-[80px]"></div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-16 items-start">
-          {/* First Column: Image */}
-          <div className="lg:col-span-4 lg:-ml-8">
-            <div className="relative lg:pr-8">
-              <div className="rounded-2xl shadow-soft-lg overflow-hidden transform translate-y-0 translate-x-4 relative z-10 transition-transform duration-500 hover:-translate-y-2">
-              <img 
-                src={RamPrabhuImg} 
-                alt="Dr. M. Ram Prabhu" 
-                  className="w-full h-auto object-cover"
-              />
-            </div>
-            <div className="absolute top-0 left-0 w-full h-full border-2 border-accent-400 rounded-2xl -z-0 translate-x-1 translate-y-1"></div>
-            
-            <div className="absolute -bottom-6 -right-2 md:-right-6 glassmorphism rounded-xl shadow-soft-lg p-4 z-20 max-w-xs transition-transform duration-500 hover:scale-105">
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
-                    <Award className="w-6 h-6" />
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-sm font-medium text-gray-900">
-                    16+ Years of Excellence
-                  </h4>
-                  <p className="text-xs text-gray-500">
-                    DNB (Super Speciality) Plastic Surgery
-                  </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Second Column: Introduction */}
-          <div className="lg:col-span-5">
-            <h3 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6 mt-8 lg:mt-0">
-              Meet Dr. M. Ram Prabhu, Your Expert Aesthetics & Plastic Surgeon
-            </h3>
-            
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Dr. M. Ram Prabhu is a highly skilled Aesthetics and Plastic Surgeon with 16+ years of experience, specializing in Gynecomastia, Liposuction, Rhinoplasty, and Aesthetic Surgery. He earned his MBBS from Dr. NTR University of Health Sciences, Andhra Pradesh in 2009, followed by DNB (Super Speciality) in Plastic Surgery from the National Board of Examinations, New Delhi in 2019. He is registered with the Telangana State Medical Council (License No. 66931) and is a member of IAAPS and APSI.
+    <section className="bg-white py-20">
+      <div className="container mx-auto px-4">
+        <div className="grid items-center gap-10 md:grid-cols-2 lg:gap-16">
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent-600">
+              About the Doctor
             </p>
-            
-            <a 
-              href="https://www.linkedin.com/in/ramprabhu-musham-78b2ba20/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors"
+            <h2 className="mb-5 font-serif text-[clamp(1.8rem,4vw,2.65rem)] font-normal leading-tight text-neutral-950">
+              Meet Dr. M. Ram Prabhu
+            </h2>
+            <p className="mb-4 text-[15px] leading-8 text-neutral-600">
+              Dr. M. Ram Prabhu is a board-certified Plastic &amp; Cosmetic Surgeon with 16+ years of experience, specialising in Gynecomastia, Liposuction, Rhinoplasty, and Aesthetic Surgery.
+            </p>
+            <p className="mb-7 text-[15px] leading-8 text-neutral-600">
+              He earned his MBBS from Dr. NTR University of Health Sciences (2009), followed by DNB (Super Speciality) in Plastic Surgery from the National Board of Examinations, New Delhi (2019). He is registered with the Telangana State Medical Council (Licence No. 66931) and is a member of IAAPS and APSI.
+            </p>
+            <div className="mb-7 flex flex-wrap gap-3">
+              {tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-[#e8ddc8] bg-[#f5f0e8] px-3 py-1 text-xs text-[#8a6a2a]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 rounded-lg bg-neutral-950 px-6 py-3 text-sm text-[#f5f0e8] transition hover:bg-neutral-800"
             >
-              Read Full Biography
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
+              View Full Profile &amp; Credentials
+              <span aria-hidden="true">→</span>
+            </Link>
           </div>
 
-          {/* Third Column: Specializations and Buttons */}
-          <div className="lg:col-span-3">
-            <div className="grid grid-cols-1 gap-6">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <Stethoscope className="w-5 h-5 text-primary-600" />
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-gray-900 font-medium">Specialized Procedures</h4>
-                  <p className="text-sm text-gray-600">Expert in Gynecomastia & Liposuction</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <BookOpen className="w-5 h-5 text-primary-600" />
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-gray-900 font-medium">Medical Registration</h4>
-                  <p className="text-sm text-gray-600">License No. 66931</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <Award className="w-5 h-5 text-primary-600" />
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-gray-900 font-medium">Advanced Training</h4>
-                  <p className="text-sm text-gray-600">DNB (Super Speciality) Plastic Surgery, NBE 2019</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <Users className="w-5 h-5 text-primary-600" />
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-gray-900 font-medium">Patient-Centered</h4>
-                  <p className="text-sm text-gray-600">Compassionate, holistic care</p>
+          <div className="relative">
+            <div className="overflow-hidden rounded-2xl border border-[#ede8de] bg-white shadow-soft">
+              <img
+                src={RamPrabhuImg}
+                alt="Dr. M. Ram Prabhu - Plastic & Cosmetic Surgeon, Kondapur Hyderabad"
+                className="block aspect-[4/5] w-full object-cover"
+              />
+              <div className="border-t border-[#ede8de] bg-[#fbf8f1] px-4 py-5">
+                <p className="mb-4 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-accent-700">
+                  Professional affiliations
+                </p>
+                <div className="grid grid-cols-4 gap-3">
+                {affiliations.map((item) => (
+                  <div key={item.n} className="text-center">
+                    <div className="mb-2 flex h-14 items-center justify-center rounded-lg border border-[#eadfce] bg-white px-2">
+                      <img src={item.logo} alt={`${item.n} affiliation`} className="max-h-9 max-w-full object-contain" />
+                    </div>
+                    <div className="text-xs font-semibold text-neutral-900">{item.n}</div>
+                    <div className="text-[10px] text-neutral-500">{item.l}</div>
+                  </div>
+                ))}
                 </div>
               </div>
             </div>

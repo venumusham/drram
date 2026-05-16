@@ -1,97 +1,144 @@
 import React, { useState } from 'react';
-import { ChevronRight } from 'lucide-react';
-import Button from '../ui/Button';
-import { serviceHighlights } from '../../data/services';
+import { Link } from 'react-router-dom';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
+
+const services = [
+  {
+    tab: 'Face',
+    img: '/images/services/service-face-plastic.png',
+    title: 'Facial Aesthetics',
+    desc: 'Refined facial procedures planned around proportion, natural expression, and long-term harmony.',
+    procedures: ['Facelift Surgery', 'Rhinoplasty', 'Blepharoplasty', 'Otoplasty', 'Chin Surgery', 'Facial Fat Grafting'],
+    link: '/services/facelift',
+    accent: '#1a3a5c',
+  },
+  {
+    tab: 'Body',
+    img: '/images/services/service-body-plastic.png',
+    title: 'Body Contouring',
+    desc: 'Advanced contouring for chest, abdomen, arms, and body shape with a focus on definition and recovery.',
+    procedures: ['Liposuction (VASER)', 'Tummy Tuck', 'Body Contouring', 'Gynecomastia', 'Lipoma Removal', 'Arm Lift'],
+    link: '/services/body-contouring',
+    accent: '#1a5c3a',
+  },
+  {
+    tab: 'Breast',
+    img: '/images/services/service-breast-plastic.png',
+    title: 'Breast Procedures',
+    desc: 'Personalised breast surgery with balanced proportions, careful planning, and natural-looking outcomes.',
+    procedures: ['Breast Augmentation', 'Breast Reduction', 'Breast Lift', 'Implant Revision', 'Gynecomastia', 'Fat Grafting'],
+    link: '/services/breast-procedures',
+    accent: '#5c1a3a',
+  },
+  {
+    tab: 'Reconstructive',
+    img: '/images/services/service-reconstructive-plastic.png',
+    title: 'Reconstructive Care',
+    desc: 'Restoring form and function after injury, illness, scars, wounds, and congenital conditions.',
+    procedures: ['Scar Revision', 'Diabetic Foot Care', 'Skin Grafting', 'Earlobe Repair', 'Wound Management', 'Circumcision'],
+    link: '/services/reconstructive',
+    accent: '#5c3a1a',
+  },
+];
 
 const ServicesHighlightSection: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState('face');
+  const [activeService, setActiveService] = useState(0);
+  const selected = services[activeService];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="bg-[#f8f6f1] py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="flex items-center justify-center mb-4">
-            <div className="h-px bg-accent-500 flex-grow max-w-[80px]"></div>
-            <h2 className="text-accent-600 font-semibold mx-3 text-sm uppercase tracking-wider">Our Services</h2>
-            <div className="h-px bg-accent-500 flex-grow max-w-[80px]"></div>
+        <div className="mb-10 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent-600">
+              Our Services
+            </p>
+            <h2 className="font-serif text-[clamp(1.9rem,4vw,2.8rem)] font-normal leading-tight text-neutral-950">
+              Comprehensive Plastic Surgery Solutions
+            </h2>
           </div>
-          
-          <h3 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Comprehensive Plastic Surgery Solutions
-          </h3>
-          
-          <p className="text-gray-700 leading-relaxed">
-            Dr. M. Ram Prabhu offers a wide range of plastic surgery procedures with a focus on achieving natural-looking results while ensuring patient safety and satisfaction.
+          <p className="max-w-2xl text-[15px] leading-7 text-neutral-600 lg:justify-self-end">
+            Explore common aesthetic and reconstructive procedures by treatment area. Each plan begins with an examination, discussion of realistic outcomes, and a recovery pathway tailored to your goals.
           </p>
         </div>
-        
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
-          {Object.keys(serviceHighlights).map((category) => (
-            <button
-              key={category}
-              className={`px-6 py-3 rounded-full text-sm font-medium transition-colors duration-200 ${
-                activeCategory === category
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-              onClick={() => setActiveCategory(category)}
-            >
-              {serviceHighlights[category].label}
-            </button>
-          ))}
-        </div>
-        
-        {/* Service Cards */}
-        <div className="grid grid-cols-1 gap-8">
-          {serviceHighlights[activeCategory].services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-2xl overflow-hidden shadow-soft border border-gray-100 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1"
-            >
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="h-full w-full flex items-center justify-center p-6 lg:p-10">
-                  <div className="w-full h-full mx-auto overflow-hidden rounded-xl shadow-soft">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                      style={{ minHeight: 300 }}
-                    />
+
+        <div className="grid gap-6 lg:grid-cols-[300px_minmax(0,1fr)]">
+          <div className="grid grid-cols-2 gap-3 lg:grid-cols-1">
+            {services.map((service, index) => (
+              <button
+                key={service.tab}
+                onClick={() => setActiveService(index)}
+                className={`group overflow-hidden rounded-xl border bg-white text-left transition ${
+                  activeService === index
+                    ? 'border-accent-500 shadow-soft'
+                    : 'border-[#eadfce] hover:border-accent-300'
+                }`}
+              >
+                <div className="flex items-center gap-3 p-3">
+                  <img
+                    src={service.img}
+                    alt=""
+                    className="h-14 w-16 flex-shrink-0 rounded-lg object-cover"
+                  />
+                  <div className="min-w-0">
+                    <div className="text-sm font-semibold text-neutral-950">{service.tab}</div>
+                    <div className="truncate text-xs text-neutral-500">{service.title}</div>
                   </div>
                 </div>
-                <div className="p-8">
-                  <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">
-                    {service.title}
+              </button>
+            ))}
+          </div>
+
+          <div className="overflow-hidden rounded-2xl border border-[#eadfce] bg-white shadow-soft">
+            <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
+              <div className="relative min-h-[260px] overflow-hidden lg:min-h-[520px]">
+                <img
+                  src={selected.img}
+                  alt={selected.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5">
+                  <span
+                    className="rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white"
+                    style={{ background: selected.accent }}
+                  >
+                    {selected.tab}
+                  </span>
+                  <h3 className="mt-3 font-serif text-3xl font-normal leading-tight text-white md:text-4xl">
+                    {selected.title}
                   </h3>
-                  <p className="text-gray-700 mb-6">
-                    {service.description}
-                  </p>
-                  
-                  {service.procedures && (
-                    <div className="mb-8">
-                      <h4 className="text-lg font-semibold text-gray-900 mb-4">Procedures Include:</h4>
-                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        {service.procedures.map((procedure, idx) => (
-                          <li key={idx} className="flex items-center text-gray-700">
-                            <ChevronRight className="w-4 h-4 text-primary-600 mr-2" />
-                            {procedure}
-                          </li>
-                        ))}
-                      </ul>
+                </div>
+              </div>
+
+              <div className="p-6 md:p-10">
+                <p className="mb-7 text-[15px] leading-8 text-neutral-600">{selected.desc}</p>
+                <div className="mb-8 grid gap-3 sm:grid-cols-2">
+                  {selected.procedures.map((procedure) => (
+                    <div key={procedure} className="flex items-start gap-3 rounded-lg bg-[#fbf8f1] p-3 text-sm text-neutral-700">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-600" />
+                      <span>{procedure}</span>
                     </div>
-                  )}
-                  
-                  <Button 
-                    href={`/services/${service.id}`}
-                    variant="primary"
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    to={selected.link}
+                    className="inline-flex items-center gap-2 rounded-lg bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
                   >
                     Learn More
-                  </Button>
+                    <ArrowRight size={16} />
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 rounded-lg border border-[#d9c9ad] bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:border-accent-400"
+                  >
+                    Ask About This
+                  </Link>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

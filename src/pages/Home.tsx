@@ -2,12 +2,11 @@ import React from 'react';
 import SEO from '../components/SEO';
 import HeroSection from '../components/sections/HeroSection';
 import AboutDoctorSection from '../components/sections/AboutDoctorSection';
-import AffiliationsSection from '../components/sections/AffiliationsSection';
 import ServicesHighlightSection from '../components/sections/ServicesHighlightSection';
 import TestimonialsSection from '../components/sections/TestimonialsSection';
 import CTASection from '../components/sections/CTASection';
-import StatisticsSection from '../components/sections/StatisticsSection';
 import YouTubeSection from '../components/sections/YouTubeSection';
+import TrustCredentialsSection from '../components/sections/TrustCredentialsSection';
 
 const HomePage: React.FC = () => {
   // Structured data for business information
@@ -46,16 +45,27 @@ const HomePage: React.FC = () => {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessStructuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          ...businessStructuredData,
+          '@type': 'Physician',
+          name: 'Dr. M. Ram Prabhu',
+          description: 'Board-certified Plastic & Cosmetic Surgeon in Hyderabad with 16+ years experience and 6,000+ procedures',
+          image: 'https://drramprabhu.com/assets/ram-rPt4BUdS.png',
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '5.0',
+            reviewCount: '140',
+            bestRating: '5'
+          }
+        }) }}
       />
       <div className="HomePage">
         <HeroSection />
+        <TrustCredentialsSection />
         <AboutDoctorSection />
-        <AffiliationsSection />
-        <ServicesHighlightSection />
-        <StatisticsSection />
-        <TestimonialsSection />
         <YouTubeSection />
+        <TestimonialsSection />
+        <ServicesHighlightSection />
         <CTASection />
       </div>
     </>

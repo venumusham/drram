@@ -38,7 +38,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+      className={`fixed w-full z-50 transition-all duration-300 ${isMenuOpen ? 'bg-[#0d0d14]/95 py-3 shadow-xl backdrop-blur-md' : isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
         }`}
     >
       <div className="container mx-auto px-4">
@@ -148,11 +148,11 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden pt-4 pb-6 animate-fadeIn bg-white rounded-lg mt-2 shadow-lg">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden mt-3 overflow-hidden rounded-xl border border-accent-200/60 bg-white shadow-2xl animate-fadeIn">
+            <div className="flex flex-col px-4 py-4">
               <Link
                 to="/"
-                className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname === '/'
+                className={`rounded-lg px-3 py-2.5 text-base font-medium hover:bg-accent-50 hover:text-accent-500 transition-colors ${location.pathname === '/'
                   ? 'text-primary-600'
                   : 'text-gray-800'
                   }`}
@@ -161,7 +161,7 @@ const Header: React.FC = () => {
               </Link>
               <Link
                 to="/about"
-                className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname === '/about'
+                className={`rounded-lg px-3 py-2.5 text-base font-medium hover:bg-accent-50 hover:text-accent-500 transition-colors ${location.pathname === '/about'
                   ? 'text-primary-600'
                   : 'text-gray-800'
                   }`}
@@ -170,7 +170,7 @@ const Header: React.FC = () => {
               </Link>
               <Link
                 to="/services"
-                className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname === '/services'
+                className={`rounded-lg px-3 py-2.5 text-base font-medium hover:bg-accent-50 hover:text-accent-500 transition-colors ${location.pathname === '/services'
                   ? 'text-primary-600'
                   : 'text-gray-800'
                   }`}
@@ -179,7 +179,7 @@ const Header: React.FC = () => {
               </Link>
               <Link
                 to="/blog"
-                className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname.startsWith('/blog')
+                className={`rounded-lg px-3 py-2.5 text-base font-medium hover:bg-accent-50 hover:text-accent-500 transition-colors ${location.pathname.startsWith('/blog')
                   ? 'text-primary-600'
                   : 'text-gray-800'
                   }`}
@@ -189,7 +189,7 @@ const Header: React.FC = () => {
 
               <Link
                 to="/faq"
-                className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname === '/faq'
+                className={`rounded-lg px-3 py-2.5 text-base font-medium hover:bg-accent-50 hover:text-accent-500 transition-colors ${location.pathname === '/faq'
                   ? 'text-primary-600'
                   : 'text-gray-800'
                   }`}
@@ -198,40 +198,39 @@ const Header: React.FC = () => {
               </Link>
               <Link
                 to="/contact"
-                className={`text-base font-medium hover:text-accent-400 transition-colors ${location.pathname === '/contact'
+                className={`rounded-lg px-3 py-2.5 text-base font-medium hover:bg-accent-50 hover:text-accent-500 transition-colors ${location.pathname === '/contact'
                   ? 'text-primary-600'
                   : 'text-gray-800'
                   }`}
               >
                 Contact
               </Link>
-              <div className="pt-4 flex flex-col space-y-2">
+              <div className="mt-3 grid grid-cols-2 gap-2 border-t border-gray-100 pt-4">
                 <a
                   href="tel:9949808628"
-                  className="flex items-center text-primary-600 hover:text-primary-700 transition-colors"
+                  className="flex items-center justify-center rounded-lg bg-primary-50 px-3 py-2.5 text-primary-700 hover:text-primary-800 transition-colors"
                 >
-                  <Phone size={20} className="mr-1" />
+                  <Phone size={18} className="mr-1" />
                   <span className="text-sm">9949808628</span>
                 </a>
                 <a
                   href="https://wa.me/9949808628"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-green-600 hover:text-green-700 transition-colors"
+                  className="flex items-center justify-center rounded-lg bg-green-50 px-3 py-2.5 text-green-700 hover:text-green-800 transition-colors"
                   aria-label="WhatsApp"
                 >
                   <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mr-1" />
                   <span className="text-sm">WhatsApp</span>
                 </a>
               </div>
-              <Button
-                icon={<Calendar size={16} />}
-                href="/contact"
-                fullWidth
-                variant="primary"
+              <Link
+                to="/contact"
+                className="mt-3 flex w-full items-center justify-center rounded-lg bg-accent-500 px-4 py-3 text-sm font-semibold text-black transition-colors hover:bg-accent-400"
               >
+                <Calendar size={16} className="mr-2" />
                 Book Consultation
-              </Button>
+              </Link>
             </div>
           </div>
         )}

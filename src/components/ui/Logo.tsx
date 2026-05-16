@@ -20,7 +20,7 @@ const Logo: React.FC<LogoProps> = ({ inverted = false }) => {
         <div
           className={`font-serif font-bold text-xl leading-none ${textColor}`}
         >
-          Dr Ramprabhu
+          Dr Ramprabhu Clinic
         </div>
       </div>
     </div>
