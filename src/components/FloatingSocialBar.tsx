@@ -20,35 +20,50 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
   const waUrl = `https://wa.me/${WHATSAPP_INTL}?text=${encodeURIComponent(whatsappMessage)}`;
   return (
     <>
-      {/* Right-side floating buttons (mobile only) */}
-      <div className="fixed right-4 bottom-20 z-50 flex flex-col gap-3 md:hidden">
+      {/* Right-side floating buttons */}
+      <div className="fixed bottom-20 right-4 z-50 flex flex-col gap-3 md:bottom-auto md:top-1/2 md:-translate-y-1/2">
         <a
           href={`tel:${PHONE_INTL}`}
-          className="bg-primary-700 p-3 rounded-full shadow-lg text-white"
+          className="group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full bg-[#111118]/90 text-white shadow-xl shadow-black/20 ring-1 ring-white/10 backdrop-blur transition-all hover:bg-accent-500 hover:text-black md:hover:w-36"
           aria-label="Call Dr. Ram Prabhu"
           data-conversion="call_floating"
         >
-          <Phone size={20} />
+          <span className="w-0 whitespace-nowrap text-sm font-semibold opacity-0 transition-all md:group-hover:w-20 md:group-hover:opacity-100">
+            Call
+          </span>
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+            <Phone size={20} />
+          </span>
         </a>
         <a
           href={waUrl}
-          className="bg-green-500 p-3 rounded-full shadow-lg text-white"
+          className="group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full bg-green-500 text-white shadow-xl shadow-black/20 transition-all hover:bg-green-400 hover:text-black md:hover:w-40"
           aria-label="WhatsApp Dr. Ram Prabhu"
           target="_blank"
           rel="noopener noreferrer"
           data-conversion="whatsapp_floating"
         >
-          <MessageCircle size={20} />
+          <span className="w-0 whitespace-nowrap text-sm font-semibold opacity-0 transition-all md:group-hover:w-24 md:group-hover:opacity-100">
+            WhatsApp
+          </span>
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+            <MessageCircle size={20} />
+          </span>
         </a>
         <a
           href={MAPS_URL}
-          className="bg-yellow-500 p-3 rounded-full shadow-lg text-white"
+          className="group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full bg-[#c9a96e] text-black shadow-xl shadow-black/20 transition-all hover:bg-accent-400 md:hover:w-40"
           aria-label="Directions to clinic"
           target="_blank"
           rel="noopener noreferrer"
           data-conversion="maps_floating"
         >
-          <MapPin size={20} />
+          <span className="w-0 whitespace-nowrap text-sm font-semibold opacity-0 transition-all md:group-hover:w-24 md:group-hover:opacity-100">
+            Directions
+          </span>
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+            <MapPin size={20} />
+          </span>
         </a>
       </div>
 
