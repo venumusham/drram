@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
@@ -62,22 +62,65 @@ const SEO: React.FC<SEOProps> = ({
   // lives in index.html (single source of truth). Per-page Schema here is
   // intentionally minimal to avoid conflicting signals (rating/hours/geo).
   // Add page-specific MedicalProcedure schema in individual pages instead.
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: title,
-    description: description,
-    url: url,
-    image: image,
-    isPartOf: {
-      '@type': 'WebSite',
-      '@id': 'https://drramprabhu.com/#website',
-      name: siteName,
-      url: 'https://drramprabhu.com/'
-    },
-    about: { '@id': 'https://drramprabhu.com/#clinic' },
-    primaryImageOfPage: image
-  };
+  const structuredData = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: title,
+      description: description,
+      url: url,
+      image: image,
+      isPartOf: {
+        '@type': 'WebSite',
+        '@id': 'https://drramprabhu.com/#website',
+        name: siteName,
+        url: 'https://drramprabhu.com/'
+      },
+      about: { '@id': 'https://drramprabhu.com/#clinic' },
+      primaryImageOfPage: image
+    }),
+    [description, image, title, url]
+  );
+
+  useEffect(() => {
+    const upsertMeta = (selector: string, attrs: Record<string, string>) => {
+      const tagName = selector.startsWith('link') ? 'link' : 'meta';
+      let el = document.head.querySelector(selector) as HTMLMetaElement | HTMLLinkElement | null;
+
+      if (!el) {
+        el = document.createElement(tagName) as HTMLMetaElement | HTMLLinkElement;
+        Object.entries(attrs).forEach(([key, value]) => el?.setAttribute(key, value));
+        document.head.appendChild(el);
+        return;
+      }
+
+      Object.entries(attrs).forEach(([key, value]) => el?.setAttribute(key, value));
+    };
+
+    document.title = title;
+    upsertMeta('meta[name="description"]', { name: 'description', content: description });
+    upsertMeta('meta[name="keywords"]', { name: 'keywords', content: allKeywords });
+    upsertMeta('link[rel="canonical"]', { rel: 'canonical', href: url });
+    upsertMeta('meta[property="og:title"]', { property: 'og:title', content: title });
+    upsertMeta('meta[property="og:description"]', { property: 'og:description', content: description });
+    upsertMeta('meta[property="og:type"]', { property: 'og:type', content: type });
+    upsertMeta('meta[property="og:url"]', { property: 'og:url', content: url });
+    upsertMeta('meta[property="og:image"]', { property: 'og:image', content: image });
+    upsertMeta('meta[property="og:site_name"]', { property: 'og:site_name', content: siteName });
+    upsertMeta('meta[name="twitter:card"]', { name: 'twitter:card', content: 'summary_large_image' });
+    upsertMeta('meta[name="twitter:title"]', { name: 'twitter:title', content: title });
+    upsertMeta('meta[name="twitter:description"]', { name: 'twitter:description', content: description });
+    upsertMeta('meta[name="twitter:image"]', { name: 'twitter:image', content: image });
+
+    let schema = document.head.querySelector('script[data-route-webpage-schema="true"]') as HTMLScriptElement | null;
+    if (!schema) {
+      schema = document.createElement('script');
+      schema.type = 'application/ld+json';
+      schema.dataset.routeWebpageSchema = 'true';
+      document.head.appendChild(schema);
+    }
+    schema.textContent = JSON.stringify(structuredData);
+  }, [allKeywords, description, image, structuredData, title, type, url]);
 
   return (
     <Helmet>

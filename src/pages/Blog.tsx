@@ -8,6 +8,7 @@ const BlogIndex: React.FC = () => {
   const posts = [...BLOG_POSTS].sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
+  const absoluteImage = (image: string) => (image.startsWith('http') ? image : `https://drramprabhu.com${image}`);
 
   const blogSchema = {
     '@context': 'https://schema.org',
@@ -25,7 +26,7 @@ const BlogIndex: React.FC = () => {
       url: `https://drramprabhu.com/blog/${p.slug}`,
       datePublished: p.publishedAt,
       author: { '@type': 'Person', name: p.author },
-      image: `https://drramprabhu.com${p.image}`,
+      image: absoluteImage(p.image),
     })),
   };
 

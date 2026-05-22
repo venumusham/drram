@@ -117,6 +117,65 @@ const BlogMarkdownPost: React.FC = () => {
           },
         ]
       : [];
+  const keloidSeoSchemas =
+    meta.slug === 'keloid-scar-treatment-surgery-hyderabad'
+      ? [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'MedicalWebPage',
+            '@id': `${SITE}/blog/${meta.slug}#medicalwebpage`,
+            url: `${SITE}/blog/${meta.slug}`,
+            name: meta.title,
+            description: meta.excerpt,
+            about: {
+              '@type': 'MedicalCondition',
+              name: 'Keloid',
+              alternateName: 'Raised scar',
+            },
+            reviewedBy: {
+              '@type': 'Physician',
+              name: 'Dr. M. Ram Prabhu',
+              medicalSpecialty: 'Plastic Surgery',
+              url: `${SITE}/about`,
+            },
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            '@id': `${SITE}/blog/${meta.slug}#faq`,
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can keloids be permanently cured?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text:
+                    'Some keloids remain controlled long term, but recurrence is possible. Combination treatment gives better control than excision alone.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are steroid injections enough for keloids?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text:
+                    'Steroid injections may help small or active keloids. Larger or resistant keloids may need combined treatment such as surgery, pressure therapy, silicone gel, and follow-up scar modulation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can keloids happen after acne or piercing?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text:
+                    'Yes. Ear piercings, acne, burns, surgery, and minor injuries can trigger keloids in prone individuals.',
+                },
+              },
+            ],
+          },
+        ]
+      : [];
+  const specialSeoSchemas = [...gynecomastiaSeoSchemas, ...keloidSeoSchemas];
 
   return (
     <BlogArticleLayout
@@ -143,7 +202,7 @@ const BlogMarkdownPost: React.FC = () => {
       {videoSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
       )}
-      {gynecomastiaSeoSchemas.map((schema) => (
+      {specialSeoSchemas.map((schema) => (
         <script
           key={schema['@id']}
           type="application/ld+json"
