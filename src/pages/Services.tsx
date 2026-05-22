@@ -3,6 +3,7 @@ import ServicesList from '../components/sections/ServicesList';
 import ServiceProcess from '../components/sections/ServiceProcess';
 import FAQShort from '../components/sections/FAQShort';
 import CTASection from '../components/sections/CTASection';
+import AppointmentForm from '../components/sections/AppointmentForm';
 import SEO from '../components/SEO';
 
 const ServicesPage: React.FC = () => {
@@ -40,6 +41,21 @@ const ServicesPage: React.FC = () => {
 
         <div className="container mx-auto px-4 py-12">
           <ServicesList />
+          <section className="py-12" aria-labelledby="slot-booking-title">
+            <div className="mb-8 text-center">
+              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent-600">Check availability</p>
+              <h2 id="slot-booking-title" className="text-3xl font-serif font-bold text-gray-900">
+                Book a Slot via WhatsApp
+              </h2>
+              <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-gray-600">
+                Select your procedure and preferred consultation time. WhatsApp opens with all details filled in, so the
+                clinic can confirm quickly.
+              </p>
+            </div>
+            <div className="mx-auto max-w-4xl">
+              <AppointmentForm />
+            </div>
+          </section>
           <ServiceProcess />
           <FAQShort />
           <CTASection />

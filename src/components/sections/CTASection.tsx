@@ -15,7 +15,7 @@ const CTASection: React.FC = () => {
       </p>
       <div className="flex flex-wrap justify-center gap-3">
         <Link
-          to="/contact"
+          to="/book-appointment"
           className="rounded-lg bg-accent-500 px-8 py-4 text-sm font-semibold text-black transition hover:bg-accent-400"
         >
           Book Free Consultation

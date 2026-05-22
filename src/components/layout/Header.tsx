@@ -127,7 +127,7 @@ const Header: React.FC = () => {
               </a>
               <Button
                 icon={<Calendar size={16} />}
-                href="/contact"
+                href="/book-appointment"
                 variant={isScrolled ? "primary" : "outline"}
                 className={!isScrolled ? "border-white text-white hover:bg-white/10" : ""}
               >
@@ -225,7 +225,7 @@ const Header: React.FC = () => {
                 </a>
               </div>
               <Link
-                to="/contact"
+                to="/book-appointment"
                 className="mt-3 flex w-full items-center justify-center rounded-lg bg-accent-500 px-4 py-3 text-sm font-semibold text-black transition-colors hover:bg-accent-400"
               >
                 <Calendar size={16} className="mr-2" />

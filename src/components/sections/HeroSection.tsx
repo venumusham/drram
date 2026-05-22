@@ -35,7 +35,7 @@ const slides = [
     imagePosition: 'center center',
     mobileImagePosition: '67% center',
     primary: 'Book Free Consultation',
-    primaryHref: '/contact',
+    primaryHref: '/book-appointment',
     secondary: 'Explore Procedures',
     secondaryHref: '/services',
   },
@@ -64,7 +64,7 @@ const slides = [
     primaryHref: 'https://share.google/jmiDUr3EofEfv2aZv',
     externalPrimary: true,
     secondary: 'Book Consultation',
-    secondaryHref: '/contact',
+    secondaryHref: '/book-appointment',
   },
   {
     navLabel: 'Videos',
@@ -90,7 +90,7 @@ const slides = [
     primary: 'Meet the Doctor',
     primaryHref: '/about',
     secondary: 'Contact Clinic',
-    secondaryHref: '/contact',
+    secondaryHref: '/book-appointment',
   },
 ];
 
