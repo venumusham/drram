@@ -31,14 +31,10 @@ export interface PublishSlotPayload {
   consultation_type?: string;
 }
 
-const headers = SUPABASE_ANON_KEY.startsWith('sb_publishable_')
-  ? {
-      apikey: SUPABASE_ANON_KEY,
-    }
-  : {
-      apikey: SUPABASE_ANON_KEY,
-      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-    };
+const headers = {
+  apikey: SUPABASE_ANON_KEY,
+  Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+};
 
 export async function fetchAvailableSlots(slotDate: string): Promise<AppointmentSlot[]> {
   if (!slotDate) return [];
