@@ -313,9 +313,9 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
       setSubmitState('idle');
       setStatusMessage('Slot reserved. WhatsApp has opened with the confirmation details.');
       refreshAvailability();
-    } catch {
+    } catch (error) {
       setSubmitState('error');
-      setStatusMessage('This slot could not be booked. It may have just been taken. Please choose another slot.');
+      setStatusMessage(error instanceof Error ? error.message : 'This slot could not be booked. Please choose another slot.');
     }
   };
 

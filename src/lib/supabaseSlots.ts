@@ -31,10 +31,14 @@ export interface PublishSlotPayload {
   consultation_type?: string;
 }
 
-const headers = {
-  apikey: SUPABASE_ANON_KEY,
-  Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-};
+const headers = SUPABASE_ANON_KEY.startsWith('sb_publishable_')
+  ? {
+      apikey: SUPABASE_ANON_KEY,
+    }
+  : {
+      apikey: SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+    };
 
 export async function fetchAvailableSlots(slotDate: string): Promise<AppointmentSlot[]> {
   if (!slotDate) return [];
@@ -105,7 +109,18 @@ export async function bookAppointmentSlot(payload: SlotBookingPayload): Promise<
   });
 
   if (!response.ok) {
-    throw new Error('Unable to book this slot');
+    let detail = '';
+    try {
+      detail = await response.text();
+    } catch {
+      detail = '';
+    }
+
+    if (response.status === 401 || response.status === 403) {
+      throw new Error('Booking is blocked by Supabase permissions. Please check the appointment_slots RLS update policy.');
+    }
+
+    throw new Error(detail || 'Unable to book this slot');
   }
 }
 
