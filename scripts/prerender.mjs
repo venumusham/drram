@@ -53,6 +53,39 @@ const ROUTES = [
   '/medical-tourism-india',
   // Blog (Step 7)
   '/blog',
+  '/blog/achilles-tear-child-heel-injury-hyderabad',
+  '/blog/breast-augmentation-natural-results-safety-hyderabad',
+  '/blog/sebaceous-cyst-minimal-scar-removal-hyderabad',
+  '/blog/spongy-bug-injury-skin-infection-hyderabad',
+  '/blog/male-chest-contouring-minimal-scar-hyderabad',
+  '/blog/breast-reduction-surgery-telugu-hyderabad',
+  '/blog/breast-lift-surgery-telugu-hyderabad',
+  '/blog/breast-augmentation-surgery-telugu-hyderabad',
+  '/blog/dr-ramprabhu-plastic-surgery-clinic-consultation',
+  '/blog/breast-surgery-types-dr-ramprabhu-hyderabad',
+  '/blog/plastic-surgery-clinic-july-2025-short',
+  '/blog/gynecomastia-myths-hyderabad',
+  '/blog/gynecomastia-short-explainer-hyderabad',
+  '/blog/wrist-swelling-tenosynovitis-ganglion-cyst-hyderabad',
+  '/blog/forehead-av-malformation-not-lipoma-hyderabad',
+  '/blog/ganglion-cyst-surgery-gold-standard-hyderabad',
+  '/blog/hair-transplant-prerequisite-medical-therapy-hyderabad',
+  '/blog/skin-glue-deep-wounds-suturing-hyderabad',
+  '/blog/ingrown-toenail-pain-pus-treatment-hyderabad',
+  '/blog/av-fistula-dialysis-access-hyderabad',
+  '/blog/gynecomastia-surgery-hyderabad',
+  '/blog/sebaceous-cyst-removal-treatment-hyderabad',
+  '/blog/breast-surgery-augmentation-reduction-lift-hyderabad',
+  '/blog/what-is-plastic-surgery-reconstructive-cosmetic-hyderabad',
+  '/blog/diabetic-foot-ulcer-amputation-prevention-hyderabad',
+  '/blog/glomus-tumour-nail-pain-treatment-hyderabad',
+  '/blog/keloid-scar-treatment-surgery-hyderabad',
+  '/blog/forehead-lump-removal-no-visible-scar-hyderabad',
+  '/blog/massage-after-gynecomastia-surgery-hyderabad',
+  '/blog/endoscopic-scarless-gynecomastia-surgery-hyderabad',
+  '/blog/gynecomastia-surgery-psychology-man-boobs-hyderabad',
+  '/blog/multiple-gynecomastia-surgeries-precision-planning-hyderabad',
+  '/blog/what-is-gynecomastia-male-breast-enlargement-hyderabad',
   '/blog/gynecomastia-surgery-cost-hyderabad-2026-guide',
   '/blog/gynecomastia-recovery-timeline-hyderabad',
   '/blog/laser-liposuction-in-hyderabad--a-guide-to-idea-clinics-kondapur',
@@ -127,8 +160,9 @@ try {
       await page.setUserAgent('Mozilla/5.0 (compatible; Prerender-DrRamprabhu/1.0)');
       await page.setViewport({ width: 1280, height: 800 });
 
-      // Navigate; wait for network idle so Helmet etc. settle
-      await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
+      // Navigate; do not wait for network idle because YouTube embeds and
+      // remote thumbnails can keep the home page "busy" indefinitely.
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
 
       // Wait until #root has actual children (React mounted)
       await page.waitForFunction(

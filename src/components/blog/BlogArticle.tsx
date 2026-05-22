@@ -110,7 +110,7 @@ export const BlogArticleLayout: React.FC<BlogArticleLayoutProps> = ({
 
         {lead ? <div className="bg-white pb-2">{lead}</div> : null}
 
-        <div className="max-w-3xl mx-auto px-4 py-10">
+        <div className="max-w-3xl mx-auto py-10 pl-4 pr-20 md:px-4">
           {children}
         </div>
       </article>
@@ -125,7 +125,7 @@ export const BlogHeroFigure: React.FC<{
   caption: string;
   fetchPriority?: 'high' | 'low';
 }> = ({ src, alt, caption, fetchPriority = 'low' }) => (
-  <div className="max-w-3xl mx-auto px-4 -mt-6 relative z-10">
+  <div className="max-w-3xl mx-auto -mt-6 relative z-10 pl-4 pr-20 md:px-4">
     <figure className="not-prose">
       <div className="rounded-xl overflow-hidden shadow-xl ring-1 ring-gray-200/90 bg-gray-100">
         <img
