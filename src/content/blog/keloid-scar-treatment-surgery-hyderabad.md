@@ -16,17 +16,17 @@ Symptoms may include:
 
 Removing a keloid without recurrence prevention can stimulate another keloid, sometimes larger than before. This is why treatment planning matters.
 
-Depending on site and severity, a plan may include steroid injections, pressure therapy, silicone gel, surgery, and post-operative scar modulation. Some cases need repeated follow-up rather than one appointment.
+Depending on site and severity, a plan may include steroid injections, pressure therapy, silicone gel, surgery, and post-operative scar modulation. Some cases need repeated follow-up rather than one appointment. For broader wound and scar planning, see [reconstructive surgery services](/services/reconstructive).
 
 ## When surgery helps
 
-Surgery is considered when the keloid is large, symptomatic, functionally troublesome, or cosmetically distressing. The incision and closure must be planned to reduce tension, and the aftercare plan is as important as the excision.
+Surgery is considered when the keloid is large, symptomatic, functionally troublesome, or cosmetically distressing. The incision and closure must be planned to reduce tension, and the aftercare plan is as important as the excision. This is especially important for ear-piercing keloids, where [earlobe repair and keloid excision](/earlobe-repair-kondapur) may need preventive aftercare.
 
 ## What patients should ask
 
-Before treatment, ask about recurrence risk, follow-up schedule, pressure or silicone therapy, and whether injections will be needed after removal.
+Before treatment, ask about recurrence risk, follow-up schedule, pressure or silicone therapy, and whether injections will be needed after removal. You can also review related wound-care guidance such as [why deep cuts need proper suturing before skin glue](/blog/skin-glue-deep-wounds-suturing-hyderabad).
 
-For scar and keloid evaluation, see **[reconstructive services](/services/reconstructive)** and book a consultation for a site-specific plan.
+For scar and keloid evaluation, see **[reconstructive services](/services/reconstructive)** or **[book a consultation](/contact)** for a site-specific plan.
 
 ## Video transcript: edited for readability
 
