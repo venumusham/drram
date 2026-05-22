@@ -79,28 +79,21 @@ export async function fetchAvailableSlotsRange(fromDate: string, toDate: string)
 }
 
 export async function bookAppointmentSlot(payload: SlotBookingPayload): Promise<void> {
-  const params = new URLSearchParams({
-    id: `eq.${payload.slotId}`,
-    status: 'eq.available',
-  });
-
-  const response = await fetch(`${REST_URL}?${params.toString()}`, {
-    method: 'PATCH',
+  const response = await fetch(`${SUPABASE_URL}/rest/v1/rpc/book_appointment_slot`, {
+    method: 'POST',
     headers: {
       ...headers,
       'Content-Type': 'application/json',
-      Prefer: 'return=minimal',
     },
     body: JSON.stringify({
-      status: 'booked',
-      patient_name: payload.name,
-      patient_phone: payload.phone,
-      procedure_type: payload.procedureType,
-      consultation_type: payload.consultationType,
-      patient_notes: payload.notes || null,
-      call_preference: payload.callPreference,
-      reminder_opt_in: payload.reminderOptIn,
-      booked_at: new Date().toISOString(),
+      p_slot_id: payload.slotId,
+      p_patient_name: payload.name,
+      p_patient_phone: payload.phone,
+      p_procedure_type: payload.procedureType,
+      p_consultation_type: payload.consultationType,
+      p_patient_notes: payload.notes || null,
+      p_call_preference: payload.callPreference,
+      p_reminder_opt_in: payload.reminderOptIn,
     }),
   });
 
