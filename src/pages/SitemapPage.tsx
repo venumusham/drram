@@ -13,6 +13,7 @@ const pageGroups = [
       ['Services', '/services'],
       ['Blog', '/blog'],
       ['FAQ', '/faq'],
+      ['Book Appointment', '/book-appointment'],
       ['Contact', '/contact'],
     ],
   },

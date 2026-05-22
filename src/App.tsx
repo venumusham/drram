@@ -7,10 +7,12 @@ import HomePage from './pages/Home';
 import ServicesPage from './pages/Services';
 import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
+import BookAppointment from './pages/BookAppointment';
 import FAQPage from './pages/FAQ';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import SitemapPage from './pages/SitemapPage';
+import AdminScheduleSetter from './pages/AdminScheduleSetter';
 import PlasticSurgeonHyderabad from './pages/PlasticSurgeonHyderabad';
 import PlasticSurgeryKondapur from './pages/PlasticSurgeryKondapur';
 import CosmeticSurgeonMadhapur from './pages/CosmeticSurgeonMadhapur';
@@ -83,9 +85,11 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/book-appointment" element={<BookAppointment />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/sitemap" element={<SitemapPage />} />
+            <Route path="/admin/schedule" element={<AdminScheduleSetter />} />
             <Route path="/plastic-surgeon-hyderabad" element={<PlasticSurgeonHyderabad />} />
             <Route path="/plastic-surgery-kondapur" element={<PlasticSurgeryKondapur />} />
             <Route path="/cosmetic-surgeon-madhapur" element={<CosmeticSurgeonMadhapur />} />

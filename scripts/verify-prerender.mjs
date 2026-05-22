@@ -28,6 +28,7 @@ const ROUTES = [
   '/about',
   '/faq',
   '/contact',
+  '/book-appointment',
   '/privacy-policy',
   '/terms-of-service',
   '/sitemap',

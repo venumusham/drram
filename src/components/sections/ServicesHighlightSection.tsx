@@ -130,7 +130,7 @@ const ServicesHighlightSection: React.FC = () => {
                     <ArrowRight size={16} />
                   </Link>
                   <Link
-                    to="/contact"
+                    to="/book-appointment"
                     className="inline-flex items-center gap-2 rounded-lg border border-[#d9c9ad] bg-white px-6 py-3 text-sm font-medium text-neutral-800 transition hover:border-accent-400"
                   >
                     Ask About This

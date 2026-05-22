@@ -7,4 +7,6 @@
 # Netlify will serve directly (more specific match wins). This catch-all only
 # fires for routes NOT in dist (e.g., 404s, future client-only routes).
 
+/api/booking-webhook    /.netlify/functions/booking-webhook    200
+
 /*    /index.html   200

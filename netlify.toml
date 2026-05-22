@@ -4,3 +4,6 @@
   # This serves the already pre-built `dist` folder we push to GitHub.
   command = "echo 'Skipping build layer, serving precompiled local dist folder'"
   publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
