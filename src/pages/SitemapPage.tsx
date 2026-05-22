@@ -58,6 +58,17 @@ const pageGroups = [
       ['XML Sitemap', '/sitemap.xml'],
     ],
   },
+  {
+    title: 'Popular Treatments',
+    links: [
+      ['Gynecomastia', '/gynecomastia'],
+      ['Liposuction', '/liposuction-hyderabad'],
+      ['Breast Procedures', '/services/breast-procedures'],
+      ['Lipoma Treatment', '/lipoma-removal-hyderabad'],
+      ['Sebaceous Cyst', '/blog/sebaceous-cyst-removal-treatment-hyderabad'],
+      ['Aesthetic Procedures', '/services'],
+    ],
+  },
 ];
 
 const SitemapPage: React.FC = () => {

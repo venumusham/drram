@@ -71,32 +71,32 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services#gynecomastia" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link to="/gynecomastia" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Gynecomastia
                 </Link>
               </li>
               <li>
-                <Link to="/services#liposuction" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link to="/liposuction-hyderabad" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Liposuction
                 </Link>
               </li>
               <li>
-                <Link to="/services#breast" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link to="/services/breast-procedures" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Breast Procedures
                 </Link>
               </li>
               <li>
-                <Link to="/services#lipoma" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link to="/lipoma-removal-hyderabad" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Lipoma Treatment
                 </Link>
               </li>
               <li>
-                <Link to="/services#cyst" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link to="/blog/sebaceous-cyst-removal-treatment-hyderabad" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Sebaceous Cyst
                 </Link>
               </li>
               <li>
-                <Link to="/services#aesthetic" className="text-gray-400 hover:text-white transition-colors text-sm">
+                <Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">
                   Aesthetic Procedures
                 </Link>
               </li>
