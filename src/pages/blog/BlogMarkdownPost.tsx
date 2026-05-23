@@ -7,6 +7,14 @@ import { BlogArticleLayout, BlogAuthorBio, BlogHeroFigure, BlogPillarCta } from 
 import NotFoundPage from '../NotFound';
 
 const SITE = 'https://drramprabhu.com';
+const dateFormatter = new Intl.DateTimeFormat('en-IN', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+  timeZone: 'Asia/Kolkata',
+});
+
+const formatPublishedDate = (date: string) => dateFormatter.format(new Date(`${date}T12:00:00+05:30`));
 
 const BlogMarkdownPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -19,11 +27,7 @@ const BlogMarkdownPost: React.FC = () => {
   }
 
   const absImage = meta.image.startsWith('http') ? meta.image : `${SITE}${meta.image}`;
-  const publishedLabel = new Date(meta.publishedAt).toLocaleDateString('en-IN', {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-  });
+  const publishedLabel = formatPublishedDate(meta.publishedAt);
   const crumb = meta.breadcrumbLabel ?? (meta.title.length > 42 ? `${meta.title.slice(0, 40)}…` : meta.title);
   const wa =
     meta.whatsappPrefill ??

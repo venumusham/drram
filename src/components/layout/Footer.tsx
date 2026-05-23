@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Linkedin } from 'lucide-react';
 import Logo from '../ui/Logo';
 
+const COPYRIGHT_YEAR = 2026;
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
@@ -140,7 +142,7 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Dr. Ram Prabhu. All rights reserved.
+            &copy; {COPYRIGHT_YEAR} Dr. Ram Prabhu. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">

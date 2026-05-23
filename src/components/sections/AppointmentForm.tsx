@@ -44,19 +44,40 @@ const toLocalDateInput = (date: Date) => {
   return new Date(date.getTime() - offset * 60 * 1000).toISOString().split('T')[0];
 };
 
+const appointmentDateFormatter = new Intl.DateTimeFormat('en-IN', {
+  weekday: 'long',
+  day: 'numeric',
+  month: 'short',
+  timeZone: 'Asia/Kolkata',
+});
+
+const appointmentLongDateFormatter = new Intl.DateTimeFormat('en-IN', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+  timeZone: 'Asia/Kolkata',
+});
+
+const shortWeekdayFormatter = new Intl.DateTimeFormat('en-IN', { weekday: 'short', timeZone: 'Asia/Kolkata' });
+const dayFormatter = new Intl.DateTimeFormat('en-IN', { day: 'numeric', timeZone: 'Asia/Kolkata' });
+const shortMonthFormatter = new Intl.DateTimeFormat('en-IN', { month: 'short', timeZone: 'Asia/Kolkata' });
+
+const getDateWindow = () => {
+  const todayDate = new Date();
+  const nextWeekDate = new Date(todayDate);
+  nextWeekDate.setDate(todayDate.getDate() + 7);
+
+  return {
+    today: toLocalDateInput(todayDate),
+    nextWeek: toLocalDateInput(nextWeekDate),
+  };
+};
+
 const formatDate = (date: string) =>
-  new Date(`${date}T12:00:00`).toLocaleDateString('en-IN', {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'short',
-  });
+  appointmentDateFormatter.format(new Date(`${date}T12:00:00+05:30`));
 
 const formatLongDate = (date: string) =>
-  new Date(`${date}T12:00:00`).toLocaleDateString('en-IN', {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-  });
+  appointmentLongDateFormatter.format(new Date(`${date}T12:00:00+05:30`));
 
 const formatSlotTime = (time: string) => {
   const [hour, minute] = time.split(':').map(Number);
@@ -81,13 +102,14 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
   enableStepNavigation = false,
 }) => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const today = useMemo(() => toLocalDateInput(new Date()), []);
-  const nextWeek = useMemo(() => toLocalDateInput(new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)), []);
+  const [dateWindow, setDateWindow] = useState<{ today: string; nextWeek: string } | null>(null);
+  const today = dateWindow?.today ?? '';
+  const nextWeek = dateWindow?.nextWeek ?? '';
   const selectedSlotId = enableStepNavigation ? searchParams.get('slot') : null;
 
   const [slots, setSlots] = useState<AppointmentSlot[]>([]);
   const [selectedSlot, setSelectedSlot] = useState<AppointmentSlot | null>(null);
-  const [selectedCalendarDate, setSelectedCalendarDate] = useState(today);
+  const [selectedCalendarDate, setSelectedCalendarDate] = useState('');
   const [bookingState, setBookingState] = useState<BookingState>('loading');
   const [submitState, setSubmitState] = useState<SubmitState>('idle');
   const [statusMessage, setStatusMessage] = useState('');
@@ -98,7 +120,7 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
     phone: '',
     service: '',
     mode: 'Clinic visit',
-    preferredDate: today,
+    preferredDate: '',
     preferredTime: '',
     callWindow: 'Call anytime today',
     reminderOptIn: true,
@@ -126,23 +148,27 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
   );
   const calendarDays = useMemo(
     () =>
+      today
+        ?
       Array.from({ length: 8 }).map((_, index) => {
-        const date = new Date(`${today}T12:00:00`);
+        const date = new Date(`${today}T12:00:00+05:30`);
         date.setDate(date.getDate() + index);
         const value = toLocalDateInput(date);
         return {
           value,
-          weekday: date.toLocaleDateString('en-IN', { weekday: 'short' }),
-          day: date.toLocaleDateString('en-IN', { day: 'numeric' }),
-          month: date.toLocaleDateString('en-IN', { month: 'short' }),
+          weekday: shortWeekdayFormatter.format(date),
+          day: dayFormatter.format(date),
+          month: shortMonthFormatter.format(date),
           count: groupedSlots[value]?.length ?? 0,
         };
-      }),
+      })
+        : [],
     [groupedSlots, today]
   );
   const selectedDateSlots = groupedSlots[selectedCalendarDate] ?? [];
 
   const refreshAvailability = useCallback(() => {
+    if (!today || !nextWeek) return;
     setBookingState('loading');
     fetchAvailableSlotsRange(today, nextWeek)
       .then((data) => {
@@ -156,6 +182,19 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
         setBookingState('error');
       });
   }, [nextWeek, today]);
+
+  useEffect(() => {
+    setDateWindow(getDateWindow());
+  }, []);
+
+  useEffect(() => {
+    if (!today) return;
+    setSelectedCalendarDate((current) => current || today);
+    setManualForm((current) => ({
+      ...current,
+      preferredDate: current.preferredDate || today,
+    }));
+  }, [today]);
 
   useEffect(() => {
     refreshAvailability();

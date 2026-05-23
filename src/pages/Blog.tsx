@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { BLOG_POSTS } from '../data/blog-posts';
 
+const dateFormatter = new Intl.DateTimeFormat('en-IN', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+  timeZone: 'Asia/Kolkata',
+});
+
+const formatPublishedDate = (date: string) => dateFormatter.format(new Date(`${date}T12:00:00+05:30`));
+
 const BlogIndex: React.FC = () => {
   // Sort newest first
   const posts = [...BLOG_POSTS].sort(
@@ -91,11 +100,7 @@ const BlogIndex: React.FC = () => {
                       <h2 className="font-bold text-primary-900 text-lg mb-2 leading-tight">{p.title}</h2>
                       <p className="text-gray-600 text-sm mb-3">{p.excerpt}</p>
                       <div className="text-xs text-gray-500">
-                        {new Date(p.publishedAt).toLocaleDateString('en-IN', {
-                          day: 'numeric',
-                          month: 'short',
-                          year: 'numeric',
-                        })}{' '}
+                        {formatPublishedDate(p.publishedAt)}{' '}
                         · {p.readMin} min read · {p.author}
                       </div>
                     </div>
