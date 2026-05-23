@@ -98,6 +98,21 @@ export const ReconstructivePage: React.FC = () => {
           <p className="mb-4 text-gray-800">
             Dr. Ram Prabhu specializes in reconstructive surgery procedures that restore both function and appearance. Whether you're dealing with scars, burns, trauma, or congenital conditions, our comprehensive approach helps you achieve the best possible outcomes.
           </p>
+          <div className="mt-6 rounded-xl border border-primary-100 bg-primary-50 p-5">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-primary-700">Published reconstructive case report</p>
+            <h3 className="mb-2 text-lg font-bold text-primary-900">Nasal Reconstruction Using Two Staged Nasolabial Flap</h3>
+            <p className="mb-3 text-sm leading-7 text-gray-700">
+              Dr. Ramprabhu Musham authored this 2023 case report on full-thickness nasal tip, alar, columellar, and upper-lip trauma managed with wound debridement, lip repair, a superiorly based nasolabial flap, staged flap division, and revision under local anaesthesia.
+            </p>
+            <a
+              href="https://www.medicalandresearch.com/previous_view/1242"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold text-primary-800 underline decoration-primary-300 underline-offset-4 hover:text-primary-950"
+            >
+              Read the published paper
+            </a>
+          </div>
         </div>
 
         {/* Procedures */}

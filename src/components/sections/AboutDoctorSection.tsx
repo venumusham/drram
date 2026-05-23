@@ -37,6 +37,23 @@ const AboutDoctorSection: React.FC = () => {
             <p className="mb-7 text-[15px] leading-8 text-neutral-600">
               He earned his MBBS from Dr. NTR University of Health Sciences (2009), followed by DNB (Super Speciality) in Plastic Surgery from the National Board of Examinations, New Delhi (2019). He is registered with the Telangana State Medical Council (Licence No. 66931) and is a member of IAAPS and APSI.
             </p>
+            <div className="mb-7 rounded-xl border border-[#eadfce] bg-[#fbf8f1] p-4">
+              <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent-700">
+                Published clinical work
+              </p>
+              <p className="text-sm leading-7 text-neutral-700">
+                Author of the 2023 case report{' '}
+                <a
+                  href="https://www.medicalandresearch.com/previous_view/1242"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-primary-800 underline decoration-primary-200 underline-offset-4 hover:text-primary-950"
+                >
+                  Nasal Reconstruction Using Two Staged Nasolabial Flap
+                </a>
+                , documenting staged nasolabial flap reconstruction after full-thickness nasal trauma.
+              </p>
+            </div>
             <div className="mb-7 flex flex-wrap gap-3">
               {tags.map((tag) => (
                 <span
