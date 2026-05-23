@@ -25,12 +25,16 @@ from models import PaperAnalysis
 
 # Configuration
 PUBMED_BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+AIRTABLE_PAT = os.environ.get("AIRTABLE_PAT")
 AIRTABLE_BASE_ID = os.environ.get("AIRTABLE_BASE_ID")
-AIRTABLE_TABLE_NAME = os.environ.get("AIRTABLE_TABLE_NAME", "Papers")
+AIRTABLE_TABLE_NAME = "Clinical Papers"
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
-# Initialize Airtable
-api = Api(os.environ.get("AIRTABLE_API_KEY"))
+if not all([AIRTABLE_PAT, AIRTABLE_BASE_ID]):
+    raise ValueError("Missing required Airtable environment variables: AIRTABLE_PAT, AIRTABLE_BASE_ID")
+
+# Initialize Airtable with Personal Access Token (PAT) - NOT legacy api_key
+api = Api(AIRTABLE_PAT)
 table = api.table(AIRTABLE_BASE_ID, AIRTABLE_TABLE_NAME)
 
 # Initialize Instructor for strict LLM validation
