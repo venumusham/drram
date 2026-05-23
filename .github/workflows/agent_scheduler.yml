@@ -1,0 +1,185 @@
+name: Medical SEO Agent Scheduler
+
+on:
+  schedule:
+    # Daily Ingest: Runs daily at 08:00 UTC
+    - cron: '0 8 * * *'
+    # Daily Brief: Runs daily at 09:00 UTC
+    - cron: '0 9 * * *'
+    # Weekly Synthesis: Runs every Wednesday at 10:00 UTC
+    - cron: '0 10 * * 3'
+  workflow_dispatch:
+    inputs:
+      job_type:
+        description: 'Job to run manually'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - daily-ingest
+          - daily-brief
+          - weekly-synthesis
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  daily-ingest:
+    name: Daily PubMed Ingest
+    if: >
+      github.event_name == 'schedule' && github.event.schedule == '0 8 * * *' ||
+      github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'all' || github.event.inputs.job_type == 'daily-ingest')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run PubMed Ingestion
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python scripts/ingest_pubmed.py
+
+      - name: Send Slack Alert on Failure
+        if: failure()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+            --data "{\"text\":\"❌ Daily Ingest Job Failed in ${GITHUB_REPOSITORY}\\nWorkflow: ${GITHUB_WORKFLOW}\\nRun ID: ${GITHUB_RUN_ID}\\nURL: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}\"}" \
+            $SLACK_WEBHOOK_URL
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  daily-brief:
+    name: Daily Brief Publishing
+    needs: daily-ingest
+    if: >
+      github.event_name == 'schedule' && github.event.schedule == '0 9 * * *' ||
+      github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'all' || github.event.inputs.job_type == 'daily-brief')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Configure Git User
+        run: |
+          git config --global user.name 'Medical SEO Agent'
+          git config --global user.email 'agent@medical-seo.local'
+
+      - name: Run Daily Brief Publishing
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python scripts/publish_daily_brief.py
+
+      - name: Send Slack Alert on Failure
+        if: failure()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+            --data "{\"text\":\"❌ Daily Brief Job Failed in ${GITHUB_REPOSITORY}\\nWorkflow: ${GITHUB_WORKFLOW}\\nRun ID: ${GITHUB_RUN_ID}\\nURL: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}\"}" \
+            $SLACK_WEBHOOK_URL
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  weekly-synthesis:
+    name: Weekly Synthesis Publishing
+    if: >
+      github.event_name == 'schedule' && github.event.schedule == '0 10 * * 3' ||
+      github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'all' || github.event.inputs.job_type == 'weekly-synthesis')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Configure Git User
+        run: |
+          git config --global user.name 'Medical SEO Agent'
+          git config --global user.email 'agent@medical-seo.local'
+
+      - name: Run Weekly Synthesis Publishing
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python scripts/publish_weekly_synthesis.py
+
+      - name: Send Slack Alert on Failure
+        if: failure()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+            --data "{\"text\":\"❌ Weekly Synthesis Job Failed in ${GITHUB_REPOSITORY}\\nWorkflow: ${GITHUB_WORKFLOW}\\nRun ID: ${GITHUB_RUN_ID}\\nURL: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}\"}" \
+            $SLACK_WEBHOOK_URL
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
