@@ -32,7 +32,8 @@ const HomeFactsSection: React.FC = () => (
             near Burfighar, Kondapur, Hyderabad 500084. Patients can call or WhatsApp
             +91 9949808628 for appointment availability. Procedure planning includes
             examination, realistic outcome discussion, scar placement, recovery timeline,
-            safety considerations, and follow-up instructions.
+            safety considerations, and follow-up instructions. His published clinical work
+            includes a 2023 nasal reconstruction case report using a two-staged nasolabial flap.
           </p>
         </div>
       </div>

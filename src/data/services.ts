@@ -83,6 +83,7 @@ export const serviceHighlights: ServiceHighlights = {
         image: '/images/services/reconstructive.webp',
         procedures: [
           'Skin Cancer Reconstruction',
+          'Nasal Trauma Reconstruction',
           'Hand Surgery',
           'Microsurgery',
           'Trauma Reconstruction',

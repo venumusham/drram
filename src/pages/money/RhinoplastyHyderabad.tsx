@@ -26,6 +26,7 @@ const data: MoneyPageData = {
     '500+ Nose Cases',
     'Open & Closed Technique',
     'Functional + Aesthetic',
+    'Published Nasal Reconstruction Case Report',
     '0% EMI',
   ],
   heroPriceBand: 'Rhinoplasty from ₹70,000',
@@ -36,6 +37,7 @@ const data: MoneyPageData = {
     'Rhinoplasty — commonly called a "nose job" — is a surgical procedure that reshapes the nose to improve appearance, breathing, or both. It can address a dorsal hump, drooping or bulbous tip, wide nostrils, deviated septum, asymmetry from injury, or congenital deformity. As the central feature of the face, even a 1-2 mm change can dramatically alter facial harmony.',
     'At our Kondapur clinic, Dr. Ram Prabhu performs both open and closed rhinoplasty using techniques tailored to Indian and South Asian noses, where preserving ethnic character while making subtle refinements is the priority. Functional rhinoplasty (correcting breathing problems from a deviated septum or collapsed valves) is often combined with aesthetic refinement in a single procedure.',
     'Rhinoplasty is one of the most technically demanding plastic surgery procedures because the nose is a 3D structure of cartilage, bone, and skin — every adjustment must balance form, function, and long-term healing. Dr. Ram Prabhu has performed 500+ rhinoplasty procedures across primary and revision cases.',
+    'His reconstructive nose experience includes the published 2023 case report "Nasal Reconstruction Using Two Staged Nasolabial Flap," which documented staged repair of a full-thickness nasal defect after facial trauma. Cosmetic rhinoplasty and trauma reconstruction are different indications, but both require precise understanding of nasal skin, cartilage support, scar placement, and staged healing.',
   ],
   causes: [
     'Dorsal hump (bony or cartilaginous bump on the bridge)',
@@ -165,6 +167,10 @@ const data: MoneyPageData = {
     {
       q: 'Can rhinoplasty improve my breathing?',
       a: 'Yes — septorhinoplasty corrects deviated septum, collapsed nasal valves, and turbinate hypertrophy that impair breathing. Many patients undergoing cosmetic rhinoplasty also notice breathing improvement because functional issues are addressed simultaneously.',
+    },
+    {
+      q: 'Does Dr. Ram Prabhu have reconstructive nose surgery experience?',
+      a: 'Yes. In addition to cosmetic and functional rhinoplasty, Dr. Ramprabhu Musham authored the 2023 case report "Nasal Reconstruction Using Two Staged Nasolabial Flap," documenting staged reconstruction of a traumatic full-thickness nasal defect. This supports his reconstructive understanding of nasal tissue, flap planning, and scar-sensitive healing.',
     },
     {
       q: 'When can I wear glasses after rhinoplasty?',
