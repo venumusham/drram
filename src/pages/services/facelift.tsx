@@ -7,22 +7,22 @@ const procedures = [
   {
     title: 'Traditional Facelift',
     description: 'Addresses sagging skin, deep creases, and loss of muscle tone in the face and neck.',
-    image: '/images/facelift/facelift.jpg',
+    image: '/images/facelift/facelift.webp',
   },
   {
     title: 'Mini Facelift',
     description: 'A less invasive option for mild to moderate sagging, focusing on the lower face and jawline.',
-    image: '/images/facelift/mini-facelift.jpg',
+    image: '/images/facelift/mini-facelift.webp',
   },
   {
     title: 'Neck Lift',
     description: 'Targets loose neck skin and excess fat for a smoother, more youthful neck contour.',
-    image: '/images/facelift/neck-facelift.jpg',
+    image: '/images/facelift/neck-facelift.webp',
   },
   {
     title: 'Mid-Facelift',
     description: 'Lifts and tightens the cheeks and mid-face area for a refreshed appearance.',
-    image: '/images/facelift/mid-facelift.jpg',
+    image: '/images/facelift/mid-facelift.webp',
   },
 ];
 
@@ -41,13 +41,13 @@ const FaceliftPage: React.FC = () => {
           'face rejuvenation surgery',
           'dr ram prabhu facelift'
         ]}
-        image="/images/facelift/facelift.jpg"
+        image="/images/facelift/facelift.webp"
         url="https://drramprabhu.com/services/facelift"
         type="article"
       />
       <div className="bg-white min-h-screen pb-12">
         {/* Hero Section */}
-        <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/facelift/fg.jpg)'}}>
+        <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/facelift/fg.webp)'}}>
           <div className="absolute inset-0 bg-black/60"></div>
           <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white px-6 py-3 rounded">Facelift</h1>
         </div>

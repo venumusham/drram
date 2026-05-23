@@ -20,7 +20,7 @@ const AboutPage: React.FC = () => {
           'reconstructive surgeon profile',
           'cosmetic surgeon experience hyderabad'
         ]}
-        image="/images/breast/breast-hero.jpg"
+        image="/images/breast/breast-hero.webp"
         url="https://drramprabhu.com/about"
       />
       <div className="AboutPage">

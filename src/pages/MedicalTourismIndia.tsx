@@ -152,7 +152,7 @@ const MedicalTourismIndia: React.FC = () => {
           'india plastic surgery cost in usd',
           'plastic surgery india tax deductible',
         ]}
-        image="https://drramprabhu.com/images/breast/Gynecomastia.jpg"
+        image="https://drramprabhu.com/images/breast/Gynecomastia.webp"
         url={url}
         type="article"
       />

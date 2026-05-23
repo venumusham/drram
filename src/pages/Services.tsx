@@ -19,7 +19,7 @@ const ServicesPage: React.FC = () => {
           'facial plastic surgery india',
           'breast surgery specialist hyderabad'
         ]}
-        image="/images/services/body.jpg"
+        image="/images/services/body.webp"
         url="https://drramprabhu.com/services"
       />
       <div className="ServicesPage">

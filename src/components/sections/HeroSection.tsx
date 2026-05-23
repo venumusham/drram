@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, X } from 'lucide-react';
+import OptimizedImage from '../ui/OptimizedImage';
 
 const procedures = [
-  { name: 'Gynecomastia Surgery', group: 'Chest contouring', image: '/images/breast/Gynecomastia.jpg', href: '/gynecomastia' },
-  { name: 'Liposuction', group: 'Body contouring', image: '/images/body/lipo.jpg', href: '/liposuction-hyderabad' },
-  { name: 'Lipoma / Cyst Excision', group: 'Day-care surgery', image: '/images/blog/lipoma-removal-thumbnail.png', href: '/lipoma-removal-hyderabad' },
-  { name: 'Diabetic Foot Care', group: 'Reconstructive care', image: '/images/blog/diabetic-foot-reconstruction-thumbnail.png', href: '/services/reconstructive' },
-  { name: 'Breast Augmentation', group: 'Breast procedures', image: '/images/breast/Breast-Augmentation.jpg', href: '/breast-augmentation-hyderabad' },
-  { name: 'Axillary Breast Reduction', group: 'Breast procedures', image: '/images/breast/breast-hero.jpg', href: '/services/breast-procedures' },
-  { name: 'Circumcision Surgery', group: 'Stapler circumcision', image: '/images/stapler-circumcision/illustration.png', href: '/stapler-circumcision-hyderabad' },
-  { name: 'Scar / Mole Excision', group: 'Scar revision', image: '/images/reconstruction/Scar-Revision.jpg', href: '/services/reconstructive' },
-  { name: 'Tummy Tuck', group: 'Abdominoplasty', image: '/images/body/tummy.jpg', href: '/tummy-tuck-hyderabad' },
-  { name: 'Facial & Body Contouring', group: 'Aesthetic surgery', image: '/images/services/body.jpg', href: '/services' },
-  { name: 'Cosmetic Rhinoplasty', group: 'Facial aesthetics', image: '/images/facelift/face-background.jpg', href: '/rhinoplasty-hyderabad' },
-  { name: 'Prominent Ear Correction', group: 'Otoplasty', image: '/images/facelift/facelift.jpg', href: '/services/facelift' },
+  { name: 'Gynecomastia Surgery', group: 'Chest contouring', image: '/images/breast/Gynecomastia.webp', href: '/gynecomastia', alt: 'Gynecomastia surgery chest contouring service by Dr. Ram Prabhu in Hyderabad' },
+  { name: 'Liposuction', group: 'Body contouring', image: '/images/body/lipo.webp', href: '/liposuction-hyderabad', alt: 'Liposuction body contouring treatment service at Dr Ramprabhu Clinic Hyderabad' },
+  { name: 'Lipoma / Cyst Excision', group: 'Day-care surgery', image: '/images/blog/lipoma-removal-thumbnail.webp', href: '/lipoma-removal-hyderabad', alt: 'Lipoma and sebaceous cyst removal day-care surgery service by Dr. Ram Prabhu' },
+  { name: 'Diabetic Foot Care', group: 'Reconstructive care', image: '/images/blog/diabetic-foot-reconstruction-thumbnail.webp', href: '/services/reconstructive', alt: 'Diabetic foot wound reconstruction care service by Dr. Ram Prabhu' },
+  { name: 'Breast Augmentation', group: 'Breast procedures', image: '/images/breast/Breast-Augmentation.webp', href: '/breast-augmentation-hyderabad', alt: 'Breast augmentation plastic surgery service in Hyderabad by Dr. Ram Prabhu' },
+  { name: 'Axillary Breast Reduction', group: 'Breast procedures', image: '/images/breast/breast-hero.webp', href: '/services/breast-procedures', alt: 'Axillary breast and breast procedure consultation at Dr Ramprabhu Clinic' },
+  { name: 'Circumcision Surgery', group: 'Stapler circumcision', image: '/images/stapler-circumcision/illustration.webp', href: '/stapler-circumcision-hyderabad', alt: 'Stapler circumcision surgery service in Hyderabad by Dr. Ram Prabhu' },
+  { name: 'Scar / Mole Excision', group: 'Scar revision', image: '/images/reconstruction/Scar-Revision.webp', href: '/services/reconstructive', alt: 'Scar revision and mole excision reconstructive surgery service by Dr. Ram Prabhu' },
+  { name: 'Tummy Tuck', group: 'Abdominoplasty', image: '/images/body/tummy.webp', href: '/tummy-tuck-hyderabad', alt: 'Tummy tuck abdominoplasty body contouring surgery service in Hyderabad' },
+  { name: 'Facial & Body Contouring', group: 'Aesthetic surgery', image: '/images/services/body.webp', href: '/services', alt: 'Facial and body contouring aesthetic surgery service at Dr Ramprabhu Clinic' },
+  { name: 'Cosmetic Rhinoplasty', group: 'Facial aesthetics', image: '/images/facelift/face-background.webp', href: '/rhinoplasty-hyderabad', alt: 'Cosmetic rhinoplasty nose surgery service by Dr. Ram Prabhu Hyderabad' },
+  { name: 'Prominent Ear Correction', group: 'Otoplasty', image: '/images/facelift/facelift.webp', href: '/services/facelift', alt: 'Prominent ear correction otoplasty service by plastic surgeon Dr. Ram Prabhu' },
 ];
 
 const videos = [
@@ -31,33 +32,35 @@ const slides = [
     eyebrow: "Hyderabad's trusted plastic surgeon",
     title: 'Expertise in Aesthetic & Reconstructive Surgery',
     text: 'Dr. M. Ram Prabhu, DNB Plastic Surgery. 16+ years, 6,000+ procedures, Kondapur, Hyderabad.',
-    image: '/images/hero-clinic-premium.png',
+    image: '/images/hero-clinic-premium.webp',
     imagePosition: 'center center',
     mobileImagePosition: '67% center',
     primary: 'Book Free Consultation',
     primaryHref: '/book-appointment',
     secondary: 'Explore Procedures',
     secondaryHref: '/services',
+    imageAlt: 'Premium clinic consultation environment for Dr Ramprabhu Plastic Surgery Clinic in Kondapur Hyderabad',
   },
   {
     navLabel: 'Gynecomastia',
     eyebrow: 'Specialist procedure',
     title: 'Gynecomastia Surgery in Hyderabad',
     text: 'Confidential evaluation, chest contouring, gland removal planning, and recovery guidance for natural-looking results.',
-    image: '/images/breast/Gynecomastia.jpg',
+    image: '/images/breast/Gynecomastia.webp',
     mobileImagePosition: '58% center',
     primary: 'View Gynecomastia',
     primaryHref: '/gynecomastia',
     secondary: 'Ask on WhatsApp',
     secondaryHref: 'https://wa.me/919949808628?text=Hello%20Dr.%20Ram%20Prabhu%2C%20I%20would%20like%20to%20know%20about%20gynecomastia%20surgery.',
     externalSecondary: true,
+    imageAlt: 'Gynecomastia chest contouring consultation and treatment planning by Dr. Ram Prabhu',
   },
   {
     navLabel: 'Reviews',
     eyebrow: 'Patient proof',
     title: '5.0 Google Rating',
     text: 'Recent Google Business Profile reviews from patients across cosmetic, reconstructive, and minor surgical care.',
-    image: '/images/hero-reviews.png',
+    image: '/images/hero-reviews.webp',
     imagePosition: '72% center',
     mobileImagePosition: '78% center',
     primary: 'Read Reviews',
@@ -65,6 +68,7 @@ const slides = [
     externalPrimary: true,
     secondary: 'Book Consultation',
     secondaryHref: '/book-appointment',
+    imageAlt: 'Verified Google patient reviews for Dr Ramprabhu Plastic Surgery Clinic Hyderabad',
   },
   {
     navLabel: 'Videos',
@@ -78,19 +82,21 @@ const slides = [
     externalPrimary: true,
     secondary: 'View Services',
     secondaryHref: '/services',
+    imageAlt: 'YouTube patient education video thumbnail by Dr. Ram Prabhu on plastic surgery procedures',
   },
   {
     navLabel: 'Credentials',
     eyebrow: 'Credentials',
     title: 'Qualified Care, Clear Guidance',
     text: 'DNB Plastic Surgery, TSMC registration, professional affiliations, and safety-first treatment planning.',
-    image: '/images/hero-credentials.png',
+    image: '/images/hero-credentials.webp',
     imagePosition: '76% center',
     mobileImagePosition: '82% center',
     primary: 'Meet the Doctor',
     primaryHref: '/about',
     secondary: 'Contact Clinic',
     secondaryHref: '/book-appointment',
+    imageAlt: 'Medical credentials and professional affiliations of Dr. M. Ram Prabhu Plastic Surgeon',
   },
 ];
 
@@ -168,10 +174,12 @@ const HeroSection: React.FC = () => {
           aria-hidden={activeSlide !== index}
           style={{ background: item.background ?? '#0d0d14' }}
         >
-          <img
+          <OptimizedImage
             src={item.image}
-            alt=""
+            alt={item.imageAlt}
             className="hero-slide-image h-full w-full object-cover"
+            priority={index === 0}
+            sizes="100vw"
             style={{
               objectFit: item.imageFit ?? 'cover',
               opacity: item.imageOpacity ?? 1,
@@ -200,7 +208,7 @@ const HeroSection: React.FC = () => {
                   to={procedure.href}
                   className="flex items-center gap-2 rounded-full border border-white/10 bg-white/10 py-1 pl-1 pr-3 text-left text-white/80 transition hover:border-accent-300/60 hover:text-accent-200"
                 >
-                  <img src={procedure.image} alt="" className="h-8 w-8 rounded-full object-cover" />
+                  <OptimizedImage src={procedure.image} alt={procedure.alt} className="h-8 w-8 rounded-full object-cover" sizes="32px" />
                   <span className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.08em]">
                     {procedure.name}
                   </span>
@@ -218,10 +226,11 @@ const HeroSection: React.FC = () => {
                   onClick={() => openHeroVideo(video.id)}
                   className="relative h-16 w-32 overflow-hidden rounded-xl border border-white/10 bg-white/10 text-left text-white transition hover:border-accent-300/60"
                 >
-                  <img
+                  <OptimizedImage
                     src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
-                    alt=""
+                    alt={`${video.label} educational video thumbnail by Dr. Ram Prabhu`}
                     className="absolute inset-0 h-full w-full object-cover"
+                    sizes="128px"
                   />
                   <span className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
                   <span className="absolute bottom-2 left-2 right-8 line-clamp-2 text-[11px] font-semibold uppercase leading-3 tracking-[0.04em] text-white">
@@ -251,7 +260,7 @@ const HeroSection: React.FC = () => {
                 to={procedure.href}
                 className="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/10 p-2 transition hover:border-accent-300/50 hover:bg-white/15"
               >
-                <img src={procedure.image} alt="" className="h-12 w-14 rounded-lg object-cover" />
+                <OptimizedImage src={procedure.image} alt={procedure.alt} className="h-12 w-14 rounded-lg object-cover" sizes="56px" />
                 <span className="min-w-0">
                   <span className="block truncate text-sm font-semibold text-[#f5f0e8]">{procedure.name}</span>
                   <span className="block truncate text-[11px] text-white/45 group-hover:text-accent-200">{procedure.group}</span>

@@ -29,7 +29,7 @@ const data: MoneyPageData = {
     '0% EMI',
   ],
   heroPriceBand: 'Rhinoplasty from ₹70,000',
-  heroImage: 'https://drramprabhu.com/images/breast/Gynecomastia.jpg',
+  heroImage: 'https://drramprabhu.com/images/breast/Gynecomastia.webp',
   priceMin: '70000',
   priceMax: '180000',
   whatIsParagraphs: [
@@ -132,7 +132,7 @@ const data: MoneyPageData = {
     { when: 'Month 3', title: '80% final shape', detail: 'Most swelling resolved. Tip is still slightly firm. Photographs look very close to final.' },
     { when: 'Month 12', title: 'Final result', detail: 'Complete settling of all swelling. Final tip definition visible. Permanent results.' },
   ],
-  beforeAfterImage: '/images/breast/Gynecomastia-before-after.jpeg',
+  beforeAfterImage: '/images/breast/Gynecomastia-before-after.webp',
   faqs: [
     {
       q: 'How long does rhinoplasty surgery take?',

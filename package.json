@@ -9,6 +9,8 @@
     "build:spa": "vite build",
     "build:vercel": "vite build",
     "prerender": "node scripts/prerender.mjs",
+    "images:webp": "node scripts/convert-images-webp.mjs",
+    "images:use-webp": "node scripts/switch-public-images-to-webp.mjs",
     "lint": "eslint .",
     "preview": "vite preview --port 4173",
     "verify-prerender": "node scripts/verify-prerender.mjs"
@@ -36,6 +38,7 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.35",
     "puppeteer": "^23.0.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",

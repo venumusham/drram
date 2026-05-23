@@ -30,7 +30,7 @@ const data: MoneyPageData = {
     '0% EMI',
   ],
   heroPriceBand: 'Liposuction from ₹60,000',
-  heroImage: 'https://drramprabhu.com/images/body/lipo.jpg',
+  heroImage: 'https://drramprabhu.com/images/body/lipo.webp',
   priceMin: '60000',
   priceMax: '200000',
   whatIsParagraphs: [
@@ -131,7 +131,7 @@ const data: MoneyPageData = {
     { when: 'Month 3', title: '80% final result', detail: 'Most swelling resolved. Skin retraction visible. Final shape becoming evident.' },
     { when: 'Month 6', title: 'Final result', detail: 'Final contour visible. Skin fully retracted. Permanent fat removal.' },
   ],
-  beforeAfterImage: '/images/body/before-after.jpg',
+  beforeAfterImage: '/images/body/before-after.webp',
   faqs: [
     {
       q: 'How much does liposuction cost in Hyderabad?',

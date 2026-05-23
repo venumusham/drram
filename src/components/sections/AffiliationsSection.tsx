@@ -3,13 +3,13 @@ import React from 'react';
 const affiliations = [
   {
     name: 'National Medical Commission',
-    logo: '/images/affiliations/nmc.png',
+    logo: '/images/affiliations/nmc.webp',
     alt: 'National Medical Commission Logo',
     description: 'Regulatory body for medical education and practice in India'
   },
   {
     name: 'Telangana State Medical Council',
-    logo: '/images/affiliations/tsmc.png',
+    logo: '/images/affiliations/tsmc.webp',
     alt: 'Telangana State Medical Council Logo',
     description: 'State medical regulatory authority'
   },
@@ -21,7 +21,7 @@ const affiliations = [
   },
   {
     name: 'Association of Plastic Surgeons of India',
-    logo: '/images/affiliations/apsi.png',
+    logo: '/images/affiliations/apsi.webp',
     alt: 'APSI Logo',
     description: 'National body representing plastic surgeons across India'
   }
