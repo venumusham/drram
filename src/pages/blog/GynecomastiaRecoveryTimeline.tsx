@@ -10,7 +10,7 @@ import {
 const SLUG = 'gynecomastia-recovery-timeline-hyderabad';
 const PUBLISHED = '2026-05-13';
 
-const IMG_HERO = '/images/breast/gynecomastia-recovery-timeline-thumbnail.png';
+const IMG_HERO = '/images/breast/gynecomastia-recovery-timeline-thumbnail.webp';
 const ABS_HERO = `https://drramprabhu.com${IMG_HERO}`;
 
 const GynecomastiaRecoveryTimeline: React.FC = () => (

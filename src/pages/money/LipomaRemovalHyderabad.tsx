@@ -29,7 +29,7 @@ const data: MoneyPageData = {
     'Same-Day Discharge',
   ],
   heroPriceBand: 'Lipoma Removal from ₹8,000',
-  heroImage: 'https://drramprabhu.com/images/body/before-after.jpg',
+  heroImage: 'https://drramprabhu.com/images/body/before-after.webp',
   priceMin: '8000',
   priceMax: '50000',
   whatIsParagraphs: [
@@ -131,7 +131,7 @@ const data: MoneyPageData = {
     { when: 'Month 3', title: 'Scar maturation', detail: 'Scar pink, beginning to fade. Scar massage and silicone gel optional.' },
     { when: 'Month 12', title: 'Final scar', detail: 'Scar fades to thin, barely visible line. Permanent removal — does not regrow at the same site.' },
   ],
-  beforeAfterImage: '/images/body/before-after.jpg',
+  beforeAfterImage: '/images/body/before-after.webp',
   faqs: [
     {
       q: 'How much does lipoma removal cost in Hyderabad?',

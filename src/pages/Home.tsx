@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
           'body contouring hyderabad',
           'dr ram prabhu plastic surgeon'
         ]}
-        image="/images/hero.jpg"
+        image="/banner.webp"
         url="https://drramprabhu.com"
       />
       <div className="HomePage">

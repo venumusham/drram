@@ -7,27 +7,27 @@ const procedures = [
   {
     title: 'Liposuction',
     description: 'Removes stubborn fat deposits to sculpt and contour your body shape.',
-    image: '/images/body/lipo.jpg',
+    image: '/images/body/lipo.webp',
   },
   {
     title: 'Tummy Tuck',
     description: 'Tightens abdominal muscles and removes excess skin for a flatter, firmer midsection.',
-    image: '/images/body/tummy.jpg',
+    image: '/images/body/tummy.webp',
   },
   {
     title: 'Body Lift',
     description: 'Comprehensive procedure to address excess skin and fat throughout the body.',
-    image: '/images/body/bodfylift.jpg',
+    image: '/images/body/bodfylift.webp',
   },
   {
     title: 'Brachioplasty',
     description: 'Removes excess skin and fat from the upper arms for a more toned appearance.',
-    image: '/images/body/Brachioplasty.jpg',
+    image: '/images/body/Brachioplasty.webp',
   },
   {
     title: 'Thigh Lift',
     description: 'Improves the shape and tone of the thighs by removing excess skin and fat.',
-    image: '/images/body/thighlift.jpg',
+    image: '/images/body/thighlift.webp',
   },
 ];
 
@@ -46,13 +46,13 @@ const BodyContouringPage: React.FC = () => {
           'body lift surgery dr ram',
           'brachioplasty hyderabad'
         ]}
-        image="/images/body/body-contouring.jpg"
+        image="/images/body/body-contouring.webp"
         url="https://drramprabhu.com/services/body-contouring"
         type="article"
       />
       <div className="bg-white min-h-screen pb-12">
         {/* Hero Section */}
-        <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/body/body-contouring.jpg)'}}>
+        <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/body/body-contouring.webp)'}}>
           <div className="absolute inset-0 bg-black/60"></div>
           <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white px-6 py-3 rounded">Body Contouring</h1>
         </div>
@@ -85,7 +85,7 @@ const BodyContouringPage: React.FC = () => {
           <div className="flex justify-center">
             <div className="relative">
               <img 
-                src="/images/body/before-after.jpg" 
+                src="/images/body/before-after.webp" 
                 alt="Before and After Results" 
                 className="rounded-lg shadow-lg w-full max-w-lg" 
               />

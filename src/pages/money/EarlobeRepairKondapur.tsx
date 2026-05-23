@@ -30,7 +30,7 @@ const data: MoneyPageData = {
     'Re-Piercing After 6 Weeks',
   ],
   heroPriceBand: 'Earlobe Repair from ₹6,000',
-  heroImage: 'https://drramprabhu.com/images/body/before-after.jpg',
+  heroImage: 'https://drramprabhu.com/images/body/before-after.webp',
   priceMin: '6000',
   priceMax: '20000',
   whatIsParagraphs: [
@@ -130,7 +130,7 @@ const data: MoneyPageData = {
     { when: 'Month 6', title: 'Scar fading', detail: 'Scar fades to thin pink line. Largely invisible at conversational distance.' },
     { when: 'Month 12', title: 'Final scar', detail: 'Scar matures to barely visible white line. Permanent repair.' },
   ],
-  beforeAfterImage: '/images/body/before-after.jpg',
+  beforeAfterImage: '/images/body/before-after.webp',
   faqs: [
     {
       q: 'How much does earlobe repair cost in Hyderabad?',

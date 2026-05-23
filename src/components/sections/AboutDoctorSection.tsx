@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import RamPrabhuImg from './ram.png';
+import OptimizedImage from '../ui/OptimizedImage';
 
 const tags = [
   'Gynecomastia Specialist',
@@ -12,10 +13,10 @@ const tags = [
 ];
 
 const affiliations = [
-  { n: 'NMC', l: 'Compliant', logo: '/images/affiliations/nmc.png' },
-  { n: 'TSMC', l: 'Registered', logo: '/images/affiliations/tsmc.png' },
+  { n: 'NMC', l: 'Compliant', logo: '/images/affiliations/nmc.webp' },
+  { n: 'TSMC', l: 'Registered', logo: '/images/affiliations/tsmc.webp' },
   { n: 'IAAPS', l: 'Member', logo: '/images/affiliations/iaaps.png' },
-  { n: 'APSI', l: 'Member', logo: '/images/affiliations/apsi.png' },
+  { n: 'APSI', l: 'Member', logo: '/images/affiliations/apsi.webp' },
 ];
 
 const AboutDoctorSection: React.FC = () => {
@@ -57,10 +58,11 @@ const AboutDoctorSection: React.FC = () => {
 
           <div className="relative">
             <div className="overflow-hidden rounded-2xl border border-[#ede8de] bg-white shadow-soft">
-              <img
+              <OptimizedImage
                 src={RamPrabhuImg}
                 alt="Dr. M. Ram Prabhu - Plastic & Cosmetic Surgeon, Kondapur Hyderabad"
                 className="block aspect-[4/5] w-full object-cover"
+                sizes="(min-width: 768px) 50vw, 100vw"
               />
               <div className="border-t border-[#ede8de] bg-[#fbf8f1] px-4 py-5">
                 <p className="mb-4 text-center text-[11px] font-semibold uppercase tracking-[0.16em] text-accent-700">
@@ -70,7 +72,7 @@ const AboutDoctorSection: React.FC = () => {
                 {affiliations.map((item) => (
                   <div key={item.n} className="text-center">
                     <div className="mb-2 flex h-14 items-center justify-center rounded-lg border border-[#eadfce] bg-white px-2">
-                      <img src={item.logo} alt={`${item.n} affiliation`} className="max-h-9 max-w-full object-contain" />
+                      <OptimizedImage src={item.logo} alt={`${item.n} medical affiliation logo for Dr. M. Ram Prabhu`} className="max-h-9 max-w-full object-contain" sizes="80px" />
                     </div>
                     <div className="text-xs font-semibold text-neutral-900">{item.n}</div>
                     <div className="text-[10px] text-neutral-500">{item.l}</div>

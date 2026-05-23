@@ -17,7 +17,7 @@ const FAQPage: React.FC = () => {
           'plastic surgery cost hyderabad',
           'dr ram prabhu patient info'
         ]}
-        image="/images/reconstruction/before-after.jpg"
+        image="/images/reconstruction/before-after.webp"
         url="https://drramprabhu.com/faq"
       />
       <div className="FAQPage">

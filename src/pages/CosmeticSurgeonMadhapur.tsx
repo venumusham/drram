@@ -6,7 +6,7 @@ const CosmeticSurgeonMadhapur: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Dr. Ram Prabhu - Cosmetic Surgeon",
-    "image": "https://drramprabhu.com/images/banner.png",
+    "image": "https://drramprabhu.com/banner.webp",
     "description": "Expert cosmetic and plastic surgery services in Madhapur by Dr. Ram Prabhu",
     "address": {
       "@type": "PostalAddress",
@@ -51,7 +51,7 @@ const CosmeticSurgeonMadhapur: React.FC = () => {
           'dr ram prabhu madhapur',
           'reconstructive surgery madhapur'
         ]}
-        image="https://drramprabhu.com/images/banner.png"
+        image="https://drramprabhu.com/banner.webp"
         url="https://drramprabhu.com/cosmetic-surgeon-madhapur"
       />
       <script

@@ -14,7 +14,7 @@ const procedures = [
       'Improves self-confidence',
       'Advanced techniques for optimal results'
     ],
-    image: '/images/reconstruction/Scar-Revision.jpg',
+    image: '/images/reconstruction/Scar-Revision.webp',
   },
   {
     title: 'Post-Trauma Reconstruction',
@@ -26,7 +26,7 @@ const procedures = [
       'Addresses complex injuries',
       'Personalized treatment plans'
     ],
-    image: '/images/reconstruction/Post-Trauma-Reconstruction.jpg',
+    image: '/images/reconstruction/Post-Trauma-Reconstruction.webp',
   },
   {
     title: 'Cancer Reconstruction',
@@ -38,7 +38,7 @@ const procedures = [
       'Minimal scarring techniques',
       'Ongoing support and care'
     ],
-    image: '/images/reconstruction/Cancer-Reconstruction.jpg',
+    image: '/images/reconstruction/Cancer-Reconstruction.webp',
   },
   {
     title: 'Congenital Reconstruction',
@@ -50,7 +50,7 @@ const procedures = [
       'Comprehensive care approach',
       'Long-term follow-up care'
     ],
-    image: '/images/reconstruction/congenital-reconstruction.jpg',
+    image: '/images/reconstruction/congenital-reconstruction.webp',
   },
   {
     title: 'Microsurgery',
@@ -62,7 +62,7 @@ const procedures = [
       'Natural-looking results',
       'Comprehensive rehabilitation'
     ],
-    image: '/images/reconstruction/Microsurgery.jpg',
+    image: '/images/reconstruction/Microsurgery.webp',
   },
 ];
 
@@ -81,13 +81,13 @@ export const ReconstructivePage: React.FC = () => {
           'microsurgery india',
           'post trauma reconstruction dr ram'
         ]}
-        image="/images/reconstruction/reconstructive-hero.jpg"
+        image="/images/reconstruction/reconstructive-hero.webp"
         url="https://drramprabhu.com/services/reconstructive"
         type="article"
       />
       <div className="bg-white min-h-screen pb-12">
         {/* Hero Section */}
-        <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/reconstruction/reconstructive-hero.jpg)'}}>
+        <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/reconstruction/reconstructive-hero.webp)'}}>
           <div className="absolute inset-0 bg-black/60"></div>
           <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white px-6 py-3 rounded">Reconstructive Surgery</h1>
         </div>
@@ -129,7 +129,7 @@ export const ReconstructivePage: React.FC = () => {
           <div className="flex justify-center">
             <div className="relative">
               <img 
-                src="/images/reconstruction/before-after.jpg" 
+                src="/images/reconstruction/before-after.webp" 
                 alt="Before and After Results" 
                 className="rounded-lg shadow-lg w-full max-w-md" 
               />

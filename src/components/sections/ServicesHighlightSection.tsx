@@ -1,43 +1,48 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import OptimizedImage from '../ui/OptimizedImage';
 
 const services = [
   {
     tab: 'Face',
-    img: '/images/services/service-face-plastic.png',
+    img: '/images/services/service-face-plastic.webp',
     title: 'Facial Aesthetics',
     desc: 'Refined facial procedures planned around proportion, natural expression, and long-term harmony.',
     procedures: ['Facelift Surgery', 'Rhinoplasty', 'Blepharoplasty', 'Otoplasty', 'Chin Surgery', 'Facial Fat Grafting'],
     link: '/services/facelift',
     accent: '#1a3a5c',
+    imageAlt: 'Facial aesthetics plastic surgery services including facelift rhinoplasty blepharoplasty and otoplasty',
   },
   {
     tab: 'Body',
-    img: '/images/services/service-body-plastic.png',
+    img: '/images/services/service-body-plastic.webp',
     title: 'Body Contouring',
     desc: 'Advanced contouring for chest, abdomen, arms, and body shape with a focus on definition and recovery.',
     procedures: ['Liposuction (VASER)', 'Tummy Tuck', 'Body Contouring', 'Gynecomastia', 'Lipoma Removal', 'Arm Lift'],
     link: '/services/body-contouring',
     accent: '#1a5c3a',
+    imageAlt: 'Body contouring plastic surgery services including VASER liposuction tummy tuck gynecomastia and arm lift',
   },
   {
     tab: 'Breast',
-    img: '/images/services/service-breast-plastic.png',
+    img: '/images/services/service-breast-plastic.webp',
     title: 'Breast Procedures',
     desc: 'Personalised breast surgery with balanced proportions, careful planning, and natural-looking outcomes.',
     procedures: ['Breast Augmentation', 'Breast Reduction', 'Breast Lift', 'Implant Revision', 'Gynecomastia', 'Fat Grafting'],
     link: '/services/breast-procedures',
     accent: '#5c1a3a',
+    imageAlt: 'Breast plastic surgery services including augmentation reduction lift gynecomastia and fat grafting',
   },
   {
     tab: 'Reconstructive',
-    img: '/images/services/service-reconstructive-plastic.png',
+    img: '/images/services/service-reconstructive-plastic.webp',
     title: 'Reconstructive Care',
     desc: 'Restoring form and function after injury, illness, scars, wounds, and congenital conditions.',
     procedures: ['Scar Revision', 'Diabetic Foot Care', 'Skin Grafting', 'Earlobe Repair', 'Wound Management', 'Circumcision'],
     link: '/services/reconstructive',
     accent: '#5c3a1a',
+    imageAlt: 'Reconstructive plastic surgery services including scar revision diabetic foot care skin grafting earlobe repair and circumcision',
   },
 ];
 
@@ -75,10 +80,11 @@ const ServicesHighlightSection: React.FC = () => {
                 }`}
               >
                 <div className="flex items-center gap-3 p-3">
-                  <img
+                  <OptimizedImage
                     src={service.img}
-                    alt=""
+                    alt={service.imageAlt}
                     className="h-14 w-16 flex-shrink-0 rounded-lg object-cover"
+                    sizes="64px"
                   />
                   <div className="min-w-0">
                     <div className="text-sm font-semibold text-neutral-950">{service.tab}</div>
@@ -92,10 +98,11 @@ const ServicesHighlightSection: React.FC = () => {
           <div className="overflow-hidden rounded-2xl border border-[#eadfce] bg-white shadow-soft">
             <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
               <div className="relative min-h-[260px] overflow-hidden lg:min-h-[520px]">
-                <img
+                <OptimizedImage
                   src={selected.img}
-                  alt={selected.title}
+                  alt={selected.imageAlt}
                   className="absolute inset-0 h-full w-full object-cover"
+                  sizes="(min-width: 1024px) 520px, 100vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">

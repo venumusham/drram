@@ -16,7 +16,7 @@ const SEO: React.FC<SEOProps> = ({
   title,
   description,
   keywords = [],
-  image = '/images/logo.png',
+  image = '/banner.webp',
   url = 'https://drramprabhu.com',
   type = 'website'
 }) => {

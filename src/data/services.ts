@@ -23,7 +23,7 @@ export const serviceHighlights: ServiceHighlights = {
         id: 'facelift',
         title: 'Facelift',
         description: 'Comprehensive facial rejuvenation procedures to enhance your natural beauty.',
-        image: '/images/services/face.jpg',
+        image: '/images/services/face.webp',
         procedures: [
           'Facelift Surgery',
           'Rhinoplasty',
@@ -42,7 +42,7 @@ export const serviceHighlights: ServiceHighlights = {
         id: 'body-contouring',
         title: 'Body Contouring',
         description: 'Advanced body sculpting procedures to help you achieve your desired shape.',
-        image: '/images/services/body.jpg',
+        image: '/images/services/body.webp',
         procedures: [
           'Liposuction',
           'Tummy Tuck',
@@ -61,7 +61,7 @@ export const serviceHighlights: ServiceHighlights = {
         id: 'breast-procedures',
         title: 'Breast Procedures',
         description: 'Comprehensive breast enhancement and reconstruction procedures.',
-        image: '/images/services/breast.jpg',
+        image: '/images/services/breast.webp',
         procedures: [
           'Breast Augmentation',
           'Breast Lift',
@@ -80,7 +80,7 @@ export const serviceHighlights: ServiceHighlights = {
         id: 'reconstructive',
         title: 'Reconstructive Surgery',
         description: 'Specialized procedures to restore form and function.',
-        image: '/images/services/reconstructive.jpg',
+        image: '/images/services/reconstructive.webp',
         procedures: [
           'Skin Cancer Reconstruction',
           'Hand Surgery',

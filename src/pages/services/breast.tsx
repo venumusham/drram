@@ -5,27 +5,27 @@ const procedures = [
   {
     title: 'Breast Augmentation',
     description: 'Enhances breast size and shape using implants or fat transfer for a fuller, more balanced appearance.',
-    image: '/images/breast/Breast-Augmentation.jpg',
+    image: '/images/breast/Breast-Augmentation.webp',
   },
   {
     title: 'Breast Reduction',
     description: 'Reduces breast size to improve comfort, posture, and overall body proportion.',
-    image: '/images/breast/Breast-reduction.jpg',
+    image: '/images/breast/Breast-reduction.webp',
   },
   {
     title: 'Mastopexy',
     description: 'Lifts and reshapes sagging breasts to restore a more youthful position and contour.',
-    image: '/images/breast/Mastopexy.jpg',
+    image: '/images/breast/Mastopexy.webp',
   },
   {
     title: 'Breast Reconstruction',
     description: 'Restores breast shape and volume after mastectomy or other breast surgeries.',
-    image: '/images/breast/Breast-Reconstruction.jpg',
+    image: '/images/breast/Breast-Reconstruction.webp',
   },
   {
     title: 'Gynecomastia',
     description: 'Reduces excess breast tissue in men for a more masculine chest contour.',
-    image: '/images/breast/Gynecomastia.jpg',
+    image: '/images/breast/Gynecomastia.webp',
   },
 ];
 
@@ -33,7 +33,7 @@ const BreastPage: React.FC = () => {
   return (
     <div className="bg-white min-h-screen pb-12">
       {/* Hero Section */}
-      <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/breast/breast-hero.jpg)'}}>
+      <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/breast/breast-hero.webp)'}}>
         <div className="absolute inset-0 bg-black/60"></div>
         <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white px-6 py-3 rounded">Breast Surgery</h1>
       </div>
@@ -66,7 +66,7 @@ const BreastPage: React.FC = () => {
         <div className="flex justify-center">
           <div className="relative">
             <img 
-              src="/images/breast/Gynecomastia-before-after.jpeg" 
+              src="/images/breast/Gynecomastia-before-after.webp" 
               alt="Before and After Results" 
               className="rounded-lg shadow-lg w-full max-w-lg" 
             />

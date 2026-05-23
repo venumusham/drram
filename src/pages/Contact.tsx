@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
           'plastic surgeon phone number',
           'idea clinic directions'
         ]}
-        image="/images/banner.png"
+        image="/banner.webp"
         url="https://drramprabhu.com/contact"
       />
       <div className="ContactPage">

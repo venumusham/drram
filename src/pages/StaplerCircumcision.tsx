@@ -24,7 +24,7 @@ const StaplerCircumcision: React.FC = () => {
         name: 'Stapler Circumcision in Hyderabad',
         alternateName: 'ZSR Stapler Circumcision',
         url: 'https://drramprabhu.com/stapler-circumcision-hyderabad',
-        image: 'https://drramprabhu.com/images/stapler-circumcision/illustration.png',
+        image: 'https://drramprabhu.com/images/stapler-circumcision/illustration.webp',
         description: 'Advanced, painless, and bloodless stapler circumcision procedure by Dr. Ram Prabhu in Hyderabad. Quick recovery and excellent cosmetic results.',
         medicalSpecialty: 'Urology',
         procedureType: 'Outpatient',
@@ -68,7 +68,7 @@ const StaplerCircumcision: React.FC = () => {
                     'best circumcision surgeon hyderabad',
                     'circumcision for adults hyderabad'
                 ]}
-                image="https://drramprabhu.com/images/stapler-circumcision/illustration.png"
+                image="https://drramprabhu.com/images/stapler-circumcision/illustration.webp"
                 url="https://drramprabhu.com/stapler-circumcision-hyderabad"
                 type="article"
             />
@@ -122,7 +122,7 @@ const StaplerCircumcision: React.FC = () => {
                                 <div className="relative">
                                     <div className="absolute -inset-4 bg-primary-100 rounded-full blur-3xl opacity-50"></div>
                                     <img
-                                        src="/images/stapler-circumcision/illustration.png"
+                                        src="/images/stapler-circumcision/illustration.webp"
                                         alt="Stapler Circumcision"
                                         className="relative w-full max-w-lg rounded-2xl shadow-2xl border-4 border-white transform hover:scale-105 transition-transform duration-500"
                                     />
@@ -174,7 +174,7 @@ const StaplerCircumcision: React.FC = () => {
                         <div className="flex flex-col lg:flex-row items-center gap-12">
                             <div className="w-full lg:w-1/2 order-2 lg:order-1">
                                 <img
-                                    src="/images/stapler-circumcision/schematic.png"
+                                    src="/images/stapler-circumcision/schematic.webp"
                                     alt="Stapler Circumcision Schematic"
                                     className="rounded-xl shadow-lg w-full max-w-md mx-auto"
                                 />
@@ -358,7 +358,7 @@ const StaplerCircumcision: React.FC = () => {
                             <div className="w-full lg:w-1/2">
                                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="/banner-desktop.png"
+                                        src="/banner-desktop.webp"
                                         alt="Dr. Ram Prabhu"
                                         className="w-full aspect-[4/3] object-cover"
                                     />

@@ -14,7 +14,7 @@ const procedures = [
       'Minimal scarring with advanced surgical techniques',
       'Personalized recovery plan for optimal results'
     ],
-    image: '/images/breast/Breast-Augmentation.jpg',
+    image: '/images/breast/Breast-Augmentation.webp',
   },
   {
     title: 'Breast Reduction',
@@ -26,7 +26,7 @@ const procedures = [
       'Reduces skin irritation and rashes',
       'Enhances clothing fit and style options'
     ],
-    image: '/images/breast/Breast-reduction.jpg',
+    image: '/images/breast/Breast-reduction.webp',
   },
   {
     title: 'Mastopexy',
@@ -38,7 +38,7 @@ const procedures = [
       'Minimizes scarring with advanced techniques',
       'Restores youthful breast appearance'
     ],
-    image: '/images/breast/Mastopexy.jpg',
+    image: '/images/breast/Mastopexy.webp',
   },
   {
     title: 'Breast Reconstruction',
@@ -50,7 +50,7 @@ const procedures = [
       'Minimal scarring with careful incision placement',
       'Comprehensive post-surgery support'
     ],
-    image: '/images/breast/Breast-Reconstruction.jpg',
+    image: '/images/breast/Breast-Reconstruction.webp',
   },
   {
     title: 'Gynecomastia',
@@ -62,7 +62,7 @@ const procedures = [
       'Minimal scarring with advanced techniques',
       'Quick recovery with proper care'
     ],
-    image: '/images/breast/Gynecomastia.jpg',
+    image: '/images/breast/Gynecomastia.webp',
   },
 ];
 
@@ -81,13 +81,13 @@ const BreastProceduresPage: React.FC = () => {
           'breast reconstruction india',
           'male breast reduction doctor'
         ]}
-        image="/images/breast/breast-hero.jpg"
+        image="/images/breast/breast-hero.webp"
         url="https://drramprabhu.com/services/breast-procedures"
         type="article"
       />
       <div className="bg-white min-h-screen pb-12">
         {/* Hero Section */}
-        <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/breast/breast-hero.jpg)'}}>
+        <div className="relative w-full h-64 md:h-80 bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url(/images/breast/breast-hero.webp)'}}>
           <div className="absolute inset-0 bg-black/60"></div>
           <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white px-6 py-3 rounded">Breast Procedures</h1>
         </div>
@@ -129,7 +129,7 @@ const BreastProceduresPage: React.FC = () => {
           <div className="flex justify-center">
             <div className="relative">
               <img 
-                src="/images/breast/Gynecomastia-before-after.jpeg" 
+                src="/images/breast/Gynecomastia-before-after.webp" 
                 alt="Before and After Results" 
                 className="rounded-lg shadow-lg w-full max-w-lg" 
               />

@@ -29,7 +29,7 @@ const data: MoneyPageData = {
     '0% EMI',
   ],
   heroPriceBand: 'Augmentation from ₹1,20,000',
-  heroImage: 'https://drramprabhu.com/images/breast/Breast-Augmentation.jpg',
+  heroImage: 'https://drramprabhu.com/images/breast/Breast-Augmentation.webp',
   priceMin: '120000',
   priceMax: '250000',
   whatIsParagraphs: [
@@ -130,7 +130,7 @@ const data: MoneyPageData = {
     { when: 'Month 3', title: '"Drop and fluff"', detail: 'Implants settle into natural position. Final shape becoming evident.' },
     { when: 'Month 6', title: 'Final result', detail: 'Implants fully settled. Final breast shape visible. Long-term result.' },
   ],
-  beforeAfterImage: '/images/body/before-after.jpg',
+  beforeAfterImage: '/images/body/before-after.webp',
   faqs: [
     {
       q: 'How much does breast augmentation cost in Hyderabad?',

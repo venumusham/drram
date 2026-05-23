@@ -30,7 +30,7 @@ const data: MoneyPageData = {
     '0% EMI',
   ],
   heroPriceBand: 'Facelift from ₹1,20,000',
-  heroImage: 'https://drramprabhu.com/images/facelift/facelift.jpg',
+  heroImage: 'https://drramprabhu.com/images/facelift/facelift.webp',
   priceMin: '120000',
   priceMax: '300000',
   whatIsParagraphs: [
@@ -133,7 +133,7 @@ const data: MoneyPageData = {
     { when: 'Month 3', title: '90% final result', detail: 'Most swelling resolved. Scars fading. Final contour visible.' },
     { when: 'Month 6-12', title: 'Final result', detail: 'Complete settling. Scars become barely visible. Results last 7-10 years.' },
   ],
-  beforeAfterImage: '/images/facelift/before-after.jpg',
+  beforeAfterImage: '/images/facelift/before-after.webp',
   videoEmbedUrl: undefined,
   faqs: [
     {

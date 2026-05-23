@@ -29,7 +29,7 @@ const data: MoneyPageData = {
     '0% EMI',
   ],
   heroPriceBand: 'Tummy Tuck from ₹1,40,000',
-  heroImage: 'https://drramprabhu.com/images/body/tummy.jpg',
+  heroImage: 'https://drramprabhu.com/images/body/tummy.webp',
   priceMin: '140000',
   priceMax: '280000',
   whatIsParagraphs: [
@@ -132,7 +132,7 @@ const data: MoneyPageData = {
     { when: 'Month 6', title: 'Full recovery', detail: 'Final aesthetic shape visible. Core strength returns to normal. Scar maturation begins.' },
     { when: 'Month 12', title: 'Final result', detail: 'Scar fades to barely visible pink line. Permanent muscle repair holds. Long-term flat contour.' },
   ],
-  beforeAfterImage: '/images/body/before-after.jpg',
+  beforeAfterImage: '/images/body/before-after.webp',
   faqs: [
     {
       q: 'How much does a tummy tuck cost in Hyderabad?',

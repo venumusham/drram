@@ -12,7 +12,7 @@ const BookAppointment: React.FC = () => {
         title="Live Slot Booking | Dr Ramprabhu Clinic Kondapur"
         description="Book a live consultation slot with Dr. Ram Prabhu, Plastic Surgeon in Kondapur Hyderabad. Choose available clinic slots and confirm via WhatsApp."
         keywords={['book plastic surgeon hyderabad', 'dr ramprabhu appointment', 'plastic surgery consultation slot']}
-        image="/images/banner.png"
+        image="/banner.webp"
         url="https://drramprabhu.com/book-appointment"
       />
       <div className="BookAppointmentPage bg-[#f6f8fb] md:bg-white">

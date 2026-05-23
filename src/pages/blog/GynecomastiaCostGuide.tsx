@@ -10,7 +10,7 @@ import {
 const SLUG = 'gynecomastia-surgery-cost-hyderabad-2026-guide';
 const PUBLISHED = '2026-05-12';
 
-const IMG_HERO = '/images/breast/gynecomastia-cost-guide-thumbnail.png';
+const IMG_HERO = '/images/breast/gynecomastia-cost-guide-thumbnail.webp';
 const ABS_HERO = `https://drramprabhu.com${IMG_HERO}`;
 
 const GynecomastiaCostGuide: React.FC = () => (

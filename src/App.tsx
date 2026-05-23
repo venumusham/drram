@@ -70,7 +70,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <ScrollToTop />
       <div className="font-sans min-h-screen flex flex-col">
         <Header />

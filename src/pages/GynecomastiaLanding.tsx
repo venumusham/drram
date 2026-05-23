@@ -143,7 +143,7 @@ const GynecomastiaLanding: React.FC = () => {
     name: 'Gynecomastia Surgery in Hyderabad',
     alternateName: ['Male Chest Reduction Surgery', 'Male Breast Reduction', 'Gynecomastia Treatment'],
     url: 'https://drramprabhu.com/gynecomastia',
-    image: 'https://drramprabhu.com/images/breast/Gynecomastia.jpg',
+    image: 'https://drramprabhu.com/images/breast/Gynecomastia.webp',
     description:
       'Endoscopic and scarless gynecomastia surgery in Kondapur, Hyderabad — VASER liposuction with gland excision. Performed by Dr. M. Ram Prabhu (DNB Super Speciality, 16+ years, 1,000+ cases). Cost from ₹50,000 with 0% EMI.',
     medicalSpecialty: 'PlasticSurgery',
@@ -215,7 +215,7 @@ const GynecomastiaLanding: React.FC = () => {
           'vaser liposuction gynecomastia',
           'gynecomastia treatment kondapur',
         ]}
-        image="https://drramprabhu.com/images/breast/Gynecomastia.jpg"
+        image="https://drramprabhu.com/images/breast/Gynecomastia.webp"
         url="https://drramprabhu.com/gynecomastia"
         type="article"
       />
