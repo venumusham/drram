@@ -1,17 +1,41 @@
 # robots.txt for drramprabhu.com
-# https://drramprabhu.com/robots.txt
+# Public medical education and clinic pages are open for search and AI crawlers.
 
 User-agent: *
 Allow: /
-
-# Block admin/dev paths if they exist
 Disallow: /admin/
 Disallow: /api/
 Disallow: /.env
 Disallow: /node_modules/
 
-# Sitemap location
-Sitemap: https://drramprabhu.com/sitemap.xml
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
 
-# Crawl-delay for polite bots
-Crawl-delay: 10
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://drramprabhu.com/sitemap.xml
