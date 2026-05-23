@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const BusinessHours: React.FC = () => {
+  const [todayName, setTodayName] = useState<string | null>(null);
+
   const hours = [
     { day: 'Monday', hours: '9:00 AM - 6:00 PM' },
     { day: 'Tuesday', hours: '9:00 AM - 6:00 PM' },
@@ -12,10 +14,14 @@ const BusinessHours: React.FC = () => {
   ];
 
   const isToday = (day: string) => {
+    return todayName === day;
+  };
+
+  useEffect(() => {
     const today = new Date().getDay();
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    return days[today] === day;
-  };
+    setTodayName(days[today]);
+  }, []);
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6 md:p-8">

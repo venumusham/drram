@@ -151,6 +151,7 @@ const HeroSection: React.FC = () => {
 
   useEffect(() => {
     if (isPaused) return;
+    if (navigator.userAgent.includes('Prerender-DrRamprabhu')) return;
 
     const timer = window.setInterval(() => {
       goToSlide(activeSlide + 1);
