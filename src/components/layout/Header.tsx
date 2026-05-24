@@ -111,6 +111,21 @@ const Header: React.FC = () => {
               <a
                 href="tel:9949808628"
                 className={`flex items-center hover:text-accent-400 transition-colors ${linkColor}`}
+                onClick={() => {
+                  if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                      send_to: 'AW-16793309853/phone_call_click',
+                      value: 1.0,
+                      currency: 'INR'
+                    });
+                  }
+                  if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Contact', {
+                      content_name: 'Phone Call',
+                      content_category: 'Contact'
+                    });
+                  }
+                }}
               >
                 <Phone size={20} className="mr-1" />
                 <span className="text-sm">9949808628</span>
@@ -121,6 +136,21 @@ const Header: React.FC = () => {
                 rel="noopener noreferrer"
                 className={`flex items-center hover:text-green-500 transition-colors ${linkColor}`}
                 aria-label="WhatsApp"
+                onClick={() => {
+                  if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                      send_to: 'AW-16793309853/whatsapp_header_click',
+                      value: 1.0,
+                      currency: 'INR'
+                    });
+                  }
+                  if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Contact', {
+                      content_name: 'WhatsApp Header',
+                      content_category: 'Contact'
+                    });
+                  }
+                }}
               >
                 <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mr-1" />
                 <span className="text-sm hidden lg:inline">WhatsApp</span>
@@ -130,6 +160,21 @@ const Header: React.FC = () => {
                 href="/book-appointment"
                 variant={isScrolled ? "primary" : "outline"}
                 className={!isScrolled ? "border-white text-white hover:bg-white/10" : ""}
+                onClick={() => {
+                  if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                      send_to: 'AW-16793309853/book_consultation_click',
+                      value: 1.0,
+                      currency: 'INR'
+                    });
+                  }
+                  if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead', {
+                      content_name: 'Book Consultation Button',
+                      content_category: 'Appointment'
+                    });
+                  }
+                }}
               >
                 Book Consultation
               </Button>
@@ -209,6 +254,21 @@ const Header: React.FC = () => {
                 <a
                   href="tel:9949808628"
                   className="flex items-center justify-center rounded-lg bg-primary-50 px-3 py-2.5 text-primary-700 hover:text-primary-800 transition-colors"
+                  onClick={() => {
+                    if (typeof gtag !== 'undefined') {
+                      gtag('event', 'conversion', {
+                        send_to: 'AW-16793309853/phone_call_click',
+                        value: 1.0,
+                        currency: 'INR'
+                      });
+                    }
+                    if (typeof fbq !== 'undefined') {
+                      fbq('track', 'Contact', {
+                        content_name: 'Phone Call Mobile',
+                        content_category: 'Contact'
+                      });
+                    }
+                  }}
                 >
                   <Phone size={18} className="mr-1" />
                   <span className="text-sm">9949808628</span>
@@ -219,6 +279,21 @@ const Header: React.FC = () => {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded-lg bg-green-50 px-3 py-2.5 text-green-700 hover:text-green-800 transition-colors"
                   aria-label="WhatsApp"
+                  onClick={() => {
+                    if (typeof gtag !== 'undefined') {
+                      gtag('event', 'conversion', {
+                        send_to: 'AW-16793309853/whatsapp_mobile_click',
+                        value: 1.0,
+                        currency: 'INR'
+                      });
+                    }
+                    if (typeof fbq !== 'undefined') {
+                      fbq('track', 'Contact', {
+                        content_name: 'WhatsApp Mobile',
+                        content_category: 'Contact'
+                      });
+                    }
+                  }}
                 >
                   <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mr-1" />
                   <span className="text-sm">WhatsApp</span>
@@ -227,6 +302,21 @@ const Header: React.FC = () => {
               <Link
                 to="/book-appointment"
                 className="mt-3 flex w-full items-center justify-center rounded-lg bg-accent-500 px-4 py-3 text-sm font-semibold text-black transition-colors hover:bg-accent-400"
+                onClick={() => {
+                  if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                      send_to: 'AW-16793309853/book_consultation_click',
+                      value: 1.0,
+                      currency: 'INR'
+                    });
+                  }
+                  if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead', {
+                      content_name: 'Book Consultation Mobile',
+                      content_category: 'Appointment'
+                    });
+                  }
+                }}
               >
                 <Calendar size={16} className="mr-2" />
                 Book Consultation

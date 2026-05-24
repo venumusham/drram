@@ -264,6 +264,38 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
       .filter(Boolean)
       .join('\n');
 
+    // Track conversion events
+    if (typeof window !== 'undefined') {
+      // Google Ads Conversion Tracking
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', {
+          send_to: 'AW-16793309853/booking_whatsapp_click',
+          value: 1.0,
+          currency: 'INR',
+          transaction_id: `whatsapp_${Date.now()}`
+        });
+      }
+      
+      // Meta Pixel Conversion Tracking
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead', {
+          content_name: 'WhatsApp Booking',
+          content_category: 'Appointment',
+          value: 1.0,
+          currency: 'INR'
+        });
+      }
+      
+      // Google Analytics Event
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'whatsapp_booking', {
+          event_category: 'Conversion',
+          event_label: details.reserved ? 'Slot Reserved' : 'Manual Request',
+          value: 1
+        });
+      }
+    }
+
     window.open(`https://wa.me/919949808628?text=${encodeURIComponent(whatsappMessage)}`, '_blank', 'noopener,noreferrer');
   };
 
