@@ -18,6 +18,27 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
   whatsappMessage = WHATSAPP_DEFAULT_MSG,
 }) => {
   const waUrl = `https://wa.me/${WHATSAPP_INTL}?text=${encodeURIComponent(whatsappMessage)}`;
+  
+  const trackConversion = (eventName: string, eventLabel: string) => {
+    if (typeof window !== 'undefined') {
+      // Google Ads Conversion Tracking
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', {
+          send_to: 'AW-16793309853/' + eventName,
+          value: 1.0,
+          currency: 'INR'
+        });
+      }
+      // Meta Pixel Conversion Tracking
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Contact', {
+          content_name: eventLabel,
+          content_category: 'Contact'
+        });
+      }
+    }
+  };
+  
   return (
     <>
       {/* Right-side floating buttons */}
@@ -27,6 +48,7 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
           className="group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full bg-[#111118]/90 text-white shadow-xl shadow-black/20 ring-1 ring-white/10 backdrop-blur transition-all hover:bg-accent-500 hover:text-black md:hover:w-36"
           aria-label="Call Dr. Ram Prabhu"
           data-conversion="call_floating"
+          onClick={() => trackConversion('call_floating_click', 'Floating Call Button')}
         >
           <span className="w-0 whitespace-nowrap text-sm font-semibold opacity-0 transition-all md:group-hover:w-20 md:group-hover:opacity-100">
             Call
@@ -42,6 +64,7 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
           target="_blank"
           rel="noopener noreferrer"
           data-conversion="whatsapp_floating"
+          onClick={() => trackConversion('whatsapp_floating_click', 'Floating WhatsApp Button')}
         >
           <span className="w-0 whitespace-nowrap text-sm font-semibold opacity-0 transition-all md:group-hover:w-24 md:group-hover:opacity-100">
             WhatsApp
@@ -77,6 +100,7 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
           href={`tel:${PHONE_INTL}`}
           className="flex flex-col items-center justify-center py-2 text-primary-700 active:bg-primary-50"
           data-conversion="call_bottombar"
+          onClick={() => trackConversion('call_bottombar_click', 'Mobile Bottom Call')}
         >
           <Phone size={18} />
           <span className="text-[11px] font-semibold mt-0.5">Call Now</span>
@@ -87,6 +111,7 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-2 text-green-700 border-l border-r border-gray-200 active:bg-green-50"
           data-conversion="whatsapp_bottombar"
+          onClick={() => trackConversion('whatsapp_bottombar_click', 'Mobile Bottom WhatsApp')}
         >
           <MessageCircle size={18} />
           <span className="text-[11px] font-semibold mt-0.5">WhatsApp</span>
