@@ -35,7 +35,7 @@ const slides = [
     image: '/images/hero-clinic-premium.webp',
     imagePosition: 'center center',
     mobileImagePosition: '67% center',
-    primary: 'Book Free Consultation',
+    primary: 'Book Consultation',
     primaryHref: '/book-appointment',
     secondary: 'Explore Procedures',
     secondaryHref: '/services',

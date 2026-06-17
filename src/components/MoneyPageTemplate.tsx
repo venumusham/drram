@@ -491,7 +491,7 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
                 type="submit"
                 className="bg-primary-700 text-white font-semibold px-6 py-3 rounded shadow hover:bg-primary-800 transition"
               >
-                Book Free Consultation
+                Book Consultation
               </button>
               <p className="text-xs text-gray-500 text-center">
                 Or call <a href={`tel:${PHONE_INTL}`} className="text-primary-700 font-semibold">9949808628</a> directly.

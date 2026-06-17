@@ -18,7 +18,7 @@ const CTASection: React.FC = () => {
           to="/book-appointment"
           className="rounded-lg bg-accent-500 px-8 py-4 text-sm font-semibold text-black transition hover:bg-accent-400"
         >
-          Book Free Consultation
+          Book Consultation
         </Link>
         <a
           href="tel:+919949808628"
