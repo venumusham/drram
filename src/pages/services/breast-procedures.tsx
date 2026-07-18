@@ -123,6 +123,25 @@ const BreastProceduresPage: React.FC = () => {
           </div>
         </div>
 
+        {/* Related gynecomastia resources */}
+        <div className="container mx-auto px-4 py-8 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4 text-primary-800">Related gynecomastia resources</h2>
+          <div className="grid gap-4 md:grid-cols-3">
+            <Link to="/one-sided-male-breast-enlargement-hyderabad" className="rounded-xl border border-gray-200 bg-gray-50 p-5 transition hover:shadow-md">
+              <h3 className="font-semibold text-primary-800">One-sided enlargement</h3>
+              <p className="mt-2 text-sm text-gray-600">When one breast or nipple is larger than the other.</p>
+            </Link>
+            <Link to="/asymmetric-gynecomastia-unequal-male-chest" className="rounded-xl border border-gray-200 bg-gray-50 p-5 transition hover:shadow-md">
+              <h3 className="font-semibold text-primary-800">Unequal male chest</h3>
+              <p className="mt-2 text-sm text-gray-600">How asymmetric chest contour is assessed and planned.</p>
+            </Link>
+            <Link to="/teenage-gynecomastia-treatment-hyderabad" className="rounded-xl border border-gray-200 bg-gray-50 p-5 transition hover:shadow-md">
+              <h3 className="font-semibold text-primary-800">Teenage gynecomastia</h3>
+              <p className="mt-2 text-sm text-gray-600">When observation, evaluation, or surgery may be appropriate.</p>
+            </Link>
+          </div>
+        </div>
+
         {/* Before & After Gallery */}
         <div className="container mx-auto px-4 py-8 max-w-4xl">
           <h2 className="text-2xl font-bold mb-6 text-primary-800">Before & After</h2>

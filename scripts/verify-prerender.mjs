@@ -47,6 +47,9 @@ const ROUTES = [
   '/tummy-tuck-hyderabad',
   '/lipoma-removal-hyderabad',
   '/earlobe-repair-kondapur',
+  '/one-sided-male-breast-enlargement-hyderabad',
+  '/asymmetric-gynecomastia-unequal-male-chest',
+  '/teenage-gynecomastia-treatment-hyderabad',
   // Medical tourism (Step 7)
   '/medical-tourism-india',
   // Blog (Step 7)
