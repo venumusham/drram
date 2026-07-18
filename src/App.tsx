@@ -23,6 +23,7 @@ import BodyContouringPage from './pages/services/body-contouring';
 import BreastProceduresPage from './pages/services/breast-procedures';
 import { ReconstructivePage } from './pages/services/reconstructive';
 import GynecomastiaLanding from './pages/GynecomastiaLanding';
+import { AsymmetricGynecomastia, OneSidedMaleBreastEnlargement, TeenageGynecomastia } from './pages/GynecomastiaSupportPages';
 import StaplerCircumcision from './pages/StaplerCircumcision';
 import NotFoundPage from './pages/NotFound';
 // Money pages — long-form SEO-optimized procedure landings (Step 6).
@@ -96,6 +97,9 @@ function App() {
             <Route path="/plastic-surgeon-gachibowli" element={<PlasticSurgeonGachibowli />} />
             <Route path="/plastic-surgeon-hitech-city" element={<PlasticSurgeonHitechCity />} />
             <Route path="/gynecomastia" element={<GynecomastiaLanding />} />
+            <Route path="/one-sided-male-breast-enlargement-hyderabad" element={<OneSidedMaleBreastEnlargement />} />
+            <Route path="/asymmetric-gynecomastia-unequal-male-chest" element={<AsymmetricGynecomastia />} />
+            <Route path="/teenage-gynecomastia-treatment-hyderabad" element={<TeenageGynecomastia />} />
             <Route path="/stapler-circumcision-hyderabad" element={<StaplerCircumcision />} />
             {/* Money pages (Step 6) */}
             <Route path="/rhinoplasty-hyderabad" element={<RhinoplastyHyderabad />} />

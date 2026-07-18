@@ -572,6 +572,27 @@ const GynecomastiaLanding: React.FC = () => {
           </div>
         </section>
 
+        <section className="bg-primary-50 py-12 px-4">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-900">Related gynecomastia concerns</h2>
+            <p className="mt-3 text-gray-700">These guides answer common questions that need a more focused assessment.</p>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              <a href="/one-sided-male-breast-enlargement-hyderabad" className="rounded-xl bg-white p-5 shadow-sm transition hover:shadow-md">
+                <h3 className="font-semibold text-primary-900">One-sided enlargement</h3>
+                <p className="mt-2 text-sm text-gray-600">When one breast or nipple is larger than the other.</p>
+              </a>
+              <a href="/asymmetric-gynecomastia-unequal-male-chest" className="rounded-xl bg-white p-5 shadow-sm transition hover:shadow-md">
+                <h3 className="font-semibold text-primary-900">Unequal male chest</h3>
+                <p className="mt-2 text-sm text-gray-600">How asymmetric chest contour is assessed and planned.</p>
+              </a>
+              <a href="/teenage-gynecomastia-treatment-hyderabad" className="rounded-xl bg-white p-5 shadow-sm transition hover:shadow-md">
+                <h3 className="font-semibold text-primary-900">Teenage gynecomastia</h3>
+                <p className="mt-2 text-sm text-gray-600">When observation, evaluation, or surgery may be appropriate.</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* ================= 14. LOCATION & CONTACT ================= */}
         <section className="py-12 px-4">
           <div className="max-w-3xl mx-auto text-center">
