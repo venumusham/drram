@@ -11,7 +11,7 @@ const ClinicLocation: React.FC = () => {
 
       <div className="mb-6 rounded-lg overflow-hidden h-[400px]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.985621181176!2d78.3517147!3d17.460402299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91038ef40aef%3A0x4255a5cd5b7f505b!2sDr.%20Ramprabhu%20Plastic%20Surgery%20Clinic!5e0!3m2!1sen!2sin!4v1778855170129!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.1604958405565!2d78.3744207!3d17.433422099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91e736fbc1b5%3A0x3a136dab257734d3!2sLUX%20Hospitals%20%7C%20NABH%20Certified%20%7C%20Best%20in%20Hyderabad%20for%20Proctology%2C%20Gynecology%2C%20Orthopedics%2C%20Bariatric%20%26%20Laparoscopic%20Surgery!5e1!3m2!1sen!2sin!4v1786470484366!5m2!1sen!2sin"
           className="w-full h-full border-0"
           allowFullScreen
           loading="lazy"
@@ -28,13 +28,7 @@ const ClinicLocation: React.FC = () => {
           <div className="ml-4">
             <h3 className="text-lg font-medium text-gray-900">Address</h3>
             <p className="text-gray-700">
-              1st Floor, Idea Clinic, 61B
-              <br />
-              3rd Street, Near Burfighar Sweetshop
-              <br />
-              Sri Ram Nagar, Kondapur
-              <br />
-              Hyderabad, Telangana 500084
+              Lux Hospitals, Plot No.116 Lumbini Avenue,<br />Gachibowli Near IKEA,<br />Hyderabad – 500081
             </p>
             <a
               href={MAPS_URL}
@@ -58,21 +52,21 @@ const ClinicLocation: React.FC = () => {
               <div className="flex items-center">
                 <MessageCircle className="w-4 h-4 text-primary-600 mr-2" />
                 <a
-                  href="https://wa.me/9949808628"
+                  href="https://wa.me/917969084444"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-primary-600 transition-colors"
                 >
-                  WhatsApp: 9949808628
+                  WhatsApp: 7969084444
                 </a>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 text-primary-600 mr-2" />
                 <a
-                  href="tel:9949808628"
+                  href="tel:07969084439"
                   className="text-gray-700 hover:text-primary-600 transition-colors"
                 >
-                  Clinic: 9949808628
+                  Clinic: 07969084439
                 </a>
               </div>
             </div>

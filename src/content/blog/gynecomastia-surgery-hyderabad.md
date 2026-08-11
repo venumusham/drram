@@ -88,7 +88,7 @@ Gynecomastia is not caused by weakness of character. It is not a lifestyle failu
 
 You do not need to silently endure it. One consultation is enough to get an honest answer about your specific situation. What you do with that information is your choice.
 
-If you are in Hyderabad and want to speak with Dr. M. Ram Prabhu directly, consultations are available at Kondapur. Call **9949808628** or visit **drramprabhu.com** to book an appointment.
+If you are in Hyderabad and want to speak with Dr. M. Ram Prabhu directly, consultations are available at Kondapur. Call **07969084439** or visit **drramprabhu.com** to book an appointment.
 
 ## Frequently asked questions about gynecomastia surgery
 

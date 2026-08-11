@@ -13,7 +13,7 @@ interface LocalPlasticSurgeryPageProps {
   nearbyAreas: string[];
 }
 
-const phone = '9949808628';
+const phone = '07969084439';
 
 const procedures = [
   ['Gynecomastia surgery', '/gynecomastia'],

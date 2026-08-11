@@ -571,7 +571,7 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <a href="tel:07969084439" className="text-sm font-semibold text-primary-700 hover:text-primary-900">
-                Prefer calling? 9949808628
+                Prefer calling? 07969084439
               </a>
               <button type="submit" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-green-500 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-green-600 md:rounded-md">
                 <MessageCircle size={19} />

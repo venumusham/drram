@@ -179,7 +179,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a lipoma removal consultation?',
-      a: 'Call or WhatsApp 9949808628. Most lipomas can be assessed and scheduled at the same visit if simple. Bring any prior ultrasound or MRI reports if available. Mon-Sat, 10AM-12PM and 7PM-8PM.',
+      a: 'Call or WhatsApp 07969084439. Most lipomas can be assessed and scheduled at the same visit if simple. Bring any prior ultrasound or MRI reports if available. Mon-Sat, 10AM-12PM and 7PM-8PM.',
     },
   ],
   formGradeOptions: [

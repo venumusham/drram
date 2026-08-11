@@ -9,7 +9,7 @@ const FAQPage: React.FC = () => {
     <>
       <SEO
         title="Plastic Surgery FAQs | Cost, Recovery, Safety | Dr. Ram Prabhu"
-        description="Plastic surgery FAQs by Dr. Ram Prabhu, DNB. Cost, recovery timelines, anaesthesia, EMI options, gynecomastia, liposuction & rhinoplasty answers — Kondapur Hyderabad. Call 9949808628."
+        description="Plastic surgery FAQs by Dr. Ram Prabhu, DNB. Cost, recovery timelines, anaesthesia, EMI options, gynecomastia, liposuction & rhinoplasty answers — Kondapur Hyderabad. Call 07969084439."
         keywords={[
           'plastic surgery faq hyderabad',
           'cosmetic surgery questions',

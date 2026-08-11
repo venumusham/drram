@@ -28,9 +28,9 @@ const HomeFactsSection: React.FC = () => (
             diabetic foot care, earlobe repair, skin grafting, and facial aesthetic surgery.
           </p>
           <p>
-            The clinic is located at 1st Floor, Idea Clinic, 61B 3rd Street, Sri Ram Nagar,
-            near Burfighar, Kondapur, Hyderabad 500084. Patients can call or WhatsApp
-            +91 9949808628 for appointment availability. Procedure planning includes
+            The clinic is located at Lux Hospitals, Plot No.116 Lumbini Avenue, Gachibowli Near IKEA, 
+            Hyderabad – 500081. Patients can call or WhatsApp
+            07969084439 for appointment availability. Procedure planning includes
             examination, realistic outcome discussion, scar placement, recovery timeline,
             safety considerations, and follow-up instructions. His published clinical work
             includes a 2023 nasal reconstruction case report using a two-staged nasolabial flap.
@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
     <>
       <SEO
         title="Dr. M. Ram Prabhu | Plastic & Cosmetic Surgeon Hyderabad"
-        description="Plastic surgeon in Kondapur Hyderabad — Dr. M. Ram Prabhu, DNB (Super Speciality). 16+ yrs, 6,000+ procedures, 140+ Google reviews. Gynecomastia, liposuction, rhinoplasty, breast surgery. Call 9949808628."
+        description="Plastic surgeon in Kondapur Hyderabad — Dr. M. Ram Prabhu, DNB (Super Speciality). 16+ yrs, 6,000+ procedures, 140+ Google reviews. Gynecomastia, liposuction, rhinoplasty, breast surgery. Call 07969084439."
         keywords={[
           'best plastic surgeon hyderabad',
           'cosmetic surgery hyderabad',

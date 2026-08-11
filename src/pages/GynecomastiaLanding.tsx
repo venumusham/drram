@@ -81,7 +81,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'How do I book a consultation?',
-    a: 'Call or WhatsApp 9949808628 to schedule a consultation. The clinic is at 1st Floor, Idea Clinic, 61B, 3rd Street, Sri Ram Nagar, Kondapur, Hyderabad (PIN: 500084) — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
+    a: 'Call or WhatsApp 07969084439 to schedule a consultation. The clinic is at Lux Hospitals, Plot No.116 Lumbini Avenue, Gachibowli Near IKEA, Hyderabad – 500081 — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
   },
 ];
 
@@ -203,7 +203,7 @@ const GynecomastiaLanding: React.FC = () => {
     <>
       <SEO
         title="Gynecomastia Surgery Hyderabad ★ Scarless from ₹50K | Dr. Ram Prabhu"
-        description="Scarless gynecomastia surgery in Kondapur Hyderabad from ₹50,000. VASER liposuction + gland removal, 1-2 day recovery, 0% EMI. Dr. Ram Prabhu, DNB, 1,000+ cases. Call 9949808628."
+        description="Scarless gynecomastia surgery in Kondapur Hyderabad from ₹50,000. VASER liposuction + gland removal, 1-2 day recovery, 0% EMI. Dr. Ram Prabhu, DNB, 1,000+ cases. Call 07969084439."
         keywords={[
           'gynecomastia surgery hyderabad',
           'gynecomastia surgery cost hyderabad',
@@ -257,7 +257,7 @@ const GynecomastiaLanding: React.FC = () => {
                 className="bg-white text-primary-900 font-semibold px-4 py-3 rounded-lg shadow text-center hover:bg-primary-50 transition"
                 data-conversion="gyno_hero_call"
               >
-                📞 Call 9949808628
+                📞 Call 07969084439
               </a>
               <a
                 href={waUrl}
@@ -566,7 +566,7 @@ const GynecomastiaLanding: React.FC = () => {
                 Book Consultation
               </button>
               <p className="text-xs text-gray-500 text-center">
-                Or call <a href={`tel:${PHONE_INTL}`} className="text-primary-700 font-semibold">9949808628</a> directly.
+                Or call <a href={`tel:${PHONE_INTL}`} className="text-primary-700 font-semibold">07969084439</a> directly.
               </p>
             </form>
           </div>
@@ -598,10 +598,7 @@ const GynecomastiaLanding: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Visit Our Clinic in Kondapur</h2>
             <address className="not-italic text-gray-700 mb-3 leading-relaxed">
-              1st Floor, Idea Clinic, 61B<br />
-              3rd Street, Near Burfighar Sweetshop<br />
-              Sri Ram Nagar, Kondapur<br />
-              Hyderabad, Telangana 500084
+              Lux Hospitals, Plot No.116 Lumbini Avenue,<br />Gachibowli Near IKEA,<br />Hyderabad – 500081
             </address>
             <p className="text-gray-700 mb-4">
               <strong>Hours:</strong> Mon-Sat, 10:00 AM – 12:00 PM and 7:00 PM – 8:00 PM
@@ -619,7 +616,7 @@ const GynecomastiaLanding: React.FC = () => {
                 href={`tel:${PHONE_INTL}`}
                 className="bg-primary-700 text-white px-5 py-2 rounded shadow hover:bg-primary-800 transition"
               >
-                Call 9949808628
+                Call 07969084439
               </a>
               <a
                 href={waUrl}

@@ -424,7 +424,7 @@ const StaplerCircumcision: React.FC = () => {
                                 </div>
                                 <div className="flex items-center justify-center gap-4 text-xl">
                                     <MessageCircle size={24} className="text-green-400" />
-                                    <a href="https://wa.me/9949808628" className="hover:text-green-400 transition-colors">WhatsApp us</a>
+                                    <a href="https://wa.me/917969084444" className="hover:text-green-400 transition-colors">WhatsApp us</a>
                                 </div>
                                 <p className="text-primary-100 flex items-center justify-center">
                                     <ShieldCheck size={18} className="mr-2" />

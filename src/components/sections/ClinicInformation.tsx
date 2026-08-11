@@ -13,10 +13,7 @@ const ClinicInformation: React.FC = () => {
               <h3 className="text-xl font-semibold">Location</h3>
             </div>
             <p className="text-gray-600">
-              1st Floor, Idea Clinic, 61B<br />
-              3rd Street, Near Burfighar Sweetshop<br />
-              Sri Ram Nagar, Kondapur<br />
-              Hyderabad, Telangana 500084
+              Lux Hospitals, Plot No.116 Lumbini Avenue,<br />Gachibowli Near IKEA,<br />Hyderabad – 500081
             </p>
           </div>
 
@@ -36,8 +33,8 @@ const ClinicInformation: React.FC = () => {
               <h3 className="text-xl font-semibold">Contact</h3>
             </div>
             <p className="text-gray-600">
-              Phone: 9949808628<br />
-              Clinic: 9949808628<br />
+              Phone: 07969084439<br />
+              Clinic: 07969084439<br />
               Email: ram.musham@gmail.com
             </p>
           </div>

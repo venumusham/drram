@@ -12,4 +12,4 @@ Consultation usually includes history, clinical examination, review of photograp
 
 ## Key takeaway
 
-The first step is a clear diagnosis and honest treatment plan. Call 9949808628 to book an appointment.
+The first step is a clear diagnosis and honest treatment plan. Call 07969084439 to book an appointment.

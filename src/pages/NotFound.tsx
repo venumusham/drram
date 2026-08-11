@@ -14,7 +14,7 @@ const NotFoundPage: React.FC = () => {
     <>
       <SEO
         title="Page Not Found | Dr. Ram Prabhu Plastic Surgery Clinic Kondapur"
-        description="The page you're looking for doesn't exist. Browse plastic surgery services, book a consultation, or call Dr. Ram Prabhu at 9949808628."
+        description="The page you're looking for doesn't exist. Browse plastic surgery services, book a consultation, or call Dr. Ram Prabhu at 07969084439."
         url="https://drramprabhu.com/404"
       />
       {/* This meta tag is read by prerender services (and we set content via JS above) */}
@@ -59,7 +59,7 @@ const NotFoundPage: React.FC = () => {
           <p className="mt-8 text-sm text-gray-500">
             Or call us directly:{' '}
             <a href="tel:07969084439" className="text-primary-700 font-semibold">
-              9949808628
+              07969084439
             </a>
           </p>
         </div>

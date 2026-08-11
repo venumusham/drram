@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
-const phone = '9949808628';
+const phone = '07969084439';
 const whatsapp =
   'https://wa.me/917969084444?text=Hello%20Dr.%20Ram%20Prabhu%2C%20I%20am%20looking%20for%20a%20plastic%20surgery%20consultation%20in%20Kondapur.';
 
@@ -64,7 +64,7 @@ const faqs = [
   {
     q: 'How do I book a consultation?',
     a:
-      'Patients can call or WhatsApp 9949808628, or use the online appointment page at drramprabhu.com/book-appointment.',
+      'Patients can call or WhatsApp 07969084439, or use the online appointment page at drramprabhu.com/book-appointment.',
   },
 ];
 

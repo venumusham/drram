@@ -14,7 +14,7 @@ type SupportPageData = {
   faqs: Faq[];
 };
 
-const PHONE = '9949808628';
+const PHONE = '07969084439';
 
 const pages: Record<string, SupportPageData> = {
   unilateral: {
