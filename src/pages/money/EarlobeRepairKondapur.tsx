@@ -6,7 +6,7 @@ const data: MoneyPageData = {
   procedureName: 'Earlobe Repair',
   seoTitle: 'Earlobe Repair Hyderabad ★ 30-Min Walk-In | Dr. Ram Prabhu',
   seoDescription:
-    'Torn or split earlobe repair in Kondapur Hyderabad — 30-minute walk-in procedure under local anaesthesia. Re-piercing in 6 weeks. Dr. Ram Prabhu, DNB. From ₹6,000. Call 9949808628.',
+    'Torn or split earlobe repair in Kondapur Hyderabad — 30-minute walk-in procedure under local anaesthesia. Re-piercing in 6 weeks. Dr. Ram Prabhu, DNB. From ₹6,000. Call 07969084439.',
   seoKeywords: [
     'earlobe repair near me',
     'ear lobe repair near me',

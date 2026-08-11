@@ -55,7 +55,7 @@ const evaluationCriteria = [
 ];
 
 function getWhatsApp(area: string) {
-  return `https://wa.me/919949808628?text=Hello%20Dr.%20Ram%20Prabhu%2C%20I%20am%20looking%20for%20a%20plastic%20surgery%20consultation%20near%20${encodeURIComponent(area)}.`;
+  return `https://wa.me/917969084444?text=Hello%20Dr.%20Ram%20Prabhu%2C%20I%20am%20looking%20for%20a%20plastic%20surgery%20consultation%20near%20${encodeURIComponent(area)}.`;
 }
 
 const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
@@ -97,7 +97,7 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
         },
         areaServed: [area, ...nearbyAreas],
         url: pageUrl,
-        telephone: '+919949808628',
+        telephone: '07969084439',
         priceRange: 'INR',
         medicalSpecialty: 'PlasticSurgery',
         founder: { '@id': 'https://drramprabhu.com/#physician' },

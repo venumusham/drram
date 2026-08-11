@@ -6,7 +6,7 @@ const data: MoneyPageData = {
   procedureName: 'Breast Augmentation',
   seoTitle: 'Breast Augmentation Hyderabad ★ from ₹1.2L | Dr. Ram Prabhu DNB',
   seoDescription:
-    'Breast augmentation with silicone implants or fat transfer in Kondapur Hyderabad by Dr. Ram Prabhu, DNB Plastic Surgery. Natural results, FDA-approved implants. From ₹1.2L. Call 9949808628.',
+    'Breast augmentation with silicone implants or fat transfer in Kondapur Hyderabad by Dr. Ram Prabhu, DNB Plastic Surgery. Natural results, FDA-approved implants. From ₹1.2L. Call 07969084439.',
   seoKeywords: [
     'breast augmentation hyderabad',
     'breast augmentation in hyderabad',

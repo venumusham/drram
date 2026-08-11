@@ -58,7 +58,7 @@ const NotFoundPage: React.FC = () => {
           </div>
           <p className="mt-8 text-sm text-gray-500">
             Or call us directly:{' '}
-            <a href="tel:+919949808628" className="text-primary-700 font-semibold">
+            <a href="tel:07969084439" className="text-primary-700 font-semibold">
               9949808628
             </a>
           </p>

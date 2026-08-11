@@ -63,7 +63,7 @@ const TermsOfService: React.FC = () => {
             <h2>Contact</h2>
             <p>
               For questions about these terms, contact Dr Ramprabhu Clinic at{' '}
-              <a href="tel:+919949808628">9949808628</a> or use the{' '}
+              <a href="tel:07969084439">07969084439</a> or use the{' '}
               <Link to="/contact">contact page</Link>.
             </p>
           </div>

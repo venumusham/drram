@@ -33,7 +33,7 @@ const StaplerCircumcision: React.FC = () => {
             '@type': 'Physician',
             name: 'Dr. M. Ram Prabhu',
             medicalSpecialty: ['Plastic Surgery', 'Reconstructive Surgery'],
-            telephone: '9949808628'
+            telephone: '07969084439'
         }
     };
 
@@ -60,7 +60,7 @@ const StaplerCircumcision: React.FC = () => {
         <>
             <SEO
                 title="Stapler Circumcision Hyderabad | 15-Min Painless | Dr. Ram Prabhu"
-                description="Painless stapler (ZSR) circumcision in Kondapur Hyderabad — bloodless, 15-min procedure, same-day discharge, quick recovery. Dr. Ram Prabhu, DNB. EMI available. Call 9949808628."
+                description="Painless stapler (ZSR) circumcision in Kondapur Hyderabad — bloodless, 15-min procedure, same-day discharge, quick recovery. Dr. Ram Prabhu, DNB. EMI available. Call 07969084439."
                 keywords={[
                     'stapler circumcision hyderabad',
                     'zsr circumcision hyderabad',
@@ -108,7 +108,7 @@ const StaplerCircumcision: React.FC = () => {
                                         Book Consultation
                                     </Button>
                                     <Button
-                                        href="tel:9949808628"
+                                        href="tel:07969084439"
                                         variant="secondary"
                                         size="lg"
                                         icon={<Phone size={20} />}
@@ -420,7 +420,7 @@ const StaplerCircumcision: React.FC = () => {
                             <div className="space-y-4 mb-10">
                                 <div className="flex items-center justify-center gap-4 text-xl">
                                     <Phone size={24} className="text-accent-300" />
-                                    <a href="tel:9949808628" className="hover:text-accent-300 transition-colors">9949808628</a>
+                                    <a href="tel:07969084439" className="hover:text-accent-300 transition-colors">07969084439</a>
                                 </div>
                                 <div className="flex items-center justify-center gap-4 text-xl">
                                     <MessageCircle size={24} className="text-green-400" />

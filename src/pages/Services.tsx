@@ -11,7 +11,7 @@ const ServicesPage: React.FC = () => {
     <>
       <SEO
         title="Plastic Surgery Services Hyderabad | 16+ Procedures | Dr. Ram Prabhu"
-        description="16+ plastic surgery services in Kondapur Hyderabad — gynecomastia, liposuction, rhinoplasty, breast surgery, facelift, tummy tuck, scar revision, microvascular reconstruction. By Dr. Ram Prabhu, DNB. Call 9949808628."
+        description="16+ plastic surgery services in Kondapur Hyderabad — gynecomastia, liposuction, rhinoplasty, breast surgery, facelift, tummy tuck, scar revision, microvascular reconstruction. By Dr. Ram Prabhu, DNB. Call 07969084439."
         keywords={[
           'plastic surgery services hyderabad',
           'cosmetic surgery treatments',
