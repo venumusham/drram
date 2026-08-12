@@ -180,7 +180,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a tummy tuck consultation?',
-      a: 'Call or WhatsApp 07969084439. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. All consultations are confidential.',
+      a: 'Call 07969084439. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. All consultations are confidential.',
     },
   ],
   formGradeOptions: [

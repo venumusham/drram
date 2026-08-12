@@ -186,7 +186,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a rhinoplasty consultation?',
-      a: 'Call or WhatsApp 07969084439 to schedule a consultation. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations with photo review are available for outstation patients.',
+      a: 'Call 07969084439 to schedule a consultation. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations with photo review are available for outstation patients.',
     },
   ],
   formGradeOptions: [

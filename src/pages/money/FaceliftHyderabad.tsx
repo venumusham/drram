@@ -182,7 +182,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a facelift consultation?',
-      a: 'Call or WhatsApp 07969084439. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Bring recent and old photographs (10+ years ago) to help understand your unique ageing pattern.',
+      a: 'Call 07969084439. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Bring recent and old photographs (10+ years ago) to help understand your unique ageing pattern.',
     },
   ],
   formGradeOptions: [

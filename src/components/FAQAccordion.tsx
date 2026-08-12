@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'How do I book a consultation?',
     answer:
-      'Call or WhatsApp 07969084439 to schedule a consultation. The clinic is at Lux Hospitals, Plot No.116 Lumbini Avenue, Gachibowli Near IKEA, Hyderabad – 500081 — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
+      'Call 07969084439 to schedule a consultation. The clinic is at Lux Hospitals, Plot No.116 Lumbini Avenue, Gachibowli Near IKEA, Hyderabad – 500081 — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
   },
 ];
 

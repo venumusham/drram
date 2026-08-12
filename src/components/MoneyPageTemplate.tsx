@@ -661,7 +661,7 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
         <section className="py-12 px-4 bg-primary-50">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">
-              Visit Our Clinic in Kondapur
+              Visit Our Clinic in Gachobowli
             </h2>
             <address className="not-italic text-gray-700 mb-3 leading-relaxed">
               Lux Hospitals, Plot No.116 Lumbini Avenue,<br />Gachibowli Near IKEA,<br />Hyderabad – 500081

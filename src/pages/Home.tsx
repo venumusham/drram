@@ -29,8 +29,7 @@ const HomeFactsSection: React.FC = () => (
           </p>
           <p>
             The clinic is located at Lux Hospitals, Plot No.116 Lumbini Avenue, Gachibowli Near IKEA, 
-            Hyderabad – 500081. Patients can call or WhatsApp
-            07969084439 for appointment availability. Procedure planning includes
+            Hyderabad – 500081. Patients can call 07969084439 for appointment availability. Procedure planning includes
             examination, realistic outcome discussion, scar placement, recovery timeline,
             safety considerations, and follow-up instructions. His published clinical work
             includes a 2023 nasal reconstruction case report using a two-staged nasolabial flap.

@@ -179,7 +179,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a liposuction consultation?',
-      a: 'Call or WhatsApp 07969084439 to schedule a consultation. Bring photos of areas you want treated. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM.',
+      a: 'Call 07969084439 to schedule a consultation. Bring photos of areas you want treated. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM.',
     },
   ],
   formGradeOptions: [

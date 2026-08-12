@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 text-gray-400" />
                 <div className="text-gray-400 text-sm">
-                  <p>WhatsApp: </p>
+                  <p>WhatsApp: 07969084444</p>
                   <p>Clinic: 07969084439</p>
                 </div>
               </li>
@@ -130,7 +130,8 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Clock size={18} className="mr-2 mt-1 text-gray-400" />
                 <div className="text-gray-400 text-sm">
-                  <p>Everyday: 8am - 5pm</p>
+                  <p>VISIT OUR CLINIC - GACHIBOWLI, HYDERABAD</p>
+                      <p>TIMINGS- 9:00 AM - 4:00 PM</p>
                 </div>
               </li>
             </ul>

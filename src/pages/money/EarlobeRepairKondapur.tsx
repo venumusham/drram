@@ -178,7 +178,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book an earlobe repair appointment?',
-      a: 'Call or WhatsApp 07969084439. Many earlobe repairs can be done on a walk-in basis with prior phone confirmation. Mon-Sat, 10AM-12PM and 7PM-8PM. Idea Clinic, Kondapur, Hyderabad.',
+      a: 'Call 07969084439. Many earlobe repairs can be done on a walk-in basis with prior phone confirmation. Mon-Sat, 10AM-12PM and 7PM-8PM. Idea Clinic, Kondapur, Hyderabad.',
     },
   ],
   formGradeOptions: [

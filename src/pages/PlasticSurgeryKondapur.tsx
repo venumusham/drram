@@ -64,7 +64,7 @@ const faqs = [
   {
     q: 'How do I book a consultation?',
     a:
-      'Patients can call or WhatsApp 07969084439, or use the online appointment page at drramprabhu.com/book-appointment.',
+      'Patients can call 07969084439, or use the online appointment page at drramprabhu.com/book-appointment.',
   },
 ];
 

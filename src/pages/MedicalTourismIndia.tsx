@@ -263,7 +263,7 @@ const MedicalTourismIndia: React.FC = () => {
     <>
       <SEO
         title="Plastic Surgery in India for NRI ★ Save 60-75% | Dr. Ram Prabhu"
-        description="Medical tourism plastic surgery for NRI & international patients in Hyderabad. Save 60-75% vs USA/UK, 40-60% vs UAE. DNB Plastic Surgeon, FDA implants, concierge service. WhatsApp 7969084444."
+        description="Medical tourism plastic surgery for NRI & international patients in Hyderabad. Save 60-75% vs USA/UK, 40-60% vs UAE. DNB Plastic Surgeon, FDA implants, concierge service. WhatsApp 0."
         keywords={[
           "plastic surgery india for nri",
           "medical tourism india plastic surgery",
@@ -334,7 +334,7 @@ const MedicalTourismIndia: React.FC = () => {
               </span>
             </div>
             <div className="bg-yellow-300 text-primary-900 inline-block px-4 py-2 rounded-lg font-bold text-lg mb-6">
-              Free Video Consultation — WhatsApp 7969084444
+              Free Video Consultation — WhatsApp  0
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
               <a

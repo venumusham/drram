@@ -57,7 +57,7 @@ const ClinicLocation: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-primary-600 transition-colors"
                 >
-                  WhatsApp: 7969084444
+                  WhatsApp: 07969084444
                 </a>
               </div>
               <div className="flex items-center">
@@ -91,8 +91,8 @@ const ClinicLocation: React.FC = () => {
             <h3 className="text-lg font-medium text-gray-900">Office Hours</h3>
             <div className="text-gray-700">
               <div className="grid grid-cols-2 gap-1">
-                <div>Everyday:</div>
-                <div>8am - 5pm</div>
+                <div>TIMINGS</div>
+                <div>9:00 AM - 4:00 PM</div>
               </div>
             </div>
           </div>

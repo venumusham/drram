@@ -81,7 +81,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'How do I book a consultation?',
-    a: 'Call or WhatsApp 07969084439 to schedule a consultation. The clinic is at Lux Hospitals, Plot No.116 Lumbini Avenue, Gachibowli Near IKEA, Hyderabad – 500081 — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
+    a: 'Call 07969084439 to schedule a consultation. The clinic is at Lux Hospitals, Plot No.116 Lumbini Avenue, Gachibowli Near IKEA, Hyderabad – 500081 — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations are available for patients outside Hyderabad.',
   },
 ];
 
@@ -596,12 +596,12 @@ const GynecomastiaLanding: React.FC = () => {
         {/* ================= 14. LOCATION & CONTACT ================= */}
         <section className="py-12 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Visit Our Clinic in Kondapur</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Visit Our Clinic in Gachibowli</h2>
             <address className="not-italic text-gray-700 mb-3 leading-relaxed">
               Lux Hospitals, Plot No.116 Lumbini Avenue,<br />Gachibowli Near IKEA,<br />Hyderabad – 500081
             </address>
             <p className="text-gray-700 mb-4">
-              <strong>Hours:</strong> Mon-Sat, 10:00 AM – 12:00 PM and 7:00 PM – 8:00 PM
+              TIMINGS- 9:00 AM - 4:00 PM
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-4">
               <a
