@@ -6,7 +6,7 @@ const data: MoneyPageData = {
   procedureName: 'Tummy Tuck (Abdominoplasty)',
   seoTitle: 'Tummy Tuck Hyderabad ★ Mommy Makeover | Dr. Ram Prabhu DNB',
   seoDescription:
-    'Tummy tuck (abdominoplasty) in Kondapur Hyderabad — full, mini, post-pregnancy mommy makeover. Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. From ₹1.4L. 0% EMI. Call 9949808628.',
+    'Tummy tuck (abdominoplasty) in Kondapur Hyderabad — full, mini, post-pregnancy mommy makeover. Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. From ₹1.4L. 0% EMI. Call 07969084439.',
   seoKeywords: [
     'tummy tuck hyderabad',
     'tummy tuck surgery cost near me',
@@ -180,7 +180,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a tummy tuck consultation?',
-      a: 'Call or WhatsApp 9949808628. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. All consultations are confidential.',
+      a: 'Call 07969084439. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. All consultations are confidential.',
     },
   ],
   formGradeOptions: [

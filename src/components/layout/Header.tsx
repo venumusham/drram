@@ -109,14 +109,14 @@ const Header: React.FC = () => {
 
             <div className="flex items-center space-x-4">
               <a
-                href="tel:9949808628"
+                href="tel:07969084439"
                 className={`flex items-center hover:text-accent-400 transition-colors ${linkColor}`}
               >
                 <Phone size={20} className="mr-1" />
-                <span className="text-sm">9949808628</span>
+                <span className="text-sm">07969084439</span>
               </a>
               <a
-                href="https://wa.me/9949808628"
+                href="https://wa.me/917969084444"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`flex items-center hover:text-green-500 transition-colors ${linkColor}`}
@@ -207,14 +207,14 @@ const Header: React.FC = () => {
               </Link>
               <div className="mt-3 grid grid-cols-2 gap-2 border-t border-gray-100 pt-4">
                 <a
-                  href="tel:9949808628"
+                  href="tel:07969084439"
                   className="flex items-center justify-center rounded-lg bg-primary-50 px-3 py-2.5 text-primary-700 hover:text-primary-800 transition-colors"
                 >
                   <Phone size={18} className="mr-1" />
-                  <span className="text-sm">9949808628</span>
+                  <span className="text-sm">07969084439</span>
                 </a>
                 <a
-                  href="https://wa.me/9949808628"
+                  href="https://wa.me/917969084444"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded-lg bg-green-50 px-3 py-2.5 text-green-700 hover:text-green-800 transition-colors"

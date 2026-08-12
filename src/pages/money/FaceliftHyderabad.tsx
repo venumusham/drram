@@ -6,7 +6,7 @@ const data: MoneyPageData = {
   procedureName: 'Facelift Surgery',
   seoTitle: 'Facelift Hyderabad ★ Natural Results | Dr. Ram Prabhu DNB',
   seoDescription:
-    'Facelift, mini facelift, mid-facelift & neck lift in Kondapur Hyderabad. Natural-looking facial rejuvenation by Dr. Ram Prabhu, DNB Plastic Surgery. From ₹1,20,000. Call 9949808628.',
+    'Facelift, mini facelift, mid-facelift & neck lift in Kondapur Hyderabad. Natural-looking facial rejuvenation by Dr. Ram Prabhu, DNB Plastic Surgery. From ₹1,20,000. Call 07969084439.',
   seoKeywords: [
     'facelift hyderabad',
     'facelift in hyderabad',
@@ -182,7 +182,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a facelift consultation?',
-      a: 'Call or WhatsApp 9949808628. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Bring recent and old photographs (10+ years ago) to help understand your unique ageing pattern.',
+      a: 'Call 07969084439. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Bring recent and old photographs (10+ years ago) to help understand your unique ageing pattern.',
     },
   ],
   formGradeOptions: [

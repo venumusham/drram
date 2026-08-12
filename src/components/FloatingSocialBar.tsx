@@ -2,10 +2,10 @@ import React from 'react';
 import { Phone, MessageCircle, MapPin } from 'lucide-react';
 
 // Single canonical contact constants. Update here only.
-export const PHONE = '9949808628';
-export const PHONE_INTL = '+919949808628';
-export const WHATSAPP_INTL = '919949808628';
-export const MAPS_URL = 'https://maps.app.goo.gl/bSxwGm3f2zBu4fbi9';
+export const PHONE = '07969084439';
+export const PHONE_INTL = '07969084439';
+export const WHATSAPP_INTL = '917969084444';
+export const MAPS_URL = 'https://maps.app.goo.gl/fFqyMjiR1pgoWnpV9';
 export const WHATSAPP_DEFAULT_MSG =
   'Hello Dr. Ram Prabhu, I would like to book a consultation. Please share available slots.';
 

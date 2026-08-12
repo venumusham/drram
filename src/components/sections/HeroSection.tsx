@@ -51,7 +51,7 @@ const slides = [
     primary: 'View Gynecomastia',
     primaryHref: '/gynecomastia',
     secondary: 'Ask on WhatsApp',
-    secondaryHref: 'https://wa.me/919949808628?text=Hello%20Dr.%20Ram%20Prabhu%2C%20I%20would%20like%20to%20know%20about%20gynecomastia%20surgery.',
+    secondaryHref: 'https://wa.me/917969084444?text=Hello%20Dr.%20Ram%20Prabhu%2C%20I%20would%20like%20to%20know%20about%20gynecomastia%20surgery.',
     externalSecondary: true,
     imageAlt: 'Gynecomastia chest contouring consultation and treatment planning by Dr. Ram Prabhu',
   },

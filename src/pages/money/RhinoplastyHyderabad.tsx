@@ -6,7 +6,7 @@ const data: MoneyPageData = {
   procedureName: 'Rhinoplasty',
   seoTitle: 'Rhinoplasty Hyderabad ★ from ₹70K | Dr. Ram Prabhu DNB',
   seoDescription:
-    'Open & closed rhinoplasty in Kondapur Hyderabad — nose reshaping, hump reduction, tip refinement, deviated septum correction. Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. Call 9949808628.',
+    'Open & closed rhinoplasty in Kondapur Hyderabad — nose reshaping, hump reduction, tip refinement, deviated septum correction. Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. Call 07969084439.',
   seoKeywords: [
     'rhinoplasty hyderabad',
     'rhinoplasty in hyderabad',
@@ -186,7 +186,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a rhinoplasty consultation?',
-      a: 'Call or WhatsApp 9949808628 to schedule a consultation. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations with photo review are available for outstation patients.',
+      a: 'Call 07969084439 to schedule a consultation. The clinic is at Idea Clinic, Kondapur, Hyderabad — Mon-Sat, 10AM-12PM and 7PM-8PM. Online consultations with photo review are available for outstation patients.',
     },
   ],
   formGradeOptions: [

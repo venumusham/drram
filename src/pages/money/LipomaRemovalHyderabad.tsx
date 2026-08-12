@@ -6,7 +6,7 @@ const data: MoneyPageData = {
   procedureName: 'Lipoma Removal',
   seoTitle: 'Lipoma Removal Hyderabad ★ Day-Care | Dr. Ram Prabhu DNB',
   seoDescription:
-    'Lipoma removal in Kondapur Hyderabad — small incision, day-care, minimal scar. Sebaceous cyst & lump excision by Dr. Ram Prabhu, DNB Plastic Surgery. From ₹8,000. Call 9949808628.',
+    'Lipoma removal in Kondapur Hyderabad — small incision, day-care, minimal scar. Sebaceous cyst & lump excision by Dr. Ram Prabhu, DNB Plastic Surgery. From ₹8,000. Call 07969084439.',
   seoKeywords: [
     'lipoma removal',
     'lipoma removal hyderabad',
@@ -179,7 +179,7 @@ const data: MoneyPageData = {
     },
     {
       q: 'How do I book a lipoma removal consultation?',
-      a: 'Call or WhatsApp 9949808628. Most lipomas can be assessed and scheduled at the same visit if simple. Bring any prior ultrasound or MRI reports if available. Mon-Sat, 10AM-12PM and 7PM-8PM.',
+      a: 'Call 07969084439. Most lipomas can be assessed and scheduled at the same visit if simple. Bring any prior ultrasound or MRI reports if available. Mon-Sat, 10AM-12PM and 7PM-8PM.',
     },
   ],
   formGradeOptions: [

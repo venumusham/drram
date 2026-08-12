@@ -264,7 +264,7 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
       .filter(Boolean)
       .join('\n');
 
-    window.open(`https://wa.me/919949808628?text=${encodeURIComponent(whatsappMessage)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/917969084444?text=${encodeURIComponent(whatsappMessage)}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleManualChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -570,8 +570,8 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
             <InfoNote />
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <a href="tel:+919949808628" className="text-sm font-semibold text-primary-700 hover:text-primary-900">
-                Prefer calling? 9949808628
+              <a href="tel:07969084439" className="text-sm font-semibold text-primary-700 hover:text-primary-900">
+                Prefer calling? 07969084439
               </a>
               <button type="submit" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-green-500 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-green-600 md:rounded-md">
                 <MessageCircle size={19} />

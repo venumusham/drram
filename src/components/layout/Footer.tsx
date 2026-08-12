@@ -111,8 +111,8 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 text-gray-400" />
                 <div className="text-gray-400 text-sm">
-                  <p>WhatsApp: 9949808628</p>
-                  <p>Clinic: 9949808628</p>
+                  <p>WhatsApp: 07969084444</p>
+                  <p>Clinic: 07969084439</p>
                 </div>
               </li>
               <li className="flex items-start">
@@ -122,16 +122,16 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-gray-400" />
                 <span className="text-gray-400 text-sm">
-                  1st Floor, Idea Clinic, 61B<br />
-                  3rd Street, Near Burfighar Sweetshop<br />
-                  Sri Ram Nagar, Kondapur<br />
-                  Hyderabad, Telangana 500084
+                  Lux Hospitals, Plot No.116 Lumbini Avenue,<br />
+                  Gachibowli Near IKEA,<br />
+                  Hyderabad – 500081
                 </span>
               </li>
               <li className="flex items-start">
                 <Clock size={18} className="mr-2 mt-1 text-gray-400" />
                 <div className="text-gray-400 text-sm">
-                  <p>Everyday: 8am - 5pm</p>
+                  <p>VISIT OUR CLINIC - GACHIBOWLI, HYDERABAD</p>
+                      <p>TIMINGS- 9:00 AM - 4:00 PM</p>
                 </div>
               </li>
             </ul>

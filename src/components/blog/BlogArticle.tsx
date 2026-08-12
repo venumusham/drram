@@ -166,7 +166,7 @@ export const BlogPillarCta: React.FC<BlogPillarCtaProps> = ({
           href={`tel:${PHONE_INTL}`}
           className="bg-primary-700 text-white font-semibold px-5 py-2 rounded shadow hover:bg-primary-800 transition"
         >
-          Call 9949808628
+          Call 07969084439
         </a>
         <a
           href={waUrl}
