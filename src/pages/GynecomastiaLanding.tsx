@@ -3,6 +3,7 @@ import FAQAccordion from '../components/FAQAccordion';
 import ProceduresAccordion from '../components/ProceduresAccordion';
 import SEO from '../components/SEO';
 import { PHONE_INTL, WHATSAPP_INTL, MAPS_URL } from '../components/FloatingSocialBar';
+import WhatsappLink from '../components/ui/WhatsappLink';
 
 /**
  * Gynecomastia money page — targets the highest-value commercial query.
@@ -259,15 +260,17 @@ const GynecomastiaLanding: React.FC = () => {
               >
                 📞 Call 07969084439
               </a>
-              <a
+              <WhatsappLink
                 href={waUrl}
+                formType="Gynecomastia Hero WhatsApp"
+                condition="Gynecomastia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white font-semibold px-4 py-3 rounded-lg shadow text-center hover:bg-green-600 transition"
                 data-conversion="gyno_hero_whatsapp"
               >
                 💬 WhatsApp Now
-              </a>
+              </WhatsappLink>
               <a
                 href="#booking"
                 className="bg-yellow-400 text-primary-900 font-semibold px-4 py-3 rounded-lg shadow text-center hover:bg-yellow-300 transition"
@@ -618,14 +621,16 @@ const GynecomastiaLanding: React.FC = () => {
               >
                 Call 07969084439
               </a>
-              <a
+              <WhatsappLink
                 href={waUrl}
+                formType="Gynecomastia Footer WhatsApp"
+                condition="Gynecomastia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-5 py-2 rounded shadow hover:bg-green-600 transition"
               >
                 WhatsApp
-              </a>
+              </WhatsappLink>
             </div>
           </div>
         </section>

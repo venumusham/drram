@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Calendar, CheckCircle2, ChevronRight, Clock, MessageCircle, MessageSquare, Phone, ShieldCheck, User, X } from 'lucide-react';
 import { AppointmentSlot, bookAppointmentSlot, fetchAvailableSlotsRange } from '../../lib/supabaseSlots';
 import { triggerBookingWebhook } from '../../lib/bookingWebhook';
+import { logLead } from '../../lib/careConsole';
 
 type BookingState = 'idle' | 'loading' | 'error';
 type SubmitState = 'idle' | 'booking' | 'error';
@@ -263,6 +264,10 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({
     ]
       .filter(Boolean)
       .join('\n');
+
+    // Record the lead in Care Console, but keep our own deep link: the CRM's
+    // generic link would drop the name, slot and procedure the clinic needs.
+    logLead({ formType: 'Appointment Form WhatsApp', condition: details.service });
 
     window.open(`https://wa.me/917969084444?text=${encodeURIComponent(whatsappMessage)}`, '_blank', 'noopener,noreferrer');
   };

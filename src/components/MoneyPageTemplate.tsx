@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SEO from "./SEO";
 import FAQAccordion from "./FAQAccordion";
 import { PHONE_INTL, WHATSAPP_INTL, MAPS_URL } from "./FloatingSocialBar";
+import WhatsappLink from "./ui/WhatsappLink";
 
 /**
  * Reusable template for service "money pages" — long-form, SEO-optimized
@@ -249,15 +250,17 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
               >
                 📞 Call 07969084439
               </a>
-              <a
+              <WhatsappLink
                 href={waUrl}
+                formType="Money Page Hero WhatsApp"
+                condition={data.procedureName}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white font-semibold px-4 py-3 rounded-lg shadow text-center hover:bg-green-600 transition"
                 data-conversion={`${data.slug}_hero_whatsapp`}
               >
                 💬 WhatsApp Now
-              </a>
+              </WhatsappLink>
               <a
                 href="#booking"
                 className="bg-yellow-400 text-primary-900 font-semibold px-4 py-3 rounded-lg shadow text-center hover:bg-yellow-300 transition"
@@ -685,14 +688,16 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
               >
                 Call 07969084439
               </a>
-              <a
+              <WhatsappLink
                 href={waUrl}
+                formType="Money Page Footer WhatsApp"
+                condition={data.procedureName}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-5 py-2 rounded shadow hover:bg-green-600 transition"
               >
                 WhatsApp
-              </a>
+              </WhatsappLink>
             </div>
           </div>
         </section>

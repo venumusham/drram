@@ -12,6 +12,12 @@ node_modules
 dist-ssr
 *.local
 
+# Local env — server-side secrets. Set these in the Vercel/Netlify dashboard.
+.env
+.env.local
+.env.*.local
+!.env.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, X } from 'lucide-react';
 import OptimizedImage from '../ui/OptimizedImage';
+import WhatsappLink from '../ui/WhatsappLink';
 
 const procedures = [
   { name: 'Gynecomastia Surgery', group: 'Chest contouring', image: '/images/breast/Gynecomastia.webp', href: '/gynecomastia', alt: 'Gynecomastia surgery chest contouring service by Dr. Ram Prabhu in Hyderabad' },
@@ -114,9 +115,33 @@ type SlideLinkProps = {
   className: string;
   href: string;
   external?: boolean;
+  /** Procedure this slide is about, sent to Care Console on WhatsApp clicks. */
+  whatsappCondition?: string;
 };
 
-function SlideLink({ children, className, href, external = false }: SlideLinkProps) {
+function SlideLink({
+  children,
+  className,
+  href,
+  external = false,
+  whatsappCondition,
+}: SlideLinkProps) {
+  // WhatsApp slides route through Care Console so the lead is captured.
+  if (href.startsWith('https://wa.me/')) {
+    return (
+      <WhatsappLink
+        href={href}
+        formType="Hero Slide WhatsApp"
+        condition={whatsappCondition}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+      >
+        {children}
+      </WhatsappLink>
+    );
+  }
+
   if (external) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
@@ -308,6 +333,7 @@ const HeroSection: React.FC = () => {
             <SlideLink
               href={slide.primaryHref}
               external={slide.externalPrimary}
+              whatsappCondition={slide.navLabel}
               className="rounded-lg bg-accent-500 px-7 py-3 text-center text-sm font-semibold text-black transition hover:bg-accent-400"
             >
               {slide.primary}
@@ -315,6 +341,7 @@ const HeroSection: React.FC = () => {
             <SlideLink
               href={slide.secondaryHref}
               external={slide.externalSecondary}
+              whatsappCondition={slide.navLabel}
               className="rounded-lg border border-white/30 bg-white/10 px-7 py-3 text-center text-sm font-semibold text-[#f5f0e8] backdrop-blur transition hover:bg-white/15"
             >
               {slide.secondary}

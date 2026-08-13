@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, Navigation, MessageCircle } from 'lucide-react';
 import { MAPS_URL } from '../FloatingSocialBar';
+import WhatsappLink from '../ui/WhatsappLink';
 
 const ClinicLocation: React.FC = () => {
   return (
@@ -51,14 +52,15 @@ const ClinicLocation: React.FC = () => {
             <div className="space-y-2">
               <div className="flex items-center">
                 <MessageCircle className="w-4 h-4 text-primary-600 mr-2" />
-                <a
+                <WhatsappLink
                   href="https://wa.me/917969084444"
+                  formType="Clinic Location WhatsApp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-primary-600 transition-colors"
                 >
                   WhatsApp: 07969084444
-                </a>
+                </WhatsappLink>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 text-primary-600 mr-2" />

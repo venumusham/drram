@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../SEO';
 import { PHONE_INTL, WHATSAPP_INTL } from '../FloatingSocialBar';
+import WhatsappLink from '../ui/WhatsappLink';
 
 const SITE = 'https://drramprabhu.com';
 
@@ -168,14 +169,15 @@ export const BlogPillarCta: React.FC<BlogPillarCtaProps> = ({
         >
           Call 07969084439
         </a>
-        <a
+        <WhatsappLink
           href={waUrl}
+          formType="Blog Article WhatsApp"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 text-white font-semibold px-5 py-2 rounded shadow hover:bg-green-600 transition"
         >
           WhatsApp
-        </a>
+        </WhatsappLink>
         <Link
           to={pillarHref}
           className="bg-yellow-400 text-primary-900 font-semibold px-5 py-2 rounded shadow hover:bg-yellow-300 transition"
