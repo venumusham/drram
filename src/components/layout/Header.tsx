@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Calendar } from 'lucide-react';
 import Button from '../ui/Button';
 import Logo from '../ui/Logo';
+import WhatsappLink from '../ui/WhatsappLink';
+import { WHATSAPP_INTL } from '../FloatingSocialBar';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -115,8 +117,9 @@ const Header: React.FC = () => {
                 <Phone size={20} className="mr-1" />
                 <span className="text-sm">07969084439</span>
               </a>
-              <a
-                href="https://wa.me/917969084444"
+              <WhatsappLink
+                href={`https://wa.me/${WHATSAPP_INTL}`}
+                formType="Header WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`flex items-center hover:text-green-500 transition-colors ${linkColor}`}
@@ -124,7 +127,7 @@ const Header: React.FC = () => {
               >
                 <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mr-1" />
                 <span className="text-sm hidden lg:inline">WhatsApp</span>
-              </a>
+              </WhatsappLink>
               <Button
                 icon={<Calendar size={16} />}
                 href="/book-appointment"
@@ -213,8 +216,9 @@ const Header: React.FC = () => {
                   <Phone size={18} className="mr-1" />
                   <span className="text-sm">07969084439</span>
                 </a>
-                <a
-                  href="https://wa.me/917969084444"
+                <WhatsappLink
+                  href={`https://wa.me/${WHATSAPP_INTL}`}
+                  formType="Mobile Menu WhatsApp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded-lg bg-green-50 px-3 py-2.5 text-green-700 hover:text-green-800 transition-colors"
@@ -222,7 +226,7 @@ const Header: React.FC = () => {
                 >
                   <img src="/images/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 mr-1" />
                   <span className="text-sm">WhatsApp</span>
-                </a>
+                </WhatsappLink>
               </div>
               <Link
                 to="/book-appointment"

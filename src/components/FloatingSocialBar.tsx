@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, MessageCircle, MapPin } from 'lucide-react';
+import WhatsappLink from './ui/WhatsappLink';
 
 // Single canonical contact constants. Update here only.
 export const PHONE = '07969084439';
@@ -35,8 +36,9 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
             <Phone size={20} />
           </span>
         </a>
-        <a
+        <WhatsappLink
           href={waUrl}
+          formType="Floating Bar WhatsApp"
           className="group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full bg-green-500 text-white shadow-xl shadow-black/20 transition-all hover:bg-green-400 hover:text-black md:hover:w-40"
           aria-label="WhatsApp Dr. Ram Prabhu"
           target="_blank"
@@ -49,7 +51,7 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
           <span className="flex h-12 w-12 shrink-0 items-center justify-center">
             <MessageCircle size={20} />
           </span>
-        </a>
+        </WhatsappLink>
         <a
           href={MAPS_URL}
           className="group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full bg-[#c9a96e] text-black shadow-xl shadow-black/20 transition-all hover:bg-accent-400 md:hover:w-40"
@@ -81,8 +83,9 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
           <Phone size={18} />
           <span className="text-[11px] font-semibold mt-0.5">Call Now</span>
         </a>
-        <a
+        <WhatsappLink
           href={waUrl}
+          formType="Mobile Bottom Bar WhatsApp"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-2 text-green-700 border-l border-r border-gray-200 active:bg-green-50"
@@ -90,7 +93,7 @@ const FloatingSocialBar: React.FC<FloatingSocialBarProps> = ({
         >
           <MessageCircle size={18} />
           <span className="text-[11px] font-semibold mt-0.5">WhatsApp</span>
-        </a>
+        </WhatsappLink>
         <a
           href={MAPS_URL}
           target="_blank"

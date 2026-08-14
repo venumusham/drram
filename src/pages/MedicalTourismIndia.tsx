@@ -7,6 +7,7 @@ import {
   WHATSAPP_INTL,
   MAPS_URL,
 } from "../components/FloatingSocialBar";
+import WhatsappLink from "../components/ui/WhatsappLink";
 
 /**
  * Medical Tourism / NRI Landing — captures 710+ wasted international
@@ -337,15 +338,17 @@ const MedicalTourismIndia: React.FC = () => {
               Free Video Consultation — WhatsApp  0
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
-              <a
+              <WhatsappLink
                 href={waUrl}
+                formType="Medical Tourism Hero WhatsApp"
+                condition="Medical Tourism"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white font-semibold px-4 py-3 rounded-lg shadow text-center hover:bg-green-600 transition"
                 data-conversion="medtourism_hero_whatsapp"
               >
                 💬 WhatsApp Consult
-              </a>
+              </WhatsappLink>
               <a
                 href="#booking"
                 className="bg-yellow-400 text-primary-900 font-semibold px-4 py-3 rounded-lg shadow text-center hover:bg-yellow-300 transition"
@@ -763,14 +766,16 @@ const MedicalTourismIndia: React.FC = () => {
               </button>
               <p className="text-xs text-gray-500 text-center">
                 Or WhatsApp{" "}
-                <a
+                <WhatsappLink
                   href={waUrl}
+                  formType="Medical Tourism Form WhatsApp"
+                  condition="Medical Tourism"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-700 font-semibold"
                 >
                   07969084439
-                </a>{" "}
+                </WhatsappLink>{" "}
                 for instant response.
               </p>
             </form>
@@ -804,14 +809,16 @@ const MedicalTourismIndia: React.FC = () => {
               >
                 Call 07969084439
               </a>
-              <a
+              <WhatsappLink
                 href={waUrl}
+                formType="Medical Tourism Footer WhatsApp"
+                condition="Medical Tourism"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white px-5 py-2 rounded shadow hover:bg-green-600 transition"
               >
                 WhatsApp
-              </a>
+              </WhatsappLink>
             </div>
           </div>
         </section>

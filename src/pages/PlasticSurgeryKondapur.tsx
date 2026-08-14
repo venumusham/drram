@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import WhatsappLink from '../components/ui/WhatsappLink';
 
 const phone = '07969084439';
 const whatsapp =
@@ -165,14 +166,16 @@ const PlasticSurgeryKondapur: React.FC = () => {
               >
                 Book Consultation
               </Link>
-              <a
+              <WhatsappLink
                 href={whatsapp}
+                formType="Kondapur Page WhatsApp"
+                condition="Plastic Surgery Kondapur"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-lg border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
               >
                 WhatsApp Clinic
-              </a>
+              </WhatsappLink>
             </div>
           </div>
         </section>

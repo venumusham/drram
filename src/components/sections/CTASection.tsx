@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import WhatsappLink from '../ui/WhatsappLink';
 
 const CTASection: React.FC = () => {
   return (
@@ -26,14 +27,15 @@ const CTASection: React.FC = () => {
         >
           Call 07969084439
         </a>
-        <a
+        <WhatsappLink
           href="https://wa.me/917969084444?text=Hello%20Dr.%20Ram%20Prabhu%2C%20I%20would%20like%20to%20book%20a%20consultation.%20Please%20share%20available%20slots."
+          formType="CTA Section WhatsApp"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-lg bg-[#25D366] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#20bd5a]"
         >
           WhatsApp Us
-        </a>
+        </WhatsappLink>
       </div>
     </section>
   );

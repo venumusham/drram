@@ -7,3 +7,10 @@
 
 [functions]
   directory = "netlify/functions"
+
+# The client calls /api/* (the Vercel convention). On Netlify those paths have
+# to be routed to the equivalent function explicitly.
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

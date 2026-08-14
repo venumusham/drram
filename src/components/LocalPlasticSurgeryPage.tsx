@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from './SEO';
+import WhatsappLink from './ui/WhatsappLink';
 
 type LocalPageVariant = 'plastic' | 'cosmetic';
 
@@ -185,14 +186,16 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
               >
                 Book Consultation
               </Link>
-              <a
+              <WhatsappLink
                 href={getWhatsApp(area)}
+                formType="Local Area Page WhatsApp"
+                condition={`${specialtyLabel} ${titleArea}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-lg border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
               >
                 WhatsApp Clinic
-              </a>
+              </WhatsappLink>
             </div>
           </div>
         </section>
