@@ -7,6 +7,8 @@
 # Netlify will serve directly (more specific match wins). This catch-all only
 # fires for routes NOT in dist (e.g., 404s, future client-only routes).
 
-/api/booking-webhook    /.netlify/functions/booking-webhook    200
+# API routes must come BEFORE the catch-all: _redirects is evaluated ahead of
+# netlify.toml, so its /api/* rule never fires if /* swallows the path first.
+/api/*    /.netlify/functions/:splat    200
 
 /*    /index.html   200
