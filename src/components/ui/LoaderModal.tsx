@@ -8,6 +8,8 @@ interface LoaderModalProps {
   showFallback?: boolean;
   /** Link used by the fallback card — the CRM link when we have one, wa.me otherwise. */
   fallbackLink: string;
+  /** Fired when the user takes the fallback link, i.e. leaves for WhatsApp. */
+  onFallbackClick?: () => void;
   onClose?: () => void;
 }
 
@@ -15,6 +17,7 @@ const LoaderModal: React.FC<LoaderModalProps> = ({
   serviceTitle,
   showFallback = false,
   fallbackLink,
+  onFallbackClick,
   onClose,
 }) => {
   // Escape closes, and the page behind must not scroll while the modal is up.
@@ -73,6 +76,7 @@ const LoaderModal: React.FC<LoaderModalProps> = ({
         {showFallback && (
           <a
             href={fallbackLink}
+            onClick={onFallbackClick}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 flex w-full items-center justify-between gap-3 rounded-xl border border-gray-200 p-4"
