@@ -1,25 +1,20 @@
 import React from 'react';
-import { useWhatsappCta } from '../../hooks/useWhatsappCta';
 
-type AnchorProps = Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'onClick'>;
+type AnchorProps = Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>;
 
 export interface WhatsappLinkProps extends AnchorProps {
-  /**
-   * The plain wa.me link. Kept as the real href so the CTA still works without
-   * JS, survives right-click/open-in-new-tab, and is the fallback if the Care
-   * Console call fails.
-   */
+  /** The wa.me link, including any prefilled message. */
   href: string;
-  /** Identifies the CTA in the CRM, e.g. 'Hero WhatsApp'. */
+  /** Identifies the CTA, e.g. 'Hero WhatsApp'. Rendered as data-cta. */
   formType: string;
-  /** Overrides the condition derived from the URL, e.g. 'Gynecomastia'. */
+  /** The procedure the CTA is about, e.g. 'Gynecomastia'. Rendered as data-condition. */
   condition?: string;
   children: React.ReactNode;
 }
 
 /**
- * Drop-in replacement for a WhatsApp `<a>`: renders the same markup, but a click
- * logs the lead in Care Console and redirects to the tracked link it returns.
+ * A plain WhatsApp `<a>`. Click tracking is handled site-wide by the DecentCare
+ * script loaded once in index.html; the data attributes label which CTA it was.
  */
 const WhatsappLink: React.FC<WhatsappLinkProps> = ({
   href,
@@ -27,24 +22,10 @@ const WhatsappLink: React.FC<WhatsappLinkProps> = ({
   condition,
   children,
   ...anchorProps
-}) => {
-  const { trigger } = useWhatsappCta();
-
-  const onClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    // Let modified clicks (new tab/window, middle click) use the plain href.
-    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
-      return;
-    }
-
-    event.preventDefault();
-    trigger({ formType, condition, fallbackLink: href });
-  };
-
-  return (
-    <a href={href} onClick={onClick} {...anchorProps}>
-      {children}
-    </a>
-  );
-};
+}) => (
+  <a href={href} data-cta={formType} data-condition={condition} {...anchorProps}>
+    {children}
+  </a>
+);
 
 export default WhatsappLink;
