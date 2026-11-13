@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App.tsx';
-import WhatsappCtaProvider from './components/WhatsappCtaProvider';
+import { installDesktopCallLinks } from './lib/desktopCallLinks';
 import './index.css';
 
 const container = document.getElementById('root')!;
@@ -10,10 +10,7 @@ const container = document.getElementById('root')!;
 const tree = (
   <StrictMode>
     <HelmetProvider>
-      {/* Owns the single Care Console WhatsApp loader; CTAs reach it via useWhatsappCta. */}
-      <WhatsappCtaProvider>
-        <App />
-      </WhatsappCtaProvider>
+      <App />
     </HelmetProvider>
   </StrictMode>
 );
@@ -24,3 +21,4 @@ const tree = (
 // preserving the prerendered source HTML for crawlers and first response.
 container.replaceChildren();
 createRoot(container).render(tree);
+installDesktopCallLinks();

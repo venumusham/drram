@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react';
 // Netlify run in production are mounted as dev middleware instead. Only the
 // routes listed here are wired up; add new ones as they are created.
 const API_ROUTES: Record<string, string> = {
-  '/api/careconsole': './api/careconsole.js',
   '/api/booking-webhook': './api/booking-webhook.js',
 };
 
