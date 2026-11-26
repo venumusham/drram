@@ -4,9 +4,9 @@ import MoneyPageTemplate, { MoneyPageData } from '../../components/MoneyPageTemp
 const data: MoneyPageData = {
   slug: 'liposuction-hyderabad',
   procedureName: 'Liposuction',
-  seoTitle: 'Liposuction Hyderabad ★ VASER from ₹60K | Dr. Ram Prabhu DNB',
+  seoTitle: 'Liposuction Hyderabad | Dr. Ram Prabhu DNB',
   seoDescription:
-    'VASER liposuction in Kondapur Hyderabad — abdomen, flanks, thighs, arms, chin, back. Body contouring by Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. From ₹60K. 0% EMI. Call 07969084439.',
+    'VASER liposuction in Kondapur Hyderabad — abdomen, flanks, thighs, arms, chin, back. Body contouring by Dr. Ram Prabhu, DNB Plastic Surgery. Call 07969084439.',
   seoKeywords: [
     'liposuction hyderabad',
     'liposuction in hyderabad',

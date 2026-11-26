@@ -74,7 +74,7 @@ const FAQS = [
   },
   {
     q: "Why choose Hyderabad over Mumbai, Delhi, or Bangalore for plastic surgery?",
-    a: "Hyderabad offers excellent quality at lower cost than Mumbai/Delhi (15-20% less typically). It has international airport with direct flights from UAE, UK, USA, Singapore. The IT hub area (Kondapur/Gachibowli) where we are located is modern, English-speaking, and has world-class hospitals. The city has lower air pollution than Delhi and milder weather year-round.",
+    a: "Hyderabad offers excellent quality at lower cost than Mumbai/Delhi (15-20% less typically). It has an international airport with direct flights from UAE, UK, USA, Singapore. The IT hub area (Kondapur/Gachibowli) where we are located is modern, English-speaking, and has established multi-speciality hospitals. The city has lower air pollution than Delhi and milder weather year-round.",
   },
 ];
 
@@ -270,7 +270,6 @@ const MedicalTourismIndia: React.FC = () => {
           "medical tourism india plastic surgery",
           "rhinoplasty cost india for foreigners",
           "gynecomastia surgery india nri",
-          "best plastic surgeon india for foreigners",
           "cosmetic surgery india vs uae",
           "plastic surgery hyderabad medical tourism",
           "india plastic surgery cost in usd",
@@ -335,7 +334,7 @@ const MedicalTourismIndia: React.FC = () => {
               </span>
             </div>
             <div className="bg-yellow-300 text-primary-900 inline-block px-4 py-2 rounded-lg font-bold text-lg mb-6">
-              Free Video Consultation — WhatsApp  0
+              Video Consultation — WhatsApp 07969084439
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
               <WhatsappLink
@@ -649,25 +648,16 @@ const MedicalTourismIndia: React.FC = () => {
                 </p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">📅 16+ Years Experience</h3>
-                <p className="text-primary-100 text-sm">
-                  MBBS 2009. 6,000+ procedures across cosmetic and
-                  reconstructive surgery.
-                </p>
+                <h3 className="font-bold mb-2">🎓 DNB Plastic Surgery</h3>
+                <p className="text-primary-100 text-sm">MBBS 2009. DNB (Super Speciality) Plastic Surgery from the National Board of Examinations, New Delhi.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">🏛️ TSMC Reg #66931</h3>
-                <p className="text-primary-100 text-sm">
-                  Telangana State Medical Council. NMC registered. IAAPS & APSI
-                  member.
-                </p>
+                <h3 className="font-bold mb-2">🏛️ TSMC Registration No. 66931</h3>
+                <p className="text-primary-100 text-sm">Telangana State Medical Council. NMC registered. IAAPS & APSI member.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">⭐ 140+ Google Reviews</h3>
-                <p className="text-primary-100 text-sm">
-                  Read verified patient experiences on the Google Business
-                  Profile.
-                </p>
+                <h3 className="font-bold mb-2">👥 IAAPS & APSI Member</h3>
+                <p className="text-primary-100 text-sm">Member of the Indian Association of Aesthetic Plastic Surgeons and the Association of Plastic Surgeons of India.</p>
               </div>
             </div>
           </div>
@@ -692,7 +682,7 @@ const MedicalTourismIndia: React.FC = () => {
               Request International Patient Quote
             </h2>
             <p className="text-sm text-gray-600 text-center mb-5">
-              Reply within 24 hours. Free video consultation.
+              Reply within 24 hours. Video consultation available.
             </p>
             <form
               className="flex flex-col gap-4"
@@ -762,7 +752,7 @@ const MedicalTourismIndia: React.FC = () => {
                 type="submit"
                 className="bg-primary-700 text-white font-semibold px-6 py-3 rounded shadow hover:bg-primary-800 transition"
               >
-                Request Free Video Consultation
+                Request Video Consultation
               </button>
               <p className="text-xs text-gray-500 text-center">
                 Or WhatsApp{" "}

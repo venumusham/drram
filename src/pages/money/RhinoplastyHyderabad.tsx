@@ -4,9 +4,9 @@ import MoneyPageTemplate, { MoneyPageData } from '../../components/MoneyPageTemp
 const data: MoneyPageData = {
   slug: 'rhinoplasty-hyderabad',
   procedureName: 'Rhinoplasty',
-  seoTitle: 'Rhinoplasty Hyderabad ★ from ₹70K | Dr. Ram Prabhu DNB',
+  seoTitle: 'Rhinoplasty Hyderabad | Dr. Ram Prabhu DNB',
   seoDescription:
-    'Open & closed rhinoplasty in Kondapur Hyderabad — nose reshaping, hump reduction, tip refinement, deviated septum correction. Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. Call 07969084439.',
+    'Open & closed rhinoplasty in Kondapur Hyderabad — nose reshaping, hump reduction, tip refinement, deviated septum correction. Dr. Ram Prabhu, DNB Plastic Surgery. Call 07969084439.',
   seoKeywords: [
     'rhinoplasty hyderabad',
     'rhinoplasty in hyderabad',

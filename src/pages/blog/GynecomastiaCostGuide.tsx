@@ -17,11 +17,10 @@ const GynecomastiaCostGuide: React.FC = () => (
   <BlogArticleLayout
     slug={SLUG}
     title="Gynecomastia Surgery Cost in Hyderabad — Complete 2026 Guide"
-    metaDescription="Honest cost breakdown for gynecomastia surgery in Hyderabad. Grade-wise pricing ₹50K-₹1.5L, what's included, hidden charges to avoid, EMI options. By Dr. Ram Prabhu, DNB."
+    metaDescription="Honest cost breakdown for gynecomastia surgery in Hyderabad. What's included, hidden charges to avoid, and payment options. By Dr. Ram Prabhu, DNB."
     keywords={[
       'gynecomastia surgery cost in hyderabad',
       'gynecomastia surgery cost',
-      'best gynecomastia surgery clinic hyderabad',
       'lipo gynecomastia india',
       'man boobs surgery cost',
     ]}
@@ -47,8 +46,8 @@ const GynecomastiaCostGuide: React.FC = () => (
     </p>
 
     <p className="text-gray-700 mb-5">
-      I've performed over 1,000 gynecomastia surgeries across all four grades. Below is the same cost transparency we
-      share in our consultation rooms — so you can make a confident, informed decision.
+      Below is the same cost transparency we share in our consultation rooms — so you can make a confident, informed
+      decision.
     </p>
 
     <h2 className="text-2xl font-bold text-primary-900 mt-10 mb-4">Cost by Grade — What You'll Actually Pay</h2>
@@ -203,8 +202,8 @@ const GynecomastiaCostGuide: React.FC = () => (
     </ul>
 
     <p className="text-gray-700 mb-5">
-      A genuine, qualified plastic surgeon's complete package starts at <strong>₹50,000 for Grade 1</strong> with
-      all-inclusive transparent pricing.
+      A genuine, qualified plastic surgeon's complete package should be itemised in writing, with all-inclusive transparent
+      pricing agreed before surgery.
     </p>
 
     <h2 className="text-2xl font-bold text-primary-900 mt-10 mb-4">How to Choose Value vs Cheap</h2>
@@ -280,19 +279,18 @@ const GynecomastiaCostGuide: React.FC = () => (
       low-credentialed clinic is tempting, the risk of complications, recurrence, or unsatisfactory results vastly
       outweighs the savings.{' '}
       <strong>
-        Quality plastic surgery in Hyderabad starts at ₹50,000 — that's already excellent value compared to other Indian
-        metros and dramatically lower than abroad.
+        Compare the full package, credentials, and follow-up arrangements rather than price alone.
       </strong>
     </p>
 
     <p className="text-gray-700 mb-5">
-      For a personalized assessment and exact quote based on your grade, schedule a free consultation. We examine,
-      photograph, classify, and give you a fixed-package written quote in a single visit.
+      For a personalized assessment and quote based on your grade, schedule a consultation. We examine,
+      photograph, classify, and give you a written quote in a single visit.
     </p>
 
     <BlogPillarCta
       title="Get Your Personalised Quote"
-      body="Free consultation with Dr. Ram Prabhu, DNB Plastic Surgery. Grade examination, photographs, and exact package quote in a single visit."
+      body="Consultation with Dr. Ram Prabhu, DNB Plastic Surgery. Grade examination, photographs, and package quote in a single visit."
       pillarHref="/gynecomastia"
       pillarButtonLabel="Full Procedure Page"
       whatsappMessage="Hello Dr. Ram Prabhu, I read your gynecomastia cost guide and would like to book a consultation."

@@ -46,7 +46,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'How experienced is Dr. Ram Prabhu in gynecomastia surgery?',
-    a: 'Dr. M. Ram Prabhu has 16+ years of experience and has performed 1,000+ gynecomastia procedures across all four grades, including bodybuilder and steroid-induced cases. He holds DNB (Super Speciality) Plastic Surgery from the National Board of Examinations.',
+    a: 'Dr. M. Ram Prabhu holds DNB (Super Speciality) Plastic Surgery from the National Board of Examinations and assesses gynecomastia across all four grades, including bodybuilder and steroid-induced cases. Suitability and expected outcomes are discussed during consultation.',
   },
   {
     q: 'What surgical techniques are used?',
@@ -54,7 +54,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'How much does gynecomastia surgery cost in Hyderabad?',
-    a: 'Cost ranges from ₹50,000 to ₹1,50,000 depending on the grade, technique, anaesthesia type, and hospital stay. Grade 1 (liposuction only) starts at ₹50,000. Grade 2-3 (combined approach) typically ₹70,000-₹1,00,000. Grade 4 ₹1,00,000-₹1,50,000. 0% interest EMI is available.',
+    a: 'Cost ranges from ₹50,000 to ₹1,50,000 depending on the grade, technique, anaesthesia type, and hospital stay. Grade 1 (liposuction only): ₹50,000-₹70,000. Grade 2-3 (combined approach): ₹70,000-₹1,00,000. Grade 4: ₹1,00,000-₹1,50,000. The exact cost is confirmed after assessment.',
   },
   {
     q: 'How long is the recovery and when can I return to work?',
@@ -62,7 +62,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'Will there be visible scars after gynecomastia surgery?',
-    a: 'No — modern gynecomastia surgery is essentially scarless. Liposuction is done through 2-3 mm incisions hidden in the armpit fold or nipple edge. By 3-6 months, scars are usually invisible.',
+    a: 'No - modern gynecomastia surgery aims to keep scars small and well-placed. Liposuction is done through 2-3 mm incisions hidden in the armpit fold or nipple edge. By 3-6 months, scars are usually much less visible.',
   },
   {
     q: 'Is gynecomastia surgery painful?',
@@ -146,7 +146,7 @@ const GynecomastiaLanding: React.FC = () => {
     url: 'https://drramprabhu.com/gynecomastia',
     image: 'https://drramprabhu.com/images/breast/Gynecomastia.webp',
     description:
-      'Endoscopic and scarless gynecomastia surgery in Kondapur, Hyderabad — VASER liposuction with gland excision. Performed by Dr. M. Ram Prabhu (DNB Super Speciality, 16+ years, 1,000+ cases). Cost from ₹50,000 with 0% EMI.',
+      'Endoscopic gynecomastia surgery in Kondapur, Hyderabad — VASER liposuction with gland excision. Performed by Dr. M. Ram Prabhu (DNB Super Speciality).',
     medicalSpecialty: 'PlasticSurgery',
     procedureType: 'https://schema.org/SurgicalProcedure',
     bodyLocation: 'Chest',
@@ -203,15 +203,13 @@ const GynecomastiaLanding: React.FC = () => {
   return (
     <>
       <SEO
-        title="Gynecomastia Surgery Hyderabad ★ Scarless from ₹50K | Dr. Ram Prabhu"
-        description="Scarless gynecomastia surgery in Kondapur Hyderabad from ₹50,000. VASER liposuction + gland removal, 1-2 day recovery, 0% EMI. Dr. Ram Prabhu, DNB, 1,000+ cases. Call 07969084439."
+        title="Gynecomastia Surgery Hyderabad | Dr. Ram Prabhu"
+        description="Gynecomastia assessment and surgical treatment planning in Kondapur, Hyderabad. Dr. Ram Prabhu, DNB (Super Speciality) Plastic Surgery, Telangana State Medical Council Registration No. 66931. Call 07969084439."
         keywords={[
           'gynecomastia surgery hyderabad',
           'gynecomastia surgery cost hyderabad',
-          'best gynecomastia surgeon hyderabad',
           'male chest reduction hyderabad',
           'man boobs surgery hyderabad',
-          'scarless gynecomastia surgery',
           'bodybuilder gynecomastia surgery hyderabad',
           'vaser liposuction gynecomastia',
           'gynecomastia treatment kondapur',
@@ -236,21 +234,16 @@ const GynecomastiaLanding: React.FC = () => {
               <span className="text-white">Gynecomastia Surgery</span>
             </nav>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-              Gynecomastia Surgery in Hyderabad — Scarless Male Chest Reduction by Dr. Ram Prabhu
+              Gynecomastia Surgery in Hyderabad — Male Chest Reduction by Dr. Ram Prabhu
             </h1>
             <p className="text-primary-100 text-base md:text-lg mb-5 max-w-2xl">
-              VASER liposuction + gland excision performed by a DNB Super Speciality Plastic Surgeon with 1,000+ gynecomastia cases. All four grades treated. Same-day discharge. Final results in 8-12 weeks.
+              VASER liposuction + gland excision performed by a DNB Super Speciality Plastic Surgeon. All four grades treated. Same-day discharge.
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">★ DNB Plastic Surgery</span>
-              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">1,000+ Cases</span>
-              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">Scarless Technique</span>
+              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">Endoscopic Technique</span>
               <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">All 4 Grades</span>
               <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">Bodybuilder Specialist</span>
-              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">0% EMI</span>
-            </div>
-            <div className="bg-yellow-300 text-primary-900 inline-block px-4 py-2 rounded-lg font-bold text-lg mb-6">
-              Surgery from ₹50,000 — Free Consultation
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
               <a
@@ -460,16 +453,16 @@ const GynecomastiaLanding: React.FC = () => {
                 <p className="text-primary-100 text-sm">National Board of Examinations, New Delhi (2019). The same recognition as MCh Plastic Surgery per the National Medical Commission.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">1,000+ Gynecomastia Cases</h3>
-                <p className="text-primary-100 text-sm">Among the highest-volume gynecomastia surgeons in Hyderabad. All four grades, including challenging bodybuilder and steroid-induced cases.</p>
+                <h3 className="font-bold mb-2">DNB Plastic Surgery</h3>
+                <p className="text-primary-100 text-sm">MBBS 2009, DNB 2019. DNB (Super Speciality) Plastic Surgery from the National Board of Examinations, New Delhi.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">16+ Years Experience</h3>
-                <p className="text-primary-100 text-sm">MBBS 2009, DNB 2019. 6,000+ total procedures. TSMC License No. 66931. Member of IAAPS and APSI.</p>
+                <h3 className="font-bold mb-2">Telangana State Medical Council</h3>
+                <p className="text-primary-100 text-sm">Registration No. 66931. Practising at Lux Hospitals, Gachibowli, Hyderabad.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
                 <h3 className="font-bold mb-2">VASER & Endoscopic Techniques</h3>
-                <p className="text-primary-100 text-sm">Up-to-date with the latest scarless approaches — ultrasonic liposuction, endoscopic gland excision, micro-cannulae.</p>
+                <p className="text-primary-100 text-sm">Up-to-date with the latest surgical approaches — ultrasonic liposuction, endoscopic gland excision, micro-cannulae.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
                 <h3 className="font-bold mb-2">Transparent Pricing</h3>
@@ -488,14 +481,14 @@ const GynecomastiaLanding: React.FC = () => {
         {/* ================= 11. VIDEO ================= */}
         <section className="py-12 px-4 bg-primary-50">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4 text-center">Watch: Endoscopic Scarless Gynecomastia Surgery</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4 text-center">Watch: Endoscopic Gynecomastia Surgery</h2>
             <p className="text-gray-700 text-center mb-6">
               Educational video showing the modern endoscopic approach to gynecomastia correction.
             </p>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.youtube.com/embed/aIgr0I-RnM4"
-                title="Endoscopic Scarless Gynecomastia Surgery — Dr. Ram Prabhu"
+                title="Endoscopic Gynecomastia Surgery — Dr. Ram Prabhu"
                 allow="encrypted-media; picture-in-picture"
                 allowFullScreen
                 loading="lazy"

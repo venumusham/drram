@@ -5,7 +5,7 @@ const credentialCards = [
   {
     icon: ShieldCheck,
     title: 'Board-certified specialist',
-    text: 'DNB (Super Speciality) Plastic Surgery with Telangana State Medical Council registration.',
+    text: 'DNB (Super Speciality) Plastic Surgery. Telangana State Medical Council Registration No. 66931.',
   },
   {
     icon: ClipboardCheck,
@@ -14,8 +14,8 @@ const credentialCards = [
   },
   {
     icon: Star,
-    title: 'Trusted patient proof',
-    text: '5.0 Google rating with 140+ reviews across aesthetic and reconstructive procedures.',
+    title: 'Professional memberships',
+    text: 'Member of the Indian Association of Aesthetic Plastic Surgeons and the Association of Plastic Surgeons of India.',
   },
 ];
 
@@ -30,7 +30,7 @@ const TrustCredentialsSection: React.FC = () => {
               Credentials first
             </div>
             <h2 className="font-serif text-[clamp(1.65rem,3vw,2.35rem)] font-normal leading-tight text-neutral-950">
-              Qualified care, clear guidance, and trusted patient outcomes.
+              Qualified care, clear guidance, and attentive follow-up.
             </h2>
             <p className="mt-4 max-w-xl text-sm leading-7 text-neutral-600">
               From your first consultation to recovery, every treatment plan is explained with realistic expectations, safety-first planning, and attentive follow-up.

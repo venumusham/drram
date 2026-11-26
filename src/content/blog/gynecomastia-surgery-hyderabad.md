@@ -120,4 +120,4 @@ Yes. Gynecomastia surgery is usually performed under general anaesthesia so you 
 
 Cost depends on the grade of gynecomastia, amount of fat and gland, whether skin excision is needed, anaesthesia, hospital setup and recovery plan. The exact cost is discussed after examination.
 
-Dr. M. Ram Prabhu is a DNB Super Speciality Plastic Surgeon based in Kondapur, Hyderabad, with 16+ years of experience and over 6,000 procedures performed.
+Dr. M. Ram Prabhu is a DNB Super Speciality Plastic Surgeon based in Kondapur, Hyderabad, registered with the Telangana State Medical Council (Registration No. 66931).

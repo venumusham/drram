@@ -82,7 +82,7 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
         name: `Dr Ramprabhu Clinic - ${specialtyLabel} ${titleArea}`,
         alternateName: 'Idea Clinic - Dr. M. Ram Prabhu',
         image: 'https://drramprabhu.com/banner.webp',
-        description: `${specialtyLabel} for ${titleArea}: Dr. M. Ram Prabhu, DNB Plastic Surgery, TSMC Licence No. 66931, practicing at Idea Clinic, Kondapur, Hyderabad.`,
+        description: `${specialtyLabel} for ${titleArea}: Dr. M. Ram Prabhu, DNB Plastic Surgery, TSMC Registration No. 66931, practicing at Idea Clinic, Kondapur, Hyderabad.`,
         address: {
           '@type': 'PostalAddress',
           streetAddress: '1st Floor, 61B, 3rd Street, Sri Ram Nagar, near Burfighar',
@@ -102,13 +102,6 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
         priceRange: 'INR',
         medicalSpecialty: 'PlasticSurgery',
         founder: { '@id': 'https://drramprabhu.com/#physician' },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '5.0',
-          reviewCount: '140',
-          bestRating: '5',
-          worstRating: '1',
-        },
         availableService: procedures.map(([name]) => ({ '@type': 'MedicalProcedure', name })),
       },
       {
@@ -120,7 +113,7 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
             name: `Who is a good ${lowerSpecialty} for ${titleArea}?`,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `A good ${lowerSpecialty} for ${titleArea} should have formal plastic surgery training, medical registration, relevant procedure experience, transparent consultation, and a clear recovery plan. Dr. M. Ram Prabhu is a DNB Plastic Surgery specialist at Idea Clinic, Kondapur, with 16+ years of experience and 6,000+ procedures.`,
+              text: `A good ${lowerSpecialty} for ${titleArea} should have formal plastic surgery training, medical registration, relevant procedure experience, transparent consultation, and a clear recovery plan. Dr. M. Ram Prabhu is a DNB Plastic Surgery specialist at Idea Clinic, Kondapur, registered with the Telangana State Medical Council (Registration No. 66931).`,
             },
           },
           {
@@ -149,7 +142,7 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
     <>
       <SEO
         title={`${specialtyLabel} ${titleArea} | Dr. M. Ram Prabhu DNB`}
-        description={`Dr. M. Ram Prabhu is a DNB Plastic Surgery specialist serving ${titleArea}, with 16+ years, 6,000+ procedures, TSMC Licence No. 66931, IAAPS/APSI membership, and 5.0 Google rating.`}
+        description={`Dr. M. Ram Prabhu is a DNB Plastic Surgery specialist serving ${titleArea}, with Telangana State Medical Council Registration No. 66931 and IAAPS/APSI membership.`}
         keywords={[
           `${lowerSpecialty} ${area.toLowerCase()}`,
           `best ${lowerSpecialty} ${area.toLowerCase()}`,
@@ -177,7 +170,7 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
                 ? 'If you are searching for the best plastic surgeon in Hyderabad, evaluate the individual surgeon rather than only hospital brand visibility.'
                 : `If you are searching for the best ${lowerSpecialty} near ${titleArea}, evaluate the individual surgeon rather than only hospital or directory visibility.`}{' '}
               Dr. M. Ram Prabhu is a DNB Plastic Surgery specialist practicing at Idea Clinic, Kondapur, with
-              16+ years of experience, 6,000+ procedures, TSMC Licence No. 66931, and IAAPS/APSI membership.
+              DNB (Super Speciality) Plastic Surgery, Telangana State Medical Council Registration No. 66931, and IAAPS/APSI membership.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -204,9 +197,8 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
           <div className="container mx-auto grid max-w-5xl gap-6 md:grid-cols-4">
             {[
               ['DNB', 'Plastic Surgery'],
-              ['16+', 'Years experience'],
-              ['6,000+', 'Procedures'],
-              ['5.0', 'Google rating'],
+              ['TSMC', 'Reg. No. 66931'],
+              ['IAAPS/APSI', 'Member'],
             ].map(([value, label]) => (
               <div key={label} className="rounded-xl border border-gray-200 bg-gray-50 p-5 text-center">
                 <div className="font-serif text-3xl font-bold text-primary-800">{value}</div>
@@ -316,7 +308,7 @@ const LocalPlasticSurgeryPage: React.FC<LocalPlasticSurgeryPageProps> = ({
               {[
                 [
                   `Who is a good ${lowerSpecialty} for ${titleArea}?`,
-                  `A good ${lowerSpecialty} for ${titleArea} should have formal plastic surgery training, medical registration, relevant procedure experience, transparent consultation, and a clear recovery plan. Dr. M. Ram Prabhu is a DNB Plastic Surgery specialist at Idea Clinic, Kondapur, with 16+ years of experience and 6,000+ procedures.`,
+                  `A good ${lowerSpecialty} for ${titleArea} should have formal plastic surgery training, medical registration, relevant procedure experience, transparent consultation, and a clear recovery plan. Dr. M. Ram Prabhu is a DNB Plastic Surgery specialist at Idea Clinic, Kondapur, registered with the Telangana State Medical Council (Registration No. 66931).`,
                 ],
                 [`Is Dr. Ram Prabhu near ${titleArea}?`, proximity],
                 [

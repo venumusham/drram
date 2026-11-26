@@ -92,7 +92,7 @@ const ROUTES = [
   '/blog/keloid-scar-treatment-surgery-hyderabad',
   '/blog/forehead-lump-removal-no-visible-scar-hyderabad',
   '/blog/massage-after-gynecomastia-surgery-hyderabad',
-  '/blog/endoscopic-scarless-gynecomastia-surgery-hyderabad',
+  '/blog/endoscopic-gynecomastia-surgery-hyderabad',
   '/blog/gynecomastia-surgery-psychology-man-boobs-hyderabad',
   '/blog/multiple-gynecomastia-surgeries-precision-planning-hyderabad',
   '/blog/what-is-gynecomastia-male-breast-enlargement-hyderabad',

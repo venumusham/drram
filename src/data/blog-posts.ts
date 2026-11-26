@@ -509,7 +509,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     slug: 'gynecomastia-surgery-hyderabad',
     title: 'Gynecomastia Surgery Hyderabad: Treatment & Recovery',
     excerpt:
-      'Suffering from gynecomastia? Dr. Ram Prabhu, Plastic Surgeon in Hyderabad, explains causes, surgery & recovery. Book a free consult.',
+      'Suffering from gynecomastia? Dr. Ram Prabhu, Plastic Surgeon in Hyderabad, explains causes, surgery & recovery. Book a consult.',
     author: 'Dr. M. Ram Prabhu',
     publishedAt: '2026-05-22',
     dateModified: '2026-05-22',
@@ -710,8 +710,8 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     pillarButtonLabel: 'Gynecomastia hub',
   },
   {
-    slug: 'endoscopic-scarless-gynecomastia-surgery-hyderabad',
-    title: 'Endoscopic Scarless Gynecomastia Surgery: What Patients Should Know',
+    slug: 'endoscopic-gynecomastia-surgery-hyderabad',
+    title: 'Endoscopic Gynecomastia Surgery: What Patients Should Know',
     excerpt:
       'How endoscopic gynecomastia surgery hides access points, who may be suitable, and why the goal is a natural chest rather than simply a small scar.',
     author: 'Dr. M. Ram Prabhu',
@@ -719,13 +719,13 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     dateModified: '2026-05-22',
     readMin: 10,
     image: 'https://img.youtube.com/vi/u1_TWQy8W7k/hqdefault.jpg',
-    imageAlt: 'Endoscopic scarless gynecomastia surgery video by Dr. Ram Prabhu.',
+    imageAlt: 'Endoscopic gynecomastia surgery video by Dr. Ram Prabhu.',
     categories: ['Gynecomastia', 'Male Chest'],
     pillarPage: '/gynecomastia',
     breadcrumbLabel: 'Endoscopic gynecomastia',
-    keywords: ['scarless gynecomastia surgery hyderabad', 'endoscopic gynecomastia', 'male breast reduction scars'],
+    keywords: ['endoscopic gynecomastia', 'male breast reduction scars'],
     youtubeVideoId: 'u1_TWQy8W7k',
-    youtubeTitle: 'Endoscopic Scarless Gynecomastia Surgery',
+    youtubeTitle: 'Endoscopic Gynecomastia Surgery',
     pillarButtonLabel: 'Gynecomastia hub',
   },
   {
@@ -831,7 +831,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     keywords: ['gynecomastia surgery cost hyderabad', 'gynecomastia cost india', 'male chest reduction price'],
     pillarCtaTitle: 'Get Your Personalised Quote',
     pillarCtaBody:
-      'Free consultation with Dr. Ram Prabhu, DNB Plastic Surgery. Grade examination, photographs, and exact package quote in a single visit.',
+      'Consultation with Dr. Ram Prabhu, DNB Plastic Surgery. Grade examination, photographs, and package quote in a single visit.',
     pillarButtonLabel: 'Full procedure page',
     whatsappPrefill:
       'Hello Dr. Ram Prabhu, I read your gynecomastia cost guide and would like to book a consultation.',

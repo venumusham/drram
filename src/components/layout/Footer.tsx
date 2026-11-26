@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Linkedin, BadgeCheck } from 'lucide-react';
 import Logo from '../ui/Logo';
 
 const COPYRIGHT_YEAR = 2026;
@@ -133,6 +133,13 @@ const Footer: React.FC = () => {
                   <p>VISIT OUR CLINIC - GACHIBOWLI, HYDERABAD</p>
                       <p>TIMINGS- 9:00 AM - 4:00 PM</p>
                 </div>
+              </li>
+              <li className="flex items-start">
+                <BadgeCheck size={18} className="mr-2 mt-1 shrink-0 text-gray-400" />
+                <span className="text-gray-400 text-sm">
+                  Telangana State Medical Council<br />
+                  Registration No. 66931
+                </span>
               </li>
             </ul>
           </div>
