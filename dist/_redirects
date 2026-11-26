@@ -9,4 +9,6 @@
 
 /api/booking-webhook    /.netlify/functions/booking-webhook    200
 
+/blog/endoscopic-scarless-gynecomastia-surgery-hyderabad    /blog/endoscopic-gynecomastia-surgery-hyderabad    301
+
 /*    /index.html   200

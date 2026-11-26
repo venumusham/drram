@@ -16,17 +16,17 @@ const faqs = [
   {
     question: 'How experienced is Dr. Ram Prabhu in gynecomastia surgery?',
     answer:
-      'Dr. M. Ram Prabhu has 16+ years of experience and has performed 1,000+ gynecomastia procedures across all four grades, including bodybuilder and steroid-induced cases. He holds DNB (Super Speciality) Plastic Surgery from the National Board of Examinations, and is a member of IAAPS and APSI.',
+      'Dr. M. Ram Prabhu holds DNB (Super Speciality) Plastic Surgery from the National Board of Examinations and is registered with the Telangana State Medical Council, Registration No. 66931. He is a member of IAAPS and APSI. The surgical approach is selected after an individual clinical assessment.',
   },
   {
     question: 'What surgical techniques are used?',
     answer:
-      'Treatment is tailored to your grade. Grade 1 is usually managed with VASER or laser-assisted liposuction alone (small incisions, no visible scar). Grades 2–3 need liposuction PLUS gland excision through a hidden peri-areolar (around the nipple) incision. Grade 4 with significant skin excess may need additional skin tightening. Dr. Ram Prabhu also uses the endoscopic scarless technique where indicated.',
+      'Treatment is tailored to your grade. Grade 1 is usually managed with VASER or laser-assisted liposuction alone (small incisions). Grades 2–3 need liposuction PLUS gland excision through a peri-areolar (around the nipple) incision. Grade 4 with significant skin excess may need additional skin tightening. Endoscopic techniques may be considered in selected cases.',
   },
   {
     question: 'How much does gynecomastia surgery cost in Hyderabad?',
     answer:
-      'Cost ranges from ₹50,000 to ₹1,50,000 depending on the grade, technique, anaesthesia type, and hospital stay. Grade 1 (liposuction only) starts at ₹50,000. Grade 2–3 (combined approach) typically ₹70,000–₹1,00,000. Grade 4 or revision cases ₹1,00,000–₹1,50,000. Packages are transparent and fixed — no hidden charges. 0% interest EMI is available.',
+      'Treatment costs vary according to the grade, technique, anaesthesia, hospital stay, and any required investigations. Cost components and follow-up arrangements are explained after clinical assessment.',
   },
   {
     question: 'How long is the recovery and when can I return to work?',
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Will there be visible scars after gynecomastia surgery?',
     answer:
-      'No — modern gynecomastia surgery is essentially scarless. Liposuction is done through 2-3 mm incisions in inconspicuous areas (armpit fold, nipple edge). Gland excision uses a hidden incision along the lower border of the areola, where the skin colour change camouflages it. By 3-6 months, scars are usually invisible. Aggressive scar-prone skin types may benefit from silicone gel.',
+      'All surgical procedures involve incisions. Liposuction is performed through small incisions in inconspicuous areas where possible, and gland excision uses an incision along the lower border of the areola. Scar appearance varies with individual healing; scar care is discussed during follow-up.',
   },
   {
     question: 'Is gynecomastia surgery painful?',

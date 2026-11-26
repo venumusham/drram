@@ -15,8 +15,6 @@ const data: MoneyPageData = {
     'breast enlargement surgery hyderabad',
     'fat transfer breast augmentation',
     'silicone implants india',
-    'top rated surgeons for breast augmentation telangana',
-    'best breast surgeon hyderabad',
   ],
   h1: 'Breast Augmentation in Hyderabad — Natural Results with Implants or Fat Transfer',
   heroSubheadline:

@@ -191,9 +191,9 @@ export const BlogAuthorBio: React.FC = () => (
   <div className="not-prose mt-12 p-5 bg-gray-50 border border-gray-200 rounded">
     <h3 className="font-bold text-primary-900 mb-2">About the Author</h3>
     <p className="text-sm text-gray-700">
-      <strong>Dr. M. Ram Prabhu</strong> is a plastic surgeon with 16+ years of experience and 6,000+ procedures performed.
-      He holds DNB (Super Speciality) Plastic Surgery from the National Board of Examinations, New Delhi (2019). Member of
-      IAAPS and APSI. TSMC Registration #66931. Practices at Idea Clinic, Kondapur, Hyderabad.{' '}
+      <strong>Dr. M. Ram Prabhu</strong> is a plastic surgeon who holds DNB (Super Speciality) Plastic Surgery from the
+      National Board of Examinations, New Delhi (2019). Member of IAAPS and APSI. Telangana State Medical Council
+      Registration No. 66931. Practices at Idea Clinic, Kondapur, Hyderabad.{' '}
       <Link to="/about" className="text-primary-700 underline">
         Read full bio →
       </Link>

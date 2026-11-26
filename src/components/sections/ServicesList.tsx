@@ -49,7 +49,9 @@ const ServicesList: React.FC = () => {
               <div className="relative">
                 <h3 className="text-xl font-bold text-white mb-3">Reconstructive Excellence</h3>
                 <p className="text-primary-50 text-sm leading-relaxed">
-                  Our commitment to excellence in reconstructive surgery ensures personalized care and optimal results for every patient. Dr. Ram Prabhu's expertise and attention to detail guarantee the highest standards of surgical outcomes.
+                  Reconstructive surgery at the clinic focuses on individualised planning, clear explanation of what surgery
+                  can and cannot achieve, and structured follow-up care. Suitability and expected outcomes are discussed
+                  during consultation.
                 </p>
               </div>
             </div>
@@ -59,7 +61,8 @@ const ServicesList: React.FC = () => {
               <div className="relative">
                 <h3 className="text-xl font-bold text-white mb-3">Advanced Rhinoplasty Solutions</h3>
                 <p className="text-primary-50 text-sm leading-relaxed">
-                  Enhance your facial symmetry with tailored nose reshaping procedures by Dr. Ramprabhu M. Our advanced techniques ensure natural-looking results that complement your unique facial features.
+                  Nose reshaping is planned around your facial proportions. The aim is a natural-looking result that suits
+                  your features, with limitations discussed before surgery.
                 </p>
               </div>
             </div>

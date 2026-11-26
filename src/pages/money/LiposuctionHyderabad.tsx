@@ -6,11 +6,10 @@ const data: MoneyPageData = {
   procedureName: 'Liposuction',
   seoTitle: 'Liposuction Hyderabad ★ VASER from ₹60K | Dr. Ram Prabhu DNB',
   seoDescription:
-    'VASER liposuction in Kondapur Hyderabad — abdomen, flanks, thighs, arms, chin, back. Body contouring by Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. From ₹60K. 0% EMI. Call 9949808628.',
+    'VASER liposuction in Kondapur Hyderabad — abdomen, flanks, thighs, arms, chin, back. Body contouring by Dr. Ram Prabhu, DNB Plastic Surgery. Call 9949808628.',
   seoKeywords: [
     'liposuction hyderabad',
     'liposuction in hyderabad',
-    'best liposuction surgeon in hyderabad',
     'liposuction cost hyderabad',
     'vaser liposuction hyderabad',
     'tumescent liposuction',

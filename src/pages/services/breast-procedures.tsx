@@ -73,7 +73,7 @@ const BreastProceduresPage: React.FC = () => {
     <>
       <SEO
         title="Breast Surgery Hyderabad | Augmentation, Lift, Reduction | Dr. Ram Prabhu"
-        description="Breast augmentation, reduction, mastopexy (lift), reconstruction & gynecomastia in Kondapur Hyderabad. Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. Call 9949808628."
+        description="Breast augmentation, reduction, mastopexy (lift), reconstruction & gynecomastia in Kondapur Hyderabad. Dr. Ram Prabhu, DNB Plastic Surgery. Call 9949808628."
         keywords={[
           'breast augmentation hyderabad',
           'breast reduction telangana',

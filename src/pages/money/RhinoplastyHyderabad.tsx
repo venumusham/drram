@@ -6,11 +6,10 @@ const data: MoneyPageData = {
   procedureName: 'Rhinoplasty',
   seoTitle: 'Rhinoplasty Hyderabad ★ from ₹70K | Dr. Ram Prabhu DNB',
   seoDescription:
-    'Open & closed rhinoplasty in Kondapur Hyderabad — nose reshaping, hump reduction, tip refinement, deviated septum correction. Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. Call 9949808628.',
+    'Open & closed rhinoplasty in Kondapur Hyderabad — nose reshaping, hump reduction, tip refinement, deviated septum correction. Dr. Ram Prabhu, DNB Plastic Surgery. Call 9949808628.',
   seoKeywords: [
     'rhinoplasty hyderabad',
     'rhinoplasty in hyderabad',
-    'best rhinoplasty surgeon in hyderabad',
     'nose surgery hyderabad',
     'nose job hyderabad',
     'rhinoplasty cost hyderabad',

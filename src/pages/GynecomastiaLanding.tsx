@@ -14,7 +14,6 @@ import { PHONE_INTL, WHATSAPP_INTL, MAPS_URL } from '../components/FloatingSocia
  *   - "gynecomastia surgery cost hyderabad"
  *   - "male chest reduction hyderabad"
  *   - "man boobs surgery hyderabad"
- *   - "scarless gynecomastia surgery"
  *   - "bodybuilder gynecomastia surgery in hyderabad"
  *
  * Page sections (SEO-mapped):
@@ -23,7 +22,7 @@ import { PHONE_INTL, WHATSAPP_INTL, MAPS_URL } from '../components/FloatingSocia
  *   3. Causes & symptoms (long-tail keyword capture)
  *   4. Grades 1-4 with visual breakdown (high-value content)
  *   5. Procedures accordion (4 surgical options)
- *   6. Cost table (₹50K-₹1.5L by grade)         <- highest-converting section
+ *   6. Grade-by-grade treatment overview
  *   7. Step-by-step procedure walkthrough
  *   8. Recovery timeline (Day 1 -> Month 3)
  *   9. Why Dr. Ram Prabhu (E-E-A-T signals)
@@ -45,7 +44,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'How experienced is Dr. Ram Prabhu in gynecomastia surgery?',
-    a: 'Dr. M. Ram Prabhu has 16+ years of experience and has performed 1,000+ gynecomastia procedures across all four grades, including bodybuilder and steroid-induced cases. He holds DNB (Super Speciality) Plastic Surgery from the National Board of Examinations.',
+    a: 'Dr. M. Ram Prabhu holds DNB (Super Speciality) Plastic Surgery from the National Board of Examinations and is registered with the Telangana State Medical Council, Registration No. 66931. The surgical approach is selected after an individual clinical assessment.',
   },
   {
     q: 'What surgical techniques are used?',
@@ -53,7 +52,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'How much does gynecomastia surgery cost in Hyderabad?',
-    a: 'Cost ranges from ₹50,000 to ₹1,50,000 depending on the grade, technique, anaesthesia type, and hospital stay. Grade 1 (liposuction only) starts at ₹50,000. Grade 2-3 (combined approach) typically ₹70,000-₹1,00,000. Grade 4 ₹1,00,000-₹1,50,000. 0% interest EMI is available.',
+    a: 'Treatment costs vary according to the clinical grade, surgical technique, anaesthesia, hospital stay, and any required investigations. An individual estimate is discussed after clinical assessment.',
   },
   {
     q: 'How long is the recovery and when can I return to work?',
@@ -61,7 +60,7 @@ const GYNECOMASTIA_FAQS = [
   },
   {
     q: 'Will there be visible scars after gynecomastia surgery?',
-    a: 'No — modern gynecomastia surgery is essentially scarless. Liposuction is done through 2-3 mm incisions hidden in the armpit fold or nipple edge. By 3-6 months, scars are usually invisible.',
+    a: 'All surgical procedures involve incisions. The location and expected appearance of scars depend on the technique and your individual healing. These points are discussed during treatment planning.',
   },
   {
     q: 'Is gynecomastia surgery painful?',
@@ -93,7 +92,6 @@ const COST_TABLE = [
     duration: '60-90 min',
     anesthesia: 'Local + sedation',
     stay: 'Same-day discharge',
-    price: '₹50,000 — ₹70,000',
   },
   {
     grade: 'Grade 2 — Moderate',
@@ -102,7 +100,6 @@ const COST_TABLE = [
     duration: '90-120 min',
     anesthesia: 'General',
     stay: '1 day',
-    price: '₹70,000 — ₹85,000',
   },
   {
     grade: 'Grade 3 — Moderate-Severe',
@@ -111,7 +108,6 @@ const COST_TABLE = [
     duration: '2-3 hours',
     anesthesia: 'General',
     stay: '1 day',
-    price: '₹85,000 — ₹1,10,000',
   },
   {
     grade: 'Grade 4 — Severe',
@@ -120,7 +116,6 @@ const COST_TABLE = [
     duration: '3-4 hours',
     anesthesia: 'General',
     stay: '1-2 days',
-    price: '₹1,10,000 — ₹1,50,000',
   },
 ];
 
@@ -130,12 +125,12 @@ const RECOVERY_TIMELINE = [
   { when: 'Day 4-7', title: 'Return to work', detail: 'Most desk-job patients return to work. Driving cleared after 5-7 days. Stitches removed (or absorbable). Bruising fading visibly.' },
   { when: 'Week 2-3', title: 'Light activity', detail: 'Walking, light cardio cleared. Compression garment continues full-time. Most swelling resolves. Chest contour starting to show.' },
   { when: 'Week 4-6', title: 'Garment off', detail: 'Compression garment ends. Light gym/cardio okay. Full chest workouts still restricted. Scar massage begins for any visible incisions.' },
-  { when: 'Month 2-3', title: 'Full recovery', detail: 'Heavy weight training resumed. Final aesthetic shape visible as last residual swelling settles. Scars rapidly fading.' },
-  { when: 'Month 6+', title: 'Final result', detail: 'Scars typically invisible at conversational distance. Permanent gland removal — no recurrence with normal lifestyle.' },
+  { when: 'Month 2-3', title: 'Ongoing recovery', detail: 'Activity progression is reviewed according to healing and your surgeon’s advice.' },
+  { when: 'Month 6+', title: 'Long-term follow-up', detail: 'Long-term recovery and scar care are reviewed according to individual healing and clinical needs.' },
 ];
 
 const GynecomastiaLanding: React.FC = () => {
-  // Schema 1: MedicalProcedure with Offer + AggregateRating
+  // Schema 1: MedicalProcedure
   const procedureSchema = {
     '@context': 'https://schema.org',
     '@type': 'MedicalProcedure',
@@ -145,32 +140,17 @@ const GynecomastiaLanding: React.FC = () => {
     url: 'https://drramprabhu.com/gynecomastia',
     image: 'https://drramprabhu.com/images/breast/Gynecomastia.webp',
     description:
-      'Endoscopic and scarless gynecomastia surgery in Kondapur, Hyderabad — VASER liposuction with gland excision. Performed by Dr. M. Ram Prabhu (DNB Super Speciality, 16+ years, 1,000+ cases). Cost from ₹50,000 with 0% EMI.',
+      'Gynecomastia assessment and surgical treatment planning in Kondapur, Hyderabad by Dr. M. Ram Prabhu, DNB (Super Speciality) Plastic Surgery.',
     medicalSpecialty: 'PlasticSurgery',
     procedureType: 'https://schema.org/SurgicalProcedure',
     bodyLocation: 'Chest',
     preparation:
       'Stop steroids and blood-thinners at least 2-6 weeks before surgery. Pre-op blood work and ECG required. No food or water 6 hours before surgery.',
-    followup: 'Compression garment for 4-6 weeks. Follow-up visits at Day 7, Week 4, and Month 3. Free post-op consultations included.',
+    followup: 'Compression garment use and follow-up timing are planned according to the procedure and clinical progress.',
     howPerformed:
       'Procedure performed under general or local anaesthesia. VASER ultrasonic liposuction emulsifies fat through 2-3mm incisions. Glandular tissue is excised through a hidden peri-areolar incision. Skin is closed with absorbable sutures.',
     areaServed: ['Hyderabad', 'Kondapur', 'Gachibowli', 'Madhapur', 'Hitech City', 'Telangana'],
     performer: { '@id': 'https://drramprabhu.com/#physician' },
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      price: '50000',
-      priceCurrency: 'INR',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        price: '50000',
-        priceCurrency: 'INR',
-        valueAddedTaxIncluded: true,
-        minPrice: '50000',
-        maxPrice: '150000',
-      },
-      url: 'https://drramprabhu.com/gynecomastia',
-    },
   };
 
   // Schema 2: FAQPage matching the rendered FAQ content
@@ -202,15 +182,13 @@ const GynecomastiaLanding: React.FC = () => {
   return (
     <>
       <SEO
-        title="Gynecomastia Surgery Hyderabad ★ Scarless from ₹50K | Dr. Ram Prabhu"
-        description="Scarless gynecomastia surgery in Kondapur Hyderabad from ₹50,000. VASER liposuction + gland removal, 1-2 day recovery, 0% EMI. Dr. Ram Prabhu, DNB, 1,000+ cases. Call 9949808628."
+        title="Gynecomastia Surgery Hyderabad | Dr. Ram Prabhu"
+        description="Gynecomastia assessment and surgical treatment planning in Kondapur, Hyderabad. Dr. Ram Prabhu, DNB (Super Speciality) Plastic Surgery, Telangana State Medical Council Registration No. 66931. Call 9949808628."
         keywords={[
           'gynecomastia surgery hyderabad',
           'gynecomastia surgery cost hyderabad',
-          'best gynecomastia surgeon hyderabad',
           'male chest reduction hyderabad',
           'man boobs surgery hyderabad',
-          'scarless gynecomastia surgery',
           'bodybuilder gynecomastia surgery hyderabad',
           'vaser liposuction gynecomastia',
           'gynecomastia treatment kondapur',
@@ -235,21 +213,17 @@ const GynecomastiaLanding: React.FC = () => {
               <span className="text-white">Gynecomastia Surgery</span>
             </nav>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-              Gynecomastia Surgery in Hyderabad — Scarless Male Chest Reduction by Dr. Ram Prabhu
+              Gynecomastia Surgery in Hyderabad — Dr. Ram Prabhu
             </h1>
             <p className="text-primary-100 text-base md:text-lg mb-5 max-w-2xl">
-              VASER liposuction + gland excision performed by a DNB Super Speciality Plastic Surgeon with 1,000+ gynecomastia cases. All four grades treated. Same-day discharge. Final results in 8-12 weeks.
+              Gynecomastia assessment and surgical treatment planning by a DNB Super Speciality Plastic Surgeon. The appropriate technique, recovery plan, and follow-up are discussed after clinical examination.
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">★ DNB Plastic Surgery</span>
-              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">1,000+ Cases</span>
-              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">Scarless Technique</span>
+              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">TSMC Registration No. 66931</span>
+              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">Individual Assessment</span>
               <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">All 4 Grades</span>
-              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">Bodybuilder Specialist</span>
-              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">0% EMI</span>
-            </div>
-            <div className="bg-yellow-300 text-primary-900 inline-block px-4 py-2 rounded-lg font-bold text-lg mb-6">
-              Surgery from ₹50,000 — Free Consultation
+              <span className="bg-primary-700 px-3 py-1 rounded-full text-xs font-semibold">Confidential Care</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
               <a
@@ -287,10 +261,10 @@ const GynecomastiaLanding: React.FC = () => {
               <strong>Gynecomastia</strong> is the medical term for the abnormal enlargement of male breast tissue. It affects an estimated <strong>30-65% of men</strong> at some point in life, ranging from a small disc of glandular tissue under the nipple to a fully enlarged, breast-like chest. Despite how common it is, gynecomastia carries significant psychological burden — many men avoid removing their shirts, struggle with intimacy, and experience anxiety in social settings like swimming pools or gyms.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Surgery — known as <strong>male chest reduction</strong> or <strong>gynecomastia correction</strong> — is the only permanent solution for true glandular gynecomastia. Diet, exercise, and hormonal supplements may reduce surrounding fat but cannot remove glandular tissue. Modern techniques use a combination of <em>VASER ultrasonic liposuction</em> for fat and a small <em>peri-areolar incision</em> for gland excision, leaving virtually invisible scars.
+              Surgery — known as <strong>male chest reduction</strong> or <strong>gynecomastia correction</strong> — may be considered for glandular gynecomastia after clinical assessment. Diet, exercise, and hormonal supplements may reduce surrounding fat but cannot remove glandular tissue. Treatment can involve <em>VASER ultrasonic liposuction</em> for fat and a <em>peri-areolar incision</em> for gland excision when indicated.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              At our Kondapur clinic, Dr. Ram Prabhu has performed over 1,000 gynecomastia procedures across all four grades — including challenging cases in bodybuilders, post-bariatric patients, and steroid users.
+              At our Kondapur clinic, treatment planning accounts for the clinical grade, medical history, and individual goals, including in bodybuilders, post-bariatric patients, and steroid users.
             </p>
           </div>
         </section>
@@ -344,7 +318,6 @@ const GynecomastiaLanding: React.FC = () => {
                   <p className="text-sm text-gray-700"><strong>Technique:</strong> {c.technique}</p>
                   <p className="text-sm text-gray-700"><strong>Duration:</strong> {c.duration}</p>
                   <p className="text-sm text-gray-700"><strong>Stay:</strong> {c.stay}</p>
-                  <div className="mt-3 text-primary-700 font-bold">{c.price}</div>
                 </div>
               ))}
             </div>
@@ -362,9 +335,9 @@ const GynecomastiaLanding: React.FC = () => {
         {/* ================= 6. COST TABLE (DETAILED) ================= */}
         <section className="py-12 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-3">Gynecomastia Surgery Cost in Hyderabad</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-3">Gynecomastia Treatment Options by Grade</h2>
             <p className="text-gray-700 mb-6">
-              Cost depends on grade, technique, anaesthesia type, hospital stay, and pre-op investigations. We offer transparent fixed-package pricing with <strong>no hidden charges</strong>. 0% interest EMI is available for 6, 9, and 12 months.
+              The treatment approach depends on the grade, tissue characteristics, anaesthesia requirements, hospital stay, and clinical assessment.
             </p>
             <div className="overflow-x-auto">
               <table className="min-w-full border border-gray-200 text-sm">
@@ -374,7 +347,6 @@ const GynecomastiaLanding: React.FC = () => {
                     <th className="px-3 py-2 text-left font-semibold">Technique</th>
                     <th className="px-3 py-2 text-left font-semibold">Anaesthesia</th>
                     <th className="px-3 py-2 text-left font-semibold">Stay</th>
-                    <th className="px-3 py-2 text-left font-semibold">Price (INR)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -384,14 +356,13 @@ const GynecomastiaLanding: React.FC = () => {
                       <td className="px-3 py-2">{c.technique}</td>
                       <td className="px-3 py-2">{c.anesthesia}</td>
                       <td className="px-3 py-2">{c.stay}</td>
-                      <td className="px-3 py-2 font-bold text-primary-700">{c.price}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
             <p className="text-xs text-gray-500 mt-3">
-              Pricing valid for Kondapur clinic. Includes surgeon fee, anaesthesia, OT charges, post-op compression garment, and three follow-up visits. Excludes pre-op investigations (~₹3,000-5,000).
+              The treatment plan, expected recovery, risks, and estimated costs are discussed after an individual clinical assessment.
             </p>
           </div>
         </section>
@@ -457,20 +428,20 @@ const GynecomastiaLanding: React.FC = () => {
                 <p className="text-primary-100 text-sm">National Board of Examinations, New Delhi (2019). The same recognition as MCh Plastic Surgery per the National Medical Commission.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">1,000+ Gynecomastia Cases</h3>
-                <p className="text-primary-100 text-sm">Among the highest-volume gynecomastia surgeons in Hyderabad. All four grades, including challenging bodybuilder and steroid-induced cases.</p>
+                <h3 className="font-bold mb-2">Individual Surgical Assessment</h3>
+                <p className="text-primary-100 text-sm">The approach is planned after clinical examination of grade, tissue characteristics, and your goals.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">16+ Years Experience</h3>
-                <p className="text-primary-100 text-sm">MBBS 2009, DNB 2019. 6,000+ total procedures. TSMC License No. 66931. Member of IAAPS and APSI.</p>
+                <h3 className="font-bold mb-2">DNB Plastic Surgery & TSMC Registration</h3>
+                <p className="text-primary-100 text-sm">MBBS 2009, DNB 2019. Telangana State Medical Council Registration No. 66931. Member of IAAPS and APSI.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
                 <h3 className="font-bold mb-2">VASER & Endoscopic Techniques</h3>
-                <p className="text-primary-100 text-sm">Up-to-date with the latest scarless approaches — ultrasonic liposuction, endoscopic gland excision, micro-cannulae.</p>
+                <p className="text-primary-100 text-sm">Treatment options include ultrasonic liposuction, endoscopic gland excision where indicated, and micro-cannulae.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">Transparent Pricing</h3>
-                <p className="text-primary-100 text-sm">Fixed packages, no hidden costs, 0% interest EMI. Detailed cost breakup shared before surgery.</p>
+                <h3 className="font-bold mb-2">Clear Cost Discussion</h3>
+                <p className="text-primary-100 text-sm">Cost components and follow-up arrangements are explained before surgery.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
                 <h3 className="font-bold mb-2">Privacy & Discretion</h3>
@@ -485,14 +456,14 @@ const GynecomastiaLanding: React.FC = () => {
         {/* ================= 11. VIDEO ================= */}
         <section className="py-12 px-4 bg-primary-50">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4 text-center">Watch: Endoscopic Scarless Gynecomastia Surgery</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4 text-center">Watch: Endoscopic Gynecomastia Surgery</h2>
             <p className="text-gray-700 text-center mb-6">
               Educational video showing the modern endoscopic approach to gynecomastia correction.
             </p>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.youtube.com/embed/aIgr0I-RnM4"
-                title="Endoscopic Scarless Gynecomastia Surgery — Dr. Ram Prabhu"
+                title="Endoscopic Gynecomastia Surgery — Dr. Ram Prabhu"
                 allow="encrypted-media; picture-in-picture"
                 allowFullScreen
                 loading="lazy"
@@ -514,7 +485,7 @@ const GynecomastiaLanding: React.FC = () => {
         <section id="booking" className="py-12 px-4 bg-primary-50">
           <div className="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-xl md:text-2xl font-bold text-primary-900 mb-2 text-center">
-              Book Your Free Gynecomastia Consultation
+              Book Your Gynecomastia Consultation
             </h2>
             <p className="text-sm text-gray-600 text-center mb-5">
               Reply within 1 working hour. All details kept confidential.

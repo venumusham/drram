@@ -199,7 +199,7 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
               ))}
             </div>
             <div className="bg-yellow-300 text-primary-900 inline-block px-4 py-2 rounded-lg font-bold text-lg mb-6">
-              {data.heroPriceBand} — Free Consultation
+              {data.heroPriceBand} — Consultation
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
               <a
@@ -386,8 +386,8 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
                 <p className="text-primary-100 text-sm">National Board of Examinations, New Delhi (2019). Recognised by NMC as equivalent to MCh Plastic Surgery.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">16+ Years Experience</h3>
-                <p className="text-primary-100 text-sm">MBBS 2009, DNB 2019. 6,000+ total procedures across the spectrum of cosmetic and reconstructive surgery.</p>
+                <h3 className="font-bold mb-2">DNB Plastic Surgery</h3>
+                <p className="text-primary-100 text-sm">MBBS 2009, DNB 2019. DNB (Super Speciality) Plastic Surgery from the National Board of Examinations, New Delhi.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
                 <h3 className="font-bold mb-2">Member of IAAPS & APSI</h3>
@@ -402,8 +402,8 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
                 <p className="text-primary-100 text-sm">Fixed packages, no hidden costs, 0% interest EMI. Detailed cost breakup shared before surgery.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">140+ Google Reviews</h3>
-                <p className="text-primary-100 text-sm">Read patient experiences and outcomes on our verified Google Business Profile.</p>
+                <h3 className="font-bold mb-2">Telangana State Medical Council</h3>
+                <p className="text-primary-100 text-sm">Registration No. 66931. Practising at Idea Clinic, Kondapur, Hyderabad.</p>
               </div>
             </div>
           </div>
@@ -446,7 +446,7 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
         <section id="booking" className="py-12 px-4 bg-primary-50">
           <div className="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-xl md:text-2xl font-bold text-primary-900 mb-2 text-center">
-              Book Your Free {data.procedureName} Consultation
+              Book Your {data.procedureName} Consultation
             </h2>
             <p className="text-sm text-gray-600 text-center mb-5">
               Reply within 1 working hour. All details kept confidential.

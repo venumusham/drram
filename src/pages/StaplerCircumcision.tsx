@@ -65,7 +65,6 @@ const StaplerCircumcision: React.FC = () => {
                     'stapler circumcision hyderabad',
                     'zsr circumcision hyderabad',
                     'painless circumcision hyderabad',
-                    'best circumcision surgeon hyderabad',
                     'circumcision for adults hyderabad'
                 ]}
                 image="https://drramprabhu.com/images/stapler-circumcision/illustration.webp"

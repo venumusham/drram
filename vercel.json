@@ -5,6 +5,13 @@
   "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/blog/endoscopic-scarless-gynecomastia-surgery-hyderabad",
+      "destination": "/blog/endoscopic-gynecomastia-surgery-hyderabad",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/((?!_next|api|.*\\..*).*)", "destination": "/$1/index.html" }
   ],

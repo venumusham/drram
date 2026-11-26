@@ -17,7 +17,6 @@ const data: MoneyPageData = {
     'neck lift hyderabad',
     'mid facelift hyderabad',
     'jowl lift hyderabad',
-    'best facelift surgeon hyderabad',
   ],
   h1: 'Facelift Surgery in Hyderabad — Natural Rejuvenation by Dr. Ram Prabhu',
   heroSubheadline:

@@ -64,7 +64,7 @@ const BlogIndex: React.FC = () => {
             </nav>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Plastic Surgery Blog</h1>
             <p className="text-primary-100 text-base md:text-lg max-w-2xl">
-              Honest, in-depth articles about plastic surgery procedures, costs, recovery, and patient guidance — from Dr. M. Ram Prabhu's 16+ years of clinical practice.
+              Honest, in-depth articles about plastic surgery procedures, costs, recovery, and patient guidance — from Dr. M. Ram Prabhu.
             </p>
           </div>
         </section>

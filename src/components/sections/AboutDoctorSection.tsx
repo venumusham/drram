@@ -32,10 +32,10 @@ const AboutDoctorSection: React.FC = () => {
               Meet Dr. M. Ram Prabhu
             </h2>
             <p className="mb-4 text-[15px] leading-8 text-neutral-600">
-              Dr. M. Ram Prabhu is a board-certified Plastic &amp; Cosmetic Surgeon with 16+ years of experience, specialising in Gynecomastia, Liposuction, Rhinoplasty, and Aesthetic Surgery.
+              Dr. M. Ram Prabhu is a board-certified Plastic &amp; Cosmetic Surgeon specialising in Gynecomastia, Liposuction, Rhinoplasty, and Aesthetic Surgery.
             </p>
             <p className="mb-7 text-[15px] leading-8 text-neutral-600">
-              He earned his MBBS from Dr. NTR University of Health Sciences (2009), followed by DNB (Super Speciality) in Plastic Surgery from the National Board of Examinations, New Delhi (2019). He is registered with the Telangana State Medical Council (Licence No. 66931) and is a member of IAAPS and APSI.
+              He earned his MBBS from Dr. NTR University of Health Sciences (2009), followed by DNB (Super Speciality) in Plastic Surgery from the National Board of Examinations, New Delhi (2019). He is registered with the Telangana State Medical Council (Registration No. 66931) and is a member of IAAPS and APSI.
             </p>
             <div className="mb-7 rounded-xl border border-[#eadfce] bg-[#fbf8f1] p-4">
               <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent-700">

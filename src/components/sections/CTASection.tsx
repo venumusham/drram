@@ -11,7 +11,7 @@ const CTASection: React.FC = () => {
         Ready for Your Transformation?
       </h2>
       <p className="mx-auto mb-9 max-w-xl text-[15px] leading-7 text-[#f5f0e8]/55">
-        Book a free consultation with Dr. Ram Prabhu - discuss your goals and get a personalised treatment plan.
+        Book a consultation with Dr. Ram Prabhu to discuss your goals and receive a personalised treatment plan.
       </p>
       <div className="flex flex-wrap justify-center gap-3">
         <Link

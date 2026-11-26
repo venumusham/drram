@@ -42,7 +42,7 @@ const videos = [
   },
   {
     id: 'u1_TWQy8W7k',
-    title: 'Endoscopic Scarless Gynecomastia Surgery',
+    title: 'Endoscopic Gynecomastia Surgery',
     category: 'Gynecomastia',
     color: '#1a5c3a',
   },
@@ -100,13 +100,13 @@ const YouTubeSection: React.FC = () => {
       <div className="container mx-auto max-w-6xl px-4">
         <div className="mb-8 text-center">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent-400">
-            Patient Education &amp; Results
+            Patient Education
           </p>
           <h2 className="font-serif text-[clamp(1.7rem,4vw,2.5rem)] font-normal leading-tight text-[#f5f0e8]">
-            Watch Procedures &amp; Patient Stories
+            Watch Procedure Explainers
           </h2>
           <p className="mt-3 text-sm text-neutral-500">
-            Real cases. Real results. Educational content by Dr. M. Ram Prabhu.
+            Educational content by Dr. M. Ram Prabhu.
           </p>
         </div>
 
