@@ -88,7 +88,7 @@ const TestimonialsSection: React.FC = () => {
                 <span className="text-2xl font-semibold text-neutral-950">5.0</span>
                 <StarRating count={5} />
               </div>
-              <p className="m-0 text-xs text-neutral-400">140+ Google Reviews</p>
+              <p className="m-0 text-xs text-neutral-400">Google Reviews</p>
             </div>
           </a>
         </div>

@@ -2,10 +2,10 @@ import React from 'react';
 import { BadgeCheck, Star, Stethoscope, Users } from 'lucide-react';
 
 const stats = [
-  { num: '16+', label: 'Years', detail: 'Plastic surgery experience', icon: Stethoscope },
-  { num: '6,000+', label: 'Procedures', detail: 'Aesthetic & reconstructive', icon: BadgeCheck },
-  { num: '140+', label: 'Reviews', detail: 'Recent Google feedback', icon: Users },
-  { num: '5.0', label: 'Rating', detail: 'Google Business Profile', icon: Star },
+  { num: 'DNB', label: 'Plastic Surgery', detail: 'Super Speciality qualification', icon: Stethoscope },
+  { num: 'TSMC', label: 'Registration', detail: 'No. 66931', icon: BadgeCheck },
+  { num: 'IAAPS', label: 'Member', detail: 'Aesthetic Plastic Surgeons', icon: Users },
+  { num: 'APSI', label: 'Member', detail: 'Plastic Surgeons of India', icon: Star },
 ];
 
 const StatisticsSection: React.FC = () => {

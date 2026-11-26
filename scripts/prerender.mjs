@@ -98,7 +98,7 @@ const ROUTES = [
   '/blog/keloid-scar-treatment-surgery-hyderabad',
   '/blog/forehead-lump-removal-no-visible-scar-hyderabad',
   '/blog/massage-after-gynecomastia-surgery-hyderabad',
-  '/blog/endoscopic-scarless-gynecomastia-surgery-hyderabad',
+  '/blog/endoscopic-gynecomastia-surgery-hyderabad',
   '/blog/gynecomastia-surgery-psychology-man-boobs-hyderabad',
   '/blog/multiple-gynecomastia-surgeries-precision-planning-hyderabad',
   '/blog/what-is-gynecomastia-male-breast-enlargement-hyderabad',
@@ -118,7 +118,7 @@ const ROUTES = [
 ];
 
 const PREVIEW_PORT = 4173;
-const BASE_URL = `http://localhost:${PREVIEW_PORT}`;
+const BASE_URL = `http://127.0.0.1:${PREVIEW_PORT}`;
 const DIST_DIR = path.resolve('dist');
 
 if (!existsSync(DIST_DIR)) {
@@ -133,26 +133,28 @@ console.log(`📡 Booting vite preview on :${PREVIEW_PORT}...`);
 // Run local Vite via Node (no `npx` on PATH required). Avoid require.resolve('vite/...')
 // — Vite's package.json "exports" does not expose ./bin/vite.js.
 const viteCli = path.join(path.dirname(DIST_DIR), 'node_modules', 'vite', 'bin', 'vite.js');
-const preview = spawn(process.execPath, [viteCli, 'preview', '--port', String(PREVIEW_PORT), '--strictPort'], {
+const preview = spawn(process.execPath, [viteCli, 'preview', '--host', '127.0.0.1', '--port', String(PREVIEW_PORT), '--strictPort'], {
   stdio: ['ignore', 'pipe', 'pipe'],
   env: { ...process.env, NODE_ENV: 'production' },
 });
 
-// Wait for preview server to be ready
+// Wait for preview server to be ready (poll the URL)
 await new Promise((resolve, reject) => {
-  const timeout = setTimeout(() => reject(new Error('Preview server boot timeout (10s)')), 10000);
-  preview.stdout.on('data', (chunk) => {
-    const text = chunk.toString();
-    if (text.includes('Local:') || text.includes('localhost')) {
-      clearTimeout(timeout);
-      // Give it 500ms to fully bind
-      setTimeout(resolve, 500);
-    }
-  });
-  preview.on('error', (err) => {
-    clearTimeout(timeout);
-    reject(err);
-  });
+  const timeout = setTimeout(() => reject(new Error('Preview server boot timeout (60s)')), 60000);
+  const poll = async () => {
+    try {
+      const res = await fetch(BASE_URL);
+      if (res.ok || res.status === 404) {
+        clearTimeout(timeout);
+        resolve();
+        return;
+      }
+    } catch {}
+    if (!timeout._destroyed) setTimeout(poll, 1000);
+  };
+  setTimeout(poll, 1000);
+  preview.on('error', (err) => { clearTimeout(timeout); reject(err); });
+  preview.on('exit', (code) => { if (code !== 0 && code !== null) { clearTimeout(timeout); reject(new Error(`Preview exited with code ${code}`)); } });
 });
 
 console.log('✅ Preview server ready.');

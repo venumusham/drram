@@ -24,24 +24,16 @@ const SEO: React.FC<SEOProps> = ({
     // Location-based keywords
     'plastic surgeon hyderabad',
     'cosmetic surgery hyderabad',
-    'best plastic surgeon telangana',
-    'top-rated plastic surgeon in telangana',
-    'trusted cosmetic surgeons in south india',
-    'best cosmetic clinics near me hyderabad',
     'cosmetic procedures in banjara hills hyderabad',
     'hyderabad city hair transplant services',
     'man boobs surgery hyderabad kondapur gachibowli',
 
     // Procedure-specific keywords
-    'affordable cosmetic surgery in hyderabad',
-    'affordable plastic surgery options india',
-    'benefits of rhinoplasty for breathing issues',
     'facial reconstruction hyderabad',
     'rhinoplasty in hyderabad',
     'skin rejuvenation services hyderabad',
     'summer body transformation surgeries hyderabad',
     'tummy tuck surgery india',
-    'top rated surgeons for breast augmentation telangana',
 
     // Non-surgical keywords
     'non-surgical cosmetic procedures telangana',

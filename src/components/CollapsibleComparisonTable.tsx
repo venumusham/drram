@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 const tableData = [
   { feature: 'Procedure Type', other: 'Traditional Surgery', clinic: 'Laser + Liposuction' },
-  { feature: 'Scarring', other: 'Visible Scars', clinic: 'Scarless Finish' },
+  { feature: 'Scarring', other: 'Visible Scars', clinic: 'Scar-minimising Technique' },
   { feature: 'Anesthesia', other: 'General', clinic: 'Local' },
   { feature: 'Recovery Time', other: '1–2 Weeks', clinic: '1–2 Days' },
-  { feature: 'Pricing', other: 'Starts ₹1L+', clinic: 'Starts ₹50,000' },
+  { feature: 'Pricing', other: 'Varies', clinic: 'Discussed After Assessment' },
   { feature: 'Financing', other: 'Rarely Available', clinic: '0% EMI | Assured Pricing' },
 ];
 

@@ -59,6 +59,7 @@ export default defineConfig(({ mode }) => ({
   },
   // Preview server port — must match scripts/prerender.mjs (PREVIEW_PORT).
   preview: {
+    host: '127.0.0.1',
     port: 4173,
     strictPort: true,
   },

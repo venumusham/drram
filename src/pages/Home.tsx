@@ -20,8 +20,8 @@ const HomeFactsSection: React.FC = () => (
         </h2>
         <div className="mt-5 grid gap-5 text-sm leading-7 text-gray-700 md:grid-cols-2">
           <p>
-            Dr. M. Ram Prabhu is a DNB Super Speciality Plastic Surgeon in Hyderabad with
-            16+ years of experience and 6,000+ procedures. His clinic in Kondapur treats
+            Dr. M. Ram Prabhu is a DNB Super Speciality Plastic Surgeon in Hyderabad, registered with the
+            Telangana State Medical Council (Registration No. 66931). His clinic treats
             aesthetic and reconstructive concerns including gynecomastia, liposuction,
             rhinoplasty, breast surgery, tummy tuck, circumcision, lipoma removal,
             sebaceous cyst excision, scar revision, keloid care, wound reconstruction,
@@ -45,9 +45,8 @@ const HomePage: React.FC = () => {
     <>
       <SEO
         title="Dr. M. Ram Prabhu | Plastic & Cosmetic Surgeon Hyderabad"
-        description="Plastic surgeon in Kondapur Hyderabad — Dr. M. Ram Prabhu, DNB (Super Speciality). 16+ yrs, 6,000+ procedures, 140+ Google reviews. Gynecomastia, liposuction, rhinoplasty, breast surgery. Call 07969084439."
+        description="Plastic surgeon in Kondapur Hyderabad — Dr. M. Ram Prabhu, DNB (Super Speciality), Telangana State Medical Council Registration No. 66931. Gynecomastia, liposuction, rhinoplasty, breast surgery. Call 07969084439."
         keywords={[
-          'best plastic surgeon hyderabad',
           'cosmetic surgery hyderabad',
           'reconstructive surgery hyderabad',
           'rhinoplasty hyderabad',

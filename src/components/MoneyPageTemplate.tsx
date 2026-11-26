@@ -240,7 +240,7 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
               ))}
             </div>
             <div className="bg-yellow-300 text-primary-900 inline-block px-4 py-2 rounded-lg font-bold text-lg mb-6">
-              {data.heroPriceBand} — Free Consultation
+              {data.heroPriceBand}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
               <a
@@ -492,17 +492,14 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
                 </p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">16+ Years Experience</h3>
-                <p className="text-primary-100 text-sm">
-                  MBBS 2009, DNB 2019. 6,000+ total procedures across the
-                  spectrum of cosmetic and reconstructive surgery.
-                </p>
+                <h3 className="font-bold mb-2">DNB Plastic Surgery</h3>
+                <p className="text-primary-100 text-sm">MBBS 2009, DNB 2019. DNB (Super Speciality) Plastic Surgery from the National Board of Examinations, New Delhi.</p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
                 <h3 className="font-bold mb-2">Member of IAAPS & APSI</h3>
                 <p className="text-primary-100 text-sm">
                   Indian Association of Aesthetic Plastic Surgeons and
-                  Association of Plastic Surgeons of India. TSMC License No.
+                  Association of Plastic Surgeons of India. TSMC Registration No.
                   66931.
                 </p>
               </div>
@@ -522,11 +519,8 @@ const MoneyPageTemplate: React.FC<{ data: MoneyPageData }> = ({ data }) => {
                 </p>
               </div>
               <div className="bg-primary-800 p-5 rounded-lg">
-                <h3 className="font-bold mb-2">140+ Google Reviews</h3>
-                <p className="text-primary-100 text-sm">
-                  Read patient experiences and outcomes on our verified Google
-                  Business Profile.
-                </p>
+                <h3 className="font-bold mb-2">Telangana State Medical Council</h3>
+                <p className="text-primary-100 text-sm">Registration No. 66931. Practising at Idea Clinic, Kondapur, Hyderabad.</p>
               </div>
             </div>
           </div>

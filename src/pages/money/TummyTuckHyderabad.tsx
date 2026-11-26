@@ -4,9 +4,9 @@ import MoneyPageTemplate, { MoneyPageData } from '../../components/MoneyPageTemp
 const data: MoneyPageData = {
   slug: 'tummy-tuck-hyderabad',
   procedureName: 'Tummy Tuck (Abdominoplasty)',
-  seoTitle: 'Tummy Tuck Hyderabad ★ Mommy Makeover | Dr. Ram Prabhu DNB',
+  seoTitle: 'Tummy Tuck Hyderabad | Dr. Ram Prabhu DNB',
   seoDescription:
-    'Tummy tuck (abdominoplasty) in Kondapur Hyderabad — full, mini, post-pregnancy mommy makeover. Dr. Ram Prabhu, DNB Plastic Surgery, 16+ years. From ₹1.4L. 0% EMI. Call 07969084439.',
+    'Tummy tuck (abdominoplasty) in Kondapur Hyderabad — full, mini, post-pregnancy mommy makeover. Dr. Ram Prabhu, DNB Plastic Surgery. Call 07969084439.',
   seoKeywords: [
     'tummy tuck hyderabad',
     'tummy tuck surgery cost near me',

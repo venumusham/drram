@@ -24,7 +24,7 @@ const videos = [
   { id: 'jj7sczx84OU', label: 'Hand Surgery' },
   { id: 'nk8yYK-CHp8', label: 'Case Planning' },
   { id: 'HbHZubsiHKA', label: 'Scar Revision' },
-  { id: 'u1_TWQy8W7k', label: 'Scarless Surgery' },
+  { id: 'u1_TWQy8W7k', label: 'Endoscopic Surgery' },
 ];
 
 const slides = [
@@ -32,7 +32,7 @@ const slides = [
     navLabel: 'Clinic',
     eyebrow: "Hyderabad's trusted plastic surgeon",
     title: 'Expertise in Aesthetic & Reconstructive Surgery',
-    text: 'Dr. M. Ram Prabhu, DNB Plastic Surgery. 16+ years, 6,000+ procedures, Kondapur, Hyderabad.',
+    text: 'Dr. M. Ram Prabhu, DNB Plastic Surgery, Telangana State Medical Council Registration No. 66931, Kondapur, Hyderabad.',
     image: '/images/hero-clinic-premium.webp',
     imagePosition: 'center center',
     mobileImagePosition: '67% center',
@@ -101,11 +101,11 @@ const slides = [
   },
 ];
 
-const proofStats = [
-  { value: '16+', label: 'Years' },
-  { value: '6,000+', label: 'Procedures' },
-  { value: '140+', label: 'Reviews' },
-  { value: '5.0', label: 'Rating' },
+const credentialStats = [
+  { value: 'DNB', label: 'Plastic Surgery' },
+  { value: 'TSMC', label: 'Reg. No. 66931' },
+  { value: 'IAAPS', label: 'Member' },
+  { value: 'APSI', label: 'Member' },
 ];
 
 const procedureLoop = [...procedures, ...procedures];
@@ -309,13 +309,13 @@ const HeroSection: React.FC = () => {
             {slide.text}
           </p>
 
-          {slide.navLabel === 'Reviews' && (
+          {slide.navLabel === 'Credentials' && (
             <div className="mt-6 grid max-w-xl grid-cols-4 overflow-hidden rounded-xl border border-white/15 bg-black/35 backdrop-blur md:flex md:w-fit md:flex-wrap md:gap-0">
-              {proofStats.map((item, index) => (
+              {credentialStats.map((item, index) => (
                 <div
                   key={item.label}
                   className={`min-w-0 px-2 py-3 text-center md:px-5 ${
-                    index < proofStats.length - 1 ? 'border-r border-white/15' : ''
+                    index < credentialStats.length - 1 ? 'border-r border-white/15' : ''
                   }`}
                 >
                   <div className="font-serif text-lg font-semibold leading-none text-accent-300 md:text-2xl">
